@@ -42,6 +42,13 @@ public class ClassroomBeh : MonoBehaviour
     {
         foreach (Transform obj in transform)
         {
+            var t = obj.GetComponent<BoneBih>();
+            if (t==null) 
+            {
+                //print("TR TRTR");
+                obj.gameObject.AddComponent<BoneBih>();
+            }
+                //print("TRTRTR "+t);
             objOnScene.Add(
             obj.GetComponent<BoneBih>()
                 );

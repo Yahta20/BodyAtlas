@@ -1,0 +1,30 @@
+{
+	"eng":[
+		{
+			"Bone1":[
+				{	
+					   "name":"Bone1",
+					   "point":[
+							0:"Point0",
+							1:"Point1",
+					   ],
+							
+				}
+			],
+			"Bone2":[
+				{	
+					   "name":"Bone2",
+					   "point":[
+							0:"Point0",
+							1:"Point1",
+					   ],
+							
+				}
+			]
+			
+		}
+	],
+	"rus":[],
+	"ua":[],
+	"lat":[]
+}
