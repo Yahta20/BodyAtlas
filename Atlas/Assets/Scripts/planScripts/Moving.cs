@@ -62,6 +62,8 @@ public class Moving : MonoBehaviour
             .Select(_ => {
                 var x = Input.GetAxis("Horizontal");
                 var y = Input.GetAxis("Vertical");
+                //var y = Input.GetAxis("Vertical");
+
                 return new Vector2(x, y).normalized;
             });
         Mouselook = this.UpdateAsObservable()
@@ -106,15 +108,15 @@ public class Moving : MonoBehaviour
             .Select(_ =>
             {
 
-
                 if (Input.GetMouseButton(0))
                 {
                     Vector2 click = Input.mousePosition;
                     return click;
                 }
-
                 return Vector2.zero; 
             });
+
+
     }
     void Start()
     {
