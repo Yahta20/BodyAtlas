@@ -25,18 +25,19 @@ public class ClassroomBeh : MonoBehaviour
         var chekObj = Observable.EveryFixedUpdate()
             .Subscribe(
             s=> {
-                if (objOnScene.Capacity!=transform.childCount) {
+                if (objOnScene.Count!=transform.childCount) {
                     getBoneBihScrpt();
-                
+                    //print(transform.childCount+" "+objOnScene.Count);
                 }
-                
                 materialControl();
-
             })
             .AddTo(this);
-
-
     }
+                
+                
+
+
+
 
     private void getBoneBihScrpt()
     {
@@ -48,10 +49,19 @@ public class ClassroomBeh : MonoBehaviour
                 //print("TR TRTR");
                 obj.gameObject.AddComponent<BoneBih>();
             }
+            bool chek = true;
+            foreach (Transform item in transform)
+            {
+                if (item.name==obj.name) {
+                    chek = true;
+                }
+            }
+            if (chek) { 
                 //print("TRTRTR "+t);
-            objOnScene.Add(
-            obj.GetComponent<BoneBih>()
+                objOnScene.Add(
+                obj.GetComponent<BoneBih>()
                 );
+            }
 
         }
     }
@@ -71,11 +81,11 @@ public class ClassroomBeh : MonoBehaviour
                     pbh.unchek();
                     chosenObj = bh.gameObject;
                 }
-
-
                 chosenObj = bh.gameObject;
                 bh.changeMaterial(chosenMat);
             }
+
+
             if (!bh.chosen)
             {
                 //chosenObj = bh.gameObject;
