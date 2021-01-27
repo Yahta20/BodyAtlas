@@ -44,8 +44,8 @@ public class BoneBih : MonoBehaviour
                 if (chosen) {
                     screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
 
-                    string output = String.Format("Name {0}, Screen2World {1},posit {2},", name,screenBounds,startPos.position);
-                    print(output);   
+                    //string output = String.Format("Name {0}, Screen2World {1},posit {2},", name,screenBounds,startPos.position);
+                    //print(output);   
                 }
             })
             .AddTo(this);

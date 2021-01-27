@@ -1,30 +1,829 @@
 {
-	"eng":[
-		{
-			"Bone1":[
-				{	
-					   "name":"Bone1",
-					   "point":[
-							0:"Point0",
-							1:"Point1",
-					   ],
-							
-				}
-			],
-			"Bone2":[
-				{	
-					   "name":"Bone2",
-					   "point":[
-							0:"Point0",
-							1:"Point1",
-					   ],
-							
-				}
-			]
-			
-		}
-	],
-	"rus":[],
-	"ua":[],
-	"lat":[]
+  "eng": {
+	"clavicula": {
+      "name": "clavicle",
+      "point": {
+        "0": "corpus claviculae",
+        "1": "acromial end",
+        "2": "sternal end",
+        "3": "groove for subclavian muscle",
+        "4": "groove for subclavian muscle",
+        "5": "impression of costoclavicular ligamen",
+        "6": "nutritive foramen",
+        "7": "conoid tubercle",
+        "8": "trapezoid line",
+        "9": "acromial articular surface"
+      }
+    },
+    "scapula": {
+      "name": "scapula",
+      "point": {
+        "10": "angulus superior",
+        "11": "margo superior",
+        "12": "spina scapulae",
+        "13": "incisura scapulae",
+        "14": "fossa subscapularis",
+        "15": "facies costalis",
+        "16": "tuberculum infraglenoidale",
+        "17": "cavitas glenoidalis",
+        "18": "acromion",
+        "19": "facies articularis acromialis",
+        "20": "collum scapulae",
+        "0 ": "processus coracoideus",
+        "1 ": "acromion",
+        "2 ": "angulus acromialis",
+        "3 ": "angulus lateralis",
+        "4 ": "margo lateralis",
+        "5 ": "facies posterior",
+        "6 ": "angulus inferior",
+        "7 ": "margo medialis",
+        "8 ": "fossa infraspinata",
+        "9 ": "fossa supraspinata"
+      }
+    },
+    "humerus": {
+      "name": "humerus",
+      "point": {
+        "10": "crista supraepicondylaris medialis",
+        "11": "facies posterior",
+        "12": "facies anteromedialis",
+        "13": "corpus humeri",
+        "14": "collum chirurgicum",
+        "15": "collum anatomicum",
+        "16": "caput humeri",
+        "17": "tuberculum minus",
+        "18": "collum chirurgicum",
+        "19": "crista tuberculi minoris",
+        "20": "margo medialis",
+        "21": "facies anteromedialis",
+        "22": "fossa coronoidea",
+        "23": "processus supracondylaris",
+        "24": "capitulum humeri",
+        "25": "fossa radialis",
+        "26": "crista supraepicondylaris lateralis",
+        "27": "facies anterolateralis",
+        "28": "tuberositas deltoidea",
+        "29": "crista tuberculi majoris",
+        "0 ": "tuberculum majus",
+        "1 ": "sulcus nervi radialis",
+        "2 ": "margo lateralis",
+        "3 ": "foramen nutricium",
+        "4 ": "fossa olecrani",
+        "5 ": "epicondylus lateralis",
+        "6 ": "trochlea humeri",
+        "7 ": "condylus humeri",
+        "8 ": "sulcus nervi ulnaris",
+        "9 ": "epicondylus medialis"
+      }
+    },
+    "ulna": {
+      "name": "ulna",
+      "point": {
+        "0": "margo posterior",
+        "1": "olecranon",
+        "2": "incisura trochlearis",
+        "3": "incisura radialis",
+        "4": "processus coronoideus",
+        "5": "tuberositas ulnae",
+        "6": "foramen nutricium",
+        "7": "corpus ulnae",
+        "8": "margo anterior",
+        "9": "facies anterior",
+        "10": "caputulnae",
+        "11": "circumferentia articularis",
+        "12": "processus styloideus",
+        "13": "caput ulnae",
+        "14": "facies posterior",
+        "15": "facies medialis"
+      }
+    },
+    "radius": {
+      "name": "radius",
+      "point": {
+        "0": "fovea articularis",
+        "1": "caput radii",
+        "2": "circumferentia articularis",
+        "3": "collum radii",
+        "4": "tuberositas radii",
+        "5": "corpus radii",
+        "6": "facies lateralis",
+        "7": "facies posterior",
+        "8": "margo posterior",
+        "9": "tuberculum dorsale",
+        "10": "incisura ulnaris",
+        "11": "facies articularis",
+        "12": "processus styloideus",
+        "13": "margo interosseus",
+        "14": "margo anterior",
+        "15": "foramen nutricium",
+        "16": "facies anterior",
+        "17": "fovea articularis"
+      }
+    },
+    "phalanx distalis": {
+      "name": "phalanx distalis",
+      "point": {
+        "0": "tuberositas phalangis distalis"
+      }
+    },
+    "phalanx proximalis": {
+      "name": "phalanx proximalis",
+      "point": {
+        "0": "caput phalangis",
+        "1": "corpus phalangis",
+        "2": "basis phalangis"
+      }
+    },
+    "phalanx media": {
+      "name": "phalanx media",
+      "point": {
+        "0": "corpus phalangis"
+      }
+    },
+    "os metacarpale": {
+      "name": "os metacarpale",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os metacarpale 1": {
+      "name": "os metacarpale",
+      "point": {
+        "0": "ossa sesamoidea",
+        "1": "caput",
+        "2": "corpus",
+        "3": "basis"
+      }
+    },
+    "os lunatum": {
+      "name": "os lunatum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os triquetrum": {
+      "name": "os triquetrum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os pisiforme": {
+      "name": "os pisiforme",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os hamatum": {
+      "name": "os hamatum",
+      "point": {
+        "0": "corpus",
+        "1": "hamulus ossi hamati"
+      }
+    },
+    "os trapezoideum": {
+      "name": "os trapezoideum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os trapezium": {
+      "name": "os trapezium",
+      "point": {
+        "0": "corpus",
+        "1": "tuberculum ossis trapezii"
+      }
+    },
+    "os capitatum": {
+      "name": "os capitatum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os scaphoideum": {
+      "name": "os scaphoideum",
+      "point": {
+        "0": "corpus"
+      }
+    }},
+  "rus": {
+	"clavicula": {
+      "name": "ключица",
+      "point": {
+        "0": "тело ключицы",
+        "1": "акромиальный конец",
+        "2": "грудинный конец",
+        "3": "борозда подключичной мышцы",
+        "4": "борозда подключичной мышцы",
+        "5": "вдавление реберно-ключичной связки",
+        "6": "питательное отверстие",
+        "7": "конический бугорок",
+        "8": "трапециевидная линия",
+        "9": "суставная поверхность акромиального отростка"
+      }
+    },
+    "scapula": {
+      "name": "лопатка",
+      "point": {
+        "10": "angulus superior",
+        "11": "margo superior",
+        "12": "spina scapulae",
+        "13": "incisura scapulae",
+        "14": "fossa subscapularis",
+        "15": "facies costalis",
+        "16": "tuberculum infraglenoidale",
+        "17": "cavitas glenoidalis",
+        "18": "acromion",
+        "19": "facies articularis acromialis",
+        "20": "collum scapulae",
+        "0 ": "processus coracoideus",
+        "1 ": "acromion",
+        "2 ": "angulus acromialis",
+        "3 ": "angulus lateralis",
+        "4 ": "margo lateralis",
+        "5 ": "facies posterior",
+        "6 ": "angulus inferior",
+        "7 ": "margo medialis",
+        "8 ": "fossa infraspinata",
+        "9 ": "fossa supraspinata"
+      }
+    },
+    "humerus": {
+      "name": "плечевая кость",
+      "point": {
+        "10": "crista supraepicondylaris medialis",
+        "11": "facies posterior",
+        "12": "facies anteromedialis",
+        "13": "corpus humeri",
+        "14": "collum chirurgicum",
+        "15": "collum anatomicum",
+        "16": "caput humeri",
+        "17": "tuberculum minus",
+        "18": "collum chirurgicum",
+        "19": "crista tuberculi minoris",
+        "20": "margo medialis",
+        "21": "facies anteromedialis",
+        "22": "fossa coronoidea",
+        "23": "processus supracondylaris",
+        "24": "capitulum humeri",
+        "25": "fossa radialis",
+        "26": "crista supraepicondylaris lateralis",
+        "27": "facies anterolateralis",
+        "28": "tuberositas deltoidea",
+        "29": "crista tuberculi majoris",
+        "0 ": "tuberculum majus",
+        "1 ": "sulcus nervi radialis",
+        "2 ": "margo lateralis",
+        "3 ": "foramen nutricium",
+        "4 ": "fossa olecrani",
+        "5 ": "epicondylus lateralis",
+        "6 ": "trochlea humeri",
+        "7 ": "condylus humeri",
+        "8 ": "sulcus nervi ulnaris",
+        "9 ": "epicondylus medialis"
+      }
+    },
+    "ulna": {
+      "name": "локтевая кость",
+      "point": {
+        "0": "margo posterior",
+        "1": "olecranon",
+        "2": "incisura trochlearis",
+        "3": "incisura radialis",
+        "4": "processus coronoideus",
+        "5": "tuberositas ulnae",
+        "6": "foramen nutricium",
+        "7": "corpus ulnae",
+        "8": "margo anterior",
+        "9": "facies anterior",
+        "10": "caputulnae",
+        "11": "circumferentia articularis",
+        "12": "processus styloideus",
+        "13": "caput ulnae",
+        "14": "facies posterior",
+        "15": "facies medialis"
+      }
+    },
+    "radius": {
+      "name": "лучевая кость",
+      "point": {
+        "0": "fovea articularis",
+        "1": "caput radii",
+        "2": "circumferentia articularis",
+        "3": "collum radii",
+        "4": "tuberositas radii",
+        "5": "corpus radii",
+        "6": "facies lateralis",
+        "7": "facies posterior",
+        "8": "margo posterior",
+        "9": "tuberculum dorsale",
+        "10": "incisura ulnaris",
+        "11": "facies articularis",
+        "12": "processus styloideus",
+        "13": "margo interosseus",
+        "14": "margo anterior",
+        "15": "foramen nutricium",
+        "16": "facies anterior",
+        "17": "fovea articularis"
+      }
+    },
+    "phalanx distalis": {
+      "name": "phalanx distalis",
+      "point": {
+        "0": "tuberositas phalangis distalis"
+      }
+    },
+    "phalanx proximalis": {
+      "name": "phalanx proximalis",
+      "point": {
+        "0": "caput phalangis",
+        "1": "corpus phalangis",
+        "2": "basis phalangis"
+      }
+    },
+    "phalanx media": {
+      "name": "phalanx media",
+      "point": {
+        "0": "corpus phalangis"
+      }
+    },
+    "os metacarpale": {
+      "name": "os metacarpale",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os metacarpale 1": {
+      "name": "os metacarpale",
+      "point": {
+        "0": "ossa sesamoidea",
+        "1": "caput",
+        "2": "corpus",
+        "3": "basis"
+      }
+    },
+    "os lunatum": {
+      "name": "os lunatum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os triquetrum": {
+      "name": "os triquetrum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os pisiforme": {
+      "name": "os pisiforme",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os hamatum": {
+      "name": "os hamatum",
+      "point": {
+        "0": "corpus",
+        "1": "hamulus ossi hamati"
+      }
+    },
+    "os trapezoideum": {
+      "name": "os trapezoideum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os trapezium": {
+      "name": "os trapezium",
+      "point": {
+        "0": "corpus",
+        "1": "tuberculum ossis trapezii"
+      }
+    },
+    "os capitatum": {
+      "name": "os capitatum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os scaphoideum": {
+      "name": "os scaphoideum",
+      "point": {
+        "0": "corpus"
+      }
+    }
+  },
+  "ua" : {
+	"clavicula": {
+      "name": "ключиця",
+      "point": {
+        "0": "тіло ключиці",
+        "1": "надплечовий кінець",
+        "2": "груднинний кінець",
+        "3": "борозна підключичного м’яза",
+        "4": "борозна підключичного м’яза",
+        "5": "втиснення реброво-ключичної зв’язки",
+        "6": "живильний отвір",
+        "7": "конусоподібний горбок",
+        "8": "трапецієподібна лінія",
+        "9": "надплечова суглобова поверхня"
+      }
+    },
+    "scapula": {
+      "name": "лопатка",
+      "point": {
+        "10": "angulus superior",
+        "11": "margo superior",
+        "12": "spina scapulae",
+        "13": "incisura scapulae",
+        "14": "fossa subscapularis",
+        "15": "facies costalis",
+        "16": "tuberculum infraglenoidale",
+        "17": "cavitas glenoidalis",
+        "18": "acromion",
+        "19": "facies articularis acromialis",
+        "20": "collum scapulae",
+        "0 ": "processus coracoideus",
+        "1 ": "acromion",
+        "2 ": "angulus acromialis",
+        "3 ": "angulus lateralis",
+        "4 ": "margo lateralis",
+        "5 ": "facies posterior",
+        "6 ": "angulus inferior",
+        "7 ": "margo medialis",
+        "8 ": "fossa infraspinata",
+        "9 ": "fossa supraspinata"
+      }
+    },
+    "humerus": {
+      "name": "плечова кістка",
+      "point": {
+        "10": "crista supraepicondylaris medialis",
+        "11": "facies posterior",
+        "12": "facies anteromedialis",
+        "13": "corpus humeri",
+        "14": "collum chirurgicum",
+        "15": "collum anatomicum",
+        "16": "caput humeri",
+        "17": "tuberculum minus",
+        "18": "collum chirurgicum",
+        "19": "crista tuberculi minoris",
+        "20": "margo medialis",
+        "21": "facies anteromedialis",
+        "22": "fossa coronoidea",
+        "23": "processus supracondylaris",
+        "24": "capitulum humeri",
+        "25": "fossa radialis",
+        "26": "crista supraepicondylaris lateralis",
+        "27": "facies anterolateralis",
+        "28": "tuberositas deltoidea",
+        "29": "crista tuberculi majoris",
+        "0 ": "tuberculum majus",
+        "1 ": "sulcus nervi radialis",
+        "2 ": "margo lateralis",
+        "3 ": "foramen nutricium",
+        "4 ": "fossa olecrani",
+        "5 ": "epicondylus lateralis",
+        "6 ": "trochlea humeri",
+        "7 ": "condylus humeri",
+        "8 ": "sulcus nervi ulnaris",
+        "9 ": "epicondylus medialis"
+      }
+    },
+    "ulna": {
+      "name": "ліктьова кістка",
+      "point": {
+        "0": "margo posterior",
+        "1": "olecranon",
+        "2": "incisura trochlearis",
+        "3": "incisura radialis",
+        "4": "processus coronoideus",
+        "5": "tuberositas ulnae",
+        "6": "foramen nutricium",
+        "7": "corpus ulnae",
+        "8": "margo anterior",
+        "9": "facies anterior",
+        "10": "caputulnae",
+        "11": "circumferentia articularis",
+        "12": "processus styloideus",
+        "13": "caput ulnae",
+        "14": "facies posterior",
+        "15": "facies medialis"
+      }
+    },
+    "radius": {
+      "name": "променева кістка",
+      "point": {
+        "0": "fovea articularis",
+        "1": "caput radii",
+        "2": "circumferentia articularis",
+        "3": "collum radii",
+        "4": "tuberositas radii",
+        "5": "corpus radii",
+        "6": "facies lateralis",
+        "7": "facies posterior",
+        "8": "margo posterior",
+        "9": "tuberculum dorsale",
+        "10": "incisura ulnaris",
+        "11": "facies articularis",
+        "12": "processus styloideus",
+        "13": "margo interosseus",
+        "14": "margo anterior",
+        "15": "foramen nutricium",
+        "16": "facies anterior",
+        "17": "fovea articularis"
+      }
+    },
+    "phalanx distalis": {
+      "name": "phalanx distalis",
+      "point": {
+        "0": "tuberositas phalangis distalis"
+      }
+    },
+    "phalanx proximalis": {
+      "name": "phalanx proximalis",
+      "point": {
+        "0": "caput phalangis",
+        "1": "corpus phalangis",
+        "2": "basis phalangis"
+      }
+    },
+    "phalanx media": {
+      "name": "phalanx media",
+      "point": {
+        "0": "corpus phalangis"
+      }
+    },
+    "os metacarpale": {
+      "name": "os metacarpale",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os metacarpale 1": {
+      "name": "os metacarpale",
+      "point": {
+        "0": "ossa sesamoidea",
+        "1": "caput",
+        "2": "corpus",
+        "3": "basis"
+      }
+    },
+    "os lunatum": {
+      "name": "os lunatum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os triquetrum": {
+      "name": "os triquetrum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os pisiforme": {
+      "name": "os pisiforme",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os hamatum": {
+      "name": "os hamatum",
+      "point": {
+        "0": "corpus",
+        "1": "hamulus ossi hamati"
+      }
+    },
+    "os trapezoideum": {
+      "name": "os trapezoideum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os trapezium": {
+      "name": "os trapezium",
+      "point": {
+        "0": "corpus",
+        "1": "tuberculum ossis trapezii"
+      }
+    },
+    "os capitatum": {
+      "name": "os capitatum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os scaphoideum": {
+      "name": "os scaphoideum",
+      "point": {
+        "0": "corpus"
+      }
+    }
+  },
+  "lat": {
+    "clavicula": {
+      "name": "clavicula",
+      "point": {
+        "0": "corpus claviculae",
+        "1": "extremitas acromialis",
+        "2": "extremitas sternalis",
+        "3": "sulcus m. subclavii",
+        "4": "sulcus m. subclavii",
+        "5": "impressio lig. costoclavicularis",
+        "6": "foramen nutricium",
+        "7": "tuberculum conoideum",
+        "8": "linea trapezoidea",
+        "9": "facies articularis acromialis"
+      }
+    },
+    "scapula": {
+      "name": "scapula",
+      "point": {
+        "10": "angulus superior",
+        "11": "margo superior",
+        "12": "spina scapulae",
+        "13": "incisura scapulae",
+        "14": "fossa subscapularis",
+        "15": "facies costalis",
+        "16": "tuberculum infraglenoidale",
+        "17": "cavitas glenoidalis",
+        "18": "acromion",
+        "19": "facies articularis acromialis",
+        "20": "collum scapulae",
+        "0 ": "processus coracoideus",
+        "1 ": "acromion",
+        "2 ": "angulus acromialis",
+        "3 ": "angulus lateralis",
+        "4 ": "margo lateralis",
+        "5 ": "facies posterior",
+        "6 ": "angulus inferior",
+        "7 ": "margo medialis",
+        "8 ": "fossa infraspinata",
+        "9 ": "fossa supraspinata"
+      }
+    },
+    "humerus": {
+      "name": "humerus",
+      "point": {
+        "10": "crista supraepicondylaris medialis",
+        "11": "facies posterior",
+        "12": "facies anteromedialis",
+        "13": "corpus humeri",
+        "14": "collum chirurgicum",
+        "15": "collum anatomicum",
+        "16": "caput humeri",
+        "17": "tuberculum minus",
+        "18": "collum chirurgicum",
+        "19": "crista tuberculi minoris",
+        "20": "margo medialis",
+        "21": "facies anteromedialis",
+        "22": "fossa coronoidea",
+        "23": "processus supracondylaris",
+        "24": "capitulum humeri",
+        "25": "fossa radialis",
+        "26": "crista supraepicondylaris lateralis",
+        "27": "facies anterolateralis",
+        "28": "tuberositas deltoidea",
+        "29": "crista tuberculi majoris",
+        "0 ": "tuberculum majus",
+        "1 ": "sulcus nervi radialis",
+        "2 ": "margo lateralis",
+        "3 ": "foramen nutricium",
+        "4 ": "fossa olecrani",
+        "5 ": "epicondylus lateralis",
+        "6 ": "trochlea humeri",
+        "7 ": "condylus humeri",
+        "8 ": "sulcus nervi ulnaris",
+        "9 ": "epicondylus medialis"
+      }
+    },
+    "ulna": {
+      "name": "ulna",
+      "point": {
+        "0": "margo posterior",
+        "1": "olecranon",
+        "2": "incisura trochlearis",
+        "3": "incisura radialis",
+        "4": "processus coronoideus",
+        "5": "tuberositas ulnae",
+        "6": "foramen nutricium",
+        "7": "corpus ulnae",
+        "8": "margo anterior",
+        "9": "facies anterior",
+        "10": "caputulnae",
+        "11": "circumferentia articularis",
+        "12": "processus styloideus",
+        "13": "caput ulnae",
+        "14": "facies posterior",
+        "15": "facies medialis"
+      }
+    },
+    "radius": {
+      "name": "radius",
+      "point": {
+        "0": "fovea articularis",
+        "1": "caput radii",
+        "2": "circumferentia articularis",
+        "3": "collum radii",
+        "4": "tuberositas radii",
+        "5": "corpus radii",
+        "6": "facies lateralis",
+        "7": "facies posterior",
+        "8": "margo posterior",
+        "9": "tuberculum dorsale",
+        "10": "incisura ulnaris",
+        "11": "facies articularis",
+        "12": "processus styloideus",
+        "13": "margo interosseus",
+        "14": "margo anterior",
+        "15": "foramen nutricium",
+        "16": "facies anterior",
+        "17": "fovea articularis"
+      }
+    },
+    "phalanx distalis": {
+      "name": "phalanx distalis",
+      "point": {
+        "0": "tuberositas phalangis distalis"
+      }
+    },
+    "phalanx proximalis": {
+      "name": "phalanx proximalis",
+      "point": {
+        "0": "caput phalangis",
+        "1": "corpus phalangis",
+        "2": "basis phalangis"
+      }
+    },
+    "phalanx media": {
+      "name": "phalanx media",
+      "point": {
+        "0": "corpus phalangis"
+      }
+    },
+    "os metacarpale": {
+      "name": "os metacarpale",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os metacarpale 1": {
+      "name": "os metacarpale",
+      "point": {
+        "0": "ossa sesamoidea",
+        "1": "caput",
+        "2": "corpus",
+        "3": "basis"
+      }
+    },
+    "os lunatum": {
+      "name": "os lunatum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os triquetrum": {
+      "name": "os triquetrum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os pisiforme": {
+      "name": "os pisiforme",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os hamatum": {
+      "name": "os hamatum",
+      "point": {
+        "0": "corpus",
+        "1": "hamulus ossi hamati"
+      }
+    },
+    "os trapezoideum": {
+      "name": "os trapezoideum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os trapezium": {
+      "name": "os trapezium",
+      "point": {
+        "0": "corpus",
+        "1": "tuberculum ossis trapezii"
+      }
+    },
+    "os capitatum": {
+      "name": "os capitatum",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "os scaphoideum": {
+      "name": "os scaphoideum",
+      "point": {
+        "0": "corpus"
+      }
+    }
+  }
 }
