@@ -62,9 +62,9 @@ public class ClassroomBeh : MonoBehaviour
                 obj.GetComponent<BoneBih>()
                 );
             }
-
         }
     }
+
 
     private void materialControl()
     {
