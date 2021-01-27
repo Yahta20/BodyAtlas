@@ -22,11 +22,13 @@ public class topPanel : MonoBehaviour
         screenSize = new Vector2(Screen.width, Screen.height);
         state = true;
         SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
+
     }
 
     // Start is called before the first frame update
     void Start()
     {
+        updateFoo();
 
         image.OnPointerDownAsObservable().
             Subscribe(s=> {
@@ -36,10 +38,10 @@ public class topPanel : MonoBehaviour
         var boneUpdate = Observable.EveryLateUpdate()
             .Subscribe(
             s => {
-                //updateFoo();
                 if (state)
                 {
                     var y = Mathf.Lerp(TopPanel.anchoredPosition.y, 0, SpeedOfScrole);
+                    
                     TopPanel.anchoredPosition = new Vector2(TopPanel.anchoredPosition.x, y);
                 }
                 else {
@@ -50,4 +52,14 @@ public class topPanel : MonoBehaviour
             .AddTo(this);
 
     }
+
+    void updateFoo() {
+
+        TopPanel.sizeDelta          = new Vector2(screenSize.x*0.62f, screenSize.y*0.15f);
+
+        TopPanel.anchoredPosition   = new Vector2(screenSize.x*0.01f, TopPanel.sizeDelta.y);
+    
+    }
+
+
 }
