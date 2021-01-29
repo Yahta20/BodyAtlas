@@ -45,7 +45,7 @@ public class rightPanel : MonoBehaviour
     {
         var movi = Moving.Instance;
         var croom = ClassroomBeh.Instance;
-
+        
         croom.isChosenObject.
             Where(w => w !=stateCR).
             Subscribe(s => {

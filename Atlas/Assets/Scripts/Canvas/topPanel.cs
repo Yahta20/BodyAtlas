@@ -44,7 +44,11 @@ public class topPanel : MonoBehaviour
                 state = state == false ? true : false;
             }).
             AddTo(this);
-
+       exit.OnPointerDownAsObservable().
+            Subscribe(s => {
+                Application.Quit();
+            }).
+            AddTo(this);
         var boneUpdate = Observable.EveryLateUpdate()
             .Subscribe(
             s => {
@@ -72,9 +76,9 @@ public class topPanel : MonoBehaviour
     void updateFoo() {
         TopPanel.sizeDelta          = new Vector2(screenSize.x*0.62f, screenSize.y*0.15f);
         TopPanel.anchoredPosition   = new Vector2(screenSize.x*0.01f, TopPanel.sizeDelta.y);
-
-
     }
+
+
 
 
     

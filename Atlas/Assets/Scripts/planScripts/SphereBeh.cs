@@ -43,6 +43,7 @@ public class SphereBeh : MonoBehaviour
     {
         
         movi = Moving.Instance;
+
         movi.Movement
             .Where(v => v!= Vector2.zero)
             .Subscribe(input => {
