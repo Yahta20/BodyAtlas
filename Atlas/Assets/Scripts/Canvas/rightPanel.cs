@@ -15,6 +15,7 @@ public class rightPanel : MonoBehaviour
     public float SpeedOfScrole;
 
     private bool state;
+    private bool stateCR;
     private Vector2 screenSize;
 
 
@@ -24,19 +25,51 @@ public class rightPanel : MonoBehaviour
         Instance = this;
         TopPanel = GetComponent<RectTransform>();
         screenSize = new Vector2(Screen.width, Screen.height);
-        state = true;
+        state = false;
+        stateCR = false;
         SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
     }
 
 
+    void changeState() {
+        
+        state = state == false ? true : false;
+    }
+
+    void changeStateCR()
+    {
+        stateCR = stateCR == false ? true : false;
+    }
 
     void Start()
     {
-        image.OnPointerDownAsObservable().
+        var movi = Moving.Instance;
+        var croom = ClassroomBeh.Instance;
+
+        croom.isChosenObject.
+            Where(w => w !=stateCR).
             Subscribe(s => {
-                state = state == false ? true : false;
+               //print(s+" "+ stateCR);
+                if (s) {
+                    state = s;
+                }
+               stateCR=s;
             }).
             AddTo(this);
+
+        movi.supportPanel.
+            Where(w => w != false).
+            Subscribe(s=> {changeState();}).
+            AddTo(this);
+
+
+
+        image.OnPointerDownAsObservable().
+            Subscribe(s => {
+                changeState();
+            }).
+            AddTo(this);
+        
         var boneUpdate = Observable.EveryLateUpdate()
             .Subscribe(
             s => {
@@ -51,6 +84,7 @@ public class rightPanel : MonoBehaviour
                     var x = Mathf.Lerp(TopPanel.anchoredPosition.x, TopPanel.sizeDelta.x, SpeedOfScrole);
                     TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
                 }
+
             })
             .AddTo(this);
                     

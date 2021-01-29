@@ -33,12 +33,15 @@ public class SphereBeh : MonoBehaviour
     {
         Instance = this;
     }
-        
     // Start is called before the first frame update
+        //camera = GetComponent<Camera>();
+                //Debug = input;
+                //Debug2 = distance;
+          //.Buffer(TimeSpan.FromMilliseconds(500))
+        
     void Start()
     {
         
-        //camera = GetComponent<Camera>();
         movi = Moving.Instance;
         movi.Movement
             .Where(v => v!= Vector2.zero)
@@ -53,14 +56,11 @@ public class SphereBeh : MonoBehaviour
                 
 
                 var distance = playerVelocity * Time.fixedDeltaTime;
-                //Debug = input;
-                //Debug2 = distance;
                 transform.Translate(distance, Space.World);
             }).AddTo(this);
 
         movi.zoomScroll
             .Where(v => v != 0)
-          //.Buffer(TimeSpan.FromMilliseconds(500))
             .Subscribe(sub =>
             {
                 var fov = camera.fieldOfView;

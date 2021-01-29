@@ -10,22 +10,25 @@ public class Moving : MonoBehaviour
     public static Moving Instance { get; private set; }
 
     private Vector3 lastMouse = new Vector3(255, 255, 255);
+
     
     float camSens = 0.25f;
-    public IObservable <Vector2> Movement    { get; private set; }
-    public IObservable <Vector2> Mouselook   { get; private set; }
-    public IObservable <Vector2> MouseClickL { get; private set; }
-    public IObservable <Vector2> MouseClickR { get; private set; }
-    public IObservable <Vector2> MouseDragR  { get; private set; }
-    public IObservable <Vector2> MouseDragL  { get; private set; }
-    public IObservable  <float> zoomScroll   { get; private set; }
-    public IObservable  <float> yMoving      { get; private set; }
+    public IObservable <Vector2> Movement     { get; private set; }
+    public IObservable <Vector2> Mouselook    { get; private set; }
+    public IObservable <Vector2> MouseClickL  { get; private set; }
+    public IObservable <Vector2> MouseClickR  { get; private set; }
+    public IObservable <Vector2> MouseDragR   { get; private set; }
+    public IObservable <Vector2> MouseDragL   { get; private set; }
+    public IObservable   <bool>  supportPanel { get; private set; }
+    public IObservable   <bool>  mainPanel    { get; private set; }
+    public IObservable  <float>  zoomScroll   { get; private set; }
+    public IObservable  <float>  yMoving      { get; private set; }
 
 
     void Awake()
     {
         Instance = this;
-
+        Event e = Event.current;
 
         yMoving = this.FixedUpdateAsObservable()
             .Select(_ =>
@@ -36,12 +39,13 @@ public class Moving : MonoBehaviour
                {
                    x = 1;
                }
-               if (Input.GetKey(KeyCode.C))
+               if (Input.GetKey(KeyCode.Q))
                {
                    x = -1;
                }
                return x;
            });
+        
         zoomScroll = this.FixedUpdateAsObservable()
             .Select(_ =>
            {
@@ -58,20 +62,23 @@ public class Moving : MonoBehaviour
                 //print(x);
                 return x;//  ("Mouse ScrollWheel");
             });
+        
         Movement = this.FixedUpdateAsObservable()
-            .Select(_ => {
+            .Select(_ =>{
                 var x = Input.GetAxis("Horizontal");
                 var y = Input.GetAxis("Vertical");
                 //var y = Input.GetAxis("Vertical");
 
                 return new Vector2(x, y).normalized;
             });
+        
         Mouselook = this.UpdateAsObservable()
-             .Select(_ => {
+            .Select(_ =>{
                     var x = Input.GetAxis("Mouse X");
                     var y = Input.GetAxis("Mouse Y");
                     return new Vector2(x, y);
                 });
+        
         MouseClickL = this.FixedUpdateAsObservable()
             .Select(_ =>
             {
@@ -83,6 +90,7 @@ public class Moving : MonoBehaviour
 
                 return Vector2.zero;
             });
+        
         MouseClickR = this.FixedUpdateAsObservable()
             .Select(_ =>
             {
@@ -94,6 +102,7 @@ public class Moving : MonoBehaviour
 
                 return Vector2.zero;
             });
+        
         MouseDragR = this.FixedUpdateAsObservable()
             .Select(_ =>
             {
@@ -104,6 +113,7 @@ public class Moving : MonoBehaviour
                 }
                 return Vector2.zero; 
             });
+
         MouseDragL = this.FixedUpdateAsObservable()
             .Select(_ =>
             {
@@ -116,6 +126,24 @@ public class Moving : MonoBehaviour
                 return Vector2.zero; 
             });
 
+        supportPanel = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
+                if (Input.GetKey(KeyCode.Space))
+                {
+                    return true;
+                }
+                return false;
+            });
+        mainPanel = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
+                if (Input.GetKey(KeyCode.Escape))
+                {
+                    return true;
+                }
+                return false;
+            });
 
     }
     void Start()

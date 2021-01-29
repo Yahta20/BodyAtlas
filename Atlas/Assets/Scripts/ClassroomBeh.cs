@@ -1,10 +1,15 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UniRx;
+using UniRx.Triggers;
+
+
 
 public class ClassroomBeh : MonoBehaviour
 {
+    public static ClassroomBeh Instance;
+
     public Material regularMat;
     public Material chosenMat;
     public Material backgroundMat;
@@ -13,21 +18,46 @@ public class ClassroomBeh : MonoBehaviour
     private GameObject emptyObj;
     public List<BoneBih> objOnScene;
 
+    public IObservable <bool> isChosenObject {get; private set;}
+
     //public BoneBih just;
+    // Start is called before the first frame update
+    //print(transform.childCount+" "+objOnScene.Count);
+    //print("TR TRTR");
+    //print("TRTRTR "+t);
+    //if (chosenObj.name == "empty")
+    //{
+    //    bh.changeMaterial(regularMat);
+    //}
+    //print(just.gameObject.name);
+    //chosenObj = bh.gameObject;
 
     void Awake() {
+
+        Instance = this;
         emptyObj = new GameObject("empty");
         chosenObj = emptyObj;
+
+        isChosenObject = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
+                if (chosenObj.name != "empty")
+                {
+                    return true;
+                }
+                return false;
+            });
     }
-    // Start is called before the first frame update
+
     void Start()
     {
+
+
         var chekObj = Observable.EveryFixedUpdate()
             .Subscribe(
             s=> {
                 if (objOnScene.Count!=transform.childCount) {
                     getBoneBihScrpt();
-                    //print(transform.childCount+" "+objOnScene.Count);
                 }
                 materialControl();
             })
@@ -46,7 +76,6 @@ public class ClassroomBeh : MonoBehaviour
             var t = obj.GetComponent<BoneBih>();
             if (t==null) 
             {
-                //print("TR TRTR");
                 obj.gameObject.AddComponent<BoneBih>();
             }
             bool chek = true;
@@ -57,7 +86,6 @@ public class ClassroomBeh : MonoBehaviour
                 }
             }
             if (chek) { 
-                //print("TRTRTR "+t);
                 objOnScene.Add(
                 obj.GetComponent<BoneBih>()
                 );
@@ -70,16 +98,14 @@ public class ClassroomBeh : MonoBehaviour
     {
         foreach(BoneBih bh in objOnScene)
         {
-            //if (chosenObj.name == "empty")
-            //{
-            //    bh.changeMaterial(regularMat);
-            //}
             if (bh.chosen) {
                 if (chosenObj.name != bh.gameObject.name & chosenObj.name != "empty") {
+
                     var pbh = chosenObj.GetComponent<BoneBih>();
-                    //print(just.gameObject.name);
                     pbh.unchek();
                     chosenObj = bh.gameObject;
+                    
+
                 }
                 chosenObj = bh.gameObject;
                 bh.changeMaterial(chosenMat);
@@ -88,7 +114,6 @@ public class ClassroomBeh : MonoBehaviour
 
             if (!bh.chosen)
             {
-                //chosenObj = bh.gameObject;
                 if (chosenObj.name == "empty")
                 {
                     bh.changeMaterial(regularMat);
