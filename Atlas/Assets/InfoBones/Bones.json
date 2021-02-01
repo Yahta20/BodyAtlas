@@ -560,7 +560,7 @@
       }
     },
     "os metacarpale 1": {
-      "name": "os metacarpale",
+      "name": "os metacarpale 1",
       "point": {
         "0": "ossa sesamoidea",
         "1": "caput",
@@ -740,34 +740,126 @@
         "17": "fovea articularis"
       }
     },
-    "phalanx distalis": {
-      "name": "phalanx distalis",
+    "phalanx distalis 1": {
+      "name": "phalanx distalis 1",
       "point": {
         "0": "tuberositas phalangis distalis"
       }
     },
-    "phalanx proximalis": {
-      "name": "phalanx proximalis",
+    "phalanx proximalis 1": {
+      "name": "phalanx proximalis 1",
       "point": {
         "0": "caput phalangis",
         "1": "corpus phalangis",
         "2": "basis phalangis"
       }
     },
-    "phalanx media": {
-      "name": "phalanx media",
-      "point": {
+    "phalanx media 2": {
+      "name": "phalanx media 2",
+      "point": { 
         "0": "corpus phalangis"
       }
     },
-    "os metacarpale": {
-      "name": "os metacarpale",
+     "phalanx distalis 2": {
+      "name": "phalanx distalis 2",
+      "point": {
+        "0": "tuberositas phalangis distalis"
+      }
+    },
+    "phalanx proximalis 2": {
+      "name": "phalanx proximalis 2",
+      "point": {
+        "0": "caput phalangis",
+        "1": "corpus phalangis",
+        "2": "basis phalangis"
+      }
+    },
+     "phalanx media 3": {
+      "name": "phalanx media 3",
+      "point": { 
+        "0": "corpus phalangis"
+      }
+    },
+     "phalanx distalis 3": {
+      "name": "phalanx distalis 3",
+      "point": {
+        "0": "tuberositas phalangis distalis"
+      }
+    },
+    "phalanx proximalis 3": {
+      "name": "phalanx proximalis 3",
+      "point": {
+        "0": "caput phalangis",
+        "1": "corpus phalangis",
+        "2": "basis phalangis"
+      }
+    },
+     "phalanx media 4": {
+      "name": "phalanx media 4",
+      "point": { 
+        "0": "corpus phalangis"
+      }
+    },
+     "phalanx distalis 4": {
+      "name": "phalanx distalis 4",
+      "point": {
+        "0": "tuberositas phalangis distalis"
+      }
+    },
+    "phalanx proximalis 4": {
+      "name": "phalanx proximalis 4",
+      "point": {
+        "0": "caput phalangis",
+        "1": "corpus phalangis",
+        "2": "basis phalangis"
+      }
+    },
+    "os metacarpale 4": {
+      "name": "os metacarpale 4",
+      "point": {
+        "0": "corpus"
+      }
+    },
+    "phalanx media 5": {
+      "name": "phalanx media 5",
+      "point": { 
+        "0": "corpus phalangis"
+      }
+    },
+     "phalanx distalis 5": {
+      "name": "phalanx distalis 5",
+      "point": {
+        "0": "tuberositas phalangis distalis"
+      }
+    },
+    "phalanx proximalis 5": {
+      "name": "phalanx proximalis 5",
+      "point": {
+        "0": "caput phalangis",
+        "1": "corpus phalangis",
+        "2": "basis phalangis"
+      }
+    },
+     "os metacarpale 4": {
+      "name": "os metacarpale 4",
+      "point": {
+        "0": "corpus"
+      }
+    },
+     "os metacarpale 4": {
+      "name": "os metacarpale 4",
+      "point": {
+        "0": "corpus"
+      }
+    },
+     "os metacarpale 5": {
+      "name": "os metacarpale 5",
       "point": {
         "0": "corpus"
       }
     },
     "os metacarpale 1": {
-      "name": "os metacarpale",
+      "name": "os metacarpale 1",
       "point": {
         "0": "ossa sesamoidea",
         "1": "caput",
