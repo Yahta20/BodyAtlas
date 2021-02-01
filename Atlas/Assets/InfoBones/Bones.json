@@ -840,13 +840,19 @@
         "2": "basis phalangis"
       }
     },
-     "os metacarpale 4": {
-      "name": "os metacarpale 4",
+     "os metacarpale 2": {
+      "name": "os metacarpale 2",
       "point": {
         "0": "corpus"
       }
     },
-     "os metacarpale 4": {
+     "os metacarpale 3": {
+      "name": "os metacarpale 3",
+      "point": {
+        "0": "corpus"
+      }
+    },
+         "os metacarpale 4": {
       "name": "os metacarpale 4",
       "point": {
         "0": "corpus"
