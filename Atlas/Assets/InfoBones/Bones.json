@@ -706,12 +706,11 @@
         "7": "corpus ulnae",
         "8": "margo anterior",
         "9": "facies anterior",
-        "10": "caputulnae",
+        "10": "caput ulnae",
         "11": "circumferentia articularis",
         "12": "processus styloideus",
-        "13": "caput ulnae",
-        "14": "facies posterior",
-        "15": "facies medialis"
+        "13": "facies posterior",
+        "14": "facies medialis"
       }
     },
     "radius": {
