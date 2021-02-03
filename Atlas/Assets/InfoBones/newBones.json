@@ -1,0 +1,48 @@
+{
+  "BONES":[
+ {
+    "lat": "clavicula",
+    "ua": "ключиця",
+    "en": "clavicle",
+    "ru": "ключица",
+    "point": [
+     {
+       
+       "lat": "corpus claviculae",
+        "ua": "тіло ключиці",
+        "en": "corpus claviculae",
+        "ru": "тело ключицы"
+     } ,
+          {
+       
+       "lat": "corpus claviculae",
+        "ua": "надплечовий кінець",
+        "en": "acromial end",
+        "ru": "акромиальный конец"
+     } 
+    ]
+  },
+ {
+    "lat": "scapula",
+    "ua": "лопатка",
+    "en": "scapula",
+    "ru": "лопатка",
+    "point": [
+     {
+       
+       "lat": "processus coracoideus",
+        "ua": "ключиця",
+        "en": "clavicle",
+        "ru": "ключица"
+     } ,
+          {
+       
+       "lat": "acromion",
+        "ua": "ключиця",
+        "en": "clavicle",
+        "ru": "ключица"
+     } 
+    ]
+  }
+  ]
+}

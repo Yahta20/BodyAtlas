@@ -2,23 +2,20 @@
 
 
 public enum Lang {
-
     lat  = 0,
     ua   = 1,
-    rus  = 2,
-    eng  = 3,
-
+    ru  = 2,
+    en  = 3,
 };
+
 public enum LangUI
 {
-
     ua = 0,
     eng = 1
-
 };
+
 public sealed class GameEnviroment
 {
-
     public static GameEnviroment instance;
 
     public static GameEnviroment Singelton
@@ -34,6 +31,7 @@ public sealed class GameEnviroment
     }
 
     public Lang languageInfo { get; private set; }
+
     public LangUI languageUi { get; private set; }
 
     public void setLanguage(Lang l)
@@ -48,4 +46,9 @@ public sealed class GameEnviroment
     public void setPassword(string s) { password = s; }
 
 }
+
+
+
+
+
 

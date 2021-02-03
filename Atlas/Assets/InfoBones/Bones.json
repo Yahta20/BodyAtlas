@@ -18,6 +18,16 @@
     "scapula": {
       "name": "scapula",
       "point": {
+        "0": "processus coracoideus",
+        "1": "acromion",
+        "2": "angulus acromialis",
+        "3": "angulus lateralis",
+        "4": "margo lateralis",
+        "5": "facies posterior",
+        "6": "angulus inferior",
+        "7": "margo medialis",
+        "8": "fossa infraspinata",
+        "9": "fossa supraspinata"
         "10": "angulus superior",
         "11": "margo superior",
         "12": "spina scapulae",
@@ -29,21 +39,21 @@
         "18": "acromion",
         "19": "facies articularis acromialis",
         "20": "collum scapulae",
-        "0 ": "processus coracoideus",
-        "1 ": "acromion",
-        "2 ": "angulus acromialis",
-        "3 ": "angulus lateralis",
-        "4 ": "margo lateralis",
-        "5 ": "facies posterior",
-        "6 ": "angulus inferior",
-        "7 ": "margo medialis",
-        "8 ": "fossa infraspinata",
-        "9 ": "fossa supraspinata"
       }
     },
     "humerus": {
       "name": "humerus",
       "point": {
+        "0": "tuberculum majus",
+        "1": "sulcus nervi radialis",
+        "2": "margo lateralis",
+        "3": "foramen nutricium",
+        "4": "fossa olecrani",
+        "5": "epicondylus lateralis",
+        "6": "trochlea humeri",
+        "7": "condylus humeri",
+        "8": "sulcus nervi ulnaris",
+        "9": "epicondylus medialis"
         "10": "crista supraepicondylaris medialis",
         "11": "facies posterior",
         "12": "facies anteromedialis",
@@ -64,16 +74,6 @@
         "27": "facies anterolateralis",
         "28": "tuberositas deltoidea",
         "29": "crista tuberculi majoris",
-        "0 ": "tuberculum majus",
-        "1 ": "sulcus nervi radialis",
-        "2 ": "margo lateralis",
-        "3 ": "foramen nutricium",
-        "4 ": "fossa olecrani",
-        "5 ": "epicondylus lateralis",
-        "6 ": "trochlea humeri",
-        "7 ": "condylus humeri",
-        "8 ": "sulcus nervi ulnaris",
-        "9 ": "epicondylus medialis"
       }
     },
     "ulna": {
@@ -224,6 +224,16 @@
     "scapula": {
       "name": "лопатка",
       "point": {
+        "0": "processus coracoideus",
+        "1": "acromion",
+        "2": "angulus acromialis",
+        "3": "angulus lateralis",
+        "4": "margo lateralis",
+        "5": "facies posterior",
+        "6": "angulus inferior",
+        "7": "margo medialis",
+        "8": "fossa infraspinata",
+        "9": "fossa supraspinata"
         "10": "angulus superior",
         "11": "margo superior",
         "12": "spina scapulae",
@@ -235,21 +245,21 @@
         "18": "acromion",
         "19": "facies articularis acromialis",
         "20": "collum scapulae",
-        "0 ": "processus coracoideus",
-        "1 ": "acromion",
-        "2 ": "angulus acromialis",
-        "3 ": "angulus lateralis",
-        "4 ": "margo lateralis",
-        "5 ": "facies posterior",
-        "6 ": "angulus inferior",
-        "7 ": "margo medialis",
-        "8 ": "fossa infraspinata",
-        "9 ": "fossa supraspinata"
       }
     },
     "humerus": {
       "name": "плечевая кость",
       "point": {
+        "0": "tuberculum majus",
+        "1": "sulcus nervi radialis",
+        "2": "margo lateralis",
+        "3": "foramen nutricium",
+        "4": "fossa olecrani",
+        "5": "epicondylus lateralis",
+        "6": "trochlea humeri",
+        "7": "condylus humeri",
+        "8": "sulcus nervi ulnaris",
+        "9": "epicondylus medialis"
         "10": "crista supraepicondylaris medialis",
         "11": "facies posterior",
         "12": "facies anteromedialis",
@@ -270,16 +280,6 @@
         "27": "facies anterolateralis",
         "28": "tuberositas deltoidea",
         "29": "crista tuberculi majoris",
-        "0 ": "tuberculum majus",
-        "1 ": "sulcus nervi radialis",
-        "2 ": "margo lateralis",
-        "3 ": "foramen nutricium",
-        "4 ": "fossa olecrani",
-        "5 ": "epicondylus lateralis",
-        "6 ": "trochlea humeri",
-        "7 ": "condylus humeri",
-        "8 ": "sulcus nervi ulnaris",
-        "9 ": "epicondylus medialis"
       }
     },
     "ulna": {
@@ -431,6 +431,16 @@
     "scapula": {
       "name": "лопатка",
       "point": {
+        "0": "processus coracoideus",
+        "1": "acromion",
+        "2": "angulus acromialis",
+        "3": "angulus lateralis",
+        "4": "margo lateralis",
+        "5": "facies posterior",
+        "6": "angulus inferior",
+        "7": "margo medialis",
+        "8": "fossa infraspinata",
+        "9": "fossa supraspinata"
         "10": "angulus superior",
         "11": "margo superior",
         "12": "spina scapulae",
@@ -442,21 +452,21 @@
         "18": "acromion",
         "19": "facies articularis acromialis",
         "20": "collum scapulae",
-        "0 ": "processus coracoideus",
-        "1 ": "acromion",
-        "2 ": "angulus acromialis",
-        "3 ": "angulus lateralis",
-        "4 ": "margo lateralis",
-        "5 ": "facies posterior",
-        "6 ": "angulus inferior",
-        "7 ": "margo medialis",
-        "8 ": "fossa infraspinata",
-        "9 ": "fossa supraspinata"
       }
     },
     "humerus": {
       "name": "плечова кістка",
       "point": {
+        "0": "tuberculum majus",
+        "1": "sulcus nervi radialis",
+        "2": "margo lateralis",
+        "3": "foramen nutricium",
+        "4": "fossa olecrani",
+        "5": "epicondylus lateralis",
+        "6": "trochlea humeri",
+        "7": "condylus humeri",
+        "8": "sulcus nervi ulnaris",
+        "9": "epicondylus medialis"
         "10": "crista supraepicondylaris medialis",
         "11": "facies posterior",
         "12": "facies anteromedialis",
@@ -477,16 +487,6 @@
         "27": "facies anterolateralis",
         "28": "tuberositas deltoidea",
         "29": "crista tuberculi majoris",
-        "0 ": "tuberculum majus",
-        "1 ": "sulcus nervi radialis",
-        "2 ": "margo lateralis",
-        "3 ": "foramen nutricium",
-        "4 ": "fossa olecrani",
-        "5 ": "epicondylus lateralis",
-        "6 ": "trochlea humeri",
-        "7 ": "condylus humeri",
-        "8 ": "sulcus nervi ulnaris",
-        "9 ": "epicondylus medialis"
       }
     },
     "ulna": {
@@ -638,16 +638,6 @@
     "scapula": {
       "name": "scapula",
       "point": {
-        "10": "angulus superior",
-        "11": "margo superior",
-        "12": "spina scapulae",
-        "13": "incisura scapulae",
-        "14": "fossa subscapularis",
-        "15": "facies costalis",
-        "16": "tuberculum infraglenoidale",
-        "17": "cavitas glenoidalis",
-        "18": "facies articularis acromialis",
-        "19": "collum scapulae",
         "0 ": "processus coracoideus",
         "1 ": "acromion",
         "2 ": "angulus acromialis",
@@ -658,6 +648,16 @@
         "7 ": "margo medialis",
         "8 ": "fossa infraspinata",
         "9 ": "fossa supraspinata"
+        "10": "angulus superior",
+        "11": "margo superior",
+        "12": "spina scapulae",
+        "13": "incisura scapulae",
+        "14": "fossa subscapularis",
+        "15": "facies costalis",
+        "16": "tuberculum infraglenoidale",
+        "17": "cavitas glenoidalis",
+        "18": "facies articularis acromialis",
+        "19": "collum scapulae",
       }
     },
     "humerus": {
