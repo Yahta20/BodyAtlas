@@ -522,6 +522,29 @@ Transform:
   m_Father: {fileID: 1825077493}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &192296376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae068cf55908d9344a24c360b9d5e1cf,
+    type: 3}
+  m_PrefabInstance: {fileID: 1825077398}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &192296377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192296376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fad8feabaeca14448285f8238cf2570, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regularMat: {fileID: 0}
+  chosenMat: {fileID: 0}
+  backgroundMat: {fileID: 0}
+  chosenObj: {fileID: 0}
+  objOnScene: []
 --- !u!1 &208107059
 GameObject:
   m_ObjectHideFlags: 0
@@ -5960,6 +5983,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: os scaphoideum
+      objectReference: {fileID: 0}
+    - target: {fileID: 3550450344781239421, guid: ae068cf55908d9344a24c360b9d5e1cf,
+        type: 3}
+      propertyPath: m_Name
+      value: Skeleton
       objectReference: {fileID: 0}
     - target: {fileID: 3669955536231497913, guid: ae068cf55908d9344a24c360b9d5e1cf,
         type: 3}

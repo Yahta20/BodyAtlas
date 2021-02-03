@@ -104,24 +104,28 @@ public class ClassroomBeh : MonoBehaviour
                     var pbh = chosenObj.GetComponent<BoneBih>();
                     pbh.unchek();
                     chosenObj = bh.gameObject;
-                    
-
                 }
                 chosenObj = bh.gameObject;
-                bh.changeMaterial(chosenMat);
+                //bh.changeMaterial(chosenMat);
+                bh.setChosenMaterial();
+
             }
+
 
 
             if (!bh.chosen)
             {
                 if (chosenObj.name == "empty")
                 {
-                    bh.changeMaterial(regularMat);
+                    //bh.changeMaterial(regularMat);
+                    bh.setChosenMaterial();
                 }
                 if (chosenObj.name != "empty") {
-                    bh.changeMaterial(backgroundMat);
+                    //bh.changeMaterial(backgroundMat);
+                    bh.setBackMaterial();
                 }
                 if (chosenObj.name == bh.gameObject.name) {
+                    //
                     chosenObj = emptyObj;
                 }
             }
