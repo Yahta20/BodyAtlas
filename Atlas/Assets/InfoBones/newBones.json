@@ -1,0 +1,412 @@
+{
+  "BONES":[
+ {
+    "lat": "clavicula",
+    "ua": "ключиця",
+    "en": "clavicle",
+    "ru": "ключица",
+    "point": [
+     {
+       
+       "lat": "corpus claviculae",
+        "ua": "тіло ключиці",
+        "en": "corpus claviculae",
+        "ru": "тело ключицы"
+     } ,
+     {
+       
+       "lat": "extremitas acromialis",
+        "ua": "надплечовий кінець",
+        "en": "acromial end",
+        "ru": "акромиальный конец"
+     } ,
+     {
+       
+       "lat": "extremitas sternalis",
+        "ua": "груднинний кінець",
+        "en": "sternal end",
+        "ru": "грудинный конец"
+     } ,
+     {
+       
+       "lat": "sulcus m. subclavii",
+        "ua": "борозна підключичного м’яза",
+        "en": "groove for subclavian muscle",
+        "ru": "борозда подключичной мышцы"
+     } ,
+     {
+       
+       "lat": "sulcus m. subclavii",
+        "ua": "борозна підключичного м’яза",
+        "en": "groove for subclavian muscle",
+        "ru": "борозда подключичной мышцы"
+     } ,
+     {
+       
+       "lat": "impressio lig. costoclavicularis",
+        "ua": "втиснення реброво-ключичної зв’язки",
+        "en": "impression of costoclavicular ligamen",
+        "ru": "вдавление реберно-ключичной связки"
+     } ,
+     {
+       
+       "lat": "foramen nutricium",
+        "ua": "живильний отвір",
+        "en": "nutritive foramen",
+        "ru": "питательное отверстие"
+     } ,
+     {
+       
+       "lat": "tuberculum conoideum",
+        "ua": "конусоподібний горбок",
+        "en": "conoid tubercle",
+        "ru": "конический бугорок"
+     } ,
+     {
+       
+       "lat": "linea trapezoidea",
+        "ua": "трапецієподібна лінія",
+        "en": "trapezoid line",
+        "ru": "трапециевидная линия"
+     } ,
+     {
+       
+       "lat": "facies articularis acromialis",
+        "ua": "надплечова суглобова поверхня",
+        "en": "acromial articular surface",
+        "ru": "суставная поверхность акромиального отростка"
+     } ,
+    ]
+  },
+ {
+    "lat": "scapula",
+    "ua": "лопатка",
+    "en": "scapula",
+    "ru": "лопатка",
+    "point": [
+     {
+       
+       "lat": "processus coracoideus",
+        "ua": "дзьобоподібний відросток",
+        "en": "coracoid process",
+        "ru": "клювовидный отросток"
+     } ,
+     {
+       
+       "lat": "acromion",
+        "ua": "акроміон (плечовий) відросток",
+        "en": "acromion",
+        "ru": "акромиальный (плечевой) отросток"
+     },
+     {
+       
+       "lat": "angulus acromialis",
+        "ua": "акроміальний кут",
+        "en": "acromial angle",
+        "ru": "акромиальный угол"
+     },
+     {
+       
+       "lat": "angulus lateralis",
+        "ua": "бічний кут",
+        "en": "lateral angle",
+        "ru": "латеральный угол"
+     },
+     {
+       
+       "lat": "margo lateralis",
+        "ua": "бічний край",
+        "en": "lateral margin",
+        "ru": "латеральный край"
+     },
+          {
+       
+       "lat": "facies posterior",
+        "ua": "задня поверхня",
+        "en": "posterior surface",
+        "ru": "задняя поверхность"
+     },
+          {
+       
+       "lat": "angulus inferior",
+        "ua": "нижній кут",
+        "en": "inferior angle",
+        "ru": "нижний угол"
+     },
+          {
+       
+       "lat": "margo medialis",
+        "ua": "присередній край",
+        "en": "medial margin",
+        "ru": "медиальный край"
+     },
+          {
+       
+       "lat": "fossa infraspinata",
+        "ua": "підостьова ямка",
+        "en": "infraspinate fossa",
+        "ru": "подостная ямка"
+     },
+          {
+       
+       "lat": "fossa supraspinata",
+        "ua": "надостьова ямка",
+        "en": "supraspinate fossa",
+        "ru": "надостная ямка"
+     },
+          {
+       
+       "lat": "angulus superior",
+        "ua": "верхній кут",
+        "en": "superior angle",
+        "ru": "верхний угол"
+     },
+          {
+       
+       "lat": "margo superior",
+        "ua": "верхній край",
+        "en": "superior margin",
+        "ru": "верхний край"
+     },
+          {
+       
+       "lat": "spina scapulae",
+        "ua": "ость лопатки",
+        "en": "scapular spine",
+        "ru": "ость лопатки"
+     },
+          {
+       
+       "lat": "incisura scapulae",
+        "ua": "вирізка лопатки.",
+        "en": "scapular notch",
+        "ru": "вырезка лопатки"
+     },
+          {
+       
+       "lat": "fossa subscapularis",
+        "ua": "підлопаткова ямка",
+        "en": "subscapular fossa",
+        "ru": "подлопаточная ямка"
+     },
+          {
+       
+       "lat": "facies costalis",
+        "ua": "реброва поверхня",
+        "en": "facies costalis",
+        "ru": "реберная поверхность"
+             {
+       
+       "lat": "tuberculum infraglenoidale",
+        "ua": "підсуглобовий горбок",
+        "en": "infraglenoid tubercle",
+        "ru": "подсуставной бугорок"
+     },
+          {
+       
+       "lat": "cavitas glenoidalis",
+        "ua": "суглобова западина",
+        "en": "glenoid cavity",
+        "ru": "суставная впадина"
+     },
+          {
+       
+       "lat": "facies articularis acromialis",
+        "ua": "суглобова поверхня акроміона",
+        "en": "articular surface of acromion",
+        "ru": "суставная поверхность акромиона"
+     },
+               {
+       
+       "lat": "collum scapulae",
+        "ua": "шийка лопатки",
+        "en": "neck of scapula",
+        "ru": "шейка лопатки"
+     },
+    ]
+  },
+ {
+    "lat": "humerus",
+    "ua": "плечова кістка",
+    "en": "humerus",
+    "ru": "плечевая кость",
+    "point": [
+     {
+       "lat": "tuberculum majus",
+        "ua": "великий горбок",
+        "en": "greater tubercle",
+        "ru": "большой бугорок"
+     },
+     {
+       "lat": "sulcus nervi radialis",
+        "ua": "борозна променевого нерва",
+        "en": "groove for radial nerve",
+        "ru": "борозда лучевого нерва"
+     },
+     {
+       "lat": "margo lateralis",
+        "ua": "бічний край",
+        "en": "lateral margin",
+        "ru": "латеральный край"
+     },
+     {
+       "lat": "foramen nutricium",
+        "ua": "живильний отвір",
+        "en": "nutritive foramen",
+        "ru": "питательное отверстие"
+     },
+     {
+       "lat": "fossa olecrani",
+        "ua": "ліктьова ямка",
+        "en": "olecranon fossa",
+        "ru": "локтевая ямка"
+     },
+     {
+       "lat": "epicondylus lateralis",
+        "ua": "бічний надвиросток",
+        "en": "lateral epicondyle",
+        "ru": "латеральный надмыщелок"
+     },
+     {
+       "lat": "trochlea humeri",
+        "ua": "блок плечової кістки",
+        "en": "humeral trochlea",
+        "ru": "блок плечевой кости"
+     },
+     {
+       "lat": "condylus humeri",
+        "ua": "виросток плечової кістки",
+        "en": "humeral condyle",
+        "ru": "мыщелок плечевой кости"
+     },     
+     {
+       "lat": "sulcus nervi ulnaris",
+        "ua": "борозна ліктьового нерва",
+        "en": "groove for ulnar nerve",
+        "ru": "борозда локтевого нерва"
+     },     
+     {
+       "lat": "epicondylus medialis",
+        "ua": "присередній надвиросток",
+        "en": "medial epicondyle",
+        "ru": "медиальный надмыщелок"
+     },     
+     {
+       "lat": "crista supraepicondylaris medialis",
+        "ua": "присередній надвиросток",
+        "en": "medial supraepicondylar crest",
+        "ru": "медиальный надмыщелок"
+     },     
+     {
+       "lat": "facies posterior",
+        "ua": "задня поверхня",
+        "en": "posterior surface",
+        "ru": "задняя поверхность"
+     },     
+     {
+       "lat": "facies anteromedialis",
+        "ua": "передньоприсередня поверхня",
+        "en": "anteromedial surface",
+        "ru": "переднемедиальная поверхность"
+     },     
+     {
+       "lat": "corpus humeri",
+        "ua": "тіло плечової кістки",
+        "en": "humeral body",
+        "ru": "тело плечевой кости"
+     },     
+     {
+       "lat": "collum chirurgicum",
+        "ua": "хірургічна шийка",
+        "en": "surgical neck",
+        "ru": "хирургическая шейка"
+     },     
+     {
+       "lat": "collum anatomicum",
+        "ua": "анатомічна шийка",
+        "en": "anatomical neck",
+        "ru": "анатомическая шейка"
+     },     
+     {
+       "lat": "caput humeri",
+        "ua": "головка плечової кістки",
+        "en": "humeral head",
+        "ru": "головка плечевой кости"
+     },     
+     {
+       "lat": "tuberculum minus",
+        "ua": "малий горбок",
+        "en": "lesser tubercle",
+        "ru": "малый бугорок"
+     },     
+     {
+       "lat": "crista tuberculi minoris",
+        "ua": "гребень малого бугорка",
+        "en": "crest of lessertubercle",
+        "ru": "гребень малого бугорка"
+     },     
+     {
+       "lat": "margo medialis",
+        "ua": "присередній край",
+        "en": "medial margin",
+        "ru": "медиальный край"
+     },     
+     {
+       "lat": "facies anteromedialis",
+        "ua": "передньоприсередня поверхня",
+        "en": "anteromedial surface",
+        "ru": "переднемедиальная поверхность"
+     },     
+     {
+       "lat": "fossa coronoidea",
+        "ua": "вінцева ямка",
+        "en": "coronoid fossa",
+        "ru": "венечная ямка"
+     },     
+     {
+       "lat": "processus supracondylaris",
+        "ua": "надвиростковий відросток",
+        "en": "supracondylar process",
+        "ru": "надмыщелковый отросток"
+     },     
+     {
+       "lat": "capitulum humeri",
+        "ua": "головочка плечової кістки",
+        "en": "small head of humerus",
+        "ru": "головочка плечевой кости"
+     },     
+     {
+       "lat": "fossa radialis",
+        "ua": "променева ямка",
+        "en": "radial fossa",
+        "ru": "лучевая ямка"
+     },     
+     {
+       "lat": "crista supraepicondylaris lateralis",
+        "ua": "бічний наднадвиростковий гребінь",
+        "en": "lateral supraepicondylar crest",
+        "ru": "латеральный надмыщелковый гребень;"
+     },     
+     {
+       "lat": "facies anterolateralis",
+        "ua": "передньобічна поверхня",
+        "en": "anterolateral surface",
+        "ru": "переднелатеральная поверхность"
+     },     
+     {
+       "lat": "tuberositas deltoidea",
+        "ua": "дельтоподібна горбистість",
+        "en": "deltoid tuberosity",
+        "ru": "дельтовидная бугристость"
+     },     
+     {
+       "lat": "crista tuberculi majoris",
+        "ua": "гребінь великого горбка",
+        "en": "crest of greater tubercle",
+        "ru": "гребень большого бугорка"
+     }, 
+
+    ]
+  }
+  ]
+}
