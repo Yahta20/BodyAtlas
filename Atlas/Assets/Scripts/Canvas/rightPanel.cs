@@ -10,7 +10,13 @@ public class rightPanel : MonoBehaviour
 
     public static rightPanel Instance;
     public RectTransform TopPanel;
+    public GameObject Prefab;
+    public GameObject Content;
+
+
+
     public Image image;
+    public Text Main; 
 
     public float SpeedOfScrole;
 
@@ -18,10 +24,13 @@ public class rightPanel : MonoBehaviour
     private bool stateCR;
     private Vector2 screenSize;
 
+    private bool init = false;
+
 
 
     void Awake()
     {
+
         Instance = this;
         TopPanel = GetComponent<RectTransform>();
         screenSize = new Vector2(Screen.width, Screen.height);
@@ -62,13 +71,13 @@ public class rightPanel : MonoBehaviour
             Subscribe(s=> {changeState();}).
             AddTo(this);
 
-
-
         image.OnPointerDownAsObservable().
             Subscribe(s => {
                 changeState();
             }).
             AddTo(this);
+
+
         
         var boneUpdate = Observable.EveryLateUpdate()
             .Subscribe(
@@ -84,11 +93,53 @@ public class rightPanel : MonoBehaviour
                     var x = Mathf.Lerp(TopPanel.anchoredPosition.x, TopPanel.sizeDelta.x, SpeedOfScrole);
                     TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
                 }
+                if (croom.chosenObj.name != "empty")
+                {
+                    Main.text = croom.chosenObj.name;
+
+                }
+                else
+                {
+                    Main.text = "Sceleton";
+                    
+                }
 
             })
             .AddTo(this);
                     
 
     }
+    private void MakelistOfBones() {
+        var list = ClassroomBeh.Instance.objOnScene;
+        var listOname = new List<string>();
+        foreach (var item in list)
+        {
+            var name = item.gameObject.name;
+            if (name != "Skeleton")
+            {
+                listOname.Add(name);
+            }
+        }
+
+    }
+    private void MakelistOfPoints()
+    {
+        //var chosen = ;
+        var listOname = new List<string>();
+
+        foreach (var item in ClassroomBeh.Instance.chosenObj.GetComponent<BoneBih>().specPlases)
+        {
+            listOname.Add(item.name);
+        }
+
+    }
+
+    private void PublishList() { 
+        
+
+
+
+    }
+
 }
 

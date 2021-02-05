@@ -42,14 +42,12 @@
         "ru": "борозда подключичной мышцы"
      } ,
      {
-       
        "lat": "impressio lig. costoclavicularis",
         "ua": "втиснення реброво-ключичної зв’язки",
         "en": "impression of costoclavicular ligamen",
         "ru": "вдавление реберно-ключичной связки"
      } ,
-     {
-       
+     {  
        "lat": "foramen nutricium",
         "ua": "живильний отвір",
         "en": "nutritive foramen",
@@ -189,13 +187,14 @@
         "en": "subscapular fossa",
         "ru": "подлопаточная ямка"
      },
-          {
+     {
        
        "lat": "facies costalis",
         "ua": "реброва поверхня",
         "en": "facies costalis",
         "ru": "реберная поверхность"
-             {
+     },
+	 {
        
        "lat": "tuberculum infraglenoidale",
         "ua": "підсуглобовий горбок",

@@ -16,9 +16,9 @@ public class ClassroomBeh : MonoBehaviour
 
     public GameObject chosenObj;
     private GameObject emptyObj;
-    public List<BoneBih> objOnScene;
+    public List<BoneBih> objOnScene             {get; private set;}
 
-    public IObservable <bool> isChosenObject {get; private set;}
+    public IObservable <bool> isChosenObject    {get; private set;}
 
     //public BoneBih just;
     // Start is called before the first frame update
@@ -37,7 +37,7 @@ public class ClassroomBeh : MonoBehaviour
         Instance = this;
         emptyObj = new GameObject("empty");
         chosenObj = emptyObj;
-
+        objOnScene = new List<BoneBih>();
         isChosenObject = this.FixedUpdateAsObservable()
             .Select(_ =>
             {
@@ -51,8 +51,6 @@ public class ClassroomBeh : MonoBehaviour
 
     void Start()
     {
-
-
         var chekObj = Observable.EveryFixedUpdate()
             .Subscribe(
             s=> {
@@ -63,6 +61,8 @@ public class ClassroomBeh : MonoBehaviour
             })
             .AddTo(this);
     }
+
+
                 
                 
 
