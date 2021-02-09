@@ -19,6 +19,7 @@ public class ClassroomBeh : MonoBehaviour
     public List<BoneBih> objOnScene             {get; private set;}
 
     public IObservable <bool> isChosenObject    {get; private set;}
+    public IObservable <string> isChangedObj    {get; private set;}
 
     //public BoneBih just;
     // Start is called before the first frame update
@@ -46,6 +47,11 @@ public class ClassroomBeh : MonoBehaviour
                     return true;
                 }
                 return false;
+            });
+        isChangedObj = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
+                return chosenObj.name;
             });
     }
 

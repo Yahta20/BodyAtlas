@@ -49,6 +49,7 @@ public class LangManage : MonoBehaviour
             }
             bones.Add(bonvar);
         }
+    }
 
 
 
@@ -61,6 +62,5 @@ public class LangManage : MonoBehaviour
         
 
 
-    }
     
 }

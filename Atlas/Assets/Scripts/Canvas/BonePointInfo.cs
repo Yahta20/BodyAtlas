@@ -10,11 +10,11 @@ public class BonePointInfo : MonoBehaviour
     public Text Number;
     public Text Name;
 
-    void setNumber(string s) {
+    public void setNumber(string s) {
         Number.text= s;
     }
 
-    void setName(string s) { 
+    public void setName(string s) { 
         Name.text = s;
     }
     

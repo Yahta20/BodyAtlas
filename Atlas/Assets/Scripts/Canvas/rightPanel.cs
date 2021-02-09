@@ -24,8 +24,8 @@ public class rightPanel : MonoBehaviour
     private bool stateCR;
     private Vector2 screenSize;
 
-    private bool init = false;
-
+    public bool init = false;
+    private string chosenObj;
 
 
     void Awake()
@@ -37,6 +37,8 @@ public class rightPanel : MonoBehaviour
         state = false;
         stateCR = false;
         SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
+        init = false;
+
     }
 
 
@@ -54,17 +56,24 @@ public class rightPanel : MonoBehaviour
     {
         var movi = Moving.Instance;
         var croom = ClassroomBeh.Instance;
-        
+        //print(s+" "+ stateCR);
+        chosenObj = croom.chosenObj.name;
+
         croom.isChosenObject.
             Where(w => w !=stateCR).
             Subscribe(s => {
-               //print(s+" "+ stateCR);
                 if (s) {
                     state = s;
                 }
                stateCR=s;
             }).
             AddTo(this);
+
+        croom.isChangedObj.Where(s => s != chosenObj).Subscribe(
+            s=> {
+                s = chosenObj;
+                init = false;
+            }).AddTo(this);
 
         movi.supportPanel.
             Where(w => w != false).
@@ -93,16 +102,36 @@ public class rightPanel : MonoBehaviour
                     var x = Mathf.Lerp(TopPanel.anchoredPosition.x, TopPanel.sizeDelta.x, SpeedOfScrole);
                     TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
                 }
+                if (croom.chosenObj.name == "empty")
+                {
+                    Main.text = "Sceleton";
+                    if (!init) {
+                        if (croom.objOnScene.Count!=0) { 
+                        
+                        clearContent();
+                        MakelistOfBones();
+                        print("A");
+                        init=true;
+                        chosenObj = croom.chosenObj.name;
+                        }
+                    }
+                }
+
                 if (croom.chosenObj.name != "empty")
                 {
                     Main.text = croom.chosenObj.name;
-
+                    if (!init)
+                    {
+                        clearContent();
+                        MakelistOfPoints();
+                        init = true;
+                        print("a");
+                        chosenObj = croom.chosenObj.name;
+                    }
                 }
-                else
-                {
-                    Main.text = "Sceleton";
                     
-                }
+                /*
+                 */
 
             })
             .AddTo(this);
@@ -120,7 +149,8 @@ public class rightPanel : MonoBehaviour
                 listOname.Add(name);
             }
         }
-
+        PublishList(listOname);
+        //print("List of bones");
     }
     private void MakelistOfPoints()
     {
@@ -131,14 +161,38 @@ public class rightPanel : MonoBehaviour
         {
             listOname.Add(item.name);
         }
-
+        PublishList(listOname);
     }
 
-    private void PublishList() { 
-        
+    private void PublishList(List<string> srtList) {
+        int numer = 1;
+        foreach (var str in srtList)
+        {
+            GameObject go = Instantiate(Prefab);
+            var t= go.GetComponent<BonePointInfo>();
+            t.setName(str);
+            t.setNumber(numer.ToString());
+            go.transform.SetParent(Content.transform);
+            numer++;
 
+        }
 
+    }
+    /*
+    public void addQuestion(question q, int i, AudioClip ac)
+    {
+        go.GetComponent<questionScript>().setAudio(ac);
+        questions[i] = go;
+    }
+    */
 
+    private void clearContent() {
+        if (Content.transform.childCount!=0) {
+            foreach (Transform t in Content.transform)
+            {
+                Destroy(t.gameObject);
+            }
+        }
     }
 
 }

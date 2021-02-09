@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 5083002217093153254}
   - component: {fileID: 3534133787485156409}
   m_Layer: 5
-  m_Name: PointName (1)
+  m_Name: NumberName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113,8 +113,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 20.47, y: 0}
-  m_SizeDelta: {x: 258.25, y: 30}
+  m_AnchoredPosition: {x: 23.55, y: 0}
+  m_SizeDelta: {x: 220.13678, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5586719751055478087
 CanvasRenderer:
@@ -150,7 +150,7 @@ MonoBehaviour:
     m_BestFit: 1
     m_MinSize: 10
     m_MaxSize: 300
-    m_Alignment: 4
+    m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 4082141164271283524}
   - component: {fileID: 2978850095448535200}
   - component: {fileID: 2241745416608272574}
+  - component: {fileID: -5774312312445776197}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -192,8 +193,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 309.0751, y: 40.119278}
+  m_AnchoredPosition: {x: 19.06, y: 0}
+  m_SizeDelta: {x: 270.96188, y: 40.119278}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2978850095448535200
 CanvasRenderer:
@@ -232,3 +233,17 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &-5774312312445776197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5838770830719473899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d4a43fce3e84e0448836ef0ae8493c38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Number: {fileID: 3534133787485156409}
+  Name: {fileID: 6806688755522831543}

@@ -126,24 +126,25 @@ public class Moving : MonoBehaviour
                 return Vector2.zero; 
             });
 
-        supportPanel = this.FixedUpdateAsObservable()
+        supportPanel = this.LateUpdateAsObservable()
             .Select(_ =>
             {
-                if (Input.GetKey(KeyCode.Space))
+                if (Input.GetKeyDown(KeyCode.Space))
                 {
                     return true;
                 }
                 return false;
             });
-        mainPanel = this.FixedUpdateAsObservable()
+        mainPanel = this.LateUpdateAsObservable()
             .Select(_ =>
-            {
-                if (Input.GetKey(KeyCode.Escape))
+            { 
+                if (Input.GetKeyDown(KeyCode.Escape))//GetKey())
                 {
                     return true;
                 }
                 return false;
             });
+        
 
     }
     void Start()
