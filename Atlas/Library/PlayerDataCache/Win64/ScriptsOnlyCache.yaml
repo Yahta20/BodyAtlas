@@ -74,45 +74,45 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11238}
     - Class: 114
-      Script: {instanceID: 11272}
+      Script: {instanceID: 11270}
     - Class: 114
-      Script: {instanceID: 11558}
+      Script: {instanceID: 11556}
     - Class: 114
-      Script: {instanceID: 11618}
+      Script: {instanceID: 11616}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 11784}
     - Class: 114
-      Script: {instanceID: 12082}
+      Script: {instanceID: 12080}
+    - Class: 114
+      Script: {instanceID: 12244}
     - Class: 114
       Script: {instanceID: 12246}
     - Class: 114
-      Script: {instanceID: 12248}
+      Script: {instanceID: 12280}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 12284}
     - Class: 114
-      Script: {instanceID: 12286}
+      Script: {instanceID: 12582}
     - Class: 114
-      Script: {instanceID: 12584}
+      Script: {instanceID: 12978}
     - Class: 114
-      Script: {instanceID: 12980}
+      Script: {instanceID: 13114}
     - Class: 114
-      Script: {instanceID: 13116}
+      Script: {instanceID: 13410}
     - Class: 114
-      Script: {instanceID: 13412}
+      Script: {instanceID: 13456}
     - Class: 114
-      Script: {instanceID: 13458}
+      Script: {instanceID: 13476}
     - Class: 114
-      Script: {instanceID: 13478}
+      Script: {instanceID: 13580}
     - Class: 114
-      Script: {instanceID: 13582}
+      Script: {instanceID: 13772}
     - Class: 114
-      Script: {instanceID: 13774}
+      Script: {instanceID: 14284}
     - Class: 114
-      Script: {instanceID: 14286}
+      Script: {instanceID: 14356}
     - Class: 114
-      Script: {instanceID: 14358}
-    - Class: 114
-      Script: {instanceID: 14374}
+      Script: {instanceID: 14372}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -424,7 +424,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: 2814e43cb7abea3c47c8d774be393279
+      Hash: a0c0690ad1ee999421c2ef6009083555
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: topPanel
@@ -724,7 +724,7 @@ ScriptsOnlyBuild:
     className: ObservableCollision2DTrigger
   - hash:
       serializedVersion: 2
-      Hash: 331caa1e85ea6e3bd29f3d36c81d008a
+      Hash: b5d6c914ef9f1f4139954f458cc8abf5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: rightPanel
@@ -959,4 +959,4 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/ClassRoom.unity
-  playerPath: D:/WinUsers/ASRock/Documents/prod/Atlas.exe
+  playerPath: d:/WinUsers/ASRock/Documents/prod/Atlas.exe

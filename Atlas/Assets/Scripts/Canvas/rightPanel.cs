@@ -7,25 +7,30 @@ using UniRx.Triggers;
 
 public class rightPanel : MonoBehaviour
 {
-
     public static rightPanel Instance;
+
     public RectTransform TopPanel;
     public GameObject Prefab;
     public GameObject Content;
 
+    public Image ScrollArea;
+    public Image slide;
+    //public 
+    public Image scroller;
 
-
-    public Image image;
     public Text Main; 
 
+
     public float SpeedOfScrole;
+    public bool init = false;
 
     private bool state;
     private bool stateCR;
     private Vector2 screenSize;
-
-    public bool init = false;
     private string chosenObj;
+
+
+
 
 
     void Awake()
@@ -40,24 +45,18 @@ public class rightPanel : MonoBehaviour
         init = false;
 
     }
-
-
-    void changeState() {
-        
-        state = state == false ? true : false;
-    }
-
-    void changeStateCR()
-    {
-        stateCR = stateCR == false ? true : false;
-    }
-
     void Start()
     {
+        //updateFoo();
         var movi = Moving.Instance;
         var croom = ClassroomBeh.Instance;
         //print(s+" "+ stateCR);
         chosenObj = croom.chosenObj.name;
+
+        topPanel.Instance.changeScrean.
+            Where(x => x == true).
+            Subscribe(_ => { updateFoo(); }).
+            AddTo(this);
 
         croom.isChosenObject.
             Where(w => w !=stateCR).
@@ -80,7 +79,7 @@ public class rightPanel : MonoBehaviour
             Subscribe(s=> {changeState();}).
             AddTo(this);
 
-        image.OnPointerDownAsObservable().
+        slide.OnPointerDownAsObservable().
             Subscribe(s => {
                 changeState();
             }).
@@ -110,7 +109,6 @@ public class rightPanel : MonoBehaviour
                         
                         clearContent();
                         MakelistOfBones();
-                        print("A");
                         init=true;
                         chosenObj = croom.chosenObj.name;
                         }
@@ -125,7 +123,6 @@ public class rightPanel : MonoBehaviour
                         clearContent();
                         MakelistOfPoints();
                         init = true;
-                        print("a");
                         chosenObj = croom.chosenObj.name;
                     }
                 }
@@ -137,6 +134,62 @@ public class rightPanel : MonoBehaviour
             .AddTo(this);
                     
 
+    }
+
+
+    private void updateFoo()
+    {
+        //main panel
+        TopPanel.sizeDelta          = new Vector2(screenSize.x * 0.37f, screenSize.y);
+        TopPanel.anchoredPosition   = new Vector2(0, 0);
+
+        
+        //text of bone
+        var rtMain = Main.rectTransform;
+        rtMain.sizeDelta = new Vector2(TopPanel.sizeDelta.x * 0.9f, TopPanel.sizeDelta.y * 0.15f);
+        rtMain.anchoredPosition = new Vector2(0, -TopPanel.sizeDelta.y * 0.01f);
+
+        //background
+        var rtScrAr = ScrollArea.rectTransform;
+        rtScrAr.sizeDelta = new Vector2(TopPanel.sizeDelta.x * 0.95f, TopPanel.sizeDelta.y * 0.85f);
+        rtScrAr.anchoredPosition = new Vector2(0, 0);
+
+        var rtScroll = slide.rectTransform;
+        rtScroll.sizeDelta = new Vector2(TopPanel.sizeDelta.x * 0.131f, TopPanel.sizeDelta.x * 0.131f);
+        rtScroll.anchoredPosition = new Vector2(0, 0);
+
+        var rtScroller = scroller.rectTransform;
+        rtScroller.sizeDelta = new Vector2(TopPanel.sizeDelta.x-TopPanel.sizeDelta.x * 0.95f, TopPanel.sizeDelta.y * 0.85f);
+        rtScroller.anchoredPosition = new Vector2(0, 0);
+
+        Image content = Content.GetComponent<Image>();
+
+        var rtcont = content.rectTransform;
+        rtcont.anchoredPosition = new Vector2(0, 0);
+        //print(Content.transform.childCount);
+        if (Content.transform.childCount != 0) {
+            var vlg = Content.GetComponent<VerticalLayoutGroup>();
+            vlg.padding.top = (int)(TopPanel.sizeDelta.x * 0.05f);
+            vlg.spacing = vlg.padding.top;
+            rtcont.sizeDelta = new Vector2(rtScrAr.sizeDelta.x, Content.transform.childCount*50);
+           //
+           //foreach (var item in Content.transform)
+           //{
+           //    var img = 
+           //}
+        }
+    }
+
+
+
+
+    void changeState() {
+        
+        state = state == false ? true : false;
+    }
+    void changeStateCR()
+    {
+        stateCR = stateCR == false ? true : false;
     }
     private void MakelistOfBones() {
         var list = ClassroomBeh.Instance.objOnScene;
@@ -163,7 +216,6 @@ public class rightPanel : MonoBehaviour
         }
         PublishList(listOname);
     }
-
     private void PublishList(List<string> srtList) {
         int numer = 1;
         foreach (var str in srtList)
@@ -174,18 +226,10 @@ public class rightPanel : MonoBehaviour
             t.setNumber(numer.ToString());
             go.transform.SetParent(Content.transform);
             numer++;
-
         }
+        updateFoo();
 
     }
-    /*
-    public void addQuestion(question q, int i, AudioClip ac)
-    {
-        go.GetComponent<questionScript>().setAudio(ac);
-        questions[i] = go;
-    }
-    */
-
     private void clearContent() {
         if (Content.transform.childCount!=0) {
             foreach (Transform t in Content.transform)
@@ -194,6 +238,19 @@ public class rightPanel : MonoBehaviour
             }
         }
     }
+
+
+
+
+
+    /*
+    public void addQuestion(question q, int i, AudioClip ac)
+    {
+        go.GetComponent<questionScript>().setAudio(ac);
+        questions[i] = go;
+    }
+    */
+
 
 }
 
