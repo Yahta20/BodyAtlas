@@ -53,6 +53,7 @@ public class ClassroomBeh : MonoBehaviour
             {
                 return chosenObj.name;
             });
+        
     }
 
     void Start()

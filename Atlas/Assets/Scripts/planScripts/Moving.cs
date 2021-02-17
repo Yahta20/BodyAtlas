@@ -7,28 +7,41 @@ using UniRx.Triggers;
 
 public class Moving : MonoBehaviour
 {
+    /*
+     Class для обработки данных ввода 
+     
+     */
     public static Moving Instance { get; private set; }
 
     private Vector3 lastMouse = new Vector3(255, 255, 255);
 
     
-    float camSens = 0.25f;
-    public IObservable <Vector2> Movement     { get; private set; }
-    public IObservable <Vector2> Mouselook    { get; private set; }
-    public IObservable <Vector2> MouseClickL  { get; private set; }
-    public IObservable <Vector2> MouseClickR  { get; private set; }
-    public IObservable <Vector2> MouseDragR   { get; private set; }
-    public IObservable <Vector2> MouseDragL   { get; private set; }
-    public IObservable   <bool>  supportPanel { get; private set; }
-    public IObservable   <bool>  mainPanel    { get; private set; }
-    public IObservable  <float>  zoomScroll   { get; private set; }
-    public IObservable  <float>  yMoving      { get; private set; }
 
+    float camSens = 0.25f;
+    public IObservable <Vector2> Movement       { get; private set; }
+    public IObservable <Vector2> Mouselook      { get; private set; }
+    public IObservable <Vector2> MouseClickL    { get; private set; }
+    public IObservable <Vector2> MouseClickR    { get; private set; }
+    public IObservable <Vector2> MouseDragR     { get; private set; }
+    public IObservable <Vector2> MouseDragL     { get; private set; }
+    public IObservable <Vector2> CursorPos      { get; private set; }
+    public IObservable   <bool>  supportPanel   { get; private set; }
+    public IObservable   <bool>  mainPanel      { get; private set; }
+    public IObservable  <float>  zoomScroll     { get; private set; }
+    public IObservable  <float>  yMoving        { get; private set; }
 
     void Awake()
     {
         Instance = this;
         Event e = Event.current;
+
+        CursorPos = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
+                return 
+                new Vector2(Input.mousePosition.x, Input.mousePosition.y);
+            }); 
+
 
         yMoving = this.FixedUpdateAsObservable()
             .Select(_ =>

@@ -23,8 +23,8 @@ public class rightPanel : MonoBehaviour
 
     public float SpeedOfScrole;
     public bool init = false;
+    public bool state { get; private set; }
 
-    private bool state;
     private bool stateCR;
     private Vector2 screenSize;
     private string chosenObj;
@@ -48,6 +48,10 @@ public class rightPanel : MonoBehaviour
     void Start()
     {
         //updateFoo();
+        /*
+        правильную регистрацию изменения экрана
+         
+         */
         var movi = Moving.Instance;
         var croom = ClassroomBeh.Instance;
         //print(s+" "+ stateCR);
@@ -55,7 +59,7 @@ public class rightPanel : MonoBehaviour
 
         topPanel.Instance.changeScrean.
             Where(x => x == true).
-            Subscribe(_ => { updateFoo(); }).
+            Subscribe(_ => { updateFoo();}).
             AddTo(this);
 
         croom.isChosenObject.
@@ -171,16 +175,18 @@ public class rightPanel : MonoBehaviour
             var vlg = Content.GetComponent<VerticalLayoutGroup>();
             vlg.padding.top = (int)(TopPanel.sizeDelta.x * 0.05f);
             vlg.spacing = vlg.padding.top;
-            rtcont.sizeDelta = new Vector2(rtScrAr.sizeDelta.x, Content.transform.childCount*50);
+            //rtcont.sizeDelta = new Vector2(rtScrAr.sizeDelta.x, Content.transform.childCount*30);
            //
            //foreach (var item in Content.transform)
            //{
            //    var img = 
            //}
         }
+
+
     }
 
-
+    
 
 
     void changeState() {
@@ -202,9 +208,10 @@ public class rightPanel : MonoBehaviour
                 listOname.Add(name);
             }
         }
-        PublishList(listOname);
+        PublishList(listOname,true);
         //print("List of bones");
     }
+
     private void MakelistOfPoints()
     {
         //var chosen = ;
@@ -214,15 +221,20 @@ public class rightPanel : MonoBehaviour
         {
             listOname.Add(item.name);
         }
-        PublishList(listOname);
+        PublishList(listOname,false);
     }
-    private void PublishList(List<string> srtList) {
+
+    private void PublishList(List<string> srtList,bool bone) {
         int numer = 1;
+        if (bone) { 
+            
+        }
         foreach (var str in srtList)
         {
             GameObject go = Instantiate(Prefab);
             var t= go.GetComponent<BonePointInfo>();
             t.setName(str);
+            t.setGoName(str);
             t.setNumber(numer.ToString());
             go.transform.SetParent(Content.transform);
             numer++;

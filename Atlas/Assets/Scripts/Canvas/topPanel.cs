@@ -22,10 +22,11 @@ public class topPanel : MonoBehaviour
     public float SpeedOfScrole;
     private Vector2 screenSize;
 
+    //public IObservable <Vector2> screenSize { get; private set; }
     public IObservable <bool> changeScrean { get; private set; }
     
     void Awake() {
-
+        GameEnviroment.Singelton.setLanguage(0);
         Instance = this;
         TopPanel = GetComponent<RectTransform>();
         screenSize = new Vector2(Screen.width, Screen.height);
@@ -37,10 +38,12 @@ public class topPanel : MonoBehaviour
             {
                 if (screenSize.x!=Screen.width| screenSize.y != Screen.height) {
                     screenSize = new Vector2(Screen.width, Screen.height);
+                    //print("Allo");
                     return true;
                 }
                 return false;
             });
+
 
     }
 
@@ -52,8 +55,13 @@ public class topPanel : MonoBehaviour
         var movi = Moving.Instance;
 
         changeScrean.
-            Where(x => x == true).
-            Subscribe(_ => { updateFoo(); } ).
+            //Where(w => w != false).
+            Subscribe(s => {
+                if (s==true) { 
+                    updateFoo();
+                }
+                //print(s);
+            } ).
             AddTo(this);
 
         movi.mainPanel.
@@ -72,10 +80,28 @@ public class topPanel : MonoBehaviour
                 Application.Quit();
             }).
             AddTo(this);
+        lang.OnPointerDownAsObservable().
+             Subscribe(s => {
+                 
+                 switch (GameEnviroment.Singelton.languageInfo)
+                 {
+                     case (Lang.lat):
+                         GameEnviroment.Singelton.setLanguage(1); break;
+                     case (Lang.ua):
+                         GameEnviroment.Singelton.setLanguage(2); break;
+                     case (Lang.ru):
+                         GameEnviroment.Singelton.setLanguage(3); break;
+                     case (Lang.en):
+                         GameEnviroment.Singelton.setLanguage(0); break;
+                 }
+                 
+             }).
+             AddTo(this);
 
         var boneUpdate = Observable.EveryLateUpdate()
             .Subscribe(
             s => {
+                //updateFoo();
                 if (state)
                 {
                     var y = Mathf.Lerp(TopPanel.anchoredPosition.y, 0, SpeedOfScrole);
@@ -98,7 +124,8 @@ public class topPanel : MonoBehaviour
     }
 
 
-    void updateFoo() {
+    void updateFoo( ) {
+        //print(screenSize);
         //razmer okna
         TopPanel.sizeDelta          = new Vector2(screenSize.x*0.62f, screenSize.y*0.15f);
         TopPanel.anchoredPosition   = new Vector2(screenSize.x*0.01f, TopPanel.sizeDelta.y);

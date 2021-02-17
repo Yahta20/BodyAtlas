@@ -64,10 +64,20 @@ public class SphereBeh : MonoBehaviour
             .Where(v => v != 0)
             .Subscribe(sub =>
             {
+                var xPassLine = Screen.width-rightPanel.Instance.TopPanel.sizeDelta.x;// Input.mousePosition.x;
                 var fov = camera.fieldOfView;
-                fov -= sub*0.2f;
-                fov = fov > cameraMinZoom ? cameraMinZoom : fov;
-                fov = fov < cameraMaxZoom ? cameraMaxZoom : fov;
+                
+
+                if (xPassLine > Input.mousePosition.x 
+                     |!rightPanel.Instance.state
+                ) { 
+
+                    fov -= sub*0.2f;
+                    fov = fov > cameraMinZoom ? cameraMinZoom : fov;
+                    fov = fov < cameraMaxZoom ? cameraMaxZoom : fov;
+                }
+                
+
                 camera.fieldOfView = fov;
             }).AddTo(this);
 

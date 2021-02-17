@@ -16,13 +16,14 @@ public class LangManage : MonoBehaviour
     public static LangManage instance;
     public Lang currentLang;
     public LangUI currentUILang;
-    public List <BoneNameClass> bones = new List<BoneNameClass>();
+    public List <BoneNameClass> bones {get; private set;}
     public TextAsset inputData;
     private JObject json2work;
 
     private void Awake()
     {
         instance = this;
+        List<BoneNameClass> bones = new List<BoneNameClass>();
         string jsonRaw = inputData.ToString();
         json2work = JObject.Parse(jsonRaw);
         int numberOfBones = json2work["BONES"].Count();
@@ -49,6 +50,11 @@ public class LangManage : MonoBehaviour
             }
             bones.Add(bonvar);
         }
+        //print(bones.Count);
+        //print(bones[1].getCountOfPoints());
+        //print(bones[1].getNameOfBone());
+        //print(bones[1].getNameOfPoint(3));
+        
     }
 
 
@@ -59,8 +65,9 @@ public class LangManage : MonoBehaviour
 
 
 
-        
 
 
-    
+
+
+
 }
