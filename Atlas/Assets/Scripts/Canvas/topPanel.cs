@@ -75,24 +75,37 @@ public class topPanel : MonoBehaviour
             }).
             AddTo(this);
 
-       exit.OnPointerDownAsObservable().
+        exit.OnPointerDownAsObservable().
             Subscribe(s => {
                 Application.Quit();
             }).
             AddTo(this);
+
         lang.OnPointerDownAsObservable().
              Subscribe(s => {
                  
                  switch (GameEnviroment.Singelton.languageInfo)
                  {
                      case (Lang.lat):
-                         GameEnviroment.Singelton.setLanguage(1); break;
+                         GameEnviroment.Singelton.setLanguage(1);
+                         typolang.text = "Українська";
+                         nlang.text = "Мова";
+                         break;
                      case (Lang.ua):
-                         GameEnviroment.Singelton.setLanguage(2); break;
+                         GameEnviroment.Singelton.setLanguage(2);
+                         typolang.text = "Русский";
+                         nlang.text = "Язык";
+                         break;
                      case (Lang.ru):
-                         GameEnviroment.Singelton.setLanguage(3); break;
+                         GameEnviroment.Singelton.setLanguage(3);
+                         typolang.text = "English";
+                         nlang.text = "Language";
+                         break;
                      case (Lang.en):
-                         GameEnviroment.Singelton.setLanguage(0); break;
+                         GameEnviroment.Singelton.setLanguage(0);
+                         typolang.text = "Latina";
+                         nlang.text = "Lingua";
+                         break;
                  }
                  
              }).

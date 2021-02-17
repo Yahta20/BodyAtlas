@@ -3,17 +3,15 @@ using System.Collections.Generic;
 
 public class BoneNameClass 
 {
-    public string latName;
-    public string uaName;
-    public string enName;
-    public string ruName;
+    public string latName { get; private set; }
+    public string uaName  { get; private set; }
+    public string enName  { get; private set; }
+    public string ruName  { get; private set; }
 
     public List<string> latdotsOfBones=new List<string>();
     public List<string> rudotsOfBones =new List<string>();
     public List<string> endotsOfBones =new List<string>();
     public List<string> uadotsOfBones =new List<string>();
-
-
 
     public Dictionary<Lang, string> Name { get; private set; }
 
@@ -63,9 +61,9 @@ public class BoneNameClass
         return latdotsOfBones.Count;  
     }
 
-    public string getNameOfBone() {
-        return latName;
-    }
+    //public string getNameOfBone() {
+    //    return latName;
+    //}
 
     public string getNameOfPoint(int Num){
         return latdotsOfBones[Num];

@@ -23,7 +23,7 @@ public class LangManage : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        List<BoneNameClass> bones = new List<BoneNameClass>();
+        bones = new List<BoneNameClass>();
         string jsonRaw = inputData.ToString();
         json2work = JObject.Parse(jsonRaw);
         int numberOfBones = json2work["BONES"].Count();
@@ -32,11 +32,7 @@ public class LangManage : MonoBehaviour
             var ua =json2work["BONES"][i]["ua"] .Value<string>();
             var en =json2work["BONES"][i]["en"] .Value<string>();
             var ru =json2work["BONES"][i]["ru"] .Value<string>();
-            var bonvar = new BoneNameClass(
-                lat,
-                ua ,
-                en ,
-                ru);
+            var bonvar = new BoneNameClass(lat,ua,en,ru);
             for (int p = 0; p < json2work["BONES"][i]["point"].Count(); p++) {
                 var plat = json2work["BONES"][i]["point"][p]["lat"].Value<string>();
                 var pua =  json2work["BONES"][i]["point"][p]["ua"] .Value<string>();
@@ -50,14 +46,42 @@ public class LangManage : MonoBehaviour
             }
             bones.Add(bonvar);
         }
-        //print(bones.Count);
+        print(bones.Count);
         //print(bones[1].getCountOfPoints());
         //print(bones[1].getNameOfBone());
         //print(bones[1].getNameOfPoint(3));
         
     }
 
+    public string FindBone(string BoneName) {
+        foreach (var item in bones)
+        {
+            if (BoneName==item.latName) {
+                return item.Name[GameEnviroment.Singelton.languageInfo];
+            }
+        }
+        
+        return "none";
+    }
 
+    public string FindPoint(string PointName)
+    {
+        foreach (var bone in bones)
+        {
+
+            foreach (var point in bone.Points)
+            {
+                
+                if (PointName == point[Lang.lat])
+                {
+                    return point[GameEnviroment.Singelton.languageInfo];
+                }
+
+            }
+        }
+
+        return "none";
+    }
 
 
 

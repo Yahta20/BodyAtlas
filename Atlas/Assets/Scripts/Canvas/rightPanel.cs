@@ -35,7 +35,6 @@ public class rightPanel : MonoBehaviour
 
     void Awake()
     {
-
         Instance = this;
         TopPanel = GetComponent<RectTransform>();
         screenSize = new Vector2(Screen.width, Screen.height);
@@ -43,8 +42,9 @@ public class rightPanel : MonoBehaviour
         stateCR = false;
         SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
         init = false;
-
     }
+
+
     void Start()
     {
         //updateFoo();
@@ -193,10 +193,12 @@ public class rightPanel : MonoBehaviour
         
         state = state == false ? true : false;
     }
+
     void changeStateCR()
     {
         stateCR = stateCR == false ? true : false;
     }
+
     private void MakelistOfBones() {
         var list = ClassroomBeh.Instance.objOnScene;
         var listOname = new List<string>();
@@ -224,24 +226,34 @@ public class rightPanel : MonoBehaviour
         PublishList(listOname,false);
     }
 
+
     private void PublishList(List<string> srtList,bool bone) {
         int numer = 1;
-        if (bone) { 
-            
+        
+        if (LangManage.instance.bones!=null) {
+           print(LangManage.instance.bones.Count);
         }
+            
         foreach (var str in srtList)
         {
             GameObject go = Instantiate(Prefab);
             var t= go.GetComponent<BonePointInfo>();
-            t.setName(str);
             t.setGoName(str);
             t.setNumber(numer.ToString());
+            if (bone)
+            {
+                t.setName(LangManage.instance.FindBone(str));
+            }
+            else {
+                t.setName(LangManage.instance.FindPoint(str));
+            }
             go.transform.SetParent(Content.transform);
             numer++;
         }
         updateFoo();
-
     }
+
+            
     private void clearContent() {
         if (Content.transform.childCount!=0) {
             foreach (Transform t in Content.transform)
