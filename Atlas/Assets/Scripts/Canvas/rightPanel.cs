@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -15,12 +16,12 @@ public class rightPanel : MonoBehaviour
 
     public Image ScrollArea;
     public Image slide;
-    //public 
+    
     public Image scroller;
 
-    public Text Main; 
+    public Text Main;
 
-
+    public Canvas mainCanvas;
     public float SpeedOfScrole;
     public bool init = false;
     public bool state { get; private set; }
@@ -29,7 +30,7 @@ public class rightPanel : MonoBehaviour
     private Vector2 screenSize;
     private string chosenObj;
 
-
+    public IObservable<Vector2> changeScrean { get; private set; }
 
 
 
@@ -42,6 +43,18 @@ public class rightPanel : MonoBehaviour
         stateCR = false;
         SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
         init = false;
+        changeScrean = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
+                if (mainCanvas!=null)
+                {
+                    return mainCanvas.pixelRect.size;
+                }
+
+                return new Vector2(1024,768);
+            });
+
+
     }
 
 
@@ -57,9 +70,15 @@ public class rightPanel : MonoBehaviour
         //print(s+" "+ stateCR);
         chosenObj = croom.chosenObj.name;
 
-        topPanel.Instance.changeScrean.
-            Where(x => x == true).
-            Subscribe(_ => { updateFoo();}).
+        //topPanel.Instance.changeScrean.
+        //    Where(x => x == true).
+        //    Subscribe(_ => { updateFoo();}).
+        //   AddTo(this);
+        var screan =topPanel.Instance.screenSize.
+            Where(w => w != Vector2.zero).
+            Subscribe(s => {
+                updateFoo(s);
+            }).
             AddTo(this);
 
         croom.isChosenObject.
@@ -95,16 +114,6 @@ public class rightPanel : MonoBehaviour
             .Subscribe(
             s => {
                 //updateFoo();
-                if (state)
-                {
-                    var x = Mathf.Lerp(TopPanel.anchoredPosition.x, 0, SpeedOfScrole);
-                    TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
-                }
-                else
-                {
-                    var x = Mathf.Lerp(TopPanel.anchoredPosition.x, TopPanel.sizeDelta.x, SpeedOfScrole);
-                    TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
-                }
                 if (croom.chosenObj.name == "empty")
                 {
                     Main.text = "Sceleton";
@@ -121,7 +130,9 @@ public class rightPanel : MonoBehaviour
 
                 if (croom.chosenObj.name != "empty")
                 {
+
                     Main.text = croom.chosenObj.name;
+
                     if (!init)
                     {
                         clearContent();
@@ -141,11 +152,21 @@ public class rightPanel : MonoBehaviour
     }
 
 
-    private void updateFoo()
+    private void updateFoo(Vector2 screenSize)
     {
-        //main panel
         TopPanel.sizeDelta          = new Vector2(screenSize.x * 0.37f, screenSize.y);
-        TopPanel.anchoredPosition   = new Vector2(0, 0);
+        if (state)
+        {
+            var x = Mathf.Lerp(TopPanel.anchoredPosition.x, 0, SpeedOfScrole);
+            TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
+        }
+        else
+        {
+            var x = Mathf.Lerp(TopPanel.anchoredPosition.x, TopPanel.sizeDelta.x, SpeedOfScrole);
+            TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
+        }
+        //main panel
+        //TopPanel.anchoredPosition   = new Vector2(0, 0);
 
         
         //text of bone
@@ -230,9 +251,11 @@ public class rightPanel : MonoBehaviour
     private void PublishList(List<string> srtList,bool bone) {
         int numer = 1;
         
-        if (LangManage.instance.bones!=null) {
-           print(LangManage.instance.bones.Count);
-        }
+        //if (LangManage.instance.bones!=null) {
+        //   //print(LangManage.instance.bones.Count);
+        //}
+                //t.setName(LangManage.instance.FindBone(str));
+                //t.setName(LangManage.instance.FindPoint(str));
             
         foreach (var str in srtList)
         {
@@ -242,15 +265,15 @@ public class rightPanel : MonoBehaviour
             t.setNumber(numer.ToString());
             if (bone)
             {
-                t.setName(LangManage.instance.FindBone(str));
+                t.setTranslate(LangManage.instance.FindBoneDic(str));
             }
             else {
-                t.setName(LangManage.instance.FindPoint(str));
+                t.setTranslate(LangManage.instance.FindPointDic(str));
             }
             go.transform.SetParent(Content.transform);
             numer++;
         }
-        updateFoo();
+        //updateFoo();
     }
 
             

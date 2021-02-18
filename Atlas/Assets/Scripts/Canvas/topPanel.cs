@@ -9,7 +9,9 @@ using UniRx.Triggers;
 public class topPanel : MonoBehaviour
 {
     public static topPanel Instance;
-    
+
+    public Canvas mainCanvas;
+
     public RectTransform TopPanel;
     public Image scroll;
     public Image exit;
@@ -20,47 +22,61 @@ public class topPanel : MonoBehaviour
     private bool state;
     private bool stateCR;
     public float SpeedOfScrole;
-    private Vector2 screenSize;
+    //private Vector2 screenSize;
 
-    //public IObservable <Vector2> screenSize { get; private set; }
+    public IObservable <Vector2> screenSize { get; private set; }
     public IObservable <bool> changeScrean { get; private set; }
     
     void Awake() {
         GameEnviroment.Singelton.setLanguage(0);
         Instance = this;
         TopPanel = GetComponent<RectTransform>();
-        screenSize = new Vector2(Screen.width, Screen.height);
+        //mainCanvas = GetComponent<Canvas>();
+        //screenSize = new Vector2(Screen.width, Screen.height);
         //print(screenSize);
         state = false;
         SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
         changeScrean = this.FixedUpdateAsObservable()
             .Select(_ =>
             {
-                if (screenSize.x!=Screen.width| screenSize.y != Screen.height) {
-                    screenSize = new Vector2(Screen.width, Screen.height);
-                    //print("Allo");
-                    return true;
-                }
+                //if (screenSize.x!=Screen.width| screenSize.y != Screen.height) {
+                //    screenSize = new Vector2(Screen.width, Screen.height);
+                //    //print("Allo");
+                //    return true;
+                //}
                 return false;
             });
-
+        screenSize = this.FixedUpdateAsObservable()
+            .Select(w =>
+            {
+                if (mainCanvas == null)
+                {
+                    mainCanvas = (Canvas)FindObjectOfType(typeof(Canvas));
+                } else {
+                   
+                    return mainCanvas.pixelRect.size;
+                }
+                
+                return Vector2.zero;
+            });
 
     }
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-        updateFoo();
+        //updateFoo();
 
         var movi = Moving.Instance;
 
-        changeScrean.
-            //Where(w => w != false).
+        screenSize.
+            //Where(w => w != Vector2.zero).
+            //Buffer(2).
+            //Where(w=>w[1]!=w[0]).
             Subscribe(s => {
-                if (s==true) { 
-                    updateFoo();
-                }
-                //print(s);
+                updateFoo(s);
             } ).
             AddTo(this);
 
@@ -115,17 +131,17 @@ public class topPanel : MonoBehaviour
             .Subscribe(
             s => {
                 //updateFoo();
-                if (state)
-                {
-                    var y = Mathf.Lerp(TopPanel.anchoredPosition.y, 0, SpeedOfScrole);
-                    TopPanel.anchoredPosition = new Vector2(TopPanel.anchoredPosition.x, y);
-                    
-                }
-                else {
-                    var y = Mathf.Lerp(TopPanel.anchoredPosition.y, TopPanel.sizeDelta.y, SpeedOfScrole);
-                    TopPanel.anchoredPosition = new Vector2(TopPanel.anchoredPosition.x, y);
-                }
-
+                //if (state)
+                //{
+                //    var y = Mathf.Lerp(TopPanel.anchoredPosition.y, 0, SpeedOfScrole);
+                //    TopPanel.anchoredPosition = new Vector2(TopPanel.anchoredPosition.x, y);
+                //    
+                //}
+                //else {
+                //    var y = Mathf.Lerp(TopPanel.anchoredPosition.y, TopPanel.sizeDelta.y, SpeedOfScrole);
+                //    TopPanel.anchoredPosition = new Vector2(TopPanel.anchoredPosition.x, y);
+                //}
+                //
             })
             .AddTo(this);
     }
@@ -137,11 +153,11 @@ public class topPanel : MonoBehaviour
     }
 
 
-    void updateFoo( ) {
+    void updateFoo(Vector2 screenSize) {
         //print(screenSize);
         //razmer okna
-        TopPanel.sizeDelta          = new Vector2(screenSize.x*0.62f, screenSize.y*0.15f);
-        TopPanel.anchoredPosition   = new Vector2(screenSize.x*0.01f, TopPanel.sizeDelta.y);
+        TopPanel.sizeDelta          = new Vector2(screenSize.x*0.37f, screenSize.y*0.15f);
+        TopPanel.anchoredPosition   = new Vector2(0, 0);
 
         //razmer kartinok
         //-vihod

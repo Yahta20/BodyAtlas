@@ -46,7 +46,7 @@ public class LangManage : MonoBehaviour
             }
             bones.Add(bonvar);
         }
-        print(bones.Count);
+        //print(bones.Count);
         //print(bones[1].getCountOfPoints());
         //print(bones[1].getNameOfBone());
         //print(bones[1].getNameOfPoint(3));
@@ -79,10 +79,39 @@ public class LangManage : MonoBehaviour
 
             }
         }
-
         return "none";
     }
 
+    public Dictionary<Lang, string> FindBoneDic(string BoneName)
+    {
+        foreach (var item in bones)
+        {
+            if (BoneName == item.Name[Lang.lat])
+            {
+                return item.Name;
+            }
+        }
+
+        return new Dictionary<Lang, string>() ;
+    }
+
+    public Dictionary<Lang, string> FindPointDic(string PointName)
+    {
+        foreach (var bone in bones)
+        {
+
+            foreach (var point in bone.Points)
+            {
+
+                if (PointName == point[Lang.lat])
+                {
+                    return point;
+                }
+
+            }
+        }
+        return new Dictionary<Lang, string>(); 
+    }
 
 
 
