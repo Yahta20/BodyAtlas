@@ -1098,18 +1098,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304210935}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 881700175}
+  m_Father: {fileID: 1446192457}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0.33000183, y: -10}
-  m_SizeDelta: {x: 344.5332, y: 89.54411}
-  m_Pivot: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 9.279999, y: -0.11999512}
+  m_SizeDelta: {x: 344.5332, y: 65.23}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &304210937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1462,7 +1462,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &408990476
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1480,8 +1480,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 248.98, y: 45}
-  m_Pivot: {x: 0, y: 1}
+  m_SizeDelta: {x: 88.95003, y: 80}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &408990477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1662,8 +1662,8 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 254.88448, y: 45.000008}
-  m_Pivot: {x: 1, y: 1}
+  m_SizeDelta: {x: 179.18004, y: 42.65528}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &513581235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2858,7 +2858,6 @@ RectTransform:
   m_Children:
   - {fileID: 627554048}
   - {fileID: 1446192457}
-  - {fileID: 304210936}
   - {fileID: 1523114851}
   m_Father: {fileID: 364498157}
   m_RootOrder: 0
@@ -2917,7 +2916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cf83a7b83017a549a45f58155ffa77a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TopPanel: {fileID: 304210936}
+  TopPanel: {fileID: 881700175}
   Prefab: {fileID: 5838770830719473899, guid: 546b1526462f91e4ab538ffd4c3e9491, type: 3}
   Content: {fileID: 63600472}
   ScrollArea: {fileID: 1446192458}
@@ -4387,6 +4386,7 @@ RectTransform:
   m_Children:
   - {fileID: 1526480241}
   - {fileID: 83150967}
+  - {fileID: 304210936}
   m_Father: {fileID: 881700175}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4588,12 +4588,12 @@ RectTransform:
   - {fileID: 513581234}
   - {fileID: 408990476}
   m_Father: {fileID: 881700175}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 356.9, y: 100}
+  m_SizeDelta: {x: 356.9, y: 42.655273}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1523114852
 MonoBehaviour:
@@ -4644,7 +4644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18af83e404258f14aba4868cfc56e654, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCanvas: {fileID: 364498156}
+  mainCanvas: {fileID: 0}
   TopPanel: {fileID: 50297111}
   scroll: {fileID: 50297112}
   exit: {fileID: 1421169236}

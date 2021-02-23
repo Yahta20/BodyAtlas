@@ -74,8 +74,9 @@ public class rightPanel : MonoBehaviour
         //    Where(x => x == true).
         //    Subscribe(_ => { updateFoo();}).
         //   AddTo(this);
-        var screan =topPanel.Instance.screenSize.
+        var screan = UIManager.Instance.screenSize.
             Where(w => w != Vector2.zero).
+            DistinctUntilChanged().
             Subscribe(s => {
                 updateFoo(s);
             }).
@@ -141,6 +142,16 @@ public class rightPanel : MonoBehaviour
                         chosenObj = croom.chosenObj.name;
                     }
                 }
+                if (state)
+                {
+                    var x = Mathf.Lerp(TopPanel.anchoredPosition.x, 0, SpeedOfScrole);
+                    TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
+                }
+                else
+                {
+                    var x = Mathf.Lerp(TopPanel.anchoredPosition.x, TopPanel.sizeDelta.x, SpeedOfScrole);
+                    TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
+                }
                     
                 /*
                  */
@@ -154,25 +165,14 @@ public class rightPanel : MonoBehaviour
 
     private void updateFoo(Vector2 screenSize)
     {
-        TopPanel.sizeDelta          = new Vector2(screenSize.x * 0.37f, screenSize.y);
-        if (state)
-        {
-            var x = Mathf.Lerp(TopPanel.anchoredPosition.x, 0, SpeedOfScrole);
-            TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
-        }
-        else
-        {
-            var x = Mathf.Lerp(TopPanel.anchoredPosition.x, TopPanel.sizeDelta.x, SpeedOfScrole);
-            TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
-        }
+        TopPanel.sizeDelta          = new Vector2(screenSize.x * 0.37f, screenSize.y );
         //main panel
         //TopPanel.anchoredPosition   = new Vector2(0, 0);
 
-        
         //text of bone
         var rtMain = Main.rectTransform;
-        rtMain.sizeDelta = new Vector2(TopPanel.sizeDelta.x * 0.9f, TopPanel.sizeDelta.y * 0.15f);
-        rtMain.anchoredPosition = new Vector2(0, -TopPanel.sizeDelta.y * 0.01f);
+        rtMain.sizeDelta = new Vector2(TopPanel.sizeDelta.x, TopPanel.sizeDelta.y * 0.08f);
+        rtMain.anchoredPosition = new Vector2(0, TopPanel.sizeDelta.y * 0.01f);
 
         //background
         var rtScrAr = ScrollArea.rectTransform;
