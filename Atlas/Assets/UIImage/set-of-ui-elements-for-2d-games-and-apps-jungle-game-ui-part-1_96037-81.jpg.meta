@@ -138,10 +138,10 @@ TextureImporter:
       name: set-of-ui-elements-for-2d-games-and-apps-jungle-game-ui-part-1_96037-81_0
       rect:
         serializedVersion: 2
-        x: 59
-        y: 242
-        width: 63
-        height: 70
+        x: 92
+        y: 246
+        width: 30
+        height: 33
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +201,10 @@ TextureImporter:
       name: set-of-ui-elements-for-2d-games-and-apps-jungle-game-ui-part-1_96037-81_3
       rect:
         serializedVersion: 2
-        x: 214
+        x: 239
         y: 169
-        width: 65
-        height: 70
+        width: 40
+        height: 44
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,7 +269,7 @@ TextureImporter:
         width: 60
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -290,7 +290,7 @@ TextureImporter:
         width: 62
         height: 63
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -11,18 +11,6 @@ ScriptsOnlyBuild:
     - UIManager
     - rightPanel
     - topPanel
-    Unity.Addressables.Editor.dll:
-    - UnityEditor.AddressableAssets.AddressableAssetSettingsDefaultObject
-    - UnityEditor.AddressableAssets.Build.DataBuilders.BuildScriptFastMode
-    - UnityEditor.AddressableAssets.Build.DataBuilders.BuildScriptPackedMode
-    - UnityEditor.AddressableAssets.Build.DataBuilders.BuildScriptPackedPlayMode
-    - UnityEditor.AddressableAssets.Build.DataBuilders.BuildScriptVirtualMode
-    - UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
-    - UnityEditor.AddressableAssets.Settings.AddressableAssetGroupTemplate
-    - UnityEditor.AddressableAssets.Settings.AddressableAssetSettings
-    - UnityEditor.AddressableAssets.Settings.GroupSchemas.BundledAssetGroupSchema
-    - UnityEditor.AddressableAssets.Settings.GroupSchemas.ContentUpdateGroupSchema
-    - UnityEditor.AddressableAssets.Settings.GroupSchemas.PlayerDataGroupSchema
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -72,47 +60,47 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11238}
+      Script: {instanceID: 11250}
     - Class: 114
-      Script: {instanceID: 11268}
+      Script: {instanceID: 11280}
     - Class: 114
-      Script: {instanceID: 11554}
+      Script: {instanceID: 11580}
     - Class: 114
-      Script: {instanceID: 11614}
+      Script: {instanceID: 11642}
     - Class: 114
-      Script: {instanceID: 11782}
+      Script: {instanceID: 11810}
     - Class: 114
-      Script: {instanceID: 12078}
+      Script: {instanceID: 12108}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 12272}
     - Class: 114
-      Script: {instanceID: 12244}
+      Script: {instanceID: 12274}
     - Class: 114
-      Script: {instanceID: 12278}
+      Script: {instanceID: 12308}
     - Class: 114
-      Script: {instanceID: 12282}
+      Script: {instanceID: 12312}
     - Class: 114
-      Script: {instanceID: 12580}
+      Script: {instanceID: 12612}
     - Class: 114
-      Script: {instanceID: 12976}
+      Script: {instanceID: 13022}
     - Class: 114
-      Script: {instanceID: 13112}
+      Script: {instanceID: 13162}
     - Class: 114
-      Script: {instanceID: 13408}
+      Script: {instanceID: 13468}
     - Class: 114
-      Script: {instanceID: 13454}
+      Script: {instanceID: 13516}
     - Class: 114
-      Script: {instanceID: 13474}
+      Script: {instanceID: 13536}
     - Class: 114
-      Script: {instanceID: 13578}
+      Script: {instanceID: 13640}
     - Class: 114
-      Script: {instanceID: 13770}
+      Script: {instanceID: 13836}
     - Class: 114
-      Script: {instanceID: 14282}
+      Script: {instanceID: 14372}
     - Class: 114
-      Script: {instanceID: 14354}
+      Script: {instanceID: 14444}
     - Class: 114
-      Script: {instanceID: 14370}
+      Script: {instanceID: 14460}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -436,7 +424,7 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
-      Hash: 3263e5b6e3e49c268b553629f50ed676
+      Hash: 16fc3a647df6658bab821326245e1475
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SphereBeh
@@ -622,6 +610,12 @@ ScriptsOnlyBuild:
     className: VerticalLayoutGroup
   - hash:
       serializedVersion: 2
+      Hash: 8491d6dc91856701b1cda4ed3dbaa6a0
+    assemblyName: Unity.VectorGraphics.dll
+    namespaceName: Unity.VectorGraphics
+    className: SVGImage
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: UniRx.dll
     namespaceName: UniRx.Triggers
@@ -700,7 +694,7 @@ ScriptsOnlyBuild:
     className: TimelineAsset
   - hash:
       serializedVersion: 2
-      Hash: c7501abfa6a28986d4dffcc616e5eb1a
+      Hash: dea4619edcf0ff00c855c4790140cb0e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ClassroomBeh
@@ -856,7 +850,7 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
-      Hash: 1f8be44fe1cd94c167ad84b632afb050
+      Hash: d4e02fa32970d1873f9604a1bcab9a0b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: BonePointInfo

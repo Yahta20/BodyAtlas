@@ -27,23 +27,23 @@ public class topPanel : MonoBehaviour
     public IObservable <Vector2> screenSize { get; private set; }
     public IObservable <bool> changeScrean { get; private set; }
     
-    void Awake() {
-        GameEnviroment.Singelton.setLanguage(0);
-        Instance = this;
-        TopPanel = GetComponent<RectTransform>();
         //mainCanvas = GetComponent<Canvas>();
         //screenSize = new Vector2(Screen.width, Screen.height);
         //print(screenSize);
-        state = false;
-        SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
-        changeScrean = this.FixedUpdateAsObservable()
-            .Select(_ =>
-            {
                 //if (screenSize.x!=Screen.width| screenSize.y != Screen.height) {
                 //    screenSize = new Vector2(Screen.width, Screen.height);
                 //    //print("Allo");
                 //    return true;
                 //}
+    void Awake() {
+        
+        Instance = this;
+        TopPanel = GetComponent<RectTransform>();
+        state = false;
+        SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
+        changeScrean = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
                 return false;
             });
         screenSize = this.FixedUpdateAsObservable()
@@ -71,16 +71,16 @@ public class topPanel : MonoBehaviour
 
         var movi = Moving.Instance;
         var uiMng = UIManager.Instance;
-
-        uiMng.screenSize.
             //o=> { var v = o;
             // updateFoo();}
-            Where(w => w != Vector2.zero).
-            DistinctUntilChanged().
             //Buffer(2).
             //Where(w=>w[1]!=w[0]).
-            Subscribe(s => {
                 //print(s);
+
+        uiMng.screenSize.
+            Where(w => w != Vector2.zero).
+            DistinctUntilChanged().
+            Subscribe(s => {
                 updateFoo(s);
             } )
             .AddTo(this);
@@ -110,17 +110,17 @@ public class topPanel : MonoBehaviour
                      case (Lang.lat):
                          GameEnviroment.Singelton.setLanguage(1);
                          //typolang.text = "Українська";
-                         nlang.text = "Мова Українська";
+                         nlang.text = "Українська Мова";
                          break;
                      case (Lang.ua):
                          GameEnviroment.Singelton.setLanguage(2);
                          //typolang.text = "Русский";
-                         nlang.text = "Язык Русский";
+                         nlang.text = "Русский Язык";
                          break;
                      case (Lang.ru):
                          GameEnviroment.Singelton.setLanguage(3);
                          //typolang.text = "English";
-                         nlang.text = "Language English";
+                         nlang.text = "English Language";
                          break;
                      case (Lang.en):
                          GameEnviroment.Singelton.setLanguage(0);
@@ -172,8 +172,10 @@ public class topPanel : MonoBehaviour
         //-vihod
         var rtExit = exit.rectTransform;
         rtExit.sizeDelta            = new Vector2(TopPanel.sizeDelta.y * 0.9f, TopPanel.sizeDelta.y * 0.9f);
-        rtExit.anchoredPosition     = new Vector2(TopPanel.sizeDelta.y * 0.05f,0);
-        
+        rtExit.anchoredPosition     = new Vector2(-TopPanel.sizeDelta.y * 0.05f,0);
+
+        //.sizeDelta            = new Vector2(TopPanel.sizeDelta.y * 0.9f, TopPanel.sizeDelta.y * 0.9f);
+        //.anchoredPosition     = new Vector2(TopPanel.sizeDelta.y * 0.05f,0);
         //-scroll
         var rtScroll = scroll.rectTransform;
         rtScroll.sizeDelta          = new Vector2(TopPanel.sizeDelta.x * 0.08f, TopPanel.sizeDelta.x * 0.08f);
@@ -182,7 +184,7 @@ public class topPanel : MonoBehaviour
         //-change
         var rtlang = lang.rectTransform;
         rtlang.sizeDelta            = new Vector2(TopPanel.sizeDelta.y * 0.9f, TopPanel.sizeDelta.y * 0.9f);
-        rtlang.anchoredPosition     = new Vector2(-TopPanel.sizeDelta.y * 0.05f, 0);
+        rtlang.anchoredPosition     = new Vector2(TopPanel.sizeDelta.y * 0.05f, 0);
         
         //-tip yazika
         //var rttypolang = typolang.rectTransform;
@@ -191,7 +193,7 @@ public class topPanel : MonoBehaviour
 
         //nazvanie
         var rtnlang = nlang.rectTransform;
-        rtnlang.sizeDelta           = new Vector2(TopPanel.sizeDelta.x * 0.72f, TopPanel.sizeDelta.y);
+        rtnlang.sizeDelta           = new Vector2(TopPanel.sizeDelta.x * 0.70f, TopPanel.sizeDelta.y);
         rtnlang.anchoredPosition    = new Vector2(0, 0);
 
     }

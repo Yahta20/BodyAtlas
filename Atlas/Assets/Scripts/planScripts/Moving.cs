@@ -25,6 +25,11 @@ public class Moving : MonoBehaviour
     public IObservable <Vector2> MouseDragR     { get; private set; }
     public IObservable <Vector2> MouseDragL     { get; private set; }
     public IObservable <Vector2> CursorPos      { get; private set; }
+    public IObservable <Vector2> ScrollClick    { get; private set; }
+    public IObservable <Vector2> ScrollDrag     { get; private set; }
+
+
+ 
     public IObservable   <bool>  supportPanel   { get; private set; }
     public IObservable   <bool>  mainPanel      { get; private set; }
     public IObservable  <float>  zoomScroll     { get; private set; }
@@ -40,7 +45,29 @@ public class Moving : MonoBehaviour
             {
                 return 
                 new Vector2(Input.mousePosition.x, Input.mousePosition.y);
-            }); 
+            });
+        ScrollDrag = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
+                if (Input.GetMouseButton(2))
+                {
+                    Vector2 click = Input.mousePosition;
+                    return click;
+                }
+                return Vector2.zero;
+            });
+
+        ScrollClick = this.FixedUpdateAsObservable()
+            .Select(_ =>
+            {
+                if (Input.GetMouseButtonDown(2))
+                {
+                    Vector2 click = Input.mousePosition;
+                    return click;
+                }
+
+                return Vector2.zero;
+            });
 
 
         yMoving = this.FixedUpdateAsObservable()
@@ -48,6 +75,7 @@ public class Moving : MonoBehaviour
            {
                float x = 0;
                
+               x = Input.GetAxis("Mouse ScrollWheel")*6;
                if (Input.GetKey(KeyCode.E))
                {
                    x = 1;
@@ -58,12 +86,14 @@ public class Moving : MonoBehaviour
                }
                return x;
            });
+                
+
+
         
         zoomScroll = this.FixedUpdateAsObservable()
             .Select(_ =>
            {
                float x = 0;
-               x = Input.GetAxis("Mouse ScrollWheel")*5;
                if (Input.GetKey(KeyCode.Z))
                {
                    x = 1;
@@ -80,8 +110,7 @@ public class Moving : MonoBehaviour
             .Select(_ =>{
                 var x = Input.GetAxis("Horizontal");
                 var y = Input.GetAxis("Vertical");
-                //var y = Input.GetAxis("Vertical");
-
+                
                 return new Vector2(x, y).normalized;
             });
         

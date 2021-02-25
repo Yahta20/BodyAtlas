@@ -30,6 +30,8 @@ public class rightPanel : MonoBehaviour
     private Vector2 screenSize;
     private string chosenObj;
 
+    public Dictionary<Lang, string> BoneDic { get; private set; }
+    public Dictionary<Lang, string> BoneNameDic { get; private set; }
     public IObservable<Vector2> changeScrean { get; private set; }
 
 
@@ -65,6 +67,8 @@ public class rightPanel : MonoBehaviour
         правильную регистрацию изменения экрана
          
          */
+        BoneDic = LangManage.instance.FindBoneDic("osseus");
+
         var movi = Moving.Instance;
         var croom = ClassroomBeh.Instance;
         //print(s+" "+ stateCR);
@@ -117,7 +121,8 @@ public class rightPanel : MonoBehaviour
                 //updateFoo();
                 if (croom.chosenObj.name == "empty")
                 {
-                    Main.text = "Sceleton";
+                    //Main.text = "Sceleton";
+                    Main.text = BoneDic[GameEnviroment.Singelton.languageInfo];
                     if (!init) {
                         if (croom.objOnScene.Count!=0) { 
                         
@@ -131,8 +136,8 @@ public class rightPanel : MonoBehaviour
 
                 if (croom.chosenObj.name != "empty")
                 {
-
-                    Main.text = croom.chosenObj.name;
+                    BoneNameDic = LangManage.instance.FindBoneDic(croom.chosenObj.name);
+                    Main.text = BoneNameDic[GameEnviroment.Singelton.languageInfo];
 
                     if (!init)
                     {

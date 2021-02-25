@@ -10,8 +10,8 @@ public class ClassroomBeh : MonoBehaviour
 {
     public static ClassroomBeh Instance;
 
-    public Material regularMat;
-    public Material chosenMat;
+    //public Material regularMat;
+    //public Material chosenMat;
     public Material backgroundMat;
 
     public GameObject chosenObj;
@@ -34,7 +34,7 @@ public class ClassroomBeh : MonoBehaviour
     //chosenObj = bh.gameObject;
 
     void Awake() {
-
+        GameEnviroment.Singelton.setLanguage(0);
         Instance = this;
         emptyObj = new GameObject("empty");
         chosenObj = emptyObj;
@@ -128,8 +128,8 @@ public class ClassroomBeh : MonoBehaviour
                     bh.setChosenMaterial();
                 }
                 if (chosenObj.name != "empty") {
-                    //bh.changeMaterial(backgroundMat);
-                    bh.setBackMaterial();
+                    bh.changeMaterial(backgroundMat);
+                    //bh.setBackMaterial();
                 }
                 if (chosenObj.name == bh.gameObject.name) {
                     //

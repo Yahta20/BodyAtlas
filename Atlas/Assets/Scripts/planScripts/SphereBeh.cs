@@ -16,7 +16,9 @@ public class SphereBeh : MonoBehaviour
     public ReactiveProperty <Vector2> clickPos { get; private set; }
     
     public Vector3 clicPlace;
-    public Vector3 Debug2;
+    public Vector3 ScrollclicPlace;
+
+    public Vector3 CameraPlase;
     
     public Camera camera;
     
@@ -29,15 +31,11 @@ public class SphereBeh : MonoBehaviour
     public float cameraMaxZoom = 25f;
     [Range(25, 60)]
     public float cameraMinZoom = 60f;
+    
     void Awake()
     {
         Instance = this;
     }
-    // Start is called before the first frame update
-        //camera = GetComponent<Camera>();
-                //Debug = input;
-                //Debug2 = distance;
-          //.Buffer(TimeSpan.FromMilliseconds(500))
         
     void Start()
     {
@@ -47,17 +45,19 @@ public class SphereBeh : MonoBehaviour
         movi.Movement
             .Where(v => v!= Vector2.zero)
             .Subscribe(input => {
-                var inputVelocity = input * speedmov;
-                var x = inputVelocity.x;
-                var z = inputVelocity.y*Vector3.up;//
+                Movement(input);
+                //var inputVelocity = input * speedmov;
+                //var x = inputVelocity.x;
+                //var z = inputVelocity.y*Vector3.up;//
+                //
+                //var playerVelocity = //new Vector3(x, 0, z.z);
+                //inputVelocity.x * this.gameObject.transform.right + // x (+/-) corresponds to strafe right/left
+                //inputVelocity.y * this.gameObject.transform.up; // y (+/-) corresponds to forward/back
+                //
+                //
+                //var distance = playerVelocity * Time.fixedDeltaTime;
+                //transform.Translate(distance, Space.World);
 
-                var playerVelocity = //new Vector3(x, 0, z.z);
-                inputVelocity.x * this.gameObject.transform.right + // x (+/-) corresponds to strafe right/left
-                inputVelocity.y * this.gameObject.transform.up; // y (+/-) corresponds to forward/back
-                
-
-                var distance = playerVelocity * Time.fixedDeltaTime;
-                transform.Translate(distance, Space.World);
             }).AddTo(this);
 
         movi.zoomScroll
@@ -101,7 +101,6 @@ public class SphereBeh : MonoBehaviour
             })
             .AddTo(this);
 
-
         movi.yMoving
             .Where(y => y != 0)
             .Subscribe(s => {
@@ -110,7 +109,65 @@ public class SphereBeh : MonoBehaviour
             })
             .AddTo(this);
 
+        movi.ScrollClick
+            .Where(sp=> sp != Vector2.zero)
+            .Subscribe(s => {
+                ScrollclicPlace = s;
+            })
+            .AddTo(this);
+        
+        movi.ScrollDrag
+            .Where(v => v != Vector2.zero)
+            .Subscribe(s => {
+                var currentPos = s;
+                var deltaX = currentPos.x - ScrollclicPlace.x;
+                var deltaY = currentPos.y - ScrollclicPlace.y;
+                Movement(new Vector2(-deltaX, -deltaY));
+                ScrollclicPlace = s;
+            })
+            .AddTo(this);
 
+
+
+        var CmrMoving = Observable.EveryFixedUpdate().
+            Subscribe(_ => {
+                if (ClassroomBeh.Instance.chosenObj.name == "empty") {
+                    CameraPlase = camera.transform.position;
+                }
+                else { }
+            }).
+            AddTo(this);
+
+
+    }
+
+    private void RotationByPress(Vector2 inputVector) {
+        var curr = transform.rotation;
+        transform.rotation = Quaternion.SlerpUnclamped(transform.rotation, transform.rotation*Quaternion.Euler(-inputVector.y, inputVector.x, 0), Time.deltaTime*10);
+        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y,0);
+    } 
+
+    public void Movement(Vector2 input)
+    {
+        var inputVelocity = input * speedmov;
+        var x = inputVelocity.x;
+        var z = inputVelocity.y * Vector3.up;//
+
+        var playerVelocity = //new Vector3(x, 0, z.z);
+        inputVelocity.x * this.gameObject.transform.right + // x (+/-) corresponds to strafe right/left
+        inputVelocity.y * this.gameObject.transform.up; // y (+/-) corresponds to forward/back
+
+
+        var distance = playerVelocity * Time.fixedDeltaTime;
+        transform.Translate(distance, Space.World);
+
+    }
+
+    // Start is called before the first frame update
+        //camera = GetComponent<Camera>();
+                //Debug = input;
+                //Debug2 = distance;
+          //.Buffer(TimeSpan.FromMilliseconds(500))
         /*\\, Space.World
         this.OnMouseDragAsObservable()
             .Subscribe(s =>
@@ -169,15 +226,9 @@ public class SphereBeh : MonoBehaviour
             }).AddTo(this);
          */
 
-    }
-    private void RotationByPress(Vector2 inputVector) {
         //inputVector.
-        var curr = transform.rotation;
-        transform.rotation = Quaternion.SlerpUnclamped(transform.rotation, transform.rotation*Quaternion.Euler(-inputVector.y, inputVector.x, 0), Time.deltaTime*10);
-        transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y,0);
         //transform.rotation = Quaternion.Euler(-inputVector.y, inputVector.x,0);
         //transform.Rotate(-inputVector.y, inputVector.x, 0); // .eulerAngles(-inputVector.y, inputVector.x, 0)
-    } 
     /*
     private Quaternion ClampRotationAroundXAxis(Quaternion q, float minAngle, float maxAngle)
     {
@@ -206,12 +257,9 @@ public class SphereBeh : MonoBehaviour
         return q;// ua;						
     }
      */
-
-    void Update()
-    {
         //if (Input.GetKeyDown(KeyCode.Mouse1))
         //{
         //    print(Input.mousePosition);
         //}
-    }
+
 }
