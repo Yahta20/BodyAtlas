@@ -17,6 +17,7 @@ public class BoneBih : MonoBehaviour
     public Material defMat;
     public Material backMat;
 
+    private Quaternion startRot;
     private Vector2 screenBounds;
     private Transform startPos;
     
@@ -24,7 +25,7 @@ public class BoneBih : MonoBehaviour
     void Awake() {
         boneCollider = this.gameObject.GetComponent<Collider>();
         specPlases = new List<Transform>();
-
+        startRot = gameObject.transform.rotation;
         if (this.transform.childCount!=0) { 
             foreach (Transform t in this.transform) {
                 specPlases.Add(t);
@@ -80,6 +81,9 @@ public class BoneBih : MonoBehaviour
 
 
 
+    public void setStartRot() {
+        gameObject.transform.rotation = startRot;
+    }
 
     public void unchek() {
         chosen = false;    

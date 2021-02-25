@@ -126,9 +126,11 @@ public class ClassroomBeh : MonoBehaviour
                 {
                     //bh.changeMaterial(regularMat);
                     bh.setChosenMaterial();
+                    bh.setStartRot();
                 }
                 if (chosenObj.name != "empty") {
                     bh.changeMaterial(backgroundMat);
+                    bh.setStartRot();
                     //bh.setBackMaterial();
                 }
                 if (chosenObj.name == bh.gameObject.name) {

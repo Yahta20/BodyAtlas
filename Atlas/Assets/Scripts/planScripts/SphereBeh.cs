@@ -35,6 +35,7 @@ public class SphereBeh : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        
     }
         
     void Start()
@@ -94,10 +95,21 @@ public class SphereBeh : MonoBehaviour
                 var currentPos = s;
                 var deltaX = currentPos.x - clicPlace.x;
                 var deltaY = currentPos.y - clicPlace.y;
-                RotationByPress(
-                    new Vector2(deltaX, deltaY)
-                    );
+                if (ClassroomBeh.Instance.chosenObj.name == "empty")
+                {
+                    RotationByPress(
+                        new Vector2(deltaX, deltaY)
+                        );
+                }
+                if (ClassroomBeh.Instance.chosenObj.name != "empty")
+                {
+                    RotateBone(new Vector2(deltaX, deltaY));
+                    //print("ewfweefwef"+ deltaX+"|"+deltaY);
+                }
+
                 clicPlace = s;
+
+
             })
             .AddTo(this);
 
@@ -127,18 +139,31 @@ public class SphereBeh : MonoBehaviour
             })
             .AddTo(this);
 
-
-
         var CmrMoving = Observable.EveryFixedUpdate().
             Subscribe(_ => {
                 if (ClassroomBeh.Instance.chosenObj.name == "empty") {
-                    CameraPlase = camera.transform.position;
+                    
                 }
-                else { }
+                else {
+                    //print(" w2s"+camera.WorldToScreenPoint(ClassroomBeh.Instance.chosenObj.transform.position));
+                   // print(" w2v" + camera.WorldToViewportPoint(ClassroomBeh.Instance.chosenObj.transform.position));
+
+                }
             }).
             AddTo(this);
 
 
+    }
+
+    private void RotateBone(Vector2 v)
+    {
+        var curr = ClassroomBeh.Instance.chosenObj.transform.rotation;
+        ClassroomBeh.Instance.chosenObj.transform.rotation = 
+            Quaternion.SlerpUnclamped(ClassroomBeh.Instance.chosenObj.transform.rotation,
+            ClassroomBeh.Instance.chosenObj.transform.rotation * Quaternion.Euler(v.y, v.x, 0), Time.deltaTime * 10);
+        ClassroomBeh.Instance.chosenObj.transform.rotation = 
+            Quaternion.Euler(ClassroomBeh.Instance.chosenObj.transform.rotation.eulerAngles.x, 
+            ClassroomBeh.Instance.chosenObj.transform.rotation.eulerAngles.y, 0);
     }
 
     private void RotationByPress(Vector2 inputVector) {
