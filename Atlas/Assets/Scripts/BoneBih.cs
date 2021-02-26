@@ -73,6 +73,7 @@ public class BoneBih : MonoBehaviour
         backMat.name = "Background";
         backMat = new Material(backMat);
     }
+
     private void updateFoo()
     {
         currentRender.enabled = false;
@@ -84,7 +85,6 @@ public class BoneBih : MonoBehaviour
     public void setStartRot() {
         gameObject.transform.rotation = startRot;
     }
-
     public void unchek() {
         chosen = false;    
     }

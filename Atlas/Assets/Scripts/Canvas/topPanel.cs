@@ -16,6 +16,7 @@ public class topPanel : MonoBehaviour
     public Image scroll;
     public Image exit;
     public Image lang;
+    public Image flag;
     public Text typolang;
     public Text nlang;
 
@@ -184,8 +185,13 @@ public class topPanel : MonoBehaviour
         //-change
         var rtlang = lang.rectTransform;
         rtlang.sizeDelta            = new Vector2(TopPanel.sizeDelta.y * 0.9f, TopPanel.sizeDelta.y * 0.9f);
-        rtlang.anchoredPosition     = new Vector2(TopPanel.sizeDelta.y * 0.05f, 0);
-        
+        rtlang.anchoredPosition     = new Vector2(0, -TopPanel.sizeDelta.y * 0.05f);
+
+        //-fang
+        var rtflag = flag.rectTransform;
+        rtflag.sizeDelta = new Vector2(rtlang.sizeDelta.y * 0.91f, rtlang.sizeDelta.y * 0.55f);
+        rtflag.anchoredPosition = new Vector2(TopPanel.sizeDelta.y * 0.05f, 0);
+
         //-tip yazika
         //var rttypolang = typolang.rectTransform;
         //rttypolang.sizeDelta        = new Vector2(TopPanel.sizeDelta.x * 0.72f, TopPanel.sizeDelta.y);

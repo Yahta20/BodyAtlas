@@ -70,12 +70,6 @@ public class ClassroomBeh : MonoBehaviour
     }
 
 
-                
-                
-
-
-
-
     private void getBoneBihScrpt()
     {
         foreach (Transform obj in transform)
@@ -117,8 +111,6 @@ public class ClassroomBeh : MonoBehaviour
                 bh.setChosenMaterial();
 
             }
-
-
 
             if (!bh.chosen)
             {
