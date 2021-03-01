@@ -5,12 +5,15 @@ ScriptsOnlyBuild:
     - CameraBeh
     - ClassroomBeh
     - GameManager
+    - LangImageBeh
     - LangManage
     - Moving
     - SphereBeh
     - UIManager
     - rightPanel
     - topPanel
+    Unity.2D.Sprite.Editor.dll:
+    - UnityEditor.U2D.Sprites.SpriteEditorWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     UnityEditor.TestRunner.dll:
@@ -101,6 +104,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 14444}
     - Class: 114
       Script: {instanceID: 14460}
+    - Class: 114
+      Script: {instanceID: 14558}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -412,7 +417,7 @@ ScriptsOnlyBuild:
     className: EventSystem
   - hash:
       serializedVersion: 2
-      Hash: ec3282018c19742b1105538152d944b3
+      Hash: 3e0fa3c7b545a1ae0c925261aac83cd1
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: topPanel
@@ -944,6 +949,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: ffdd492041cf4f62979122e58a55a6cf
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LangImageBeh
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
