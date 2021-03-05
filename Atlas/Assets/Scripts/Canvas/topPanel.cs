@@ -12,7 +12,7 @@ public class topPanel : MonoBehaviour
 
     public Canvas mainCanvas;
 
-    public RectTransform TopPanel;
+    public RectTransform rtPanel;
     public Image scroll;
     public Image exit;
     public Image lang;
@@ -39,7 +39,7 @@ public class topPanel : MonoBehaviour
     void Awake() {
         
         Instance = this;
-        TopPanel = GetComponent<RectTransform>();
+        rtPanel = GetComponent<RectTransform>();
         state = false;
         SpeedOfScrole = SpeedOfScrole == 0 ? 0.1f : SpeedOfScrole;
         changeScrean = this.FixedUpdateAsObservable()
@@ -139,13 +139,13 @@ public class topPanel : MonoBehaviour
                 //updateFoo();
                 //if (state)
                 //{
-                //    var y = Mathf.Lerp(TopPanel.anchoredPosition.y, 0, SpeedOfScrole);
-                //    TopPanel.anchoredPosition = new Vector2(TopPanel.anchoredPosition.x, y);
+                //    var y = Mathf.Lerp(rtPanel.anchoredPosition.y, 0, SpeedOfScrole);
+                //    rtPanel.anchoredPosition = new Vector2(rtPanel.anchoredPosition.x, y);
                 //    
                 //}
                 //else {
-                //    var y = Mathf.Lerp(TopPanel.anchoredPosition.y, TopPanel.sizeDelta.y, SpeedOfScrole);
-                //    TopPanel.anchoredPosition = new Vector2(TopPanel.anchoredPosition.x, y);
+                //    var y = Mathf.Lerp(rtPanel.anchoredPosition.y, rtPanel.sizeDelta.y, SpeedOfScrole);
+                //    rtPanel.anchoredPosition = new Vector2(rtPanel.anchoredPosition.x, y);
                 //}
                 //
             })
@@ -162,44 +162,44 @@ public class topPanel : MonoBehaviour
     void updateFoo(Vector2 screenSize) {
         //print(screenSize);
         //razmer okna
-        var rightPanelSize =  rightPanel.Instance.TopPanel.sizeDelta;
-        var rightPanelPos = rightPanel.Instance.TopPanel.anchoredPosition;
+        var rightPanelSize =  rightPanel.Instance.rtPanel.sizeDelta;
+        var rightPanelPos = rightPanel.Instance.rtPanel.anchoredPosition;
 
 
-        TopPanel.sizeDelta          = new Vector2(rightPanelSize.x, rightPanelSize.y*0.07f);
-        TopPanel.anchoredPosition   = new Vector2(0, 0);
+        rtPanel.sizeDelta          = new Vector2(rightPanelSize.x, rightPanelSize.y*0.07f);
+        rtPanel.anchoredPosition   = new Vector2(0, 0);
 
         //razmer kartinok
         //-vihod
         var rtExit = exit.rectTransform;
-        rtExit.sizeDelta            = new Vector2(TopPanel.sizeDelta.y * 0.9f, TopPanel.sizeDelta.y * 0.9f);
-        rtExit.anchoredPosition     = new Vector2(-TopPanel.sizeDelta.y * 0.05f,0);
+        rtExit.sizeDelta            = new Vector2(rtPanel.sizeDelta.y * 0.9f, rtPanel.sizeDelta.y * 0.9f);
+        rtExit.anchoredPosition     = new Vector2(-rtPanel.sizeDelta.y * 0.05f,0);
 
-        //.sizeDelta            = new Vector2(TopPanel.sizeDelta.y * 0.9f, TopPanel.sizeDelta.y * 0.9f);
-        //.anchoredPosition     = new Vector2(TopPanel.sizeDelta.y * 0.05f,0);
+        //.sizeDelta            = new Vector2(rtPanel.sizeDelta.y * 0.9f, rtPanel.sizeDelta.y * 0.9f);
+        //.anchoredPosition     = new Vector2(rtPanel.sizeDelta.y * 0.05f,0);
         //-scroll
         var rtScroll = scroll.rectTransform;
-        rtScroll.sizeDelta          = new Vector2(TopPanel.sizeDelta.x * 0.08f, TopPanel.sizeDelta.x * 0.08f);
+        rtScroll.sizeDelta          = new Vector2(rtPanel.sizeDelta.x * 0.08f, rtPanel.sizeDelta.x * 0.08f);
         rtScroll.anchoredPosition   = new Vector2(0, 0);
         
         //-change
         var rtlang = lang.rectTransform;
-        rtlang.sizeDelta            = new Vector2(TopPanel.sizeDelta.y * 0.9f, TopPanel.sizeDelta.y * 0.9f);
-        rtlang.anchoredPosition     = new Vector2(0, -TopPanel.sizeDelta.y * 0.05f);
+        rtlang.sizeDelta            = new Vector2(rtPanel.sizeDelta.y * 0.9f, rtPanel.sizeDelta.y * 0.9f);
+        rtlang.anchoredPosition     = new Vector2(0, -rtPanel.sizeDelta.y * 0.05f);
 
         //-fang
         var rtflag = flag.rectTransform;
         rtflag.sizeDelta = new Vector2(rtlang.sizeDelta.y * 0.91f, rtlang.sizeDelta.y * 0.55f);
-        rtflag.anchoredPosition = new Vector2(TopPanel.sizeDelta.y * 0.05f, 0);
+        rtflag.anchoredPosition = new Vector2(rtPanel.sizeDelta.y * 0.05f, 0);
 
         //-tip yazika
         //var rttypolang = typolang.rectTransform;
-        //rttypolang.sizeDelta        = new Vector2(TopPanel.sizeDelta.x * 0.72f, TopPanel.sizeDelta.y);
+        //rttypolang.sizeDelta        = new Vector2(rtPanel.sizeDelta.x * 0.72f, rtPanel.sizeDelta.y);
         //rttypolang.anchoredPosition = new Vector2(0, 0);
 
         //nazvanie
         var rtnlang = nlang.rectTransform;
-        rtnlang.sizeDelta           = new Vector2(TopPanel.sizeDelta.x * 0.70f, TopPanel.sizeDelta.y);
+        rtnlang.sizeDelta           = new Vector2(rtPanel.sizeDelta.x * 0.70f, rtPanel.sizeDelta.y);
         rtnlang.anchoredPosition    = new Vector2(0, 0);
 
     }

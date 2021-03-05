@@ -1009,12 +1009,18 @@
     "en": "hamate bone",
     "ru": "крючковидная кость",
     "point": [
-        {
-       "lat": "corpus",
+      {
+        "lat": "corpus",
         "ua": "тіло",
         "en": "body",
         "ru": "тело"
-        }
+      },
+      {
+        "lat": "hamulus ossi hamati",
+        "ua": "гачок гачкуватоїкістки",
+        "en": "hook of hamate bone",
+        "ru": "крючок крючковидной кости"
+      }
       ]
   },
  {

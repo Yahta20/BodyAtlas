@@ -195,7 +195,7 @@ TextureImporter:
         x: 466
         y: 164
         width: 85
-        height: 44
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,10 +213,10 @@ TextureImporter:
       name: gr-01 (3)_3
       rect:
         serializedVersion: 2
-        x: 468
-        y: 221
-        width: 82
-        height: 41
+        x: 467
+        y: 220
+        width: 83
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,10 +234,10 @@ TextureImporter:
       name: gr-01 (3)_4
       rect:
         serializedVersion: 2
-        x: 253
-        y: 166
-        width: 65
-        height: 65
+        x: 252
+        y: 163
+        width: 68
+        height: 68
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: gr-01 (3)_6
       rect:
         serializedVersion: 2
-        x: 34
-        y: 165
-        width: 87
-        height: 85
+        x: 37
+        y: 163
+        width: 84
+        height: 81
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

@@ -65,7 +65,7 @@ public class SphereBeh : MonoBehaviour
             .Where(v => v != 0)
             .Subscribe(sub =>
             {
-                var xPassLine = Screen.width-rightPanel.Instance.TopPanel.sizeDelta.x;// Input.mousePosition.x;
+                var xPassLine = Screen.width-rightPanel.Instance.rtPanel.sizeDelta.x;// Input.mousePosition.x;
                 var fov = camera.fieldOfView;
                 
 

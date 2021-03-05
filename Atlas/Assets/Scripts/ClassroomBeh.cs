@@ -14,6 +14,8 @@ public class ClassroomBeh : MonoBehaviour
     //public Material chosenMat;
     public Material backgroundMat;
 
+    
+
     public GameObject chosenObj;
     private GameObject emptyObj;
     public List<BoneBih> objOnScene             {get; private set;}
@@ -130,6 +132,7 @@ public class ClassroomBeh : MonoBehaviour
                     chosenObj = emptyObj;
                 }
             }
+
         }
     }
                 

@@ -23,7 +23,10 @@ public class UIManager : MonoBehaviour
         Instance = this;
         mainCanvas = GetComponent<Canvas>();
         cs4work = mainCanvas.GetComponent<CanvasScaler>();
-        
+
+        //TopPanel = topPanel.Instance.rtPanel;
+        //RightPanel = rightPanel.Instance.rtPanel; 
+
         screenSize = this.FixedUpdateAsObservable()
         .Select(w =>
         {

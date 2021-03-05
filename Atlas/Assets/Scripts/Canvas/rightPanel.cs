@@ -10,7 +10,7 @@ public class rightPanel : MonoBehaviour
 {
     public static rightPanel Instance;
 
-    public RectTransform TopPanel;
+    public RectTransform rtPanel;
     public GameObject Prefab;
     public GameObject Content;
 
@@ -39,7 +39,7 @@ public class rightPanel : MonoBehaviour
     void Awake()
     {
         Instance = this;
-        TopPanel = GetComponent<RectTransform>();
+        rtPanel = GetComponent<RectTransform>();
         screenSize = new Vector2(Screen.width, Screen.height);
         state = false;
         stateCR = false;
@@ -60,6 +60,8 @@ public class rightPanel : MonoBehaviour
     }
 
 
+    
+    
     void Start()
     {
         //updateFoo();
@@ -124,16 +126,14 @@ public class rightPanel : MonoBehaviour
                     //Main.text = "Sceleton";
                     Main.text = BoneDic[GameEnviroment.Singelton.languageInfo];
                     if (!init) {
-                        if (croom.objOnScene.Count!=0) { 
-                        
-                        clearContent();
-                        MakelistOfBones();
-                        init=true;
-                        chosenObj = croom.chosenObj.name;
+                        if (croom.objOnScene.Count!=0) {                       
+                            clearContent();
+                            MakelistOfBones();
+                            init=true;
+                            chosenObj = croom.chosenObj.name;
                         }
                     }
                 }
-
                 if (croom.chosenObj.name != "empty")
                 {
                     BoneNameDic = LangManage.instance.FindBoneDic(croom.chosenObj.name);
@@ -149,17 +149,14 @@ public class rightPanel : MonoBehaviour
                 }
                 if (state)
                 {
-                    var x = Mathf.Lerp(TopPanel.anchoredPosition.x, 0, SpeedOfScrole);
-                    TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
+                    var x = Mathf.Lerp(rtPanel.anchoredPosition.x, 0, SpeedOfScrole);
+                    rtPanel.anchoredPosition = new Vector2(x, rtPanel.anchoredPosition.y);
                 }
                 else
                 {
-                    var x = Mathf.Lerp(TopPanel.anchoredPosition.x, TopPanel.sizeDelta.x, SpeedOfScrole);
-                    TopPanel.anchoredPosition = new Vector2(x, TopPanel.anchoredPosition.y);
+                    var x = Mathf.Lerp(rtPanel.anchoredPosition.x, rtPanel.sizeDelta.x, SpeedOfScrole);
+                    rtPanel.anchoredPosition = new Vector2(x, rtPanel.anchoredPosition.y);
                 }
-                    
-                /*
-                 */
 
             })
             .AddTo(this);
@@ -170,26 +167,26 @@ public class rightPanel : MonoBehaviour
 
     private void updateFoo(Vector2 screenSize)
     {
-        TopPanel.sizeDelta          = new Vector2(screenSize.x * 0.37f, screenSize.y );
+        rtPanel.sizeDelta          = new Vector2(screenSize.x * 0.37f, screenSize.y );
         //main panel
-        //TopPanel.anchoredPosition   = new Vector2(0, 0);
+        //rtPanel.anchoredPosition   = new Vector2(0, 0);
 
         //text of bone
         var rtMain = Main.rectTransform;
-        rtMain.sizeDelta = new Vector2(TopPanel.sizeDelta.x, TopPanel.sizeDelta.y * 0.08f);
-        rtMain.anchoredPosition = new Vector2(0, TopPanel.sizeDelta.y * 0.01f);
+        rtMain.sizeDelta = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.08f);
+        rtMain.anchoredPosition = new Vector2(0, rtPanel.sizeDelta.y * 0.01f);
 
         //background
         var rtScrAr = ScrollArea.rectTransform;
-        rtScrAr.sizeDelta = new Vector2(TopPanel.sizeDelta.x * 0.95f, TopPanel.sizeDelta.y * 0.85f);
+        rtScrAr.sizeDelta = new Vector2(rtPanel.sizeDelta.x * 0.95f, rtPanel.sizeDelta.y * 0.85f);
         rtScrAr.anchoredPosition = new Vector2(0, 0);
 
         var rtScroll = slide.rectTransform;
-        rtScroll.sizeDelta = new Vector2(TopPanel.sizeDelta.x * 0.131f, TopPanel.sizeDelta.x * 0.131f);
+        rtScroll.sizeDelta = new Vector2(rtPanel.sizeDelta.x * 0.131f, rtPanel.sizeDelta.y * 0.35f);
         rtScroll.anchoredPosition = new Vector2(0, 0);
 
         var rtScroller = scroller.rectTransform;
-        rtScroller.sizeDelta = new Vector2(TopPanel.sizeDelta.x-TopPanel.sizeDelta.x * 0.95f, TopPanel.sizeDelta.y * 0.85f);
+        rtScroller.sizeDelta = new Vector2(rtPanel.sizeDelta.x-rtPanel.sizeDelta.x * 0.95f, rtPanel.sizeDelta.y * 0.85f);
         rtScroller.anchoredPosition = new Vector2(0, 0);
 
         Image content = Content.GetComponent<Image>();
@@ -199,15 +196,15 @@ public class rightPanel : MonoBehaviour
         //print(Content.transform.childCount);
         if (Content.transform.childCount != 0) {
             var vlg = Content.GetComponent<VerticalLayoutGroup>();
-            vlg.padding.top = (int)(TopPanel.sizeDelta.x * 0.05f);
+            vlg.padding.top = (int)(rtPanel.sizeDelta.x * 0.05f);
             vlg.spacing = vlg.padding.top;
+        }
             //rtcont.sizeDelta = new Vector2(rtScrAr.sizeDelta.x, Content.transform.childCount*30);
            //
            //foreach (var item in Content.transform)
            //{
            //    var img = 
            //}
-        }
 
 
     }
@@ -216,9 +213,9 @@ public class rightPanel : MonoBehaviour
 
 
     void changeState() {
-        
         state = state == false ? true : false;
     }
+        
 
     void changeStateCR()
     {
@@ -231,20 +228,18 @@ public class rightPanel : MonoBehaviour
         foreach (var item in list)
         {
             var name = item.gameObject.name;
-            if (name != "Skeleton")
+            if (name != "osseus")
             {
                 listOname.Add(name);
             }
         }
         PublishList(listOname,true);
-        //print("List of bones");
     }
+
 
     private void MakelistOfPoints()
     {
-        //var chosen = ;
         var listOname = new List<string>();
-
         foreach (var item in ClassroomBeh.Instance.chosenObj.GetComponent<BoneBih>().specPlases)
         {
             listOname.Add(item.name);
@@ -253,19 +248,15 @@ public class rightPanel : MonoBehaviour
     }
 
 
+
     private void PublishList(List<string> srtList,bool bone) {
         int numer = 1;
         
-        //if (LangManage.instance.bones!=null) {
-        //   //print(LangManage.instance.bones.Count);
-        //}
-                //t.setName(LangManage.instance.FindBone(str));
-                //t.setName(LangManage.instance.FindPoint(str));
             
         foreach (var str in srtList)
         {
             GameObject go = Instantiate(Prefab);
-            var t= go.GetComponent<BonePointInfo>();
+            var t = go.GetComponent<BonePointInfo>();
             t.setGoName(str);
             t.setNumber(numer.ToString());
             if (bone)
@@ -278,10 +269,11 @@ public class rightPanel : MonoBehaviour
             go.transform.SetParent(Content.transform);
             numer++;
         }
-        //updateFoo();
+        boobleMaker.Instance.CreateUI(srtList);
     }
 
             
+    
     private void clearContent() {
         if (Content.transform.childCount!=0) {
             foreach (Transform t in Content.transform)
@@ -295,6 +287,9 @@ public class rightPanel : MonoBehaviour
 
 
 
+        //updateFoo();
+        //var chosen = ;
+        //print("List of bones");
     /*
     public void addQuestion(question q, int i, AudioClip ac)
     {
@@ -302,6 +297,11 @@ public class rightPanel : MonoBehaviour
         questions[i] = go;
     }
     */
+        //if (LangManage.instance.bones!=null) {
+        //   //print(LangManage.instance.bones.Count);
+        //}
+        //t.setName(LangManage.instance.FindBone(str));
+        //t.setName(LangManage.instance.FindPoint(str));
 
 
 }
