@@ -16,7 +16,37 @@ MonoBehaviour:
   m_Data:
     m_SerializedData: []
   m_GUID: 562155fbff76167479b9d9045e157011
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 7fa4cfe299f57e147b53dd962486afc0
+    m_Address: Assets/Material/infoline.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 7fa4cfe299f57e147b53dd962486afc0, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 7fa4cfe299f57e147b53dd962486afc0, type: 2}
+  - m_GUID: 9872c8e4cd2edba4db0a09fa16e81742
+    m_Address: Assets/Material/BackgroundView.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2100000, guid: 9872c8e4cd2edba4db0a09fa16e81742, type: 2}
+    m_TargetAsset: {fileID: 2100000, guid: 9872c8e4cd2edba4db0a09fa16e81742, type: 2}
+  - m_GUID: 096656d1d9f8e3b468c31c3d93ddf112
+    m_Address: Assets/model/prefab/Classroom.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 546b1526462f91e4ab538ffd4c3e9491
+    m_Address: Assets/model/prefab/Image.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: deee785902ff0614aabaf10da6ecd79c
+    m_Address: Assets/model/prefab/Point.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 0957561ddc1c69d499206812d9fd330d, type: 2}
   m_SchemaSet:

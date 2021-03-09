@@ -16,7 +16,7 @@ public class rightPanel : MonoBehaviour
 
     public Image ScrollArea;
     public Image slide;
-    
+
     public Image scroller;
 
     public Text Main;
@@ -27,7 +27,7 @@ public class rightPanel : MonoBehaviour
     public bool state { get; private set; }
 
     private bool stateCR;
-    private Vector2 screenSize;
+    private Vector2 screenSize;  
     private string chosenObj;
 
     public Dictionary<Lang, string> BoneDic { get; private set; }

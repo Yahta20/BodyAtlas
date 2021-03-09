@@ -20,7 +20,7 @@ public class boobleMaker : MonoBehaviour
 
     public RectTransform rtPanel;
     public GameObject Prefab;
-    public List<GameObject> PrefabList;
+    public List<GameObject>PrefabList;
 
     [Range(0, 0.15f)]
     public float scale;
@@ -59,10 +59,12 @@ public class boobleMaker : MonoBehaviour
     
     private void updateFoo(Vector2 screenSize)
     {
+
         var TopPanel = topPanel.Instance.rtPanel;
         var RightPanel = rightPanel.Instance.rtPanel;
         rtPanel.sizeDelta = new Vector2(screenSize.x+RightPanel.anchoredPosition.x- RightPanel.sizeDelta.x, screenSize.y);
         ListManager();
+
     }
 
 
@@ -73,6 +75,7 @@ public class boobleMaker : MonoBehaviour
             foreach (var item in PrefabList)
             {
                 var scriptGO = item.GetComponent<InfoPointBeh>();
+
                 var step = PrefabList.Count /4;
                 var region = step>0? index/ step: step;
                 scriptGO.index = index;
@@ -127,6 +130,7 @@ public class boobleMaker : MonoBehaviour
             }
         }
     }
+
     public void CreateUI(List<string> srtList) {
         clearContent();
         PublishList(srtList);
@@ -160,20 +164,24 @@ public class boobleMaker : MonoBehaviour
 
     private void PublishList(List<string> srtList)
     {
+
         int numer = 1;
         foreach (var str in srtList)
         {
+
             if (name != "osseus")
             {
              //   listOname.Add(name);
             GameObject go = Instantiate(Prefab);
             PrefabList.Add(go);
             var t = go.GetComponent<InfoPointBeh>();
+
             go.transform.SetParent(transform);
             go.name = str;
             t.setSetAncors(new Vector2 (0,-numer*50));
             t.UItext.text = numer.ToString();
             numer++;
+
             }
         }
     }

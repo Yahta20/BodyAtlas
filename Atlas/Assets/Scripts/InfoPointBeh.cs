@@ -9,6 +9,7 @@ public class InfoPointBeh : MonoBehaviour
 {
     public Text UItext;
     private RectTransform rtPanel;
+    public Transform pointToShow;
     private LineRenderer lr;
     public int index { get; set; }
     public SideOfScreen sos;
@@ -39,7 +40,8 @@ public class InfoPointBeh : MonoBehaviour
     public void updateFoo(Vector2 size)  
     {
         var BooblertPanel = boobleMaker.Instance.rtPanel;
-        var ScrollerPanel = rightPanel.Instance.slide.rectTransform;
+        var ScrollerPanel = rightPanel.Instance.rtPanel;
+
 
         var lowest = BooblertPanel.sizeDelta.x > BooblertPanel.sizeDelta.y ? BooblertPanel.sizeDelta.y : BooblertPanel.sizeDelta.x;
         setSize(new Vector2(lowest * scaleSize, lowest * scaleSize));
@@ -78,17 +80,20 @@ public class InfoPointBeh : MonoBehaviour
                 var ymin = (size.y - ScrollerPanel.sizeDelta.y);
                 var xmin = ScrollerPanel.sizeDelta.x;
 
-                xposRT += rtPanel.sizeDelta.x / 2;
-                yposRT -= rtPanel.sizeDelta.y / 2;
 
+                xposRT += rtPanel.sizeDelta.x / 2+ (ScrollerPanel.anchoredPosition.x - ScrollerPanel.sizeDelta.x);
+                yposRT -= rtPanel.sizeDelta.y / 2;
+                var str = $"{gameObject.name}:SP.AP:{ScrollerPanel.anchoredPosition- ScrollerPanel.sizeDelta}||x:{xposRT}||y:{yposRT}";
+                print(str);
                 setSetAncors(new Vector2(rtPanel.anchoredPosition.x, rtPanel.anchoredPosition.y));
+
                 break;
 
             case SideOfScreen.bottop:
                 indexI = posx >= 1 ? index - (int)indexX : index;
                 setSetAncors(new Vector2(-(((int)posx * offset) + offset * indexI), (int)posx * offset));
 
-                xposRT += rtPanel.sizeDelta.x / 2;
+                xposRT += rtPanel.sizeDelta.x / 2 + (ScrollerPanel.anchoredPosition.x  -  ScrollerPanel.sizeDelta.x);
                 yposRT += rtPanel.sizeDelta.y / 2;
                 
                 
@@ -116,8 +121,6 @@ public class InfoPointBeh : MonoBehaviour
         //setSetAncors(new Vector2(-(rtPanel.sizeDelta.x + rtPanel.sizeDelta.x * scaleSize) * index, 0));
         //setSetAncors(new Vector2(0, (rtPanel.sizeDelta.x + rtPanel.sizeDelta.x * scaleSize) * index));
         //Debug.DrawLine(start, point, Color.green);
-        //var str = $"{gameObject.name}-{xposRT}-{yposRT}";
-        //print(str);
         xposRT += (rtPanel.anchorMax.x * size.x + rtPanel.anchorMin.x * size.x) / 2 + rtPanel.anchoredPosition.x;
         yposRT += (rtPanel.anchorMax.y * size.y + rtPanel.anchorMin.y * size.y) / 2 + rtPanel.anchoredPosition.y;
 
@@ -125,18 +128,33 @@ public class InfoPointBeh : MonoBehaviour
         Vector3 start = SphereBeh.Instance.camera.ScreenToWorldPoint(new Vector3(xposRT, yposRT, SphereBeh.Instance.camera.nearClipPlane));
         Vector3 point = Vector3.zero;
 
+
+
+
         try
         {
-            if (GameObject.Find("/Classroom/" + gameObject.name).transform.position != null & ClassroomBeh.Instance.chosenObj.name == "empty") { 
+            ///////poisk po tochkam inpruv || 130 i 1337 linii oshibka nuzhno peredelaty vse norm rabotaet
+            ///////
+            if (
+                //GameObject.Find("/Classroom/" + gameObject.name).transform != null && 
+                ClassroomBeh.Instance.chosenObj.name == "empty") { 
                  point = GameObject.Find("/Classroom/"+gameObject.name).transform.position;
+                //var str = $"{gameObject.name}-{point}";
+                //print(str);
             }
-            if (ClassroomBeh.Instance.chosenObj.name != "empty")
+            if (
+                //GameObject.Find("/Classroom/" + gameObject.name).transform != null && 
+                ClassroomBeh.Instance.chosenObj.name != "empty")
             {
-                point = GameObject.Find("/Classroom/"+ ClassroomBeh.Instance.chosenObj.name+"/"+ gameObject.name).transform.localPosition;
+                point = GameObject.Find("/Classroom/"+ ClassroomBeh.Instance.chosenObj.name+"/"+ gameObject.name).transform.TransformPoint(Vector3.zero);
+            //    var str = $"{gameObject.name}-{point}";
+            //    print(str);
+                 
             }
         }
-        catch (System.Exception)
+        catch (System.Exception e)
         {
+            //print("йой"+e.ToString());
         }
 
 

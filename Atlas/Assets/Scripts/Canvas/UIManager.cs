@@ -27,7 +27,7 @@ public class UIManager : MonoBehaviour
         //TopPanel = topPanel.Instance.rtPanel;
         //RightPanel = rightPanel.Instance.rtPanel; 
 
-        screenSize = this.FixedUpdateAsObservable()
+        screenSize = this.LateUpdateAsObservable()
         .Select(w =>
         {
             if (mainCanvas == null)
@@ -36,12 +36,12 @@ public class UIManager : MonoBehaviour
             }
             else
             {
-
                 return mainCanvas.pixelRect.size;
             }
-
             return Vector2.zero;
         });
+
+
     }
     
     void Start()
