@@ -41,7 +41,7 @@ public class InfoPointBeh : MonoBehaviour
     {
         var BooblertPanel = boobleMaker.Instance.rtPanel;
         var ScrollerPanel = rightPanel.Instance.rtPanel;
-
+        var SliderPanel = rightPanel.Instance.slide.rectTransform;
 
         var lowest = BooblertPanel.sizeDelta.x > BooblertPanel.sizeDelta.y ? BooblertPanel.sizeDelta.y : BooblertPanel.sizeDelta.x;
         setSize(new Vector2(lowest * scaleSize, lowest * scaleSize));
@@ -77,14 +77,22 @@ public class InfoPointBeh : MonoBehaviour
                 setSetAncors(new Vector2(
                     -(int)posy * offset,
                             -(((int)posy * offset) + offset * indexI)));
-                var ymin = (size.y - ScrollerPanel.sizeDelta.y);
-                var xmin = ScrollerPanel.sizeDelta.x;
+                var ymin = -(size.y - SliderPanel.sizeDelta.y) /2;
+                var ymax = -(size.y+ymin);
+
+                //var str = $"{gameObject.name}:||ymn:{ymin}||yMX:{ymax}";
+                //print(str);
+
+                if (rtPanel.anchoredPosition.y<ymin*0.94f & rtPanel.anchoredPosition.y > ymax * 0.94f) {
+                    setSetAncors(new Vector2(
+                        -((int)posy * offset + SliderPanel.sizeDelta.x/2 ),
+                                -(((int)posy * offset) + offset * indexI)));
+
+                }
 
 
-                xposRT += rtPanel.sizeDelta.x / 2+ (ScrollerPanel.anchoredPosition.x - ScrollerPanel.sizeDelta.x);
+                xposRT -= (rtPanel.sizeDelta.x / 2- (ScrollerPanel.anchoredPosition.x - ScrollerPanel.sizeDelta.x));
                 yposRT -= rtPanel.sizeDelta.y / 2;
-                var str = $"{gameObject.name}:SP.AP:{ScrollerPanel.anchoredPosition- ScrollerPanel.sizeDelta}||x:{xposRT}||y:{yposRT}";
-                print(str);
                 setSetAncors(new Vector2(rtPanel.anchoredPosition.x, rtPanel.anchoredPosition.y));
 
                 break;
@@ -93,7 +101,7 @@ public class InfoPointBeh : MonoBehaviour
                 indexI = posx >= 1 ? index - (int)indexX : index;
                 setSetAncors(new Vector2(-(((int)posx * offset) + offset * indexI), (int)posx * offset));
 
-                xposRT += rtPanel.sizeDelta.x / 2 + (ScrollerPanel.anchoredPosition.x  -  ScrollerPanel.sizeDelta.x);
+                xposRT -= (rtPanel.sizeDelta.x / 2 - (ScrollerPanel.anchoredPosition.x  -  ScrollerPanel.sizeDelta.x));
                 yposRT += rtPanel.sizeDelta.y / 2;
                 
                 
