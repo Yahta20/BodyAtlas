@@ -12,10 +12,9 @@ public class UIManager : MonoBehaviour
 
     private Canvas mainCanvas;
     private CanvasScaler cs4work;
-    public RectTransform TopPanel;
-    public RectTransform RightPanel;
 
     public IObservable<Vector2> screenSize { get; private set; }
+
 
     // Start is called before the first frame update
     void Awake() {
