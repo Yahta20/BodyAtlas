@@ -16,8 +16,8 @@ public class rightPanel : MonoBehaviour
 
     public Image ScrollArea;
     public Image slide;
-
     public Image scroller;
+
 
     public Text Main;
 
