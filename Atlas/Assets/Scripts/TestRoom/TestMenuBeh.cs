@@ -47,24 +47,48 @@ public class TestMenuBeh : MonoBehaviour
                     updateFoo(s);
             }).
             AddTo(this);
+
+        //navedenie
         randImg.OnPointerEnterAsObservable().
             Subscribe(s => {
-                Description.text = "ыыыыыыыыыыыы";
+                Description.text = "Тест из случайных вопросов\nкостей и точек на них";
             }).
             AddTo(this);
 
 
         boneImg.OnPointerEnterAsObservable().
             Subscribe(s => {
-                Description.text = "їїїїїїїїїїїї";
+                Description.text = "Тест из вопросов о костях";
             }).
             AddTo(this);
 
         pontImg.OnPointerEnterAsObservable().
             Subscribe(s => {
-                Description.text = "іііііііііііі";
+                Description.text = "Тест из вопросов о точках на костях";
             }).
             AddTo(this);
+        // nagatie OnPointerDownAsObservable().
+            randImg.OnPointerDownAsObservable().
+            Subscribe(s => {
+                currentState = StateOfMenu.exit;
+            }).
+            AddTo(this);
+
+
+        boneImg.OnPointerDownAsObservable().
+            Subscribe(s => {
+                currentState = StateOfMenu.exit;
+            }).
+            AddTo(this);
+
+        pontImg.OnPointerDownAsObservable().
+            Subscribe(s => {
+                currentState = StateOfMenu.exit;
+            }).
+            AddTo(this);
+
+
+
     }
                 
                 
@@ -83,8 +107,8 @@ public class TestMenuBeh : MonoBehaviour
         FirstStep.sizeDelta         = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.75f);
         FirstStep.anchoredPosition  = Vector2.zero;
 
-        PointStep.sizeDelta         = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.75f);
-        PointStep.anchoredPosition  = Vector2.zero;
+        //PointStep.sizeDelta         = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.75f);
+        //PointStep.anchoredPosition  = Vector2.zero;
 
         rtMainText.sizeDelta        = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.15f);
         rtDescription.sizeDelta     = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.15f);
@@ -121,27 +145,28 @@ public class TestMenuBeh : MonoBehaviour
 
 
     }
+
     private void startState()
     {
-                this.gameObject.SetActive(true);
+        this.gameObject.SetActive(true);
         FirstStep.gameObject.SetActive(true);
-        PointStep.gameObject.SetActive(false);
+        //PointStep.gameObject.SetActive(false);
     }
         
-
     private void choseBoneState()
     {
-                this.gameObject.SetActive(true);
+        this.gameObject.SetActive(true);
         FirstStep.gameObject.SetActive(false);
-        PointStep.gameObject.SetActive(true);
+        //PointStep.gameObject.SetActive(true);
     }
-        
 
     private void exitState()
     {
                 this.gameObject.SetActive(false);
         
     }
+        
+
         
 
 }
