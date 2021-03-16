@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UniRx;
 using UniRx.Triggers;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class StartMenuBeh : MonoBehaviour
 {
@@ -13,27 +14,36 @@ public class StartMenuBeh : MonoBehaviour
     public RectTransform rtPanel;
     public RectTransform LangStep;
     public RectTransform RoomStep;
+    [Space]
+    public TMP_Text LangText;
+    public TMP_Text ModeText;
 
-    public Text MainText;
-    public Text Description;
+    //public TextMeshPro MainText;
+    //public Text Description;
 
+    [Space]
     public Image UaImg;
     public Image EngImg;
     public Image RuImg;
+    [Space]
+    public RectTransform Atlas;
+    public RectTransform Exam  ;
+
 
     public enum StartMenuState {
         hide=0,
         langChose=1,
         roomChose=2,
     }
+    
 
-    public StartMenuState curentstate;
+    public StartMenuState currentState;
 
     void Awake()
     {
         Instance = this;
         rtPanel = GetComponent<RectTransform>();
-        curentstate = StartMenuState.langChose;
+        currentState = StartMenuState.langChose;
     }
        
     private void Start()
@@ -48,7 +58,7 @@ public class StartMenuBeh : MonoBehaviour
             AddTo(this);
 
         //navedenie
-        
+
         /*
         randImg.OnPointerEnterAsObservable().
             Subscribe(s => {
@@ -68,26 +78,31 @@ public class StartMenuBeh : MonoBehaviour
                 Description.text = "Тест из вопросов о точках на костях";
             }).
             AddTo(this);
-        // nagatie OnPointerDownAsObservable().
-        randImg.OnPointerDownAsObservable().
-        Subscribe(s => {
-            currentState = StateOfMenu.exit;
-        }).
-        AddTo(this);
 
-
-        boneImg.OnPointerDownAsObservable().
-            Subscribe(s => {
-                currentState = StateOfMenu.exit;
-            }).
-            AddTo(this);
-
-        pontImg.OnPointerDownAsObservable().
-            Subscribe(s => {
-                currentState = StateOfMenu.exit;
-            }).
-            AddTo(this);
          */
+
+        // nagatie OnPointerDownAsObservable().
+        UaImg.OnPointerDownAsObservable().
+            Subscribe(s => {
+                currentState = StartMenuState.roomChose;
+                GameEnviroment.Singelton.setUILanguage(LangUI.ua);
+            }).
+            AddTo(this);
+
+
+        EngImg.OnPointerDownAsObservable().
+            Subscribe(s => {
+                currentState = StartMenuState.roomChose;
+                GameEnviroment.Singelton.setUILanguage(LangUI.eng);
+            }).
+            AddTo(this);
+
+        RuImg.OnPointerDownAsObservable().
+            Subscribe(s => {
+                currentState = StartMenuState.roomChose;
+                GameEnviroment.Singelton.setUILanguage(LangUI.ru);
+            }).
+            AddTo(this);
 
 
 
@@ -107,15 +122,68 @@ public class StartMenuBeh : MonoBehaviour
     }
     private void updateFoo(Vector2 size)
     {
+        //var rtMainText = mtPanel.rectTransform;
+        //var rtDescription = Description.rectTransform;
+        
+
+        var rtUAImg  = UaImg.rectTransform;
+        var rtENGImg = EngImg.rectTransform;
+        var rtRUImg  = RuImg.rectTransform;
+
+        rtPanel.sizeDelta = size;
+        rtPanel.anchoredPosition = Vector2.zero;
+
+        var side4Blok = size.x > size.y ? size.y : size.x;
+
+        LangStep.sizeDelta = new Vector2(side4Blok*0.68f, side4Blok * 0.68f) ;
+        RoomStep.sizeDelta = new Vector2(side4Blok * 0.68f, side4Blok * 0.68f);
+        
+        var mtPanel = LangText.rectTransform;
+        mtPanel.sizeDelta = new Vector2(LangStep.sizeDelta.x, LangStep.sizeDelta.x * 0.16f); 
+        mtPanel.anchoredPosition = Vector2.zero;
+
+        var roomPanel = ModeText.rectTransform;
+        roomPanel.sizeDelta = new Vector2(LangStep.sizeDelta.x, LangStep.sizeDelta.x * 0.16f);
+        roomPanel.anchoredPosition = Vector2.zero;
+        //LANG PANEL
+        var yFlagSpace = (LangStep.sizeDelta.y - mtPanel.sizeDelta.y) / 3;
+        var yFlag = yFlagSpace * 0.81f;
+        rtRUImg.sizeDelta  = new Vector2(yFlag*1.5F, yFlag);
+        rtRUImg.anchoredPosition = new Vector2(0, yFlagSpace-yFlag);
+
+        rtENGImg.sizeDelta = new Vector2(yFlag * 1.5F, yFlag);
+        rtENGImg.anchoredPosition = new Vector2(0, (yFlagSpace - yFlag)*2+ yFlag);
+
+        rtUAImg.sizeDelta  = new Vector2(yFlag * 1.5F, yFlag);
+        rtUAImg.anchoredPosition = new Vector2(0, (yFlagSpace - yFlag) * 3 + yFlag*2);
+        //ROOM panel
+        Atlas.sizeDelta = new Vector2(yFlag , yFlag*0.5f);
+        Atlas.anchoredPosition = new Vector2(-roomPanel.sizeDelta.x * 0.25f, 0);
+
+        Exam.sizeDelta = new Vector2(yFlag , yFlag * 0.5f);
+        Exam.anchoredPosition = new Vector2(roomPanel.sizeDelta.x * 0.25f, 0);
+        
+        
+
+
+
+
+        switch (currentState)
+        {
+            case StartMenuState.hide:
+                exitState();
+                break;
+            case StartMenuState.langChose:
+                startState();
+                break;
+            case StartMenuState.roomChose:
+                roomChose();
+                break;
+            default:
+                break;
+        }
+
         /*
-        var rtMainText = MainText.rectTransform;
-        var rtDescription = Description.rectTransform;
-        var rtrandImg = randImg.rectTransform;
-        var rtboneImg = boneImg.rectTransform;
-        var rtpontImg = pontImg.rectTransform;
-
-        rtPanel.sizeDelta = new Vector2(size.x * 0.62f, size.y * 0.62f);
-
         FirstStep.sizeDelta = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.75f);
         FirstStep.anchoredPosition = Vector2.zero;
 
@@ -133,23 +201,6 @@ public class StartMenuBeh : MonoBehaviour
         rtrandImg.anchoredPosition = new Vector2(-FirstStep.sizeDelta.x * 0.32f, FirstStep.sizeDelta.y * 0.16f);
         rtboneImg.anchoredPosition = new Vector2(0, FirstStep.sizeDelta.y * 0.16f);
         rtpontImg.anchoredPosition = new Vector2(FirstStep.sizeDelta.x * 0.32f, FirstStep.sizeDelta.y * 0.16f);
-        switch (currentState)
-        {
-            case StateOfMenu.start:
-                startState();
-
-                break;
-            case StateOfMenu.choseBone:
-                choseBoneState();
-
-                break;
-            case StateOfMenu.exit:
-                exitState();
-
-                break;
-            default:
-                break;
-        }
          */
 
 
@@ -161,15 +212,15 @@ public class StartMenuBeh : MonoBehaviour
     private void startState()
     {
         this.gameObject.SetActive(true);
-        //FirstStep.gameObject.SetActive(true);
-        //PointStep.gameObject.SetActive(false);
+        LangStep.gameObject.SetActive(true);
+        RoomStep.gameObject.SetActive(false);
     }
 
-    private void choseBoneState()
+    private void roomChose()
     {
         this.gameObject.SetActive(true);
-        //FirstStep.gameObject.SetActive(false);
-        //PointStep.gameObject.SetActive(true);
+        LangStep.gameObject.SetActive(false);
+        RoomStep.gameObject.SetActive(true);
     }
 
     private void exitState()

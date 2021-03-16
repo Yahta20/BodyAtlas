@@ -11,7 +11,8 @@ public enum Lang {
 public enum LangUI
 {
     ua = 0,
-    eng = 1
+    eng = 1,
+    ru = 2
 };
 
 public sealed class GameEnviroment
@@ -37,6 +38,10 @@ public sealed class GameEnviroment
     public LangUI languageUi { get; private set;}
 
 
+    public void setUILanguage(LangUI l)
+    {
+        languageUi = l;
+    }
 
     public void setLanguage(Lang l)
     {

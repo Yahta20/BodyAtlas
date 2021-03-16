@@ -11,9 +11,22 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Assertions.Must;
 using UnityEngine.UI;
 
-public class LangManage : MonoBehaviour
+public sealed class LangManage : MonoBehaviour
 {
     public static LangManage instance;
+
+    public static LangManage Singelton
+    {
+        get
+        {
+            if (instance == null)
+            {
+                instance = new LangManage();
+            }
+            return instance;
+        }
+    }
+
     public Lang currentLang;
     public LangUI currentUILang;
     public List <BoneNameClass> bones {get; private set;}
