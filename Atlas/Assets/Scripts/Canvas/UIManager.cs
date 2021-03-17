@@ -13,7 +13,7 @@ public class UIManager : MonoBehaviour
     private Canvas mainCanvas;
     private CanvasScaler cs4work;
 
-    public IObservable<Vector2> screenSize { get; private set; }
+    public IObservable <Vector2> screenSize { get; private set; }
 
 
     // Start is called before the first frame update

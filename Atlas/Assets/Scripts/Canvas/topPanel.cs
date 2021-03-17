@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UniRx;
 using UniRx.Triggers;
+using UnityEngine.SceneManagement;
 
 public class topPanel : MonoBehaviour
 {
@@ -68,23 +69,30 @@ public class topPanel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //updateFoo();
+        //updateFoo(mainCanvas.pixelRect.size);
 
         var movi = Moving.Instance;
         var uiMng = UIManager.Instance;
-            //o=> { var v = o;
-            // updateFoo();}
-            //Buffer(2).
-            //Where(w=>w[1]!=w[0]).
-                //print(s);
+        //o=> { var v = o;
+        // updateFoo();}
+        //Buffer(2).
+        //Where(w=>w[1]!=w[0]).
+        //print(s);
 
-        uiMng.screenSize.
+        var screen = uiMng.screenSize.
             Where(w => w != Vector2.zero).
-            DistinctUntilChanged().
-            Subscribe(s => {
-                updateFoo(s);
-            } )
-            .AddTo(this);
+        //TimeInterval().
+        //DistinctUntilChanged().
+        Subscribe(s => {
+            updateFoo(s);
+        } )
+        .AddTo(this);
+
+
+        // 出力
+        //dClick1.Subscribe(b => Debug.Log(b ? "シングルクリック" : "ダブルクリック");
+        // ↑ 3項演算子によるシングル、ダブルクリック出力
+
 
         movi.mainPanel.
             Where(w => w != false).
@@ -99,7 +107,8 @@ public class topPanel : MonoBehaviour
 
         exit.OnPointerDownAsObservable().
             Subscribe(s => {
-                Application.Quit();
+                //Application.Quit();
+                StartScene();
             }).
             AddTo(this);
 
@@ -133,9 +142,9 @@ public class topPanel : MonoBehaviour
              }).
              AddTo(this);
 
-        var boneUpdate = Observable.EveryLateUpdate()
-            .Subscribe(
-            s => {
+        //var boneUpdate = Observable.EveryLateUpdate()
+        //    .Subscribe(
+        //    s => {
                 //updateFoo();
                 //if (state)
                 //{
@@ -148,8 +157,8 @@ public class topPanel : MonoBehaviour
                 //    rtPanel.anchoredPosition = new Vector2(rtPanel.anchoredPosition.x, y);
                 //}
                 //
-            })
-            .AddTo(this);
+          //  })
+          //  .AddTo(this);
     }
 
 
@@ -204,7 +213,10 @@ public class topPanel : MonoBehaviour
 
     }
 
-
+    public void StartScene()
+    {
+        SceneManager.LoadScene(0);
+    }
 
 
 

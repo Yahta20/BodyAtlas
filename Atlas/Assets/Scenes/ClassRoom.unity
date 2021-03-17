@@ -10592,6 +10592,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6718751175675367990, guid: ad3557c64bc247f46b9b39ab7d28e2a6,
+        type: 3}
+      propertyPath: rtPanel
+      value: 
+      objectReference: {fileID: 1523114851}
+    - target: {fileID: 6718751175675367990, guid: ad3557c64bc247f46b9b39ab7d28e2a6,
+        type: 3}
+      propertyPath: mainCanvas
+      value: 
+      objectReference: {fileID: 364498156}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad3557c64bc247f46b9b39ab7d28e2a6, type: 3}
 --- !u!4 &6735399942518767506

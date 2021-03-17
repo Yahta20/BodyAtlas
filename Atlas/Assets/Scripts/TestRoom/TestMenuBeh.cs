@@ -11,7 +11,8 @@ public class TestMenuBeh : MonoBehaviour
 
     public RectTransform rtPanel;
     public RectTransform FirstStep;
-    public RectTransform PointStep;
+    //public RectTransform rtResult;
+    [Space]
 
     public Text MainText;
     public Text Description;
@@ -24,19 +25,20 @@ public class TestMenuBeh : MonoBehaviour
     public enum StateOfMenu { 
         start=0,
         choseBone=1,
-        exit=2
+        exit=2,
+        result=3
     }
 
     public StateOfMenu currentState;
 
     void Awake()
     {
-
         Instance = this; 
         rtPanel = GetComponent<RectTransform>();
         currentState=StateOfMenu.start;
-
     }
+
+
     private void Start()
     {
 
@@ -67,8 +69,9 @@ public class TestMenuBeh : MonoBehaviour
                 Description.text = "Тест из вопросов о точках на костях";
             }).
             AddTo(this);
+
         // nagatie OnPointerDownAsObservable().
-            randImg.OnPointerDownAsObservable().
+        randImg.OnPointerDownAsObservable().
             Subscribe(s => {
                 currentState = StateOfMenu.exit;
             }).
@@ -87,9 +90,9 @@ public class TestMenuBeh : MonoBehaviour
             }).
             AddTo(this);
 
-
-
     }
+
+
                 
                 
                 
@@ -130,11 +133,14 @@ public class TestMenuBeh : MonoBehaviour
                 break;
             case StateOfMenu.choseBone:
                 choseBoneState();
-                
+
                 break;
             case StateOfMenu.exit:
                 exitState();
-                
+
+                break;
+            case StateOfMenu.result:
+
                 break;
             default:
                 break;
@@ -165,8 +171,14 @@ public class TestMenuBeh : MonoBehaviour
                 this.gameObject.SetActive(false);
         
     }
-        
 
-        
+    private void resultState()
+    {
+        this.gameObject.SetActive(false);
+        //rtResult.gameObject.SetActive(true);
+    }
+
+
+
 
 }
