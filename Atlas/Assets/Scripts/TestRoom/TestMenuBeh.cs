@@ -74,6 +74,7 @@ public class TestMenuBeh : MonoBehaviour
         randImg.OnPointerDownAsObservable().
             Subscribe(s => {
                 currentState = StateOfMenu.exit;
+                TestManager.Instance.setState(TestManager.TypeOfTest.Random);
             }).
             AddTo(this);
 
@@ -81,12 +82,14 @@ public class TestMenuBeh : MonoBehaviour
         boneImg.OnPointerDownAsObservable().
             Subscribe(s => {
                 currentState = StateOfMenu.exit;
+                TestManager.Instance.setState(TestManager.TypeOfTest.Bones);
             }).
             AddTo(this);
 
         pontImg.OnPointerDownAsObservable().
             Subscribe(s => {
                 currentState = StateOfMenu.exit;
+                TestManager.Instance.setState(TestManager.TypeOfTest.Points);
             }).
             AddTo(this);
 
@@ -140,7 +143,7 @@ public class TestMenuBeh : MonoBehaviour
 
                 break;
             case StateOfMenu.result:
-
+                exitState();
                 break;
             default:
                 break;

@@ -28,6 +28,7 @@ public class ResultBeh : MonoBehaviour
              Where(w => w != Vector2.zero).
              //DistinctUntilChanged().
              Subscribe(s => {
+                 //print("w");
                  if (TMB.currentState == TestMenuBeh.StateOfMenu.result)
                  {
                      this.gameObject.SetActive(true);
@@ -76,18 +77,21 @@ public class ResultBeh : MonoBehaviour
 
         retryTxt.rectTransform.sizeDelta = new Vector2(rtMain.sizeDelta.x*0.12f, rtMain.sizeDelta.y * 0.07f);
         exitTxt .rectTransform.sizeDelta = new Vector2(rtMain.sizeDelta.x*0.12f, rtMain.sizeDelta.y * 0.07f);
+        retryTxt.rectTransform.anchoredPosition = Vector2.zero;
+        exitTxt.rectTransform. anchoredPosition = Vector2.zero;
+
         exitImg .rectTransform.sizeDelta = new Vector2(rtMain.sizeDelta.x*0.12f, rtMain.sizeDelta.x * 0.12f);
         retryImg.rectTransform.sizeDelta = new Vector2(rtMain.sizeDelta.x*0.12f, rtMain.sizeDelta.x * 0.12f);
 
 
         //        (rtMain.sizeDelta.x - rtListOfFail.sizeDelta.x - exitImg .rectTransform.sizeDelta.x)/2
-        retryTxt.rectTransform.anchoredPosition = new Vector2(
+        retryImg.rectTransform.anchoredPosition = new Vector2(
             -(rtMain.sizeDelta.x - rtListOfFail.sizeDelta.x - exitImg.rectTransform.sizeDelta.x) / 2,
             (rtMain.sizeDelta.x - rtListOfFail.sizeDelta.x - exitImg.rectTransform.sizeDelta.x) / 2
             );
-        exitTxt.rectTransform.anchoredPosition = new Vector2(
-            (rtMain.sizeDelta.x - rtListOfFail.sizeDelta.x - exitImg.rectTransform.sizeDelta.x) / 2
-            , exitTxt.rectTransform.sizeDelta.y + exitTxt.rectTransform.sizeDelta.y + retryTxt.rectTransform.anchoredPosition.x
+        exitImg.rectTransform.anchoredPosition = new Vector2(
+            -(rtMain.sizeDelta.x - rtListOfFail.sizeDelta.x - exitImg.rectTransform.sizeDelta.x) / 2
+            , exitTxt.rectTransform.sizeDelta.y + exitImg.rectTransform.sizeDelta.y + retryImg.rectTransform.anchoredPosition.y*2
             );
 
 
