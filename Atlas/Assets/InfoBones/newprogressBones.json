@@ -1071,21 +1071,21 @@
         }
       ]
   },
-    {
-      "lat": "os scaphoideum",
-      "ua": "човноподібна кістка",
-      "en": "scaphoid bone",
-      "ru": "ладьевидная кость",
-      "point": [
-        {
-          "lat": "corpus",
-          "ua": "тіло",
-          "en": "body",
-          "ru": "тело"
-        }
-      ]
-    },
-    {
+ {
+   "lat": "os scaphoideum",
+   "ua": "човноподібна кістка",
+   "en": "scaphoid bone",
+   "ru": "ладьевидная кость",
+   "point": [
+     {
+       "lat": "corpus",
+       "ua": "тіло",
+       "en": "body",
+       "ru": "тело"
+     }
+   ]
+ },
+ {
       "lat": "osseus",
       "ua": "скилет",
       "en": "skeleton",

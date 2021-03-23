@@ -22,14 +22,14 @@ public class ResultBeh : MonoBehaviour
         
     void Start()
     {
-        var TMB = TestMenuBeh.Instance;
+        var TMB = TestManager.Instance;
 
         var screan = UIManager.Instance.screenSize.
              Where(w => w != Vector2.zero).
              //DistinctUntilChanged().
              Subscribe(s => {
                  //print("w");
-                 if (TMB.currentState == TestMenuBeh.StateOfMenu.result)
+                 if (TMB.currentState == TestManager.TypeOfTest.Finish)
                  {
                      this.gameObject.SetActive(true);
                      updateFoo(s);

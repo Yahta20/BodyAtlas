@@ -33,20 +33,282 @@ MonoBehaviour:
     m_Address: Assets/model/prefab/Classroom.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 5010294781595565268, guid: 096656d1d9f8e3b468c31c3d93ddf112,
+      type: 3}
+    m_TargetAsset: {fileID: 5010294781595565268, guid: 096656d1d9f8e3b468c31c3d93ddf112,
+      type: 3}
   - m_GUID: 546b1526462f91e4ab538ffd4c3e9491
     m_Address: Assets/model/prefab/Image.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 5838770830719473899, guid: 546b1526462f91e4ab538ffd4c3e9491,
+      type: 3}
+    m_TargetAsset: {fileID: 5838770830719473899, guid: 546b1526462f91e4ab538ffd4c3e9491,
+      type: 3}
   - m_GUID: deee785902ff0614aabaf10da6ecd79c
     m_Address: Assets/model/prefab/Point.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 4173714399744442961, guid: deee785902ff0614aabaf10da6ecd79c,
+      type: 3}
+    m_TargetAsset: {fileID: 4173714399744442961, guid: deee785902ff0614aabaf10da6ecd79c,
+      type: 3}
+  - m_GUID: 12216ef5e59445f4f8267acf37cba661
+    m_Address: clavicula
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1428067420986002070, guid: 12216ef5e59445f4f8267acf37cba661,
+      type: 3}
+    m_TargetAsset: {fileID: 1428067420986002070, guid: 12216ef5e59445f4f8267acf37cba661,
+      type: 3}
+  - m_GUID: 63b0890450f347547b668e384f6cdb12
+    m_Address: humerus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4007569901960542378, guid: 63b0890450f347547b668e384f6cdb12,
+      type: 3}
+    m_TargetAsset: {fileID: 4007569901960542378, guid: 63b0890450f347547b668e384f6cdb12,
+      type: 3}
+  - m_GUID: 8603a3c1d80b93a4c81fc0f0e93ff743
+    m_Address: os capitatum
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5514451139902130814, guid: 8603a3c1d80b93a4c81fc0f0e93ff743,
+      type: 3}
+    m_TargetAsset: {fileID: 5514451139902130814, guid: 8603a3c1d80b93a4c81fc0f0e93ff743,
+      type: 3}
+  - m_GUID: 8fd3c487f9ee7394da12383ade0a987a
+    m_Address: os hamatum
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 585649560241828639, guid: 8fd3c487f9ee7394da12383ade0a987a,
+      type: 3}
+    m_TargetAsset: {fileID: 585649560241828639, guid: 8fd3c487f9ee7394da12383ade0a987a,
+      type: 3}
+  - m_GUID: 18a3b40a365830d4aa680713440ce91c
+    m_Address: os lunatum
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 979925954702933419, guid: 18a3b40a365830d4aa680713440ce91c,
+      type: 3}
+    m_TargetAsset: {fileID: 979925954702933419, guid: 18a3b40a365830d4aa680713440ce91c,
+      type: 3}
+  - m_GUID: d306c5548183b07418dc5ca99d9a54b7
+    m_Address: os metacarpale 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5860516262274633729, guid: d306c5548183b07418dc5ca99d9a54b7,
+      type: 3}
+    m_TargetAsset: {fileID: 5860516262274633729, guid: d306c5548183b07418dc5ca99d9a54b7,
+      type: 3}
+  - m_GUID: db2eebc21c6d93243be4544a2bcb62d5
+    m_Address: os metacarpale 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1213545467087218392, guid: db2eebc21c6d93243be4544a2bcb62d5,
+      type: 3}
+    m_TargetAsset: {fileID: 1213545467087218392, guid: db2eebc21c6d93243be4544a2bcb62d5,
+      type: 3}
+  - m_GUID: d773f238ebb8ea5499c7e38f1577fb24
+    m_Address: os metacarpale 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6067850771167474354, guid: d773f238ebb8ea5499c7e38f1577fb24,
+      type: 3}
+    m_TargetAsset: {fileID: 6067850771167474354, guid: d773f238ebb8ea5499c7e38f1577fb24,
+      type: 3}
+  - m_GUID: 1283d6165f12dac48848a811e4cd22ed
+    m_Address: os metacarpale 4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4808421104468034253, guid: 1283d6165f12dac48848a811e4cd22ed,
+      type: 3}
+    m_TargetAsset: {fileID: 4808421104468034253, guid: 1283d6165f12dac48848a811e4cd22ed,
+      type: 3}
+  - m_GUID: 94c2de5fe62209b459bb14e34097e686
+    m_Address: os metacarpale 5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 474618987555221468, guid: 94c2de5fe62209b459bb14e34097e686,
+      type: 3}
+    m_TargetAsset: {fileID: 474618987555221468, guid: 94c2de5fe62209b459bb14e34097e686,
+      type: 3}
+  - m_GUID: ec3b138359191b54bb8ea671c1390c65
+    m_Address: os pisiforme
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6492605073491042435, guid: ec3b138359191b54bb8ea671c1390c65,
+      type: 3}
+    m_TargetAsset: {fileID: 6492605073491042435, guid: ec3b138359191b54bb8ea671c1390c65,
+      type: 3}
+  - m_GUID: ef7cf8e9e37f0ec409f278ef15779056
+    m_Address: os scaphoideum
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1999607922749055429, guid: ef7cf8e9e37f0ec409f278ef15779056,
+      type: 3}
+    m_TargetAsset: {fileID: 1999607922749055429, guid: ef7cf8e9e37f0ec409f278ef15779056,
+      type: 3}
+  - m_GUID: bf5085520ea777e499d4c25aa26d5995
+    m_Address: os trapezium
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2579086204829345689, guid: bf5085520ea777e499d4c25aa26d5995,
+      type: 3}
+    m_TargetAsset: {fileID: 2579086204829345689, guid: bf5085520ea777e499d4c25aa26d5995,
+      type: 3}
+  - m_GUID: 886e51464985acb4e8f360a83214f27e
+    m_Address: os trapezoideum
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 3286632207204884816, guid: 886e51464985acb4e8f360a83214f27e,
+      type: 3}
+    m_TargetAsset: {fileID: 3286632207204884816, guid: 886e51464985acb4e8f360a83214f27e,
+      type: 3}
+  - m_GUID: 7eda6bc405685f6448498f6ca8e652b9
+    m_Address: os triquetrum
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8768182737605322743, guid: 7eda6bc405685f6448498f6ca8e652b9,
+      type: 3}
+    m_TargetAsset: {fileID: 8768182737605322743, guid: 7eda6bc405685f6448498f6ca8e652b9,
+      type: 3}
+  - m_GUID: 9eacd96d06a149d41b590cedb20f0501
+    m_Address: scapula
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1066322180064462857, guid: 9eacd96d06a149d41b590cedb20f0501,
+      type: 3}
+    m_TargetAsset: {fileID: 1066322180064462857, guid: 9eacd96d06a149d41b590cedb20f0501,
+      type: 3}
+  - m_GUID: 6ba8af072a3da92419ab6f155f81c9f7
+    m_Address: ulna
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 7139896921522247942, guid: 6ba8af072a3da92419ab6f155f81c9f7,
+      type: 3}
+    m_TargetAsset: {fileID: 7139896921522247942, guid: 6ba8af072a3da92419ab6f155f81c9f7,
+      type: 3}
+  - m_GUID: ce31262c4b13aa64681310417d598261
+    m_Address: radius
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5025444614141629601, guid: ce31262c4b13aa64681310417d598261,
+      type: 3}
+    m_TargetAsset: {fileID: 5025444614141629601, guid: ce31262c4b13aa64681310417d598261,
+      type: 3}
+  - m_GUID: ce9e33dd2155c0b4b93690e34129c666
+    m_Address: phalanx proximalis 5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5325595319788277487, guid: ce9e33dd2155c0b4b93690e34129c666,
+      type: 3}
+    m_TargetAsset: {fileID: 5325595319788277487, guid: ce9e33dd2155c0b4b93690e34129c666,
+      type: 3}
+  - m_GUID: a751e5f00b500e24a91f339150df2644
+    m_Address: phalanx media 5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8360975872673238320, guid: a751e5f00b500e24a91f339150df2644,
+      type: 3}
+    m_TargetAsset: {fileID: 8360975872673238320, guid: a751e5f00b500e24a91f339150df2644,
+      type: 3}
+  - m_GUID: 6ff422e742736ea42a00d47baed753bb
+    m_Address: phalanx distalis 5
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 5919657101164629009, guid: 6ff422e742736ea42a00d47baed753bb,
+      type: 3}
+    m_TargetAsset: {fileID: 5919657101164629009, guid: 6ff422e742736ea42a00d47baed753bb,
+      type: 3}
+  - m_GUID: afe8a34eb3e49c541a47901b5c73a4e1
+    m_Address: phalanx proximalis 4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1208497945216794592, guid: afe8a34eb3e49c541a47901b5c73a4e1,
+      type: 3}
+    m_TargetAsset: {fileID: 1208497945216794592, guid: afe8a34eb3e49c541a47901b5c73a4e1,
+      type: 3}
+  - m_GUID: 6ba44b1c413d7ee49ac803ae7c7a4ce2
+    m_Address: phalanx media 4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2898829355689285153, guid: 6ba44b1c413d7ee49ac803ae7c7a4ce2,
+      type: 3}
+    m_TargetAsset: {fileID: 2898829355689285153, guid: 6ba44b1c413d7ee49ac803ae7c7a4ce2,
+      type: 3}
+  - m_GUID: 84efc21eaab4e5948b39bbc5004ae76d
+    m_Address: phalanx distalis 4
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 8491652134018249591, guid: 84efc21eaab4e5948b39bbc5004ae76d,
+      type: 3}
+    m_TargetAsset: {fileID: 8491652134018249591, guid: 84efc21eaab4e5948b39bbc5004ae76d,
+      type: 3}
+  - m_GUID: 6cd77f9484b263a4e92c97578238d417
+    m_Address: phalanx media 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4828344220931415825, guid: 6cd77f9484b263a4e92c97578238d417,
+      type: 3}
+    m_TargetAsset: {fileID: 4828344220931415825, guid: 6cd77f9484b263a4e92c97578238d417,
+      type: 3}
+  - m_GUID: 4d40fbe27cef9cb48bb5a74ceb97acf0
+    m_Address: phalanx distalis 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 6071591103788448740, guid: 4d40fbe27cef9cb48bb5a74ceb97acf0,
+      type: 3}
+    m_TargetAsset: {fileID: 6071591103788448740, guid: 4d40fbe27cef9cb48bb5a74ceb97acf0,
+      type: 3}
+  - m_GUID: 59207aa8ced4a5b43a0c0da775cb6754
+    m_Address: phalanx media 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 404331295177891532, guid: 59207aa8ced4a5b43a0c0da775cb6754,
+      type: 3}
+    m_TargetAsset: {fileID: 404331295177891532, guid: 59207aa8ced4a5b43a0c0da775cb6754,
+      type: 3}
+  - m_GUID: 257267abd58093e4cab6020887d47108
+    m_Address: phalanx distalis 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 2180321468449696313, guid: 257267abd58093e4cab6020887d47108,
+      type: 3}
+    m_TargetAsset: {fileID: 2180321468449696313, guid: 257267abd58093e4cab6020887d47108,
+      type: 3}
+  - m_GUID: 739b0e50b35d2b44a9aa475a32026830
+    m_Address: phalanx proximalis 3
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 1912035166029953331, guid: 739b0e50b35d2b44a9aa475a32026830,
+      type: 3}
+    m_TargetAsset: {fileID: 1912035166029953331, guid: 739b0e50b35d2b44a9aa475a32026830,
+      type: 3}
+  - m_GUID: 71d4e4883ebe7c94fbe25a2f18907183
+    m_Address: phalanx proximalis 2
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4351361971331624978, guid: 71d4e4883ebe7c94fbe25a2f18907183,
+      type: 3}
+    m_TargetAsset: {fileID: 4351361971331624978, guid: 71d4e4883ebe7c94fbe25a2f18907183,
+      type: 3}
+  - m_GUID: 095ae349d63c987469f5f618f41ec818
+    m_Address: phalanx distalis 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 849907127781192417, guid: 095ae349d63c987469f5f618f41ec818,
+      type: 3}
+    m_TargetAsset: {fileID: 849907127781192417, guid: 095ae349d63c987469f5f618f41ec818,
+      type: 3}
+  - m_GUID: 381441173970a3f4eaa53cb2f963c61a
+    m_Address: phalanx proximalis 1
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4787723170051533252, guid: 381441173970a3f4eaa53cb2f963c61a,
+      type: 3}
+    m_TargetAsset: {fileID: 4787723170051533252, guid: 381441173970a3f4eaa53cb2f963c61a,
+      type: 3}
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 0957561ddc1c69d499206812d9fd330d, type: 2}
   m_SchemaSet:
