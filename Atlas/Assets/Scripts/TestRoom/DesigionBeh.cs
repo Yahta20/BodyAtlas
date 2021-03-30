@@ -20,9 +20,13 @@ public class DesigionBeh : MonoBehaviour
     public Text tWrong;
     public Text tRight;
 
+    [Space]
+    public Image backgroundC;
     public int numberInRaw;
     public string sWrong;
     public string sRight;
+
+
 
     private void Awake()
     {
@@ -33,7 +37,7 @@ public class DesigionBeh : MonoBehaviour
 
     void Start()
     {
-  
+        
     }
 
     void UIUpdate(Vector2 size,Vector2 delta) {
@@ -59,5 +63,20 @@ public class DesigionBeh : MonoBehaviour
         tNumber.text = numberInRaw.ToString();
         tWrong.text = sWrong;
         tRight.text = sRight;
+    }
+
+    public void setDesigion(string[] args) {
+        tNumber.text=args[0];
+        tWrong .text=args[1];
+        tRight .text=args[2];
+
+        if (args[1] == args[2])
+        {
+            backgroundC.color = Color.green;
+        }
+        else { 
+            backgroundC.color = Color.red;
+        }
+
     }
 }

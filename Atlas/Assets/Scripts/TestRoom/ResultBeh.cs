@@ -3,23 +3,31 @@ using UnityEngine.UI;
 using UniRx;
 using UniRx.Triggers;
 using UnityEngine.SceneManagement;
+using System.Collections.Generic;
 
 public class ResultBeh : MonoBehaviour
 {
+    public static ResultBeh Instance;
+
     public RectTransform rtMain;
     public RectTransform rtListOfFail;
-
-
     [Space]
     public Text  ResulTxt;
     public Text  retryTxt;
     public Text  exitTxt;
-
     [Space]
     public Image exitImg;
     public Image retryImg;
+    [Space]
+    public GameObject RPref;
+    
 
-        
+
+    void Awake()
+    {
+        Instance = this;
+    }
+
     void Start()
     {
         var TMB = TestManager.Instance;
@@ -62,8 +70,9 @@ public class ResultBeh : MonoBehaviour
         //
         //    })
         //    .AddTo(this);
+    //retryTxt.sizeDelta = new Vector2(size.x * 0.62f, size.y * 0.62f);
+    //exitTxt .sizeDelta = new Vector2(size.x * 0.62f, size.y * 0.62f);
     }
-
 
     private void updateFoo(Vector2 size)
     {
@@ -94,15 +103,46 @@ public class ResultBeh : MonoBehaviour
             , exitTxt.rectTransform.sizeDelta.y + exitImg.rectTransform.sizeDelta.y + retryImg.rectTransform.anchoredPosition.y*2
             );
 
-
-
-
-
-
-        //retryTxt.sizeDelta = new Vector2(size.x * 0.62f, size.y * 0.62f);
-        //exitTxt .sizeDelta = new Vector2(size.x * 0.62f, size.y * 0.62f);
-
     }
+
+    public void ClearListQuestions() {
+        if (rtListOfFail.transform.childCount != 0)
+        {
+            foreach (Transform t in rtListOfFail.transform)
+            {
+                Destroy(t.gameObject);
+            }
+        }
+    }
+
+    public void CreatingResults(string[] ansv,List<string> cheker) {
+        if (ansv.Length==cheker.Count) {
+            for (int i = 0; i < ansv.Length; i++)
+            {
+                var go = Instantiate(RPref);
+                var sgo = go.GetComponent<DesigionBeh>();
+                var info = new string[3]  {(i+1).ToString(),ansv[i],cheker[i] };
+                sgo.setDesigion(info);
+                go.transform.SetParent(rtListOfFail);
+                //tNumber.text=args[0];
+                //tWrong.text = args[1];
+                //tRight.text = args[2];
+                ///sgo.
+            }
+        }
+    }
+
+
+        
+    
+
+
+
+
+
+
+
+
 
     public void startScene()
     {

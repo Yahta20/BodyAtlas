@@ -95,11 +95,6 @@ public class TestMenuBeh : MonoBehaviour
 
     }
 
-
-                
-                
-                
-
     private void updateFoo(Vector2 size)
     {
         var rtMainText      = MainText.rectTransform;
