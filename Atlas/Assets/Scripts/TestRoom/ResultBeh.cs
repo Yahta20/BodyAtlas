@@ -30,6 +30,10 @@ public class ResultBeh : MonoBehaviour
 
     void Start()
     {
+        ResulTxt.text = TextUI.Singelton.getLabel("Retry");
+        retryTxt.text = TextUI.Singelton.getLabel("Retry");
+        exitTxt .text = TextUI.Singelton.getLabel("Exit");
+
         var TMB = TestManager.Instance;
 
         var screan = UIManager.Instance.screenSize.
@@ -116,6 +120,7 @@ public class ResultBeh : MonoBehaviour
     }
 
     public void CreatingResults(string[] ansv,List<string> cheker) {
+        int Index = 0;
         if (ansv.Length==cheker.Count) {
             for (int i = 0; i < ansv.Length; i++)
             {
@@ -123,6 +128,10 @@ public class ResultBeh : MonoBehaviour
                 var sgo = go.GetComponent<DesigionBeh>();
                 var info = new string[3]  {(i+1).ToString(),ansv[i],cheker[i] };
                 sgo.setDesigion(info);
+                if (sgo.backgroundC.color== Color.green) 
+                {
+                    Index++;
+                }
                 go.transform.SetParent(rtListOfFail);
                 //tNumber.text=args[0];
                 //tWrong.text = args[1];
@@ -130,19 +139,12 @@ public class ResultBeh : MonoBehaviour
                 ///sgo.
             }
         }
+        int acc = (Index / cheker.Count * 100);
+
+        string resik = $"{Index} / {cheker.Count} {TextUI.Singelton.getLabel("correct ansvers")}" ;
+
+        ResulTxt.text = resik;// 
     }
-
-
-        
-    
-
-
-
-
-
-
-
-
 
     public void startScene()
     {

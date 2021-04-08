@@ -157,21 +157,22 @@ public class SphereBeh : MonoBehaviour
 
     private void RotateBone(Vector2 v)
     {
-        var curr = ClassroomBeh.Instance.chosenObj.transform.rotation;
-        ClassroomBeh.Instance.chosenObj.transform.rotation = 
-            Quaternion.SlerpUnclamped(ClassroomBeh.Instance.chosenObj.transform.rotation,
-            ClassroomBeh.Instance.chosenObj.transform.rotation * Quaternion.Euler(v.y, v.x, 0), Time.deltaTime * 10);
-        ClassroomBeh.Instance.chosenObj.transform.rotation = 
-            Quaternion.Euler(ClassroomBeh.Instance.chosenObj.transform.rotation.eulerAngles.x, 
-            ClassroomBeh.Instance.chosenObj.transform.rotation.eulerAngles.y, 0);
+        //var curr = ClassroomBeh.Instance.chosenObj.transform.rotation;
+        //ClassroomBeh.Instance.chosenObj.transform.rotation = 
+        //    Quaternion.SlerpUnclamped(ClassroomBeh.Instance.chosenObj.transform.rotation,
+        //    ClassroomBeh.Instance.chosenObj.transform.rotation * Quaternion.Euler(v.y, v.x, 0), Time.deltaTime * 10);
+        ClassroomBeh.Instance.chosenObj.transform.Rotate(new Vector3(v.y, -v.x, 0), Space.World);
+        //    Quaternion.Euler(ClassroomBeh.Instance.chosenObj.transform.rotation.eulerAngles.x, 
+        //    ClassroomBeh.Instance.chosenObj.transform.rotation.eulerAngles.y, 0);
     }
 
     private void RotationByPress(Vector2 inputVector) {
-        var curr = transform.rotation;
+        //var curr = transform.rotation;
         transform.rotation = Quaternion.SlerpUnclamped(transform.rotation, transform.rotation*Quaternion.Euler(-inputVector.y, inputVector.x, 0), Time.deltaTime*10);
         transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles.x, transform.rotation.eulerAngles.y,0);
-    } 
+        //transform.Rotate(new Vector3(-inputVector.y, inputVector.x, 0), Space.World);
 
+    } 
     public void Movement(Vector2 input)
     {
         var inputVelocity = input * speedmov;

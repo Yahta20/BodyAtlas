@@ -14,19 +14,6 @@ using UnityEngine.UI;
 public sealed class LangManage : MonoBehaviour
 {
     public static LangManage instance;
-
-    public static LangManage Singelton
-    {
-        get
-        {
-            if (instance == null)
-            {
-                instance = new LangManage();
-            }
-            return instance;
-        }
-    }
-
     public Lang currentLang;
     public LangUI currentUILang;
     public List <BoneNameClass> bones {get; private set;}
@@ -35,7 +22,9 @@ public sealed class LangManage : MonoBehaviour
 
     private void Awake()
     {
+
         instance = this;
+        
         bones = new List<BoneNameClass>();
         string jsonRaw = inputData.ToString();
         json2work = JObject.Parse(jsonRaw);
@@ -77,6 +66,31 @@ public sealed class LangManage : MonoBehaviour
         return "none";
     }
 
+    public string FindBone4Test(string BoneName)
+    {
+        foreach (var item in bones)
+        {
+            if (BoneName == item.latName)
+            {
+                return item.Name[GameEnviroment.Singelton.languageInfo];
+            }
+            if (BoneName == item.uaName)
+            {
+                return item.Name[GameEnviroment.Singelton.languageInfo];
+            }
+            if (BoneName == item.ruName)
+            {
+                return item.Name[GameEnviroment.Singelton.languageInfo];
+            }
+            if (BoneName == item.enName)
+            {
+                return item.Name[GameEnviroment.Singelton.languageInfo];
+            }
+        }
+
+        return "none";
+    }
+
     public string FindPoint(string PointName)
     {
         foreach (var bone in bones)
@@ -86,6 +100,35 @@ public sealed class LangManage : MonoBehaviour
             {
                 
                 if (PointName == point[Lang.lat])
+                {
+                    return point[GameEnviroment.Singelton.languageInfo];
+                }
+
+            }
+        }
+        return "none";
+    }
+
+    public string FindPoint4Test(string PointName)
+    {
+        foreach (var bone in bones)
+        {
+
+            foreach (var point in bone.Points)
+            {
+                if (PointName == point[Lang.lat])
+                {
+                    return point[GameEnviroment.Singelton.languageInfo];
+                }
+                if (PointName == point[Lang.en])
+                {
+                    return point[GameEnviroment.Singelton.languageInfo];
+                }
+                if (PointName == point[Lang.ua])
+                {
+                    return point[GameEnviroment.Singelton.languageInfo];
+                }
+                if (PointName == point[Lang.ru])
                 {
                     return point[GameEnviroment.Singelton.languageInfo];
                 }

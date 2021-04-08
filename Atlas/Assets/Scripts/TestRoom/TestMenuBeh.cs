@@ -41,6 +41,10 @@ public class TestMenuBeh : MonoBehaviour
 
     private void Start()
     {
+        
+        MainText.text       = TextUI.Singelton.getLabel("Chose type of test");
+        Description.text    = TextUI.Singelton.getLabel("Description of the selected test");
+
 
         var screan = UIManager.Instance.screenSize.
             Where(w => w != Vector2.zero).
@@ -53,20 +57,20 @@ public class TestMenuBeh : MonoBehaviour
         //navedenie
         randImg.OnPointerEnterAsObservable().
             Subscribe(s => {
-                Description.text = "Тест из случайных вопросов\nкостей и точек на них";
+                Description.text = TextUI.Singelton.getLabel("Test of random questions\nbones and dots on them"); //"Тест из случайных вопросов\nкостей и точек на них";
             }).
             AddTo(this);
 
 
         boneImg.OnPointerEnterAsObservable().
             Subscribe(s => {
-                Description.text = "Тест из вопросов о костях";
+                Description.text = TextUI.Singelton.getLabel("Test of questions about bones");//"Тест из вопросов о костях";
             }).
             AddTo(this);
 
         pontImg.OnPointerEnterAsObservable().
             Subscribe(s => {
-                Description.text = "Тест из вопросов о точках на костях";
+                Description.text = TextUI.Singelton.getLabel("Test of questions about points on bones");//= "Тест из вопросов о точках на костях";
             }).
             AddTo(this);
 

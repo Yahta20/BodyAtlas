@@ -1,6 +1,5 @@
 ﻿using System;
 
-
 public enum Lang {
     lat  = 0,
     ua   = 1,
@@ -17,7 +16,7 @@ public enum LangUI
 
 public sealed class GameEnviroment
 {
-    public static GameEnviroment instance;
+    public static GameEnviroment instance;//GameEnviroment.instance.languageInfo
 
     public static GameEnviroment Singelton
     {
@@ -31,12 +30,9 @@ public sealed class GameEnviroment
         }
     }
 
-    public Lang languageInfo { get; private set; }
-
-
+    public Lang   languageInfo { get; private set; }
 
     public LangUI languageUi { get; private set;}
-
 
     public void setUILanguage(LangUI l)
     {
@@ -68,7 +64,7 @@ public sealed class GameEnviroment
         }
     }
 
-    public int getLanguage() {
+    public int  getLanguage() {
         switch (languageInfo)
         {
             case (Lang.lat):
@@ -93,8 +89,6 @@ public sealed class GameEnviroment
         }
     }
 
-
-
     public bool key { get; private set; }
 
     public static string password { get; private set; }
@@ -102,6 +96,7 @@ public sealed class GameEnviroment
     public void setPassword(string s) { password = s; }
 
 }
+
 
 
 

@@ -20,7 +20,7 @@ public class DesigionBeh : MonoBehaviour
     public Text tWrong;
     public Text tRight;
 
-    [Space]
+
     public Image backgroundC;
     public int numberInRaw;
     public string sWrong;
@@ -69,8 +69,8 @@ public class DesigionBeh : MonoBehaviour
         tNumber.text=args[0];
         tWrong .text=args[1];
         tRight .text=args[2];
-
-        if (args[1] == args[2])
+        
+        if (LangManage.instance.FindBone4Test(args[1]) ==   args[2])
         {
             backgroundC.color = Color.green;
         }

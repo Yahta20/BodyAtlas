@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     {
         currentLang = Lang.lat;
         GameEnviroment.Singelton.setLanguage(currentLang);
+        
     }
 
     

@@ -14,12 +14,12 @@ public class TestManager : MonoBehaviour
     public Text quest;
     public RectTransform rtQPlane;
 
-    public string[]     postedBones = new string[10];
+    public string[]     postedBones  = new string[10];
+    public string[]     postedPoints = new string[10];
+
     public List<string> chosenBones = new List<string>();
+
     public List<GameObject> gameObjectsOnScene = new List<GameObject>();
-
-
-
 
     public GameObject QPrefab;
     
@@ -44,6 +44,8 @@ public class TestManager : MonoBehaviour
         initTest     = false;
         finishTest   = false;
         chekTest     = false;
+        quest.text = TextUI.Singelton.getLabel("Test of questions about points on bones");
+
     }
 
     void Start()
@@ -59,40 +61,6 @@ public class TestManager : MonoBehaviour
         var boneUpdate = Observable.EveryLateUpdate()
             .Subscribe(
             s => {
-                if (initTest)
-                {
-
-                    //выделение главных костей
-                    if (gameObjectsOnScene.Count != 0) {
-
-                        gameObjectsOnScene[0].SetActive(true);
-                        if (!finishTest) {
-                            CreateAnswers();
-                            finishTest = true;
-                        }
-
-                        if (gameObjectsOnScene.Count != 1) { 
-                            for (int i = 1; i < gameObjectsOnScene.Count; i++)
-                            {
-                                gameObjectsOnScene[i].SetActive(false);
-                            }
-                        }
-                        if (gameObjectsOnScene.Count == 10) 
-                        { 
-                        
-                            if (!chekTest) {
-                                for (int i = 0; i < gameObjectsOnScene.Count; i++)
-                                {
-                                    postedBones[i] = gameObjectsOnScene[i].name;
-                                }
-                                chekTest = true;
-                            }
-                        }
-                    }
-                }
-
-
-
                 switch (currentState)
                 {
                     case TypeOfTest.Chousing:
@@ -101,7 +69,7 @@ public class TestManager : MonoBehaviour
                         break;
                     case TypeOfTest.Random:
                         if (!initTest) { 
-                        MakeRandomQuest();
+                            MakeRandomQuest();
                         }
                         
                         rtMainPanel.anchoredPosition = new Vector2(Mathf.Lerp(rtMainPanel.anchoredPosition.x,0,Time.deltaTime),0);
@@ -109,7 +77,7 @@ public class TestManager : MonoBehaviour
                     case TypeOfTest.Bones:
                         if (!initTest)
                         {
-                        MakeBoneQuest();
+                            MakeBoneQuest();
                         }
                         rtMainPanel.anchoredPosition = new Vector2(0, 0);
                         break;
@@ -126,13 +94,70 @@ public class TestManager : MonoBehaviour
                         break;
                 }
 
+
+                if (initTest)
+                {
+
+                    //выделение главных костей
+                    if (gameObjectsOnScene.Count != 0) {
+
+                        gameObjectsOnScene[0].SetActive(true);
+                        if (gameObjectsOnScene[0].GetComponent<BonTestBih>()==null) { 
+                            gameObjectsOnScene[0].AddComponent<BonTestBih>();
+                        } 
+                        if (!finishTest) {
+                            CreateAnswers();
+                            finishTest = true;
+                        }
+
+                        if (gameObjectsOnScene.Count != 1) { 
+                            for (int i = 1; i < gameObjectsOnScene.Count; i++)
+                            {
+                                gameObjectsOnScene[i].SetActive(false);
+                            }
+                        }
+                        if (gameObjectsOnScene.Count == 10| gameObjectsOnScene.Count == 1) 
+                        { 
+                        
+                            if (!chekTest) {
+                                for (int i = 0; i < gameObjectsOnScene.Count; i++)
+                                {
+                                    postedBones[i] = gameObjectsOnScene[i].name;
+                                }
+                                chekTest = true;
+                            }
+                        }
+                    }
+                }
+
+
+
+
             })
             .AddTo(this);
     }
 
     private void MakePointQuest()
     {
-       
+        var CountOfBones = LangManage.instance.bones.Count - 1;
+        var lngMng = LangManage.instance;
+        int[] Bone2Post = new int[10];
+        var randBones = Random.Range(0, CountOfBones);
+        var randPoint = Random.Range(0, lngMng.bones[randBones].Points.Count);
+        postedBones [0] = lngMng.bones[randBones].Name[Lang.lat];
+        postedPoints[0] = lngMng.bones[randBones].Points[randPoint][Lang.lat];
+        Addressables.LoadAssetAsync<GameObject>(postedBones[0]).Completed += OnLoadAsset;
+
+            
+            
+        //do {
+        //    if(postedBones[0])
+        //    randBones = Random.Range(0, CountOfBones);
+        //    randPoint = Random.Range(0, lngMng.bones[randBones].getCountOfPoints());
+        //}
+        //while (lngMng.bones[randBones].getCountOfPoints()>1);
+        initTest = true;
+        ClearList();
     }
 
     private void MakeBoneQuest()
@@ -140,17 +165,24 @@ public class TestManager : MonoBehaviour
         var CountOfBones = LangManage.instance.bones.Count-1;
         var AllBones = LangManage.instance.bones;
         int[] Bone2Post = new int[10];
+        var randBones = Random .Range(0, CountOfBones);
+        //Bone2Post[0] = randBones;
+
+
         for (int i = 0; i < Bone2Post.Length; i++)
         {
-            var randBones = Random.Range(0, CountOfBones);
             //proverka povtorenia
-            for (int q = 0; q <= i; q++)
+            randBones = Random.Range(0, CountOfBones);
+
+            for (int q = 1; q <= i; q++)
             {
-                if (randBones==Bone2Post[q]) {
-                   randBones = Random.Range(0, CountOfBones);
-                    q = 0;
+                if (randBones == Bone2Post[q])
+                {
+                    randBones = Random.Range(0, CountOfBones);
+                    q = 1;
                 }
             }
+               
             postedBones[i] = AllBones[randBones].Name[Lang.lat];
             Bone2Post[i] = randBones;
             Addressables.LoadAssetAsync<GameObject>(postedBones[i]).Completed += OnLoadAsset;
@@ -164,7 +196,11 @@ public class TestManager : MonoBehaviour
 
     private void MakeRandomQuest()
     {
-      
+        var CountOfBones = LangManage.instance.bones.Count - 1;
+        var AllBones = LangManage.instance.bones;
+        int[] Bone2Post = new int[10];
+        initTest = true;
+        ClearList();
     }
 
     void OnLoadAsset(AsyncOperationHandle<GameObject> handle)
@@ -191,9 +227,7 @@ public class TestManager : MonoBehaviour
             ResultBeh.Instance.CreatingResults(postedBones, chosenBones);
         }
     }
-            
-
-
+  
     public void updateFoo(Vector2 size) {
         rtMainPanel.sizeDelta           = new Vector2(size.x*0.25f,0);
         quest.rectTransform.sizeDelta   = new Vector2(0, size.y * 0.07f);
@@ -226,39 +260,93 @@ public class TestManager : MonoBehaviour
 
     public void CreateAnswers()
     {
-        if (gameObjectsOnScene.Count!=0) { 
+        switch (currentState)
+        {
 
-            var correct         = gameObjectsOnScene[0].name;
-            var correctList     = new string[5];
-            correctList[0]      = correct;
-            var CountOfBones    = LangManage.instance.bones.Count - 1;
-            var AllBones        = LangManage.instance.bones;
-        
-            for (int i = 1; i < correctList.Length; i++)
-            {
-                var randBones = Random.Range(0, CountOfBones);
-                if (AllBones[randBones].Name[Lang.lat] == correct) {
-                    i = 1;
-                }
-                correctList[i] = AllBones[randBones].Name[Lang.lat];
-
-                for (int q = 1; q <= i; q++)
+            case TypeOfTest.Random:
+               
+                break;
+            case TypeOfTest.Bones:
+                if (gameObjectsOnScene.Count != 0)
                 {
-                    if (AllBones[randBones].Name[Lang.lat] == correctList[q])
+                    var correct = gameObjectsOnScene[0].name;
+                    var correctList = new string[5];
+                    correctList[0] = correct;
+                    var CountOfBones = LangManage.instance.bones.Count - 1;
+                    var AllBones = LangManage.instance.bones;
+                    var randBones = Random.Range(0, CountOfBones);
+                    for (int i = 1; i < correctList.Length; i++)
                     {
                         randBones = Random.Range(0, CountOfBones);
-                        q = 1;
+                        correctList[i] = AllBones[randBones].Name[Lang.lat];
+                        for (int q = 1; q <= i; q++)
+                        {
+                            if (AllBones[randBones].Name[Lang.lat] == correctList[q])
+                            {
+                                randBones = Random.Range(0, CountOfBones);
+                                q = 1;
+                            }
+                        }
                     }
+                    PublishAnswers(correctList);
                 }
-                //var s = $"{i} = {correctList[i]}";
-                //print(s);
-            }
-            //finishTest = false;
-            //print("list "+correctList.Length);
-            PublishAnswers(correctList);
+                break;
+                    
+
+            case TypeOfTest.Points:
+                if (gameObjectsOnScene.Count != 0)
+                {
+                    var correct = gameObjectsOnScene[0].name;
+                    var correctList = new string[5];
+                    correctList[0] = correct;
+                    var CountOfBones = LangManage.instance.bones.Count - 1;
+                    var lngMng = LangManage.instance;
+                    var randBones = Random.Range(0, CountOfBones);
+                    var randPoint = Random.Range(0, lngMng.bones[randBones].Points.Count);
+
+                    for (int i = 1; i < correctList.Length; i++)
+                    {
+                        correctList[i] = lngMng.bones[randBones].Points[randPoint][GameEnviroment.Singelton.languageInfo];
+                        for (int q = 1; q <= i; q++)
+                        {
+                            if (lngMng.bones[randBones].Name[Lang.lat] == correctList[q])
+                            {
+                                randBones = Random.Range(0, CountOfBones);
+                                randPoint = Random.Range(0, lngMng.bones[randBones].Points.Count);
+                                correctList[i] = lngMng.bones[randBones].Points[randPoint][GameEnviroment.Singelton.languageInfo];
+                                q = 1;
+                            }
+                        }
+                    }
+                        
+                    //{
+                    //    randBones = Random.Range(0, CountOfBones);
+                    //    if (AllBones[randBones].Name[Lang.lat] == correct)
+                    //    {
+                    //        i = 1;
+                    //    }
+                    //    correctList[i] = AllBones[randBones].Name[Lang.lat];
+                    //
+                    //    //var s = $"{i} = {correctList[i]}";
+                    //    //print(s);
+                    //}
+                    //finishTest = false;
+                    //print("list "+correctList.Length);
+
+
+
+
+
+
+
+
+                    PublishAnswers(correctList);
+                }
+                break;
+
         }
     }
-            
+
     public void PublishAnswers(string[] list)
     {
         for (int i = 0; i < list.Length; i++)
@@ -273,10 +361,29 @@ public class TestManager : MonoBehaviour
         {
             var go = Instantiate(QPrefab);
             var sgo = go.GetComponent<QuestionBeh>();
-            sgo.setName(list[i]);
+            if (currentState== TypeOfTest.Bones)
+            {
+            sgo.setName(
+                LangManage.instance.FindBoneDic(list[i])
+                    [GameEnviroment.Singelton.languageInfo]
+                );
+            }
+            //if (currentState == TypeOfTest.Points)
+            //{
+            //    sgo.setName(
+            //        LangManage.instance.FindPointDic(list[i])
+            //            [GameEnviroment.Singelton.languageInfo]
+            //        );
+            //}
+            //
+
             go.transform.SetParent(rtQPlane);  //SetParent(rtQPlane);
         }
     }
+
+
+
+            
 
 
 
