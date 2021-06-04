@@ -80,25 +80,27 @@ public class BoneBih : MonoBehaviour
         currentRender.enabled = true;
     }
 
-
-
     public void setStartRot() {
         gameObject.transform.rotation = startRot;
     }
+
     public void unchek() {
         chosen = false;    
     }
+    
     public void changeMaterial(Material mat)
     {
       //  currentMat = mat;
         currentRender.material = mat;
     }
+
     public void setBackMaterial()
     {
         //  currentMat = mat;
         currentRender.material = backMat;
         //currentRender.
     }
+
     public void setChosenMaterial()
     {
         //  currentMat = mat;

@@ -69,7 +69,6 @@ public class Moving : MonoBehaviour
                 return Vector2.zero;
             });
 
-
         yMoving = this.FixedUpdateAsObservable()
             .Select(_ =>
            {
@@ -86,10 +85,7 @@ public class Moving : MonoBehaviour
                }
                return x;
            });
-                
-
-
-        
+            
         zoomScroll = this.FixedUpdateAsObservable()
             .Select(_ =>
            {

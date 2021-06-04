@@ -54,10 +54,10 @@ public class StartMenuBeh : MonoBehaviour
         rtPanel = GetComponent<RectTransform>();
         currentState = StartMenuState.roomChose;
 
-        LangText.text = TextUI.Singelton.getLabel("Choose language");
-        ModeText.text = TextUI.Singelton.getLabel("Choose mode");
-        AtlasText.text = TextUI.Singelton.getLabel("Atlas");
-        ExamText .text = TextUI.Singelton.getLabel("Exam");
+        LangText    .text = TextUI.Singelton.getLabel("Choose language");
+        ModeText    .text = TextUI.Singelton.getLabel("Choose mode");
+        AtlasText   .text = TextUI.Singelton.getLabel("Atlas");
+        ExamText    .text = TextUI.Singelton.getLabel("Exam");
 
     }
        
@@ -137,7 +137,16 @@ public class StartMenuBeh : MonoBehaviour
 
 
 
+    public void AtlasButton() {
+        GameEnviroment.Singelton.setGameType(GameType.Atlas);
+        PartChose();
+    }
 
+    public void ExamButton()
+    {
+        GameEnviroment.Singelton.setGameType(GameType.Exam);
+        PartChose();
+    }
 
     public void ClasroomScene() { 
         SceneManager.LoadScene(1);
@@ -150,6 +159,15 @@ public class StartMenuBeh : MonoBehaviour
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void PartChose()
+    {
+        currentState = StartMenuState.partChose;
+    }
+
+    public void langChose() {
+        currentState = StartMenuState.langChose;
     }
 
     private void updateFoo(Vector2 size)
@@ -223,15 +241,6 @@ public class StartMenuBeh : MonoBehaviour
         LangStep.gameObject.SetActive(false);
         RoomStep.gameObject.SetActive(false);
         PartStep.gameObject.SetActive(true);
-    }
-
-    public void langChose() {
-        currentState = StartMenuState.langChose;
-    }
-
-    public void PartChose()
-    {
-        currentState = StartMenuState.partChose;
     }
 
     private void startState()

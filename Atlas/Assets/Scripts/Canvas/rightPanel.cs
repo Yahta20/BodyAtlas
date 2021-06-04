@@ -10,31 +10,31 @@ public class rightPanel : MonoBehaviour
 {
     public static rightPanel Instance;
 
-    public RectTransform rtPanel;
-    public GameObject Prefab;
-    public GameObject Content;
-
+    public bool init = false;
+    public bool state { get; private set; }
+    
+    public float SpeedOfScrole;
+    
+    public Text Main;
+    
     public Image ScrollArea;
     public Image slide;
     public Image scroller;
 
-
-    public Text Main;
-
     public Canvas mainCanvas;
-    public float SpeedOfScrole;
-    public bool init = false;
-    public bool state { get; private set; }
+    public RectTransform rtPanel;
+
+    public GameObject Prefab;
+    public GameObject Content;
+
+    public Dictionary<Lang, string> BoneDic { get; private set; }
+    public Dictionary<Lang, string> BoneNameDic { get; private set; }
+
+    public IObservable<Vector2> changeScrean { get; private set; }
 
     private bool stateCR;
     private Vector2 screenSize;  
     private string chosenObj;
-
-    public Dictionary<Lang, string> BoneDic { get; private set; }
-    public Dictionary<Lang, string> BoneNameDic { get; private set; }
-    public IObservable<Vector2> changeScrean { get; private set; }
-
-
 
     void Awake()
     {
@@ -60,6 +60,10 @@ public class rightPanel : MonoBehaviour
     }
 
 
+
+
+
+
     
     
     void Start()
@@ -68,18 +72,18 @@ public class rightPanel : MonoBehaviour
         /*
         правильную регистрацию изменения экрана
          
+        //print(s+" "+ stateCR);
+        //topPanel.Instance.changeScrean.
+        //    Where(x => x == true).
+        //    Subscribe(_ => { updateFoo();}).
+        //   AddTo(this);
          */
         BoneDic = LangManage.instance.FindBoneDic("osseus");
 
         var movi = Moving.Instance;
         var croom = ClassroomBeh.Instance;
-        //print(s+" "+ stateCR);
         chosenObj = croom.chosenObj.name;
 
-        //topPanel.Instance.changeScrean.
-        //    Where(x => x == true).
-        //    Subscribe(_ => { updateFoo();}).
-        //   AddTo(this);
         var screan = UIManager.Instance.screenSize.
             Where(w => w != Vector2.zero).
             DistinctUntilChanged().
@@ -164,7 +168,6 @@ public class rightPanel : MonoBehaviour
 
     }
 
-
     private void updateFoo(Vector2 screenSize)
     {
         rtPanel.sizeDelta          = new Vector2(screenSize.x * 0.37f, screenSize.y );
@@ -208,15 +211,11 @@ public class rightPanel : MonoBehaviour
 
 
     }
-
     
-
-
     void changeState() {
         state = state == false ? true : false;
     }
         
-
     void changeStateCR()
     {
         stateCR = stateCR == false ? true : false;
@@ -235,8 +234,6 @@ public class rightPanel : MonoBehaviour
         }
         PublishList(listOname,true);
     }
-
-
     private void MakelistOfPoints()
     {
         var listOname = new List<string>();
@@ -247,11 +244,8 @@ public class rightPanel : MonoBehaviour
         PublishList(listOname,false);
     }
 
-
-
     private void PublishList(List<string> srtList,bool bone) {
         int numer = 1;
-        
             
         foreach (var str in srtList)
         {
@@ -272,8 +266,6 @@ public class rightPanel : MonoBehaviour
         boobleMaker.Instance.CreateUI(srtList);
     }
 
-            
-    
     private void clearContent() {
         if (Content.transform.childCount!=0) {
             foreach (Transform t in Content.transform)
@@ -282,27 +274,6 @@ public class rightPanel : MonoBehaviour
             }
         }
     }
-
-
-
-
-
-        //updateFoo();
-        //var chosen = ;
-        //print("List of bones");
-    /*
-    public void addQuestion(question q, int i, AudioClip ac)
-    {
-        go.GetComponent<questionScript>().setAudio(ac);
-        questions[i] = go;
-    }
-    */
-        //if (LangManage.instance.bones!=null) {
-        //   //print(LangManage.instance.bones.Count);
-        //}
-        //t.setName(LangManage.instance.FindBone(str));
-        //t.setName(LangManage.instance.FindPoint(str));
-
 
 }
 
