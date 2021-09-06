@@ -27,9 +27,10 @@ public class Moving : MonoBehaviour
     public IObservable <Vector2> CursorPos      { get; private set; }
     public IObservable <Vector2> ScrollClick    { get; private set; }
     public IObservable <Vector2> ScrollDrag     { get; private set; }
+    public IObservable<Collider> GetCollider { get; private set; }
 
 
- 
+
     public IObservable   <bool>  supportPanel   { get; private set; }
     public IObservable   <bool>  mainPanel      { get; private set; }
     public IObservable  <float>  zoomScroll     { get; private set; }
@@ -38,7 +39,43 @@ public class Moving : MonoBehaviour
     void Awake()
     {
         Instance = this;
+        var camera = FindObjectOfType<Camera>();
         Event e = Event.current;
+
+        GetCollider = this.FixedUpdateAsObservable()
+            
+            .Select(col =>
+        {
+            
+            Ray ray = camera.ScreenPointToRay(Input.mousePosition);
+            //print($"hit {Input.mousePosition}");
+            if (Input.GetMouseButton(0))
+            {
+                //порытся как свинья в огороде
+
+                RaycastHit hit;
+                RaycastHit2D hit2d = Physics2D.Raycast(Input.mousePosition,Vector2.down);
+                if (Physics.Raycast(ray, out hit))
+                {
+                    if (hit2d.collider!=null)
+                    {
+                        print($"Soryan {hit2d.distance}");
+
+                        if (hit2d.distance>hit.distance)
+                        {
+                        return hit.collider;
+                        }
+
+                        return null;
+                    }
+                    return hit.collider;
+                }
+                    
+
+            }
+            return null;
+        });
+
 
         CursorPos = this.FixedUpdateAsObservable()
             .Select(_ =>

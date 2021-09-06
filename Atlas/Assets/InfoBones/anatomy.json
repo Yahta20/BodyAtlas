@@ -1,0 +1,117 @@
+{
+  "Title": [
+    "Anatomia",
+    "Анатомія",
+    "Анатомия",
+    "Anatomy"
+  ],
+  "AnatomyPart": [
+    {
+      "Title": [
+        "Osseus",
+        "Скелет",
+        "Скелет",
+        "Skeleton"
+      ],
+      "Partition": "Osseus",
+      "Subpartitions": [
+        {
+          "Title": [
+            "Cingulum membri superioris",
+            "Пояс верхньої кінцівки",
+            "Пояс верхней конечности",
+            "Pectoral girdle"
+          ],
+          "Name": "Cingulum membri superioris",
+          "ItemList": [
+            "scapula",
+            "clavicula"
+          ]
+        },
+        {
+          "Title": [
+            "Membri superioris liberi",
+            "Вільна частина верхньої кінцівки",
+            "Свободная часть верхней конечности",
+            "Free upper limb"
+          ],
+          "Name": "membri superioris liberi",
+          "ItemList": [
+            "humerus",
+            "ulna",
+            "radius",
+            "os trapezium",
+            "os scaphoideum",
+            "os capitatum",
+            "os lunatum",
+            "os pisiforme",
+            "os hamatum",
+            "os triquetrum",
+            "os trapezoideum",
+            "os metacarpale 5",
+            "phalanx proximalis 5",
+            "phalanx media 5",
+            "phalanx distalis 5",
+            "phalanx proximalis 4",
+            "phalanx media 4",
+            "phalanx distalis 4",
+            "os metacarpale 4",
+            "phalanx proximalis 3",
+            "phalanx media 3",
+            "phalanx distalis 3",
+            "os metacarpale 3",
+            "phalanx proximalis 2",
+            "phalanx media 2",
+            "phalanx distalis 2",
+            "os metacarpale 2",
+            "phalanx proximalis 1",
+            "phalanx distalis 1",
+            "os metacarpale 1"
+          ]
+        },
+        {
+          "Title": [
+            "Membrum inferius",
+            "Нижня кінцівка",
+            "Нижняя конечность",
+            "Lower limb"
+          ],
+          "Name": "Membrum inferius",
+          "ItemList": [
+            "femur",
+            "tibia",
+            "fibula",
+            "patella",
+            "os sesamoidea I",
+            "os sesamoidea II",
+            "os cuneiforme mediale",
+            "os cuneiforme intermedium",
+            "os cuneiforme laterale",
+            "os cuboideum",
+            "os navicularae",
+            "calcaneus",
+            "talus",
+            "os metatarsale I",
+            "os metatarsale II",
+            "os metatarsale III",
+            "os metatarsale IV",
+            "os metatarsale V",
+            "phalanx proximalis I",
+            "phalanx proximalis II",
+            "phalanx proximalis III",
+            "phalanx proximalis IV",
+            "phalanx proximalis V",
+            "phalanx distalis I",
+            "phalanx distalis II",
+            "phalanx distalis III",
+            "phalanx media II",
+            "phalanx media III",
+            "phalanx distalis IV + phalanx media IV",
+            "phalanx distalis V + phalanx media V",
+            "spatia interossea metatarsi"
+          ]
+        }
+      ]
+    }
+  ]
+}

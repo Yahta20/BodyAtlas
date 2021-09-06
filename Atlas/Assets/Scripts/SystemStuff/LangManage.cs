@@ -62,9 +62,9 @@ public sealed class LangManage : MonoBehaviour
                 return item.Name[GameEnviroment.Singelton.languageInfo];
             }
         }
-        
         return "none";
     }
+        
 
     public string FindBone4Test(string BoneName)
     {
@@ -113,7 +113,6 @@ public sealed class LangManage : MonoBehaviour
     {
         foreach (var bone in bones)
         {
-
             foreach (var point in bone.Points)
             {
                 if (PointName == point[Lang.lat])
@@ -132,7 +131,6 @@ public sealed class LangManage : MonoBehaviour
                 {
                     return point[GameEnviroment.Singelton.languageInfo];
                 }
-
             }
         }
         return "none";
@@ -140,6 +138,8 @@ public sealed class LangManage : MonoBehaviour
 
     public Dictionary<Lang, string> FindBoneDic(string BoneName)
     {
+
+    
         foreach (var item in bones)
         {
             if (BoneName == item.Name[Lang.lat])
@@ -155,28 +155,15 @@ public sealed class LangManage : MonoBehaviour
     {
         foreach (var bone in bones)
         {
-
             foreach (var point in bone.Points)
             {
-
                 if (PointName == point[Lang.lat])
                 {
                     return point;
                 }
-
             }
         }
         return new Dictionary<Lang, string>(); 
     }
-
-
-
-
-
-
-
-
-
-
 
 }

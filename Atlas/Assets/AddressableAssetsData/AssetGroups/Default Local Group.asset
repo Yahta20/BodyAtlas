@@ -21,8 +21,8 @@ MonoBehaviour:
     m_Address: Assets/Material/infoline.mat
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 2100000, guid: 7fa4cfe299f57e147b53dd962486afc0, type: 2}
-    m_TargetAsset: {fileID: 2100000, guid: 7fa4cfe299f57e147b53dd962486afc0, type: 2}
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
   - m_GUID: 9872c8e4cd2edba4db0a09fa16e81742
     m_Address: BackgroundView.mat
     m_ReadOnly: 0
@@ -97,166 +97,394 @@ MonoBehaviour:
     m_Address: os metacarpale 1
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 5860516262274633729, guid: d306c5548183b07418dc5ca99d9a54b7,
+      type: 3}
+    m_TargetAsset: {fileID: 5860516262274633729, guid: d306c5548183b07418dc5ca99d9a54b7,
+      type: 3}
   - m_GUID: db2eebc21c6d93243be4544a2bcb62d5
     m_Address: os metacarpale 2
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 1213545467087218392, guid: db2eebc21c6d93243be4544a2bcb62d5,
+      type: 3}
+    m_TargetAsset: {fileID: 1213545467087218392, guid: db2eebc21c6d93243be4544a2bcb62d5,
+      type: 3}
   - m_GUID: d773f238ebb8ea5499c7e38f1577fb24
     m_Address: os metacarpale 3
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 6067850771167474354, guid: d773f238ebb8ea5499c7e38f1577fb24,
+      type: 3}
+    m_TargetAsset: {fileID: 6067850771167474354, guid: d773f238ebb8ea5499c7e38f1577fb24,
+      type: 3}
   - m_GUID: 1283d6165f12dac48848a811e4cd22ed
     m_Address: os metacarpale 4
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 4808421104468034253, guid: 1283d6165f12dac48848a811e4cd22ed,
+      type: 3}
+    m_TargetAsset: {fileID: 4808421104468034253, guid: 1283d6165f12dac48848a811e4cd22ed,
+      type: 3}
   - m_GUID: 94c2de5fe62209b459bb14e34097e686
     m_Address: os metacarpale 5
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 474618987555221468, guid: 94c2de5fe62209b459bb14e34097e686,
+      type: 3}
+    m_TargetAsset: {fileID: 474618987555221468, guid: 94c2de5fe62209b459bb14e34097e686,
+      type: 3}
   - m_GUID: ec3b138359191b54bb8ea671c1390c65
     m_Address: os pisiforme
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 6492605073491042435, guid: ec3b138359191b54bb8ea671c1390c65,
+      type: 3}
+    m_TargetAsset: {fileID: 6492605073491042435, guid: ec3b138359191b54bb8ea671c1390c65,
+      type: 3}
   - m_GUID: ef7cf8e9e37f0ec409f278ef15779056
     m_Address: os scaphoideum
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 1999607922749055429, guid: ef7cf8e9e37f0ec409f278ef15779056,
+      type: 3}
+    m_TargetAsset: {fileID: 1999607922749055429, guid: ef7cf8e9e37f0ec409f278ef15779056,
+      type: 3}
   - m_GUID: bf5085520ea777e499d4c25aa26d5995
     m_Address: os trapezium
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2579086204829345689, guid: bf5085520ea777e499d4c25aa26d5995,
+      type: 3}
+    m_TargetAsset: {fileID: 2579086204829345689, guid: bf5085520ea777e499d4c25aa26d5995,
+      type: 3}
   - m_GUID: 886e51464985acb4e8f360a83214f27e
     m_Address: os trapezoideum
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 3286632207204884816, guid: 886e51464985acb4e8f360a83214f27e,
+      type: 3}
+    m_TargetAsset: {fileID: 3286632207204884816, guid: 886e51464985acb4e8f360a83214f27e,
+      type: 3}
   - m_GUID: 7eda6bc405685f6448498f6ca8e652b9
     m_Address: os triquetrum
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 8768182737605322743, guid: 7eda6bc405685f6448498f6ca8e652b9,
+      type: 3}
+    m_TargetAsset: {fileID: 8768182737605322743, guid: 7eda6bc405685f6448498f6ca8e652b9,
+      type: 3}
   - m_GUID: 9eacd96d06a149d41b590cedb20f0501
     m_Address: scapula
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 1066322180064462857, guid: 9eacd96d06a149d41b590cedb20f0501,
+      type: 3}
+    m_TargetAsset: {fileID: 1066322180064462857, guid: 9eacd96d06a149d41b590cedb20f0501,
+      type: 3}
   - m_GUID: 6ba8af072a3da92419ab6f155f81c9f7
     m_Address: ulna
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 7139896921522247942, guid: 6ba8af072a3da92419ab6f155f81c9f7,
+      type: 3}
+    m_TargetAsset: {fileID: 7139896921522247942, guid: 6ba8af072a3da92419ab6f155f81c9f7,
+      type: 3}
   - m_GUID: ce31262c4b13aa64681310417d598261
     m_Address: radius
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 5025444614141629601, guid: ce31262c4b13aa64681310417d598261,
+      type: 3}
+    m_TargetAsset: {fileID: 5025444614141629601, guid: ce31262c4b13aa64681310417d598261,
+      type: 3}
   - m_GUID: ce9e33dd2155c0b4b93690e34129c666
     m_Address: phalanx proximalis 5
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 5325595319788277487, guid: ce9e33dd2155c0b4b93690e34129c666,
+      type: 3}
+    m_TargetAsset: {fileID: 5325595319788277487, guid: ce9e33dd2155c0b4b93690e34129c666,
+      type: 3}
   - m_GUID: a751e5f00b500e24a91f339150df2644
     m_Address: phalanx media 5
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 8360975872673238320, guid: a751e5f00b500e24a91f339150df2644,
+      type: 3}
+    m_TargetAsset: {fileID: 8360975872673238320, guid: a751e5f00b500e24a91f339150df2644,
+      type: 3}
   - m_GUID: 6ff422e742736ea42a00d47baed753bb
     m_Address: phalanx distalis 5
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 5919657101164629009, guid: 6ff422e742736ea42a00d47baed753bb,
+      type: 3}
+    m_TargetAsset: {fileID: 5919657101164629009, guid: 6ff422e742736ea42a00d47baed753bb,
+      type: 3}
   - m_GUID: afe8a34eb3e49c541a47901b5c73a4e1
     m_Address: phalanx proximalis 4
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 1208497945216794592, guid: afe8a34eb3e49c541a47901b5c73a4e1,
+      type: 3}
+    m_TargetAsset: {fileID: 1208497945216794592, guid: afe8a34eb3e49c541a47901b5c73a4e1,
+      type: 3}
   - m_GUID: 6ba44b1c413d7ee49ac803ae7c7a4ce2
     m_Address: phalanx media 4
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2898829355689285153, guid: 6ba44b1c413d7ee49ac803ae7c7a4ce2,
+      type: 3}
+    m_TargetAsset: {fileID: 2898829355689285153, guid: 6ba44b1c413d7ee49ac803ae7c7a4ce2,
+      type: 3}
   - m_GUID: 84efc21eaab4e5948b39bbc5004ae76d
     m_Address: phalanx distalis 4
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 8491652134018249591, guid: 84efc21eaab4e5948b39bbc5004ae76d,
+      type: 3}
+    m_TargetAsset: {fileID: 8491652134018249591, guid: 84efc21eaab4e5948b39bbc5004ae76d,
+      type: 3}
   - m_GUID: 6cd77f9484b263a4e92c97578238d417
     m_Address: phalanx media 3
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 4828344220931415825, guid: 6cd77f9484b263a4e92c97578238d417,
+      type: 3}
+    m_TargetAsset: {fileID: 4828344220931415825, guid: 6cd77f9484b263a4e92c97578238d417,
+      type: 3}
   - m_GUID: 4d40fbe27cef9cb48bb5a74ceb97acf0
     m_Address: phalanx distalis 3
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 6071591103788448740, guid: 4d40fbe27cef9cb48bb5a74ceb97acf0,
+      type: 3}
+    m_TargetAsset: {fileID: 6071591103788448740, guid: 4d40fbe27cef9cb48bb5a74ceb97acf0,
+      type: 3}
   - m_GUID: 59207aa8ced4a5b43a0c0da775cb6754
     m_Address: phalanx media 2
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 404331295177891532, guid: 59207aa8ced4a5b43a0c0da775cb6754,
+      type: 3}
+    m_TargetAsset: {fileID: 404331295177891532, guid: 59207aa8ced4a5b43a0c0da775cb6754,
+      type: 3}
   - m_GUID: 257267abd58093e4cab6020887d47108
     m_Address: phalanx distalis 2
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 2180321468449696313, guid: 257267abd58093e4cab6020887d47108,
+      type: 3}
+    m_TargetAsset: {fileID: 2180321468449696313, guid: 257267abd58093e4cab6020887d47108,
+      type: 3}
   - m_GUID: 739b0e50b35d2b44a9aa475a32026830
     m_Address: phalanx proximalis 3
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 1912035166029953331, guid: 739b0e50b35d2b44a9aa475a32026830,
+      type: 3}
+    m_TargetAsset: {fileID: 1912035166029953331, guid: 739b0e50b35d2b44a9aa475a32026830,
+      type: 3}
   - m_GUID: 71d4e4883ebe7c94fbe25a2f18907183
     m_Address: phalanx proximalis 2
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 4351361971331624978, guid: 71d4e4883ebe7c94fbe25a2f18907183,
+      type: 3}
+    m_TargetAsset: {fileID: 4351361971331624978, guid: 71d4e4883ebe7c94fbe25a2f18907183,
+      type: 3}
   - m_GUID: 095ae349d63c987469f5f618f41ec818
     m_Address: phalanx distalis 1
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 0}
-    m_TargetAsset: {fileID: 0}
+    m_MainAsset: {fileID: 849907127781192417, guid: 095ae349d63c987469f5f618f41ec818,
+      type: 3}
+    m_TargetAsset: {fileID: 849907127781192417, guid: 095ae349d63c987469f5f618f41ec818,
+      type: 3}
   - m_GUID: 381441173970a3f4eaa53cb2f963c61a
     m_Address: phalanx proximalis 1
     m_ReadOnly: 0
     m_SerializedLabels: []
+    m_MainAsset: {fileID: 4787723170051533252, guid: 381441173970a3f4eaa53cb2f963c61a,
+      type: 3}
+    m_TargetAsset: {fileID: 4787723170051533252, guid: 381441173970a3f4eaa53cb2f963c61a,
+      type: 3}
+  - m_GUID: 0b187c9f7820741468c396e10d1fedc9
+    m_Address: calcaneus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
     m_MainAsset: {fileID: 0}
     m_TargetAsset: {fileID: 0}
-  - m_GUID: 9574a81dd5bf35f4b8129a4169741afe
-    m_Address: osseusH
+  - m_GUID: 4a1caa7a55734e546989e359f6bdcea7
+    m_Address: Hand.json
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 4900000, guid: 4a1caa7a55734e546989e359f6bdcea7, type: 3}
+    m_TargetAsset: {fileID: 4900000, guid: 4a1caa7a55734e546989e359f6bdcea7, type: 3}
+  - m_GUID: 42345dce0bba74d409ebaa2d1b440281
+    m_Address: fibula
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 77a2b7eacd622fe4f97e32db461f1fee
+    m_Address: os cuboideum
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 78b70cad5c88aa0488754f51c2a8bd19
+    m_Address: os cuneiforme intermedium
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8f3426c184c36be42be91eb2444302a2
+    m_Address: os cuneiforme laterale
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 064ae93676bed634b930dccf172e2ef5
+    m_Address: os cuneiforme mediale
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 336822d1c49ac564f8e5a6f36e495d39
+    m_Address: os metatarsale I
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4e6ac82ce4a5e1941a42d4c0574b0d19
+    m_Address: os metatarsale II
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: efc4a2c1ca7237b4e91ff7207c0ec34c
+    m_Address: os metatarsale III
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f8c08aac5a645ae49bb735664e44f65c
+    m_Address: os metatarsale IV
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ae297ca2294dc054091da6d4fbe33ed9
+    m_Address: os metatarsale V
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 4b08563433418db478e9a482a2df3389
+    m_Address: os navicularae
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 8b58079d494c62c46810977823370931
+    m_Address: os sesamoidea II
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f2881bfc9d8b408468152ac8332550e6
+    m_Address: osseus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6e070b2b860ecdf41b553a872a34f326
+    m_Address: patella
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f25cee7106ac8b140a68f2ea1b50fd9d
+    m_Address: phalanx distalis V + phalanx media V
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: f0486d402e33bc24182a9bdce9071181
+    m_Address: phalanx distalis IV + phalanx media IV
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 01cfcc4bb1050ec4dacb558b577bb68b
+    m_Address: phalanx distalis III
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 17c0613fe3abafe419893b30b5f3858f
+    m_Address: phalanx distalis II
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: ef623227bb7c34249aafba8b2dbcf957
+    m_Address: phalanx distalis I
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6b2946818515ce347b5d03261911e2c7
+    m_Address: phalanx media II
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 6c78f036fe0c9a942936ddfa7e82b043
+    m_Address: phalanx media III
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 1c9ffe943af065b4cb6ec40d3797ec4d
+    m_Address: phalanx proximalis  III
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 576b2f1f238148744ba21489ca8d050b
+    m_Address: phalanx proximalis I
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 07a9902e81eddd74dab045bd6a164a23
+    m_Address: phalanx proximalis II
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: d8034041e25f3fe448166e949180de12
+    m_Address: phalanx proximalis IV
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: aa820e8a2eaac4241957118c352e0312
+    m_Address: phalanx proximalis V
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 45f0cb6ee7792f04ca0d2eb3661ac81f
+    m_Address: talus
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 0}
+    m_TargetAsset: {fileID: 0}
+  - m_GUID: 398223ccba85dc748ab79f0bbf783041
+    m_Address: os sesamoidea I
     m_ReadOnly: 0
     m_SerializedLabels: []
     m_MainAsset: {fileID: 0}

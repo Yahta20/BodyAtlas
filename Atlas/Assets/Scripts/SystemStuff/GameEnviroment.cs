@@ -1,18 +1,6 @@
 ﻿using System;
 
-public enum Lang {
-    lat  = 0,
-    ua   = 1,
-    ru   = 2,
-    en   = 3,
-};
 
-public enum LangUI
-{
-    ua = 0,
-    eng = 1,
-    ru = 2
-};
 
 public enum GameState { 
     Hand=0,

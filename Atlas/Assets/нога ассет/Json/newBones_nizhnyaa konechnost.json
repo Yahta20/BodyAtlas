@@ -1,0 +1,1193 @@
+{
+  "BONES":[
+ {
+    "lat": "femur",
+    "ua": "стегнова кістка",
+    "en": "thigh bone",
+    "ru": "бедренная кость",
+    "point": [
+     {
+       
+       "lat": "caput femoris",
+        "ua": "головка стегнової кістки",
+        "en": "femoral head",
+        "ru": "головка бедренной кости"
+     } ,
+     {
+       
+       "lat": "trochanter major",
+        "ua": "великий вертлюг",
+        "en": "greater trochanter",
+        "ru": "большой вертел"
+     } ,
+     {
+       
+       "lat": "crista intertrochanterica",
+        "ua": "міжвертлюговий гребінь",
+        "en": "intertrochanteric crest",
+        "ru": "межвертельный гребень"
+     } ,
+     {
+       
+       "lat": "trochanter tertius",
+        "ua": "третій вертлюг",
+        "en": "third trochanter",
+        "ru": "третий вертел"
+     } ,
+     {
+       
+       "lat": "tuberositas glutea",
+        "ua": "сіднична горбистість",
+        "en": "gluteal tuberosity",
+        "ru": "ягодичная бугристость"
+     } ,
+     {
+       "lat": "linea pectinea",
+        "ua": "гребінна лінія",
+        "en": "pectineal line",
+        "ru": "гребенчатая линия"
+     } ,
+     {  
+       "lat": "linea aspera",
+        "ua": "шорстка лінія",
+        "en": "rough line",
+        "ru": "шероховатая линия"
+     } ,
+     {
+       
+       "lat": "labium mediale",
+        "ua": "присередня губа",
+        "en": "medial lip",
+        "ru": "медиальная губа"
+     } ,
+     {
+       
+       "lat": "labium laterale",
+        "ua": "бічна губа",
+        "en": "lateral lip",
+        "ru": "латеральная губа"
+     } ,
+     {
+       
+       "lat": "facies poplitea",
+        "ua": "підколінна поверхня",
+        "en": "popliteal surface",
+        "ru": "подколенная поверхность"
+     } ,
+     {
+       
+       "lat": "linea supracondylaris lateralis",
+        "ua": "бічна надвиросткова лінія",
+        "en": "lateral supracondylar line",
+        "ru": "латеральная надмыщелковая линия"
+     } ,
+     {
+       
+       "lat": "linea intercondylaris",
+        "ua": "міжвиросткова лінія",
+        "en": "intercondylar line",
+        "ru": "межмыщелковая линия"
+     } ,
+     {
+       
+       "lat": "condylus lateralis",
+        "ua": "бічний виросток",
+        "en": "lateral condyle",
+        "ru": "латеральный мыщелок"
+     } ,
+     {
+       
+       "lat": "fossa intercondylaris",
+        "ua": "міжвиросткова ямка",
+        "en": "intercondylar fossa",
+        "ru": "межмыщелковая ямка"
+     } ,
+     {
+       
+       "lat": "condylus medialis",
+        "ua": "присередній виросток",
+        "en": "medial condyle",
+        "ru": "медиальный мыщелок"
+     } ,
+     {
+       
+       "lat": "linea supracondylaris medialis",
+        "ua": "присередня надвиросткова лінія",
+        "en": "medial supracondylar line",
+        "ru": "медиальная надмыщелковая линия"
+     } ,
+     {
+       
+       "lat": "tuberculum adductorium",
+        "ua": "привідний горбок",
+        "en": "adductor tubercle",
+        "ru": "приводящий бугорок"
+     } ,
+     {
+       
+       "lat": "epicondylus medialis",
+        "ua": "присередній надвиросток",
+        "en": "medial epicondyle",
+        "ru": "медиальный надмыщелок"
+     } ,
+     {
+       
+       "lat": "facies patellaris",
+        "ua": "надколінкова поверхня",
+        "en": "patellar surface",
+        "ru": "надколенниковая поверхность"
+     } ,
+     {
+       
+       "lat": "epicondylus lateralis",
+        "ua": "бічний надвиросток",
+        "en": "lateral epicondyle",
+        "ru": "латеральный надмыщелок"
+     } ,
+     {
+       
+       "lat": "corpus femoris",
+        "ua": "тіло стегнової кістки",
+        "en": "femoral body",
+        "ru": "тело бедренной кости"
+     } ,
+     {
+       
+       "lat": "facies anterior",
+        "ua": "передня поверхня",
+        "en": "anterior surface",
+        "ru": "передняя поверхность"
+     } ,
+     {
+       
+       "lat": "linea intertrochanterica",
+        "ua": "міжвертлюгова лінія",
+        "en": "intertrochanteric line",
+        "ru": "межвертельная линия"
+     } ,
+     {
+       
+       "lat": "fovea саріtis femoris",
+        "ua": "ямка головки стегнової кістки",
+        "en": "fovea of femoral head",
+        "ru": "ямка головки бедренной кости"
+     } ,
+     {
+       
+       "lat": "collum femoris",
+        "ua": "шийка стегнової кістки",
+        "en": "femoral neck",
+        "ru": "шейка бедренной кости"
+     } ,
+     {
+       
+       "lat": "trochanter minor",
+        "ua": "малий вертлюг",
+        "en": "lesser trochanter",
+        "ru": "малый вертел"
+     } 
+    ]
+  },
+ {
+    "lat": "patella",
+    "ua": "наколінок",
+    "en": "patella",
+    "ru": "надколенник",
+    "point": [
+     {
+       
+       "lat": "base of patella",
+        "ua": "основа наколінка",
+        "en": "basis patellae",
+        "ru": "основание надколенника"
+     } ,
+     {
+       
+       "lat": "apex of patellae",
+        "ua": "верхівка наколінка",
+        "en": "apex patellae",
+        "ru": "верхушка надколенника"
+     },
+     {
+       
+       "lat": "anterior surface",
+        "ua": "передня поверхня",
+        "en": "facies anterior",
+        "ru": "передняя поверхность"
+     },
+     {
+       
+       "lat": "articular surface",
+        "ua": "суглобова поверхня",
+        "en": "facies articularis",
+        "ru": "суставная поверхность"
+     }
+    ]
+  },
+ {
+    "lat": "tibia",
+    "ua": "великогомілкова",
+    "en": "tibia",
+    "ru": "большеберцовая",
+    "point": [
+     {
+       "lat": "condylus medialis",
+        "ua": "присередній виросток",
+        "en": "medial condyle",
+        "ru": "медиальный мыщелок"
+     },
+     {
+       "lat": "tuberositas tibiae",
+        "ua": "горбистість великогомілкової кістки",
+        "en": "tuberosity of the tibia",
+        "ru": "бугристость большеберцовой кости"
+     },
+     {
+       "lat": "margo interos- seus tibiae",
+        "ua": "міжкістковий край великогомілкової кістки",
+        "en": "interosseus tibiae margin",
+        "ru": "межкостный край большеберцовой кости"
+     },
+     {
+       "lat": "facies lateralis",
+        "ua": "бічна поверхня",
+        "en": "lateral surface",
+        "ru": "латеральная поверхность"
+     },
+     {
+       "lat": "margo anterior",
+        "ua": "передній край",
+        "en": "anterior margin",
+        "ru": "передний край"
+     },
+     {
+       "lat": "facies medialis",
+        "ua": "присередня поверхня",
+        "en": "medial surface",
+        "ru": "медиальная поверхность"
+     },
+     {
+       "lat": "malleolus medialis",
+        "ua": "присередня кісточка",
+        "en": "medial malleolus",
+        "ru": "медиальная лодыжка"
+     },
+     {
+       "lat": "facies articularis malleoli",
+        "ua": "суглобова поверхня кісточки",
+        "en": "malleolar articular surface",
+        "ru": "суставная поверхность лодыжки"
+     },     
+     {
+       "lat": "condylus lateralis",
+        "ua": "бічний виросток",
+        "en": "lateral condyle",
+        "ru": "латеральный мыщелок"
+     },     
+     {
+       "lat": "eminentia untercondylaris",
+        "ua": "міжвиросткове підвищення",
+        "en": "intercondylar eminence",
+        "ru": "межмыщелковое возвышение"
+     },     
+     {
+       "lat": "sulcus malleolaris",
+        "ua": "кісточкова борозна",
+        "en": "medial supraepicondylar crest",
+        "ru": "лодыжковая борозда"
+     },     
+     {
+       "lat": "facies posterior",
+        "ua": "задня поверхня",
+        "en": "posterior surface",
+        "ru": "задняя поверхность"
+     },     
+     {
+       "lat": "corpus tibiae",
+        "ua": "тіло великогомілкової кістки",
+        "en": "body of tibia",
+        "ru": "тело большеберцовой кости"
+     },     
+     {
+       "lat": "margo medialis",
+        "ua": "присередній край",
+        "en": "medial margin",
+        "ru": "медиальный край"
+     },     
+     {
+       "lat": "foramen nutricium",
+        "ua": "живильний отвір",
+        "en": "nutritive foramen",
+        "ru": "питательное отверстие"
+     },     
+     {
+       "lat": "linea m. solei",
+        "ua": "лінія камбалоподібного м'яза",
+        "en": "line of soleus muscle",
+        "ru": "линия камбаловидной мышцы"
+     },     
+     {
+       "lat": "tuberculum intercondylare mediale",
+        "ua": "присередній міжвиростковий горбок",
+        "en": "medial intercondylar tubercle",
+        "ru": "медиальный межмыщелковый бугорок"
+     },     
+     {
+       "lat": "area intercondylaris anterior",
+        "ua": "переднє міжвиросткове поле",
+        "en": "anterior intercondylar area",
+        "ru": "переднее межмыщелковое поле"
+     },     
+     {
+       "lat": "tuberositas tibiae",
+        "ua": "горбистість великогомілкової кістки",
+        "en": "tuberosity of the tibia",
+        "ru": "бугристость большеберцовой кости"
+     },     
+     {
+       "lat": "facies articularis superior",
+        "ua": "верхня суглобова поверхня",
+        "en": "superior articular surfaces",
+        "ru": "верхняя суставная поверхность"
+     },     
+     {
+       "lat": "facies articularis superior",
+        "ua": "верхня суглобова поверхня",
+        "en": "superior articular surfaces",
+        "ru": "верхняя суставная поверхность"
+     },     
+     {
+       "lat": "facies articularis inferior",
+        "ua": "нижня суглобова поверхня",
+        "en": "inferior articular surface",
+        "ru": "нижняя суставная поверхность"
+     }   
+    ]
+  },
+ {
+    "lat": "fibula",
+    "ua": "малогомілкова ",
+    "en": "fibula",
+    "ru": "малоберцовая",
+    "point": [
+     {
+       "lat": "corpus fibulae",
+        "ua": "тіло малогомілкової кістки",
+        "en": "body of fibula",
+        "ru": "тело малоберцовой кости"
+     },
+     {
+       "lat": "margo interos- seus",
+        "ua": "міжкістковий край",
+        "en": "interosseus margin of the fibula",
+        "ru": "межкостный край"
+     },
+     {
+       "lat": "facies posterior",
+        "ua": "задня поверхня",
+        "en": "posterior surface",
+        "ru": "задняя поверхность"
+     },
+     {
+       "lat": "foramen nutricium",
+        "ua": "живильний отвір",
+        "en": "nutritive foramen",
+        "ru": "питательное отверстие"
+     },
+     {
+       "lat": "sulcus malleolaris",
+        "ua": "кісточкова борозна",
+        "en": "malleolar groove",
+        "ru": "лодыжковая борозда"
+     },
+     {
+       "lat": "fossa malleoli lateralis",
+        "ua": "ямка бічної кісточки",
+        "en": "lateral malleolar fossa",
+        "ru": "ямка латеральной лодыжки"
+     },
+     {
+       "lat": "facies articularis malleoli",
+        "ua": "суглобова поверхня кісточки",
+        "en": "malleolar articular surface",
+        "ru": "суставная поверхность лодыжки"
+     },
+     {
+       "lat": "malleolus lateralis",
+        "ua": "бічна кісточка",
+        "en": "lateral malleolus",
+        "ru": "латеральная лодыжка"
+     },     
+     {
+       "lat": "margo interos- seus fibulae",
+        "ua": "міжкістковий край малогомілкової кістки",
+        "en": "interosseus margin of the fibula",
+        "ru": "межкостный край малоберцовой кости"
+     },     
+     {
+       "lat": "facies medialis",
+        "ua": "присередня поверхня",
+        "en": "medial surface",
+        "ru": "медиальная поверхность"
+     },     
+     {
+       "lat": "margo anterior",
+        "ua": "передній край",
+        "en": "anterior margin",
+        "ru": "передний край"
+     },     
+     {
+       "lat": "facies lateralis",
+        "ua": "бічна поверхня",
+        "en": "lateral surface",
+        "ru": "латеральная поверхность"
+     },     
+     {
+       "lat": "collum fibulae",
+        "ua": "шийка малогомілкової кістки",
+        "en": "neck of the fibula",
+        "ru": "шейка малоберцовой кости"
+     },     
+     {
+       "lat": "caput fibulae",
+        "ua": "головка малогомілкової кістки",
+        "en": "head of the fibula",
+        "ru": "головка малоберцовой кости"
+     },     
+     {
+       "lat": "facies articularis capitis fibulae",
+        "ua": "суглобова поверхня головки малогомілкової кістки",
+        "en": "articulate surface of fibular head",
+        "ru": "суставная поверхность головки малоберцовой кости"
+     },     
+     {
+       "lat": "apex capitis fibulae",
+        "ua": "верхівка головки малогомілкової кістки",
+        "en": "apex of fibular head",
+        "ru": "верхушка головки малоберцовой кости"
+     }    
+    ]
+  },
+ {
+    "lat": "os metatarsale I",
+    "ua": "плеснова кістка І",
+    "en": "metatarsal bone I",
+    "ru": "плюсневая кость I",
+    "point": [
+     {
+       
+       "lat": "basis",
+        "ua": "основа",
+        "en": "base",
+        "ru": "основание"
+     } ,
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     },
+     {
+       
+       "lat": "caput",
+        "ua": "головка",
+        "en": "head",
+        "ru": "головка"
+     },
+     {
+       
+       "lat": "tuberositas ossis metatarsalis",
+        "ua": "горбистість плеснової кістки",
+        "en": "tuberosity of metatarsal bone",
+        "ru": "бугристость плюсневой кости"
+     }
+    ]
+  },
+ {
+    "lat": "os metatarsale II",
+    "ua": "плеснова кістка ІI",
+    "en": "metatarsal bone II",
+    "ru": "плюсневая кость II",
+    "point": [
+     {
+       
+       "lat": "basis",
+        "ua": "основа",
+        "en": "base",
+        "ru": "основание"
+     } ,
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     },
+     {
+       
+       "lat": "caput",
+        "ua": "головка",
+        "en": "head",
+        "ru": "головка"
+     },
+     {
+       
+       "lat": "tuberositas ossis metatarsalis",
+        "ua": "горбистість плеснової кістки",
+        "en": "tuberosity of metatarsal bone",
+        "ru": "бугристость плюсневой кости"
+     }
+    ]
+  },
+ {
+    "lat": "os metatarsale III",
+    "ua": "плеснова кістка ІII",
+    "en": "metatarsal bone III",
+    "ru": "плюсневая кость III",
+    "point": [
+     {
+       
+       "lat": "basis",
+        "ua": "основа",
+        "en": "base",
+        "ru": "основание"
+     } ,
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     },
+     {
+       
+       "lat": "caput",
+        "ua": "головка",
+        "en": "head",
+        "ru": "головка"
+     },
+     {
+       
+       "lat": "tuberositas ossis metatarsalis",
+        "ua": "горбистість плеснової кістки",
+        "en": "tuberosity of metatarsal bone",
+        "ru": "бугристость плюсневой кости"
+     }
+    ]
+  },
+ {
+    "lat": "os metatarsale IV",
+    "ua": "плеснова кістка ІV",
+    "en": "metatarsal bone IV",
+    "ru": "плюсневая кость IV",
+    "point": [
+     {
+       
+       "lat": "basis",
+        "ua": "основа",
+        "en": "base",
+        "ru": "основание"
+     } ,
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     },
+     {
+       
+       "lat": "caput",
+        "ua": "головка",
+        "en": "head",
+        "ru": "головка"
+     },
+     {
+       
+       "lat": "tuberositas ossis metatarsalis",
+        "ua": "горбистість плеснової кістки",
+        "en": "tuberosity of metatarsal bone",
+        "ru": "бугристость плюсневой кости"
+     }
+    ]
+  },
+ {
+    "lat": "os metatarsale V",
+    "ua": "плеснова кістка V",
+    "en": "metatarsal bone V",
+    "ru": "плюсневая кость V",
+    "point": [
+     {
+       
+       "lat": "basis",
+        "ua": "основа",
+        "en": "base",
+        "ru": "основание"
+     } ,
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     },
+     {
+       
+       "lat": "caput",
+        "ua": "головка",
+        "en": "head",
+        "ru": "головка"
+     },
+     {
+       
+       "lat": "tuberositas ossis metatarsalis",
+        "ua": "горбистість плеснової кістки",
+        "en": "tuberosity of metatarsal bone",
+        "ru": "бугристость плюсневой кости"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx proximalis I",
+    "ua": "проксимальна фаланга I",
+    "en": "proximal phalanx I",
+    "ru": "проксимальная фаланга I",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx proximalis II",
+    "ua": "проксимальна фаланга II",
+    "en": "proximal phalanx II",
+    "ru": "проксимальная фаланга II",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx proximalis III",
+    "ua": "проксимальна фаланга III",
+    "en": "proximal phalanx III",
+    "ru": "проксимальная фаланга III",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx proximalis IV",
+    "ua": "проксимальна фаланга IV",
+    "en": "proximal phalanx IV",
+    "ru": "проксимальная фаланга IV",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx proximalis V",
+    "ua": "проксимальна фаланга V",
+    "en": "proximal phalanx V",
+    "ru": "проксимальная фаланга V",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx media II",
+    "ua": "середня фаланга II",
+    "en": "medial phalanx II",
+    "ru": "средняя фаланга II",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx media III",
+    "ua": "середня фаланга III",
+    "en": "medial phalanx III",
+    "ru": "средняя фаланга III",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx distalis I",
+    "ua": "кінцева фаланга I",
+    "en": "distal phalanx I",
+    "ru": "концевая фаланга I",
+    "point": [
+     {
+       
+       "lat": "tuberositas phalangis distalis",
+        "ua": "горбистість дистальної фаланги",
+        "en": "tuberosity of the distal phalanx",
+        "ru": "бугристость концевой фаланги"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx distalis II",
+    "ua": "кінцева фаланга II",
+    "en": "distal phalanx II",
+    "ru": "концевая фаланга II",
+    "point": [
+     {
+       
+       "lat": "tuberositas phalangis distalis",
+        "ua": "горбистість дистальної фаланги",
+        "en": "tuberosity of the distal phalanx",
+        "ru": "бугристость концевой фаланги"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx distalis III",
+    "ua": "кінцева фаланга III",
+    "en": "distal phalanx III",
+    "ru": "концевая фаланга III",
+    "point": [
+     {
+       
+       "lat": "tuberositas phalangis distalis",
+        "ua": "горбистість дистальної фаланги",
+        "en": "tuberosity of the distal phalanx",
+        "ru": "бугристость концевой фаланги"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx distalis IV + phalanx media IV",
+    "ua": "кінцева фаланга IV",
+    "en": "distal phalanx IV",
+    "ru": "концевая фаланга IV",
+    "point": [
+     {
+       
+       "lat": "phalanx media",
+        "ua": "середня фаланга",
+        "en": "medial phalanx",
+        "ru": "средняя фаланга"
+     },
+     {
+       
+       "lat": "phalanx distalis",
+        "ua": "кінцева фаланга",
+        "en": "distal phalanx",
+        "ru": "концевая фаланг"
+     },
+     {
+       
+       "lat": "tuberositas phalangis distalis",
+        "ua": "горбистість дистальної фаланги",
+        "en": "tuberosity of the distal phalanx",
+        "ru": "бугристость концевой фаланги"
+     }
+    ]
+  },
+ {
+    "lat": "phalanx distalis V  + phalanx media V",
+    "ua": "кінцева фаланга V",
+    "en": "distal phalanx V",
+    "ru": "концевая фаланга V",
+    "point": [
+     {
+       
+       "lat": "phalanx media",
+        "ua": "середня фаланга",
+        "en": "medial phalanx",
+        "ru": "средняя фаланга"
+     },
+     {
+       
+       "lat": "phalanx distalis",
+        "ua": "кінцева фаланга",
+        "en": "distal phalanx",
+        "ru": "концевая фаланг"
+     },
+     {
+       
+       "lat": "tuberositas phalangis distalis",
+        "ua": "горбистість дистальної фаланги",
+        "en": "tuberosity of the distal phalanx",
+        "ru": "бугристость концевой фаланги"
+     }
+    ]
+  },
+ {
+    "lat": "os cuboideum",
+    "ua": "кубоподібна кістка",
+    "en": "cuboid bone",
+    "ru": "кубовидная кость",
+    "point": [
+     {
+       
+       "lat": "sulcus tendis m. peronei longi",
+        "ua": "борозна сухожилка довгого малогомілкового м'яза",
+        "en": "groove for tendom of peroneus longus muscle",
+        "ru": "борозда сухожилия длинной малоберцовой мышцы"
+     },
+     {
+       
+       "lat": "tuberositas ossis cuboidei",
+        "ua": "горбистість кубоподібної кістки",
+        "en": "tuberosity of cuboid bone",
+        "ru": "бугристость кубовидной кости"
+     }
+    ]
+  },
+ {
+    "lat": "ossa sesamoidea",
+    "ua": "сесамоподібні кістки",
+    "en": "sesamoid bones",
+    "ru": "сесамовидные кости",
+    "point": [
+     {
+       
+       "lat": "os sesamoidea",
+        "ua": "сесамоподібна кістка",
+        "en": "sesamoid bone",
+        "ru": "сесамовидная кость"
+     },
+     {
+       
+       "lat": "os sesamoidea",
+        "ua": "сесамоподібна кістка",
+        "en": "sesamoid bone",
+        "ru": "сесамовидная кость"
+     }
+    ]
+  },
+ {
+    "lat": "os cuneiforme mediale",
+    "ua": "присередня клиноподібна кістка",
+    "en": "medial cuneiforme bone",
+    "ru": "медиальная клиновидная кость",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "os cuneiforme intermedium",
+    "ua": "проміжна клиноподібна кістка",
+    "en": "cuneiforme intermedial bone",
+    "ru": "промежуточная клиновидная кость",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "os cuneiforme laterale",
+    "ua": "бічна клиноподібна кістка",
+    "en": "lateral cuneiforme bone",
+    "ru": "латеральная клиновидная кость",
+    "point": [
+     {
+       
+       "lat": "corpus",
+        "ua": "тіло",
+        "en": "body",
+        "ru": "тело"
+     }
+    ]
+  },
+ {
+    "lat": "os navicularae",
+    "ua": "човноподібна кістка",
+    "en": "navicular bone",
+    "ru": "ладьевидная кость",
+    "point": 
+    [
+     {
+       
+       "lat": "tuberositas ossis navicularis",
+        "ua": "горбистість човноподібної кістки",
+        "en": "tuberosity of navicular bone",
+        "ru": "бугристость ладьевидной кости"
+     }
+    ]
+  },
+ {
+    "lat": "calcaneus",
+    "ua": "п'яткова кістка",
+    "en": "calcaneus",
+    "ru": "пяточная кость",
+    "point": 
+    [
+     {
+       
+       "lat": "tuber calcanei",
+        "ua": "п'ятковий горб",
+        "en": "tuber of calcaneus",
+        "ru": "пяточный бугор"
+     },
+     {
+       
+       "lat": "sulcus tendis m. flexoris hallucis longi",
+        "ua": "борозна сухожилка довгого м’яза-згинача великого пальця",
+        "en": "groove for tendom of flexor hallucis longus muscle",
+        "ru": "борозда сухожилия длинного сгибателя большого пальца"
+     },
+     {
+       
+       "lat": "tuber calcanei",
+        "ua": "п'ятковий горб",
+        "en": "tuber of calcaneus",
+        "ru": "бугор пяточной кости"
+     },
+     {
+       
+       "lat": "trochlea peronealis",
+        "ua": "малогомілковий блок",
+        "en": "peroneal trochlea",
+        "ru": "малоберцовый блок"
+     },
+     {
+       
+       "lat": "sustentaculum tali",
+        "ua": "підпора надп'яткової кістки",
+        "en": "sustentaculum of talus",
+        "ru": "опора таранной кости"
+     },
+     {
+       
+       "lat": "processus medialis tuberis calcanei",
+        "ua": "присередній відросток п’яткового горба",
+        "en": "medial process of calcaneal tuber",
+        "ru": "медиальный отросток бугра пяточной кости"
+     },
+     {
+       
+       "lat": "sulcus tendinis mm. peroneorum",
+        "ua": "борозна сухожилків малогомілкових м'язів",
+        "en": "groove for tendon of peroneus muscles",
+        "ru": "борозда сухожилий малоберцовых мышц"
+     },
+     {
+       
+       "lat": "processus lateralis tuber calcanei",
+        "ua": "бічний відросток п'яткового горба",
+        "en": "lateral tuber of calcaneal process",
+        "ru": "латеральный отросток пяточного бугра"
+     },
+     {
+       
+       "lat": "facies articularis talaris posterior",
+        "ua": "задня надп’яткова суглобова поверхня",
+        "en": "posterior articular talar surface",
+        "ru": "задняя суставная таранная поверхность"
+     },
+     {
+       
+       "lat": "sulcus calcanei",
+        "ua": "борозна п’яткової кістки",
+        "en": "groove of calcaneus",
+        "ru": "борозда пяточной кости"
+     },
+     {
+       
+       "lat": "facies articularis talaris media",
+        "ua": "середня надп’яткова суглобова поверхня",
+        "en": "medial articular talar surface",
+        "ru": "средняя суставная таранная поверхность"
+     },
+     {
+       
+       "lat": "facies articularis talaris anterior",
+        "ua": "передня надп’яткова суглобова поверхня",
+        "en": "anterior articular talar surface",
+        "ru": "передняя суставная таранная поверхность"
+     }
+    ]
+  },
+{
+    "lat": "talus",
+    "ua": "надп'яткова кістка",
+    "en": "talus",
+    "ru": "таранная кость",
+    "point": [
+     {
+       
+       "lat": "trochlea tali",
+        "ua": "блок надп'яткової кістки",
+        "en": "trochlea of talus",
+        "ru": "блок таранной кости"
+     },
+     {
+       
+       "lat": "facies malleolaris medialis",
+        "ua": "присередня кісточкова поверхня",
+        "en": "medial malleolar surface",
+        "ru": "медиальная лодыжковая поверхность"
+     },
+     {
+       
+       "lat": "facies superior trochleae",
+        "ua": "верхня блокова поверхня",
+        "en": "superior trochlear surface",
+        "ru": "верхняя блоковая поверхность"
+     },
+     {
+       
+       "lat": "collum tali",
+        "ua": "шийка надп’яткової кістки",
+        "en": "neck of talus",
+        "ru": "шейка таранной кости"
+     },
+     {
+       
+       "lat": "facies malleolaris lateralis",
+        "ua": "бічна кісточкова поверхня",
+        "en": "malleolar lateral surface",
+        "ru": "латеральная лодыжковая поверхность"
+     },
+     {
+       
+       "lat": "sinus tarsi",
+        "ua": "пазуха заплесна",
+        "en": "tarsal sinus",
+        "ru": "пазуха предплюсны"
+     },
+     {
+       
+       "lat": "processus lateralis tali",
+        "ua": "бічний відросток надп’яткової кістки",
+        "en": "lateral process of talus",
+        "ru": "латеральный отросток таранной кости"
+     },
+     {
+       
+       "lat": "processus posterior tali",
+        "ua": "задній відросток надп’яткової кістки",
+        "en": "posterior process of talus",
+        "ru": "задний отросток таранной кости"
+     },
+     {
+       
+       "lat": "sulcus tendinis m. flexoris hallucis longi",
+        "ua": "борозна сухожилка довгого м'яза-згинача великого пальця",
+        "en": "groove for tendom of flexor hallucis longus muscle",
+        "ru": "борозда сухожилия длинного сгибателя большого пальца"
+     },
+     {
+       
+       "lat": "tuberculum laterale",
+        "ua": "бічний горбок",
+        "en": "lateral tuberculum",
+        "ru": "латеральный бугорок"
+     },
+     {
+       
+       "lat": "tuberculum mediale",
+        "ua": "присередній горбок",
+        "en": "medial tuberculum",
+        "ru": "медиальный бугорок"
+     },
+     {
+       
+       "lat": "facies articularis navicularis",
+        "ua": "суглобова човноподібна поверхня",
+        "en": "articular navicular surface",
+        "ru": "суставная ладьевидная поверхность"
+     },
+     {
+       
+       "lat": "caput tali",
+        "ua": "головка надп’яткової кістки",
+        "en": "head of talus",
+        "ru": "головка таранной кости"
+     },
+     {
+       
+       "lat": "facies articularis calcanea anterior",
+        "ua": "передня п’яткова суглобова поверхня",
+        "en": "anterior articular calcaneal surface",
+        "ru": "передняя пяточная суставная поверхность"
+     },
+     {
+       
+       "lat": "facies articularis calcanea media",
+        "ua": "середня п’яткова суглобова поверхня",
+        "en": "medial articular calcaneal surface",
+        "ru": "средняя пяточная суставная поверхность"
+     },
+     {
+       
+       "lat": "sulcus tali",
+        "ua": "борозна надп’яткової кістки",
+        "en": "talar groove",
+        "ru": "борозда таранной кости"
+     },
+     {
+       
+       "lat": "facies articularis calcanea posterior",
+        "ua": "задня п’яткова суглобова поверхня",
+        "en": "posterior articular calcaneal surface",
+        "ru": "задняя пяточная суставная поверхность"
+     },
+     {
+       
+       "lat": "corpus tali",
+        "ua": "тіло надп’яткової кістки",
+        "en": "body of talus",
+        "ru": "тело таранной кости"
+     }
+    ]
+  }
+  
+  ]
+}
