@@ -34,7 +34,8 @@ public class StartMenuBeh : MonoBehaviour
 
     [Space]
     public RectTransform Atlas;
-    public RectTransform Exam  ;
+    public RectTransform Exam;
+    public RectTransform Exit;
 
 
     public enum StartMenuState {
@@ -99,8 +100,8 @@ public class StartMenuBeh : MonoBehaviour
         // nagatie OnPointerDownAsObservable().
         UaImg.OnPointerDownAsObservable().
             Subscribe(s => {
-                //GameEnviroment.Singelton.setUILanguage(LangUI.ua);
-                GameEnviroment.Singelton.setLanguage(1);
+                //GameManager.Singelton.setUILanguage(LangUI.ua);
+                GameManager.Singelton.setLanguage(1);
                 currentState = StartMenuState.hide; 
                 ExamScene();
             }).
@@ -109,8 +110,8 @@ public class StartMenuBeh : MonoBehaviour
 
         EngImg.OnPointerDownAsObservable().
             Subscribe(s => {
-                //GameEnviroment.Singelton.setUILanguage(LangUI.eng);
-                GameEnviroment.Singelton.setLanguage(3);
+                //GameManager.Singelton.setUILanguage(LangUI.eng);
+                GameManager.Singelton.setLanguage(3);
                 currentState = StartMenuState.hide;
                 ExamScene();
             }).
@@ -118,8 +119,8 @@ public class StartMenuBeh : MonoBehaviour
 
         RuImg.OnPointerDownAsObservable().
             Subscribe(s => {
-                //GameEnviroment.Singelton.setUILanguage(LangUI.ru);
-                GameEnviroment.Singelton.setLanguage(2);
+                //GameManager.Singelton.setUILanguage(LangUI.ru);
+                GameManager.Singelton.setLanguage(2);
                 currentState = StartMenuState.hide;
                 ExamScene();
             }).
@@ -127,8 +128,8 @@ public class StartMenuBeh : MonoBehaviour
 
         LatImg.OnPointerDownAsObservable().
             Subscribe(s => {
-                //GameEnviroment.Singelton.setUILanguage(LangUI.ru);
-                GameEnviroment.Singelton.setLanguage(0);
+                //GameManager.Singelton.setUILanguage(LangUI.ru);
+                GameManager.Singelton.setLanguage(0);
                 currentState = StartMenuState.hide;
                 ExamScene();
             }).
@@ -138,13 +139,13 @@ public class StartMenuBeh : MonoBehaviour
 
 
     public void AtlasButton() {
-        GameEnviroment.Singelton.setGameType(GameType.Atlas);
+        //GameManager.Singelton.setGameType(GameType.Atlas);
         PartChose();
     }
 
     public void ExamButton()
     {
-        GameEnviroment.Singelton.setGameType(GameType.Exam);
+        //GameManager.Singelton.setGameType(GameType.Exam);
         PartChose();
     }
 
@@ -153,11 +154,11 @@ public class StartMenuBeh : MonoBehaviour
     }
     
     public void ExamScene() {
-        Application.Quit();
-        //SceneManager.LoadScene(2);
+        SceneManager.LoadScene(2);
+        //Application.Quit();
     }
 
-    public void Exit()
+    public void ExitApp()
     {
         Application.Quit();
     }
@@ -185,8 +186,8 @@ public class StartMenuBeh : MonoBehaviour
 
         var side4Blok = size.x > size.y ? size.y : size.x;
 
-        LangStep.sizeDelta = new Vector2(side4Blok*0.68f, side4Blok * 0.68f) ;
-        RoomStep.sizeDelta = new Vector2(side4Blok * 0.68f, side4Blok * 0.68f);
+        LangStep.sizeDelta = new Vector2(side4Blok*0.68f, side4Blok* 0.68f) ;
+        RoomStep.sizeDelta = new Vector2(side4Blok*0.68f, side4Blok* 0.68f);
         
         var mtPanel = LangText.rectTransform;
         mtPanel.sizeDelta = new Vector2(LangStep.sizeDelta.x, LangStep.sizeDelta.x * 0.16f); 
@@ -195,41 +196,57 @@ public class StartMenuBeh : MonoBehaviour
         var roomPanel = ModeText.rectTransform;
         roomPanel.sizeDelta = new Vector2(LangStep.sizeDelta.x, LangStep.sizeDelta.x * 0.16f);
         roomPanel.anchoredPosition = Vector2.zero;
+
         //LANG PANEL
         var yFlagSpace = (LangStep.sizeDelta.y - mtPanel.sizeDelta.y) / 3;
         var yFlag = yFlagSpace * 0.81f;
         
         rtRUImg.sizeDelta  = new Vector2(yFlag*1.5F, yFlag);
-        rtRUImg.anchoredPosition = new Vector2(-yFlag * 1F,  yFlag * 0.5f);
+        rtRUImg.anchoredPosition = new Vector2(-yFlag * 1F,  yFlag*0.5f);
         
-        rtENGImg.sizeDelta = new Vector2(yFlag * 1.5F, yFlag);
-        rtENGImg.anchoredPosition = new Vector2(yFlag * 1F,  yFlag * 0.5f);
+        rtENGImg.sizeDelta = new Vector2(yFlag*1.5F, yFlag);
+        rtENGImg.anchoredPosition = new Vector2(yFlag * 1F,  yFlag*0.5f);
 
-        rtUAImg.sizeDelta  = new Vector2(yFlag * 1.5F, yFlag);
-        rtUAImg.anchoredPosition = new Vector2(-yFlag * 1F,  yFlag*  1.9f);
+        rtUAImg.sizeDelta  = new Vector2(yFlag*1.5F, yFlag);
+        rtUAImg.anchoredPosition = new Vector2(-yFlag * 1F,  yFlag*1.9f);
 
-        rtLATImg.sizeDelta = new Vector2(yFlag * 1.5F, yFlag);
-        rtLATImg.anchoredPosition = new Vector2(yFlag * 1F,  yFlag*  1.9f);
-        
+        rtLATImg.sizeDelta = new Vector2(yFlag*1.5F, yFlag);
+        rtLATImg.anchoredPosition = new Vector2(yFlag * 1F,  yFlag*1.9f);
+
+
+        var offset = roomPanel.sizeDelta.x * 0.1f;
+
         Atlas.sizeDelta = new Vector2(yFlag , yFlag*0.5f);
-        Atlas.anchoredPosition = new Vector2(-roomPanel.sizeDelta.x * 0.25f, 0);
+        Atlas.anchoredPosition = new Vector2(0, 0 - offset);
+        //Atlas.anchoredPosition = new Vector2(0f, roomPanel.sizeDelta.x * 0.25f-offset);
 
-        Exam.sizeDelta = new Vector2(yFlag , yFlag * 0.5f);
-        Exam.anchoredPosition = new Vector2(roomPanel.sizeDelta.x * 0.25f, 0);
+
+        //Exam.sizeDelta = new Vector2(yFlag , yFlag*0.5f);
+        //Exam.anchoredPosition = new Vector2(0, 0 - offset);
+
+        Exit.sizeDelta = new Vector2(yFlag, yFlag * 0.5f);
+        Exit.anchoredPosition = new Vector2(0, -roomPanel.sizeDelta.x * 0.25f - offset);
+        //Exit.anchoredPosition = new Vector2(0, -roomPanel.sizeDelta.x * 0.25f - offset);
+
+
 
         switch (currentState)
         {
             case StartMenuState.hide:
                 exitState();
+
                 break;
             case StartMenuState.langChose:
                 startState();
+
                 break;
             case StartMenuState.roomChose:
                 roomChose();
+                
                 break;
             case StartMenuState.partChose:
                 partChose();
+                
                 break;
             default:
                 break;
@@ -241,7 +258,7 @@ public class StartMenuBeh : MonoBehaviour
         this.gameObject.SetActive(true);
         LangStep.gameObject.SetActive(false);
         RoomStep.gameObject.SetActive(false);
-        PartStep.gameObject.SetActive(true);
+        //PartStep.gameObject.SetActive(true);
     }
 
     private void startState()
@@ -249,15 +266,16 @@ public class StartMenuBeh : MonoBehaviour
         this.gameObject.SetActive(true);
         LangStep.gameObject.SetActive(true);
         RoomStep.gameObject.SetActive(false);
-        PartStep.gameObject.SetActive(false);
+        //PartStep.gameObject.SetActive(false);
     }
+        
 
     private void roomChose()
     {
         this.gameObject.SetActive(true);
         LangStep.gameObject.SetActive(false);
         RoomStep.gameObject.SetActive(true);
-        PartStep.gameObject.SetActive(false);
+        //PartStep.gameObject.SetActive(false);
     }
 
     private void exitState()

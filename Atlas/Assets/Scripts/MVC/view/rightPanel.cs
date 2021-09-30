@@ -31,11 +31,11 @@ public class rightPanel : MonoBehaviour
     //public GameObject InfoPoint;
     private BoxCollider2D box;
 
-    public Dictionary<Lang, string> BoneDic { get; private set; }
+    //public Dictionary<Lang, string> BoneDic { get; private set; }
     public Dictionary<Lang, string> MainTextDic { get; private set; }
     public IObservable<Vector2> changeScrean { get; private set; }
 
-
+    private bool croomStart = false;
     private bool stateCR;
     private Vector2 screenSize;  
     private string chosenObj;
@@ -65,12 +65,12 @@ public class rightPanel : MonoBehaviour
 
     void Start()
     {
+        //BoneDic = LangManage.instance.FindBoneDic("osseus");
         
-        BoneDic = LangManage.instance.FindBoneDic("osseus");
 
         var movi = Moving.Instance;
-        var croom = ClassroomBeh.Instance;
-        chosenObj = croom.chosenObj.name;
+        //var croom = ClassroomBeh.Instance;
+        //chosenObj = croom.chosenObj.name;
 
         var screan = UIManager.Instance.screenSize.
             Where(w => w != Vector2.zero).
@@ -80,15 +80,16 @@ public class rightPanel : MonoBehaviour
             }).
             AddTo(this);
 
-        croom.isChosenObject.
-            Where(w => w !=stateCR).
-            Subscribe(s => {
-                if (s) {
-                    state = s;
-                }
-               stateCR=s;
-            }).
-            AddTo(this);
+        //croom.isChosenObject.
+        //    
+        //    Where(w => w !=stateCR).
+        //    Subscribe(s => {
+        //        if (s) {
+        //            state = s;
+        //        }
+        //       stateCR=s;
+        //    }).
+        //    AddTo(this);
 
         //dvijgenia paneli
         movi.supportPanel.
@@ -107,13 +108,24 @@ public class rightPanel : MonoBehaviour
         var boneUpdate = Observable.EveryLateUpdate()
             .Subscribe(
             s => {
-                stateJob(GameManager.Instance.getState());
+                if (ClassroomBeh.Instance==null)
+                {
+                    return;
+                }
+                else
+                {
+                    if (ClassroomBeh.Instance.Compleeted && ClassroomBeh.Instance == null)
+                    {
+                        createChosenObg();
+                    }
+                }
 
+
+                stateJob(GameManager.Instance.getState());
                 if (MainTextDic != null & MainTextDic.Count == 4)
                 {
                     setName(MainTextDic[GameManager.Singelton.currentLang]);
                 }
-
                 if (state)
                 {
                     var x = Mathf.Lerp(rtPanel.anchoredPosition.x, 0, SpeedOfScrole);
@@ -126,9 +138,25 @@ public class rightPanel : MonoBehaviour
                 }
             })
             .AddTo(this);
-                    
-
     }
+
+    private void createChosenObg()
+    {
+        var croom = ClassroomBeh.Instance;
+        
+        croom.isChosenObject
+             .Where(w => w != stateCR)
+             .Subscribe(s => {
+                  if (s)
+                  {
+                      state = s;
+                  }
+                  stateCR = s;
+              })
+             .AddTo(this);
+    }
+
+
     public int getPointNumber(string s)
     {
         int numb = 0;

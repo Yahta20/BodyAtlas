@@ -32,7 +32,43 @@ public class BonePointInfo : MonoBehaviour
     private void Start()
     {
         var uiMng = UIManager.Instance;
+        var mov = Moving.Instance;
+
         rp = rightPanel.Instance;
+
+        //mov.Get2DCollider
+        //    .Where(w=>w==box)
+        //    .Subscribe(s=> {
+        //        
+        //        if (s==box)
+        //        {
+        //            if (GameManager.Instance.currentChose == stateOfChose.Partition)
+        //            {
+        //                GameManager.Instance.currentPartition = gameObject.name;
+        //                //GameManager.Instance.setState(currenState);
+        //            }
+        //            if (GameManager.Instance.currentChose == stateOfChose.Subpartitions)
+        //            {
+        //                GameManager.Instance.currentSubpartitions = gameObject.name;
+        //                //GameManager.Instance.setState(currenState);
+        //            }
+        //            if (GameManager.Instance.currentChose == stateOfChose.Item)
+        //            {
+        //                GameManager.Instance.currentItem = gameObject.name;
+        //                //GameManager.Instance.setState(currenState);
+        //            }
+        //            if (GameManager.Instance.currentChose == stateOfChose.ItemPoints)
+        //            {
+        //                GameManager.Instance.currentItemPoints = Name.text;
+        //
+        //                //return;
+        //            }
+        //            rp.init = false;
+        //        }
+        //    })
+        //    .AddTo(this);
+            
+
 
         uiMng.screenSize.
             Where(w => w != Vector2.zero).
@@ -45,11 +81,11 @@ public class BonePointInfo : MonoBehaviour
         var boneUpdate = Observable.EveryLateUpdate()
             .Subscribe(_ =>
             {
-
                 if (TransLang!=null & TransLang.Count == 4) {
                     setName(TransLang[GameManager.Singelton.currentLang]);
                 }
             }).AddTo(this);
+
 
         currentIm.
             OnPointerDownAsObservable().
@@ -71,7 +107,7 @@ public class BonePointInfo : MonoBehaviour
                 }
                 if (GameManager.Instance.currentChose == stateOfChose.ItemPoints)
                 {
-                    GameManager.Instance.currentItemPoints = Name.text;
+                    GameManager.Instance.currentItemPoints = gameObject.name;
                     
                     //return;
                 }

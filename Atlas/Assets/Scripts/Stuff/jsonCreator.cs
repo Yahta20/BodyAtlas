@@ -8,9 +8,13 @@ using System.IO;
 public class ObjData {
 
         public string name;
+
+        public string parent;
+
         public float[] position;
         public float[] rotation;
         public float[] scale;
+        
         
         public ObjData(
             string n,
@@ -20,10 +24,10 @@ public class ObjData {
             name = n;
 
             position = new float[3] 
-            { t.localPosition.x,t.localPosition.y, t.localPosition.z };
+            { t.position.x, t.position.y, t.position.z};
             
             rotation = new float[4] 
-            { t.rotation.w, t.rotation.x, t.rotation.y, t.rotation.z };
+            {  t.rotation.x, t.rotation.y, t.rotation.z,t.rotation.w };
             
             scale = new float[3] 
             { t.localScale.x, t.localScale.y, t.localScale.z };
@@ -83,6 +87,40 @@ public class listOfData {
         }
         return Vector3.one;
     }
+
+    public ObjData GetObjByNam(string s)
+    {
+        foreach (var item in saveList)
+        {
+            if (item.name == s)
+            {
+                return item;
+            }
+        }
+        return null;
+    }
+    public ObjData GetObjByPar(string s) {
+        foreach (var item in saveList)
+        {
+            if (item.parent ==  s)
+            {
+                return item;
+            }
+        }
+        return null;
+    }
+
+    public int getChildCount(string s) { 
+        int chc = 0;
+        foreach (var item in saveList)
+        {
+            if (item.parent == s)
+            {
+                chc++;
+            }
+        }
+        return chc;
+    }
 }
     
 
@@ -102,19 +140,51 @@ public class jsonCreator : MonoBehaviour
         var path = Path.Combine(Application.dataPath, nameOfFile);
 
         var lod = new listOfData();
-        List<ObjData> eee = new List<ObjData>();
-        for (int i = 0; i < ObjectToSave.transform.childCount; i++)
+        List<ObjData> PrepData = new List<ObjData>();
+
+        var og = new ObjData(
+            "root",
+            ObjectToSave.transform
+            );
+        og.parent = "main";
+        PrepData.Add(og);
+        foreach (Transform item in ObjectToSave.transform)
         {
             var od = new ObjData(
-            ObjectToSave.transform.GetChild(i).gameObject.name,
-            ObjectToSave.transform.GetChild(i)
+            item.gameObject.name,
+            item
             );
-            var scl = ObjectToSave.transform.GetChild(i).transform.lossyScale;
+            od.parent = "root";
+            var scl = item.transform.lossyScale;
             od.UpdateParentScale(scl);
-            eee.Add(od);
-            //lod.saveList.Add(od);
+            PrepData.Add(od);
+            foreach (Transform subitem in item)
+            {
+                var odd = new ObjData(
+                    subitem.gameObject.name,
+                    subitem
+                    );
+                odd.parent = item.gameObject.name;
+            
+                var sscl = subitem.transform.lossyScale;
+                odd.UpdateParentScale(scl);
+                PrepData.Add(odd);
+            }
         }
-        lod.saveListcreaton(eee);
+        lod.saveListcreaton(PrepData);
+
+
+//        for (int i = 0; i < ObjectToSave.transform.childCount; i++)
+//        {
+//            var od = new ObjData(
+//            ObjectToSave.transform.GetChild(i).gameObject.name,
+//            ObjectToSave.transform.GetChild(i)
+//            );
+//            var scl = ObjectToSave.transform.GetChild(i).transform.lossyScale;
+//            od.UpdateParentScale(scl);
+//            eee.Add(od);
+//            //lod.saveList.Add(od);
+//        }
         var s = JsonUtility.ToJson(lod,true);
 
         try

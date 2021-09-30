@@ -25,7 +25,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 392}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 16252
+  controlID: 3133
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -175,7 +175,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 96e1fcff7aebfcffb0ebfcff26f9fcffc40afdff160bfdff1eaefeff94b6feff9ac1feffca8effff7a9effff68f2ffffa2f9ffff6afbfffffe5e00007a5f0000e08c00005ad3000086d3000028e40000
+      m_ExpandedIDs: cecffeffeaeffefffaf6feff20f7feff6afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 392}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 16253
+  controlID: 3090
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -345,14 +345,14 @@ MonoBehaviour:
   m_Gizmos: 1
   m_SceneIsLit: 0
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.4955263, y: 9.93897, z: -5.506836}
+    m_Target: {x: 4.4762383, y: 14.757298, z: 12.975368}
     speed: 2
-    m_Value: {x: 7.4955263, y: 9.93897, z: -5.506836}
+    m_Value: {x: 4.4762383, y: 14.757298, z: 12.975368}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -398,17 +398,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.08262373, y: -0.19249432, z: 0.016267803, w: -0.97767913}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.082623646, y: -0.19249414, z: 0.016267788, w: -0.9776782}
   m_Size:
     m_Target: 12.480903
     speed: 2
     m_Value: 12.480903
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.4974874
@@ -495,20 +495,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 60
   m_LastFolders:
-  - Assets/Scenes
+  - Assets
   m_LastFoldersGridSize: 60
   m_LastProjectPath: D:\WinUsers\ASRock\Documents\BodyAtlas\Atlas
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 154}
-    m_SelectedIDs: 9a430000
-    m_LastClickedID: 17306
-    m_ExpandedIDs: 000000009443000096430000984300009a4300009c4300009e430000a0430000a2430000a4430000a6430000a8430000b0430000
+    scrollPos: {x: 0, y: 16.505438}
+    m_SelectedIDs: d2430000
+    m_LastClickedID: 17362
+    m_ExpandedIDs: 00000000b6430000b8430000ba430000bc430000be430000c0430000c2430000c4430000c6430000c8430000ca430000d2430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -536,7 +536,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 116}
     m_SelectedIDs: 50430000
     m_LastClickedID: 17232
-    m_ExpandedIDs: 000000009443000096430000984300009a4300009c4300009e430000a0430000a2430000a4430000a6430000a8430000
+    m_ExpandedIDs: 00000000b6430000b8430000ba430000bc430000be430000c0430000c2430000c4430000c6430000c8430000ca430000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -561,9 +561,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: b0ec0000
-    m_LastClickedInstanceID: 60592
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: de39000040590000d4e90000ce3f0000d4860000b05a0000504000006a410000f2430000c0430000000000004c3b00005c460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

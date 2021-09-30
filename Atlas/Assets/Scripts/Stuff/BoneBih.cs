@@ -46,24 +46,36 @@ public class BoneBih : MonoBehaviour
     void Start()
     {
 
-        var mov = Moving.Instance;
 
-        mov.GetCollider.
-            Where(c =>
+        //var mov = Moving.Instance;
+        //mov.GetCollider
+        //    .Where(c =>c!=null )
+        //    .Subscribe(s => {
+        //        if ( s==boneCollider) //s.gameObject.layer == 8 &
+        //        {
+        //            chosen = chosen == false ? true : false;
+        //
+        //            if (chosen)
+        //            {
+        //                GameManager.Instance.setCurrentBone(gameObject.name);
+        //            }
+        //            else
+        //            {
+        //
+        //                topPanel.Instance.upHierarchy();
+        //            }
+        //            rightPanel.Instance.init = false;
+        //        }
+        //    }
+        //).AddTo(this);
             
-            c != null ).
-            Subscribe(s => {
-                if (s.gameObject.layer == 8 & s==boneCollider) { 
-                print($"yoy boy {s.gameObject} {s}"); }
                 
-                }
                  
-        ).AddTo(this);
 
         boneCollider.OnMouseDownAsObservable()
             .Subscribe(s=> {
                 chosen = chosen == false ? true : false;
-
+        
                 if (chosen)
                 {
                     GameManager.Instance.setCurrentBone(gameObject.name);

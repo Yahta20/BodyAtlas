@@ -24,8 +24,9 @@ public class ClassroomBeh : MonoBehaviour
 
     public IObservable <bool> isChosenObject    {get; private set;}
     public IObservable <string> nameOfChosen    {get; private set;}
+    public bool Compleeted { get; private set; } = false;
 
-    void Awake() {
+void Awake() {
         GameEnviroment.Singelton.setLanguage(0);
         Instance = this;
         emptyObj = new GameObject("empty");
@@ -71,9 +72,11 @@ public class ClassroomBeh : MonoBehaviour
             Debug.LogWarning("Spawn object faild");
         }
     }
-
+    
     void Start()
     {
+        Compleeted = true;
+
         var chekObj = Observable.EveryFixedUpdate()
             .Subscribe(
 

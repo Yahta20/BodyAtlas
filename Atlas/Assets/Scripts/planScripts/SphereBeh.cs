@@ -52,7 +52,7 @@ public class SphereBeh : MonoBehaviour
 
     void Start()
     {
-        controlObject = ClassroomBeh.Instance.gameObject;
+        
         movi = Moving.Instance;
 
         movi.Movement
@@ -145,6 +145,14 @@ public class SphereBeh : MonoBehaviour
 
     private void lockState()
     {
+        if (ClassroomBeh.Instance == null)
+        {
+            return;
+        }
+        else
+        {
+            controlObject = ClassroomBeh.Instance.gameObject;
+        }
         if (currentState == AccesState.locked)
         {
             if (GameMenState[1] == "" & GameMenState[2] == "" & GameMenState[3] == "") {
