@@ -217,12 +217,12 @@ public class StartMenuBeh : MonoBehaviour
         var offset = roomPanel.sizeDelta.x * 0.1f;
 
         Atlas.sizeDelta = new Vector2(yFlag , yFlag*0.5f);
-        Atlas.anchoredPosition = new Vector2(0, 0 - offset);
-        //Atlas.anchoredPosition = new Vector2(0f, roomPanel.sizeDelta.x * 0.25f-offset);
+        //Atlas.anchoredPosition = new Vector2(0, 0 - offset);
+        Atlas.anchoredPosition = new Vector2(0f, roomPanel.sizeDelta.x * 0.25f-offset);
 
 
-        //Exam.sizeDelta = new Vector2(yFlag , yFlag*0.5f);
-        //Exam.anchoredPosition = new Vector2(0, 0 - offset);
+        Exam.sizeDelta = new Vector2(yFlag , yFlag*0.5f);
+        Exam.anchoredPosition = new Vector2(0, 0 - offset);
 
         Exit.sizeDelta = new Vector2(yFlag, yFlag * 0.5f);
         Exit.anchoredPosition = new Vector2(0, -roomPanel.sizeDelta.x * 0.25f - offset);

@@ -5,6 +5,7 @@ using UnityEngine;
 
 [System.Serializable]
 public class BoneList {
+
     public bones[] BONES;
     public string FindBone(string BoneName)
     {
@@ -53,7 +54,6 @@ public class BoneList {
             }
         }
     }
-
     public Dictionary<Lang, string> getBoneDic(string name)
     {
         foreach (var item in BONES)
@@ -79,8 +79,23 @@ public class BoneList {
         }
         return null;
     }
-}
+    public int getBNomber(string bName) {
+        int nomb = 0;
 
+        foreach (var bone in BONES)
+        {
+            if (bone.lat == bName)
+            {
+                return nomb;
+            }
+            nomb++;
+        }
+        return nomb; 
+    }
+
+   
+}
+    
 [System.Serializable]
 public class bones
 {
@@ -90,10 +105,7 @@ public class bones
     public string ru ;
 
     public Point[] point;
-    
-
     public Dictionary<Lang, string> bonesDic {get;private set;} = new Dictionary<Lang, string>();
-
     public string[] getLatPoints() {
         var l = new List<string>();
         foreach (var item in point)
@@ -102,7 +114,6 @@ public class bones
         }
         return l.ToArray();
     }
-
     public void fillName() {  
         bonesDic.Add(Lang.lat, lat);
         bonesDic.Add(Lang.ua,  ua );
@@ -162,6 +173,8 @@ public sealed class LangEnv : MonoBehaviour
     [Space]
     public BoneList currentBone = new BoneList();
 
+    public string[] ignoreList { get; private set; } 
+        = new string[] { "spatia interossea metatarsi", "osseus" };
 
     public static LangEnv Singelton
     {
@@ -187,5 +200,16 @@ public sealed class LangEnv : MonoBehaviour
         currentBone.fillAllDict();
     }
 
+    public bool ChekIgnore(string s) {
+
+        foreach (var item in ignoreList)
+        {
+            if (s==item)
+            {
+                return false;
+            }
+        }
+        return true;
+    }
 
 }

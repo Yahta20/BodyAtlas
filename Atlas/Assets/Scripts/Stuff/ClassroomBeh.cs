@@ -77,6 +77,7 @@ void Awake() {
     {
         Compleeted = true;
 
+        //LoadScreen.Instance.changeState(StateOfLoading.hide);
         var chekObj = Observable.EveryFixedUpdate()
             .Subscribe(
 

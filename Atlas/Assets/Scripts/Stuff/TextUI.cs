@@ -75,7 +75,7 @@ public sealed class TextUI
         dictPage = new Dictionary<Lang, string>();
         dictPage.Add(Lang.lat, "Test of questions about bones");//"Тест из вопросов о костях"
         dictPage.Add(Lang.en, "Test of questions about bones" );
-        dictPage.Add(Lang.ua, "Тест з питань про кістках"     );
+        dictPage.Add(Lang.ua, "Тест з питань про кістки"     );
         dictPage.Add(Lang.ru, "Тест из вопросов о костях"     );
         Labels.Add(dictPage);
 
@@ -121,6 +121,10 @@ public sealed class TextUI
         dictPage.Add(Lang.ua, "правельних відповідей");
         dictPage.Add(Lang.ru, "правельных ответов");
         Labels.Add(dictPage);
+
+
+
+
     }
 
 
@@ -129,7 +133,7 @@ public sealed class TextUI
         {
             if (label == item[Lang.lat])
             {
-                return item[GameEnviroment.Singelton.languageInfo];
+                return item[GameManager.Singelton.currentLang];
             }
         }
         return "none";

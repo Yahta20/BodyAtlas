@@ -16,6 +16,8 @@ public class rightPanel : MonoBehaviour
     public float SpeedOfScrole;
     
     public Text Main;
+   
+
     [Space]
     public Image ScrollArea;
     public Image slide;
@@ -257,7 +259,7 @@ public class rightPanel : MonoBehaviour
     {
         rtPanel.sizeDelta          = new Vector2(screenSize.x * 0.37f, screenSize.y );
         var rtMain = Main.rectTransform;
-        rtMain.sizeDelta = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.08f);
+        rtMain.sizeDelta = new Vector2(rtPanel.sizeDelta.x * 0.93f, rtPanel.sizeDelta.y * 0.08f);
         rtMain.anchoredPosition = new Vector2(0, rtPanel.sizeDelta.y * 0.01f);
 
         var rtScrAr = ScrollArea.rectTransform;

@@ -96,7 +96,6 @@ public class topPanel : MonoBehaviour
                 StartScene();
             }).
             AddTo(this);
-
         lang.OnPointerDownAsObservable().
              Subscribe(s => {           
                  switch (GameManager.Singelton.currentLang)
@@ -124,7 +123,7 @@ public class topPanel : MonoBehaviour
                  }            
              }).
              AddTo(this);
-
+        
         back.OnPointerDownAsObservable().
              Subscribe(s => {
                  upHierarchy();                 

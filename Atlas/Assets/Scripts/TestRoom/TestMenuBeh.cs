@@ -20,7 +20,7 @@ public class TestMenuBeh : MonoBehaviour
     public Image randImg;
     public Image boneImg;
     public Image pontImg;
-
+    private Lang curlang;
 
     public enum StateOfMenu { 
         start=0,
@@ -33,43 +33,47 @@ public class TestMenuBeh : MonoBehaviour
 
     void Awake()
     {
+
         Instance = this; 
         rtPanel = GetComponent<RectTransform>();
         currentState=StateOfMenu.start;
+        GameManager.Singelton.setLanguage(0);
+        curlang = GameManager.Singelton.currentLang;
+        MainText.text = TextUI.Singelton.getLabel("Chose type of test");
+        Description.text = TextUI.Singelton.getLabel("Description of the selected test");
     }
 
 
     private void Start()
     {
-        
-        MainText.text       = TextUI.Singelton.getLabel("Chose type of test");
-        Description.text    = TextUI.Singelton.getLabel("Description of the selected test");
-
 
         var screan = UIManager.Instance.screenSize.
             Where(w => w != Vector2.zero).
             //DistinctUntilChanged().
             Subscribe(s => {
                     updateFoo(s);
+                langUpdate();
             }).
             AddTo(this);
 
         //navedenie
         randImg.OnPointerEnterAsObservable().
             Subscribe(s => {
+                //print(s);
                 Description.text = TextUI.Singelton.getLabel("Test of random questions\nbones and dots on them"); //"Тест из случайных вопросов\nкостей и точек на них";
             }).
             AddTo(this);
 
-
         boneImg.OnPointerEnterAsObservable().
             Subscribe(s => {
+                //print(s);
                 Description.text = TextUI.Singelton.getLabel("Test of questions about bones");//"Тест из вопросов о костях";
             }).
             AddTo(this);
 
         pontImg.OnPointerEnterAsObservable().
             Subscribe(s => {
+                //print(s);
                 Description.text = TextUI.Singelton.getLabel("Test of questions about points on bones");//= "Тест из вопросов о точках на костях";
             }).
             AddTo(this);
@@ -81,7 +85,6 @@ public class TestMenuBeh : MonoBehaviour
                 TestManager.Instance.setState(TestManager.TypeOfTest.Random);
             }).
             AddTo(this);
-
 
         boneImg.OnPointerDownAsObservable().
             Subscribe(s => {
@@ -96,9 +99,16 @@ public class TestMenuBeh : MonoBehaviour
                 TestManager.Instance.setState(TestManager.TypeOfTest.Points);
             }).
             AddTo(this);
-
     }
-
+    private void langUpdate()
+    {
+        if (curlang!= GameManager.Singelton.currentLang)
+        {
+            MainText.text = TextUI.Singelton.getLabel("Chose type of test");
+            Description.text = TextUI.Singelton.getLabel("Description of the selected test");
+            curlang = GameManager.Singelton.currentLang;
+        }
+    }
     private void updateFoo(Vector2 size)
     {
         var rtMainText      = MainText.rectTransform;
@@ -111,9 +121,6 @@ public class TestMenuBeh : MonoBehaviour
 
         FirstStep.sizeDelta         = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.75f);
         FirstStep.anchoredPosition  = Vector2.zero;
-
-        //PointStep.sizeDelta         = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.75f);
-        //PointStep.anchoredPosition  = Vector2.zero;
 
         rtMainText.sizeDelta        = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.15f);
         rtDescription.sizeDelta     = new Vector2(rtPanel.sizeDelta.x, rtPanel.sizeDelta.y * 0.15f);
@@ -147,11 +154,6 @@ public class TestMenuBeh : MonoBehaviour
             default:
                 break;
         }
-
-
-
-
-
     }
 
     private void startState()
@@ -170,9 +172,9 @@ public class TestMenuBeh : MonoBehaviour
 
     private void exitState()
     {
-                this.gameObject.SetActive(false);
-        
+        this.gameObject.SetActive(false);
     }
+        
 
     private void resultState()
     {

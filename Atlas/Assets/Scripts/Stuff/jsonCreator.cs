@@ -99,6 +99,7 @@ public class listOfData {
         }
         return null;
     }
+
     public ObjData GetObjByPar(string s) {
         foreach (var item in saveList)
         {

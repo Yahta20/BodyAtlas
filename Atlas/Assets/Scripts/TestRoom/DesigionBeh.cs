@@ -70,7 +70,7 @@ public class DesigionBeh : MonoBehaviour
         tWrong .text=args[1];
         tRight .text=args[2];
         
-        if (LangManage.instance.FindBone4Test(args[1]) ==   args[2])
+        if (args[1] == args[2])
         {
             backgroundC.color = Color.green;
         }

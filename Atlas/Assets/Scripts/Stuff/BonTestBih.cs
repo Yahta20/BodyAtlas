@@ -8,7 +8,7 @@ public class BonTestBih : MonoBehaviour
     public GameObject PupetBone;
     
     [Range(0, 5)]
-    public float speedMoving=2;
+    public float speedMoving=0.02f;
     [Range(25, 60)]
     public float cameraMaxZoom = 25f;
     [Range(25, 60)]
@@ -16,6 +16,7 @@ public class BonTestBih : MonoBehaviour
     public Camera camera;
 
     public Vector3 clicPlaceL;
+    public Vector3 clicPlaceS;
 
     void Awake()
     {
@@ -29,7 +30,7 @@ public class BonTestBih : MonoBehaviour
         var movi = Moving.Instance;
 
 
-        movi.MouseClickR.
+       movi.MouseClickR.
             Where(w => w != Vector2.zero).
             Subscribe(s=> {
                 clicPlaceL = s;
@@ -48,11 +49,13 @@ public class BonTestBih : MonoBehaviour
                 clicPlaceL = s;
             }).
             AddTo(this);
+        /*
+         */
 
         movi.ScrollClick
             .Where(sp => sp != Vector2.zero)
             .Subscribe(s => {
-                clicPlaceL = s;
+                clicPlaceS = s;
             })
             .AddTo(this);
 
@@ -60,10 +63,10 @@ public class BonTestBih : MonoBehaviour
             .Where(v => v != Vector2.zero)
             .Subscribe(s => {
                 var currentPos = s;
-                var deltaX = currentPos.x - clicPlaceL.x;
-                var deltaY = currentPos.y - clicPlaceL.y;
+                var deltaX = currentPos.x - clicPlaceS.x;
+                var deltaY = currentPos.y - clicPlaceS.y;
                 Movement(new Vector2(deltaX, deltaY));
-                clicPlaceL = s;
+                clicPlaceS = s;
             })
             .AddTo(this);
 
@@ -80,7 +83,7 @@ public class BonTestBih : MonoBehaviour
                     //)
                     //{
 
-                        fov -= sub * 0.2f;
+                        fov -= sub * 0.33f;
                         fov = fov > cameraMinZoom ? cameraMinZoom : fov;
                         fov = fov < cameraMaxZoom ? cameraMaxZoom : fov;
                     //}
@@ -104,7 +107,9 @@ public class BonTestBih : MonoBehaviour
 
 
         var distance = playerVelocity * Time.fixedDeltaTime;
-        transform.Translate(distance, Space.World);
+        //transform.Translate(distance, Space.World);
+
+        transform.position = transform.position+(Vector3)inputVelocity;
     }
 
 

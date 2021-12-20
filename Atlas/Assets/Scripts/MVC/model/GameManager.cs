@@ -146,7 +146,8 @@ public class studySubgect
     public string Partition;
     public subpartitions[] Subpartitions;
 
-    public Dictionary<Lang, string> TitleDic { get; private set; } = new Dictionary<Lang, string>();
+    public Dictionary<Lang, string> TitleDic { get; private set; } 
+        = new Dictionary<Lang, string>();
     public void fillName()
     {
         TitleDic.Add(Lang.lat, Title[0]);
@@ -187,7 +188,7 @@ public class subpartitions
     public Dictionary<Lang, string> TitleDic { get; private set; } = new Dictionary<Lang, string>();
     public void fillName()
     {
-        TitleDic.Add(Lang.lat, Title[0]);
+        TitleDic.Add(Lang.lat,Title[0]);
         TitleDic.Add(Lang.ua, Title[1]);
         TitleDic.Add(Lang.ru, Title[2]);
         TitleDic.Add(Lang.en, Title[3]);

@@ -48,6 +48,7 @@ public class SphereBeh : MonoBehaviour
         Instance = this;
         startCameraPlase = transform;
         currentState = AccesState.free;
+        camera = GetComponent<Camera>();
     }
 
     void Start()

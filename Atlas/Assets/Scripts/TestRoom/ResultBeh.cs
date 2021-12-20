@@ -20,20 +20,38 @@ public class ResultBeh : MonoBehaviour
     public Image retryImg;
     [Space]
     public GameObject RPref;
-    
+    private Lang curlang;
+    private string resultInfo = "";
 
 
     void Awake()
     {
         Instance = this;
-    }
-
-    void Start()
-    {
+        curlang = GameManager.Singelton.currentLang;
         ResulTxt.text = TextUI.Singelton.getLabel("Retry");
         retryTxt.text = TextUI.Singelton.getLabel("Retry");
-        exitTxt .text = TextUI.Singelton.getLabel("Exit");
+        exitTxt.text = TextUI.Singelton.getLabel("Exit");
+    }
 
+    private void langUpdate()
+    {
+        if (curlang != GameManager.Singelton.currentLang)
+        {
+            exitTxt.text = TextUI.Singelton.getLabel("Exit");
+                retryTxt.text = TextUI.Singelton.getLabel("Retry");
+            if (resultInfo=="")
+            {
+                ResulTxt.text = TextUI.Singelton.getLabel("Retry");
+            }
+            if (resultInfo != "")
+            {
+                ResulTxt.text = resultInfo + TextUI.Singelton.getLabel("correct ansvers");
+            }
+            curlang = GameManager.Singelton.currentLang;
+        }
+    }
+    void Start()
+    {
         var TMB = TestManager.Instance;
 
         var screan = UIManager.Instance.screenSize.
@@ -49,11 +67,10 @@ public class ResultBeh : MonoBehaviour
                  else {
                      this.gameObject.SetActive(false);
                  }
+                 langUpdate();
              }).
              AddTo(this);
-
-
-
+        
         exitImg.OnPointerDownAsObservable().
             Subscribe(s => {
                 startScene();
@@ -64,18 +81,6 @@ public class ResultBeh : MonoBehaviour
                 rebootScene();
             }).
             AddTo(this);
-
-
-        //var boneUpdate = Observable.EveryLateUpdate()
-        //    .Subscribe(
-        //    s => {
-        //    
-        //        
-        //
-        //    })
-        //    .AddTo(this);
-    //retryTxt.sizeDelta = new Vector2(size.x * 0.62f, size.y * 0.62f);
-    //exitTxt .sizeDelta = new Vector2(size.x * 0.62f, size.y * 0.62f);
     }
 
     private void updateFoo(Vector2 size)
@@ -106,8 +111,8 @@ public class ResultBeh : MonoBehaviour
             -(rtMain.sizeDelta.x - rtListOfFail.sizeDelta.x - exitImg.rectTransform.sizeDelta.x) / 2
             , exitTxt.rectTransform.sizeDelta.y + exitImg.rectTransform.sizeDelta.y + retryImg.rectTransform.anchoredPosition.y*2
             );
-
     }
+
 
     public void ClearListQuestions() {
         if (rtListOfFail.transform.childCount != 0)
@@ -141,9 +146,10 @@ public class ResultBeh : MonoBehaviour
         }
         int acc = (Index / cheker.Count * 100);
 
-        string resik = $"{Index} / {cheker.Count} {TextUI.Singelton.getLabel("correct ansvers")}" ;
+        string resik = $"{Index} / {cheker.Count} " ;
 
-        ResulTxt.text = resik;// 
+        resultInfo = resik;
+        ResulTxt.text = resultInfo + TextUI.Singelton.getLabel("correct ansvers");// 
     }
 
     public void startScene()

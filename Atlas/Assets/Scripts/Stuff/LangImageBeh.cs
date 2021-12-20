@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using UniRx;
+using UniRx.Triggers;
 
 public class LangImageBeh : MonoBehaviour
 {
@@ -22,11 +23,11 @@ public class LangImageBeh : MonoBehaviour
     }
 
 
+
+
     void Start()
     {
-
         var geLang = GameManager.Instance.currentLang;
-
         var img = Observable.EveryFixedUpdate()
             .Subscribe(
             s => {
@@ -51,6 +52,7 @@ public class LangImageBeh : MonoBehaviour
             })
             .AddTo(this);
     }
+
 
     
 }

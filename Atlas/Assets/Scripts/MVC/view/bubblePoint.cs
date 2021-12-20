@@ -54,35 +54,35 @@ public class bubblePoint : MonoBehaviour
         {
             gameObject.SetActive(true);
 
-        var sp = rightPanel.Instance.rtPanel;
-        var x = (rtPanel.anchoredPosition.x + rtPanel.sizeDelta.x) >
-                (UIManager.Instance.CanvasSize().x - sp.sizeDelta.x + sp.anchoredPosition.x) ?
-                UIManager.Instance.CanvasSize().x - sp.sizeDelta.x + sp.anchoredPosition.x - rtPanel.sizeDelta.x :
-                rtPanel.anchoredPosition.x;
-        var y = -(rtPanel.anchoredPosition.y - rtPanel.sizeDelta.y) >
-                (UIManager.Instance.CanvasSize().y) ?
-                (rtPanel.sizeDelta.y - UIManager.Instance.CanvasSize().y) :
-                rtPanel.anchoredPosition.y;
+            var sp = rightPanel.Instance.rtPanel;
+            var x = (rtPanel.anchoredPosition.x + rtPanel.sizeDelta.x) >
+                    (UIManager.Instance.CanvasSize().x - sp.sizeDelta.x + sp.anchoredPosition.x) ?
+                    UIManager.Instance.CanvasSize().x - sp.sizeDelta.x + sp.anchoredPosition.x - rtPanel.sizeDelta.x :
+                    rtPanel.anchoredPosition.x;
+            var y = -(rtPanel.anchoredPosition.y - rtPanel.sizeDelta.y) >
+                    (UIManager.Instance.CanvasSize().y) ?
+                    (rtPanel.sizeDelta.y - UIManager.Instance.CanvasSize().y) :
+                    rtPanel.anchoredPosition.y;
         
-        x = x < 0 ? 0 : x;
-        y = y > 0 ? 0 : y;
+            x = x < 0 ? 0 : x;
+            y = y > 0 ? 0 : y;
         
             rtPanel.anchoredPosition = new Vector2(x, y);
-        lr.positionCount = 2;
+            lr.positionCount = 2;
         
             float xposRT = x+rtPanel.sizeDelta.x/2;
-        float yposRT = y - rtPanel.sizeDelta.y/2+UIManager.Instance.CanvasSize().y;
+            float yposRT = y - rtPanel.sizeDelta.y/2+UIManager.Instance.CanvasSize().y;
         
-        Vector3 start = SphereBeh.Instance.camera.ScreenToWorldPoint(
-            new Vector3(xposRT, yposRT, SphereBeh.Instance.camera.nearClipPlane));
+            Vector3 start = SphereBeh.Instance.camera.ScreenToWorldPoint(
+                new Vector3(xposRT, yposRT, SphereBeh.Instance.camera.nearClipPlane));
 
-        Vector3 point = ClassroomBeh.Instance.chosenObj.
-            GetComponent<BoneBih>().getPoint(GameManager.Instance.getState()[3]);//Vector3.zero;
+            Vector3 point = ClassroomBeh.Instance.chosenObj.
+                GetComponent<BoneBih>().getPoint(GameManager.Instance.getState()[3]);//Vector3.zero;
 
-        lr.endWidth = 0.002f;
-        lr.startWidth = 0.003f;
-        lr.SetPosition(1, start);
-        lr.SetPosition(0, point);
+            lr.endWidth = 0.002f;
+            lr.startWidth = 0.003f;
+            lr.SetPosition(1, start);
+            lr.SetPosition(0, point);
 
             UItext.text =(
             rightPanel.Instance.getPointNumber(GameManager.Instance.getState()[3])+1).ToString();

@@ -57,35 +57,12 @@ public class PreparationBeh : MonoBehaviour
             }
             if (LoadPlace.GetComponent<ClassroomBeh>() != null)
             {
+                //LoadScreen.Instance.changeState(StateOfLoading.hide);
                 DestroyImmediate(this.gameObject);
                 DestroyImmediate(this);
-
             }
-            
         }
-          
     }
-            
-
-
-
-
-
-
-
-    //private void OnLoadTextAsset(AsyncOperationHandle<TextAsset> handle)
-    //{
-    //    if (handle.Status == AsyncOperationStatus.Succeeded)
-    //    {
-    //        DataToLoad = handle.Result;
-    //        data4Load = JsonUtility.FromJson<listOfData>(DataToLoad.text);
-    //        SpawnObj();
-    //    }
-    //    if (handle.Status == AsyncOperationStatus.Failed)
-    //    {
-    //        Debug.LogWarning("Spawn object faild");
-    //    }
-    //}
     void OnLoadAsset(AsyncOperationHandle<GameObject> handle)
     {
         if (handle.Status == AsyncOperationStatus.Succeeded)
@@ -99,18 +76,13 @@ public class PreparationBeh : MonoBehaviour
             spawnObject.transform.position      = data4Load.GetPosition(spawnObject.name);
             spawnObject.transform.rotation      = data4Load.GetRotation(spawnObject.name);
             spawnObject.transform.localScale    = data4Load.GetScale(spawnObject.name);
-            //print($"re {obj.name}");
             spawnObject.transform.SetParent(getParent(obj.parent));
-            //if (obj.parent == "root")
-            //{
-            //}
-
-
         }
         if (handle.Status == AsyncOperationStatus.Failed) {
             Debug.LogWarning("Spawn object faild");
         }
     }
+ 
     Transform getParent(string s) {
             //print(s);
         foreach (Transform item in LoadPlace.transform)
@@ -134,10 +106,10 @@ public class PreparationBeh : MonoBehaviour
             c++;
             c+=item.childCount;
         }
-
-
         return c;
     }
+}
+
+
 
   
-}

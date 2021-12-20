@@ -23,11 +23,5 @@ public class choseButBeh : MonoBehaviour
         }
     }
 
-    //void Start()
-    //{
-    //}
-    //void Update()
-    //{
-    //}
     
 }

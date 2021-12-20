@@ -1294,30 +1294,30 @@
     "point": [
      {
        
-       "lat": "base of patella",
+       "lat": "basis patellae",
         "ua": "основа наколінка",
-        "en": "basis patellae",
+        "en": "base of patella",
         "ru": "основание надколенника"
      } ,
      {
        
-       "lat": "apex of patellae",
+       "lat": "apex patellae",
         "ua": "верхівка наколінка",
-        "en": "apex patellae",
+        "en": "apex of patellae",
         "ru": "верхушка надколенника"
      },
      {
        
-       "lat": "anterior surface",
+       "lat": "facies anterior",
         "ua": "передня поверхня",
-        "en": "facies anterior",
+        "en": "anterior surface",
         "ru": "передняя поверхность"
      },
      {
        
-       "lat": "articular surface",
+       "lat": "facies articularis",
         "ua": "суглобова поверхня",
-        "en": "facies articularis",
+        "en": "articular surface",
         "ru": "суставная поверхность"
      }
     ]
