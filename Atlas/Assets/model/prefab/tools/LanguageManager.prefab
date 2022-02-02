@@ -45,4 +45,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currentLang: 0
   currentUILang: 0
-  inputData: {fileID: 4900000, guid: 9ef1bf1c361e646459774d1bf03444ce, type: 3}
+  inputData: {fileID: 0}
