@@ -1303,7 +1303,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1269748650908538839, guid: 06f04123ae7815f4aa32bc6e6f467ac7,
+  m_Sprite: {fileID: 3328828606073957418, guid: 06f04123ae7815f4aa32bc6e6f467ac7,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1482,7 +1482,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DataToLoad: {fileID: 4900000, guid: bb2214a9d323f1f4eb2109fcf68c1cfa, type: 3}
   data4Load:
-    saveList: []
+    saveList:
+    - name: 
+      parent: 
+      position: []
+      rotation: []
+      scale: []
   LoadPlace: {fileID: 0}
 --- !u!1 &1779394464
 GameObject:
@@ -1640,7 +1645,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -5855481410888112227, guid: 06f04123ae7815f4aa32bc6e6f467ac7,
+  m_Sprite: {fileID: 8316908414349497427, guid: 06f04123ae7815f4aa32bc6e6f467ac7,
     type: 3}
   m_Type: 0
   m_PreserveAspect: 0
@@ -1936,6 +1941,17 @@ PrefabInstance:
       propertyPath: m_Name
       value: TopPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 2489342858742261832, guid: ad3557c64bc247f46b9b39ab7d28e2a6,
+        type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2489342858742261832, guid: ad3557c64bc247f46b9b39ab7d28e2a6,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1480575191351021357, guid: 06f04123ae7815f4aa32bc6e6f467ac7,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad3557c64bc247f46b9b39ab7d28e2a6, type: 3}
 --- !u!1001 &5898224469501981088
@@ -2204,6 +2220,16 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6964693244630873270, guid: 32ff77ee873d06e4f892612bd869c37d,
+        type: 3}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6964693244630873270, guid: 32ff77ee873d06e4f892612bd869c37d,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 6964693244630873271, guid: 32ff77ee873d06e4f892612bd869c37d,
         type: 3}
       propertyPath: m_AnchorMax.x

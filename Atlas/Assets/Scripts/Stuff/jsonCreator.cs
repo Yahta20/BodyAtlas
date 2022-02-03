@@ -14,7 +14,7 @@ public class ObjData {
         public float[] position;
         public float[] rotation;
         public float[] scale;
-        
+        public int hash;
         
         public ObjData(
             string n,
@@ -22,7 +22,7 @@ public class ObjData {
             ) {
 
             name = n;
-
+           
             position = new float[3] 
             { t.position.x, t.position.y, t.position.z};
             
@@ -191,6 +191,7 @@ public class jsonCreator : MonoBehaviour
         try
         {
             File.WriteAllText(path,s);
+            print("alldone");
         }
         catch (System.Exception e)
         {

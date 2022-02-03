@@ -43,10 +43,16 @@ public class PreparationBeh : MonoBehaviour
         {
             if (item.parent != "root" & item.parent != "main")
             {
-                Addressables.LoadAssetAsync<GameObject>(item.name).Completed += OnLoadAsset;
+                if (item.name.StartsWith("!R"))
+                {
+                    Addressables.LoadAssetAsync<GameObject>(item.name).Completed += OnLoadAsset;
+                    
+                }
             }
         }
     }
+                
+
 
     private void FixedUpdate()
     {
@@ -67,6 +73,7 @@ public class PreparationBeh : MonoBehaviour
     {
         if (handle.Status == AsyncOperationStatus.Succeeded)
         {
+
             var spawnObject = handle.Result;
             var obj = data4Load.GetObjByNam(spawnObject.name);
 
