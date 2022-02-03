@@ -14,7 +14,7 @@ public class ObjData {
         public float[] position;
         public float[] rotation;
         public float[] scale;
-        public int hash;
+        public int HashCode;
         
         public ObjData(
             string n,
@@ -122,11 +122,25 @@ public class listOfData {
         }
         return chc;
     }
+
+    public ObjData getByHashCode(int i)
+    {
+        foreach (var item in saveList)
+        {
+            if (item.HashCode == i)
+            {
+                return item;
+            }
+        }
+        return null;
+    }
+
+
 }
-    
 
 
-        
+
+
 
 
 public class jsonCreator : MonoBehaviour

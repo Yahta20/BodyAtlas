@@ -48,14 +48,12 @@ public class PreparationBeh : MonoBehaviour
             if (item.parent != "root" & item.parent != "main")
             {
                     //Addressables.LoadAssetAsync<GameObject>(item.name).Completed += OnLoadAsset;
-                    /*
                      var asynAction = Addressables.LoadAssetAsync<GameObject>
-                        (curretstruct.objectList[i].name);
-                    curretstruct.objectList[i].HashCode = asynAction.GetHashCode();
+                        (item.name);
+                    item.HashCode = asynAction.GetHashCode();
                     asynAction.Completed += OnLoadAsset;
-                    loadScreen.setProgress(Recvisit.Count,
-                                            curretstruct.objectList.Length);
                     yield return new WaitForSecondsRealtime(.4f);
+                    /*
                      
                      
                      */
