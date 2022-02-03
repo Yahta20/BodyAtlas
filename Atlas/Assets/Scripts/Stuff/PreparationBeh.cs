@@ -12,16 +12,20 @@ public class PreparationBeh : MonoBehaviour
     public GameObject LoadPlace;
 
 
-    void Awake()
+    private void Start()
     {
         if (LoadPlace==null)
         {
             LoadPlace = new GameObject("LoadPlace");
         }
         Loadet = false;
-        
         data4Load = JsonUtility.FromJson<listOfData>(DataToLoad.text);
-        
+
+
+
+        Spawn();
+    }
+    IEnumerator Spawn() {
         var main = data4Load.GetObjByPar("main");
         LoadPlace.transform.position = data4Load.GetPosition(main.name);
         LoadPlace.transform.rotation = data4Load.GetRotation(main.name);
@@ -29,13 +33,13 @@ public class PreparationBeh : MonoBehaviour
         LoadPlace.name = main.name;
         foreach (var item in data4Load.saveList)
         {
-            if (item.parent=="root")
+            if (item.parent == "root")
             {
                 //print($"re {item.name}");
                 var go = new GameObject(item.name);
-                go.transform.position  =data4Load.GetPosition   (item.name);
-                go.transform.rotation  =data4Load.GetRotation   (item.name);
-                go.transform.localScale=data4Load.GetScale      (item.name);
+                go.transform.position = data4Load.GetPosition(item.name);
+                go.transform.rotation = data4Load.GetRotation(item.name);
+                go.transform.localScale = data4Load.GetScale(item.name);
                 go.transform.SetParent(LoadPlace.transform);
             }
         }
@@ -43,15 +47,25 @@ public class PreparationBeh : MonoBehaviour
         {
             if (item.parent != "root" & item.parent != "main")
             {
-                if (item.name.StartsWith("!R"))
+                    //Addressables.LoadAssetAsync<GameObject>(item.name).Completed += OnLoadAsset;
+                    /*
+                     var asynAction = Addressables.LoadAssetAsync<GameObject>
+                        (curretstruct.objectList[i].name);
+                    curretstruct.objectList[i].HashCode = asynAction.GetHashCode();
+                    asynAction.Completed += OnLoadAsset;
+                    loadScreen.setProgress(Recvisit.Count,
+                                            curretstruct.objectList.Length);
+                    yield return new WaitForSecondsRealtime(.4f);
+                     
+                     
+                     */
+                if (item.name.StartsWith("[R]"))
                 {
-                    Addressables.LoadAssetAsync<GameObject>(item.name).Completed += OnLoadAsset;
-                    
                 }
             }
         }
+        yield break;
     }
-                
 
 
     private void FixedUpdate()
