@@ -1,8 +1,10 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
+using UnityEngine.SceneManagement;
 
 public class PreparationBeh : MonoBehaviour
 {
@@ -20,12 +22,8 @@ public class PreparationBeh : MonoBehaviour
         }
         Loadet = false;
         data4Load = JsonUtility.FromJson<listOfData>(DataToLoad.text);
-
-
-
-        Spawn();
-    }
-    IEnumerator Spawn() {
+    }   
+    void Spawn() {
         var main = data4Load.GetObjByPar("main");
         LoadPlace.transform.position = data4Load.GetPosition(main.name);
         LoadPlace.transform.rotation = data4Load.GetRotation(main.name);
@@ -41,6 +39,7 @@ public class PreparationBeh : MonoBehaviour
                 go.transform.rotation = data4Load.GetRotation(item.name);
                 go.transform.localScale = data4Load.GetScale(item.name);
                 go.transform.SetParent(LoadPlace.transform);
+                break;
             }
         }
         foreach (var item in data4Load.saveList)
@@ -50,24 +49,24 @@ public class PreparationBeh : MonoBehaviour
                     //Addressables.LoadAssetAsync<GameObject>(item.name).Completed += OnLoadAsset;
                      var asynAction = Addressables.LoadAssetAsync<GameObject>
                         (item.name);
-                    item.HashCode = asynAction.GetHashCode();
+                    
                     asynAction.Completed += OnLoadAsset;
-                    yield return new WaitForSecondsRealtime(.4f);
-                    /*
-                     
-                     
-                     */
-                if (item.name.StartsWith("[R]"))
-                {
-                }
+                //yield return new WaitForEndOfFrame();
             }
         }
-        yield break;
+        //yield break;
     }
-
 
     private void FixedUpdate()
     {
+        if (!Loadet)
+        {
+            Loadet = true;
+            //StartCoroutine(
+            //    );
+            Spawn();
+        }
+
         if (data4Load.saveList.Length == getChildcount()) {
             if (LoadPlace.GetComponent<ClassroomBeh>()==null)
             {
@@ -80,6 +79,7 @@ public class PreparationBeh : MonoBehaviour
                 DestroyImmediate(this);
             }
         }
+
     }
     void OnLoadAsset(AsyncOperationHandle<GameObject> handle)
     {
@@ -91,17 +91,50 @@ public class PreparationBeh : MonoBehaviour
 
             spawnObject = Instantiate(spawnObject);//,(Clone)
             spawnObject.name = spawnObject.name.Replace("(Clone)", "");//.Trim("(Clone)");
+
+
+            //var cur = data4Load.getByHashCode();
+            var cur = getUnspawnObj(spawnObject);
+
+            spawnObject.transform.position = new Vector3(cur.position[0], cur.position[1], cur.position[2]);//data4Load.GetPosition(spawnObject.name);
+            spawnObject.transform.rotation = new Quaternion(cur.rotation[0], cur.rotation[1], cur.rotation[2], cur.rotation[3]);//data4Load.GetRotation(spawnObject.name);
+            spawnObject.transform.localScale   = new Vector3(cur.scale[0], cur.scale[1], cur.scale[2]);//data4Load.GetScale(spawnObject.name);
             
-            spawnObject.transform.position      = data4Load.GetPosition(spawnObject.name);
-            spawnObject.transform.rotation      = data4Load.GetRotation(spawnObject.name);
-            spawnObject.transform.localScale    = data4Load.GetScale(spawnObject.name);
             spawnObject.transform.SetParent(getParent(obj.parent));
+            cur.spawn = true;
         }
         if (handle.Status == AsyncOperationStatus.Failed) {
             Debug.LogWarning("Spawn object faild");
         }
     }
- 
+
+    private ObjData getUnspawnObj(GameObject go)
+    {
+        ObjData[] arro = data4Load.FindArrByName(go.name);
+        foreach (var item in arro)
+        {
+            if (!item.spawn)
+            {
+                return item;
+            }
+        }
+        
+        return null;
+    }
+
+    private GameObject[] findArr(string name)
+    {
+        var t = new List<GameObject>();
+        var foundObjects = FindSceneObjectsOfType (typeof(GameObject));
+        foreach (var item in foundObjects)
+        {
+            if (item.name==name) {
+                t.Add(item as GameObject);
+            }
+        }
+        return t.ToArray();
+    }
+    
     Transform getParent(string s) {
             //print(s);
         foreach (Transform item in LoadPlace.transform)

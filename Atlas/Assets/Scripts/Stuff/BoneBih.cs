@@ -78,11 +78,10 @@ public class BoneBih : MonoBehaviour
         
                 if (chosen)
                 {
-                    GameManager.Instance.setCurrentBone(gameObject.name);
+                    GameManager.Instance.setCurrentBone(gameObject.name,gameObject.transform.GetInstanceID());
                 }
                 else
                 {
-                
                     topPanel.Instance.upHierarchy();
                 }
                 rightPanel.Instance.init = false;

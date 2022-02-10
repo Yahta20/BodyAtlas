@@ -13,7 +13,7 @@ public class ClassroomBeh : MonoBehaviour
     public Material backgroundMat;
     public GameObject chosenObj;
 
-    private GameObject emptyObj;
+    public GameObject emptyObj { get; private set; }
     [Space]
     public List<GameObject> chosenObjs;
 
@@ -48,7 +48,7 @@ void Awake() {
         isChosenObject = this.FixedUpdateAsObservable()
             .Select(_ =>
             {
-                if (chosenObj.name != "empty")
+                if (chosenObj != emptyObj)
                 {
                     return true;
                 }
@@ -134,15 +134,17 @@ void Awake() {
     {
         foreach(BoneBih bh in BoneOnScene)
         {
-            if (chosenObj.name == "empty" &GameManager.Instance.getState()[2] !="" )
+            if (chosenObj== emptyObj & GameManager.Instance.getState()[2] !="" )
             {
-                if (bh.gameObject.name == GameManager.Instance.getState()[2])
+                //if (bh.gameObject.name == GameManager.Instance.getState()[2])
+                if (bh.gameObject.transform.GetInstanceID() == GameManager.Instance.GOID)
                 {
                     bh.setChek();
                 }
-            }      
+            }    
             if (bh.chosen) {
-                if (chosenObj.name != bh.gameObject.name & chosenObj.name != "empty") {
+                if (chosenObj.transform.GetInstanceID() != bh.gameObject.transform.GetInstanceID() 
+                    & !chosenObj.Equals(emptyObj) ) {
                     var pbh = chosenObj.GetComponent<BoneBih>();
                     pbh.unchek();
                     chosenObj = bh.gameObject;
@@ -153,16 +155,16 @@ void Awake() {
 
             if (!bh.chosen)
             {
-                if (chosenObj.name == "empty")
+                if (chosenObj == emptyObj)
                 {
                     bh.setChosenMaterial();
                     bh.setStartRot();
                 }
-                if (chosenObj.name != "empty") {
+                if (chosenObj != emptyObj) {
                     bh.changeMaterial(backgroundMat);
                     bh.setStartRot();
                 }
-                if (chosenObj.name == bh.gameObject.name) {
+                if (chosenObj.Equals(bh.gameObject) ) {
                     chosenObj = emptyObj;
                 }
             }

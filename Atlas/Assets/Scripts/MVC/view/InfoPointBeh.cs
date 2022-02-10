@@ -130,7 +130,8 @@ public class InfoPointBeh : MonoBehaviour
         yposRT += (rtPanel.anchorMax.y * size.y + rtPanel.anchorMin.y * size.y) / 2 + rtPanel.anchoredPosition.y;
 
 
-        Vector3 start = SphereBeh.Instance.camera.ScreenToWorldPoint(new Vector3(xposRT, yposRT, SphereBeh.Instance.camera.nearClipPlane));
+        Vector3 start = SphereBeh.Instance.camera.ScreenToWorldPoint
+            (new Vector3(xposRT, yposRT, SphereBeh.Instance.camera.nearClipPlane));
         Vector3 point = Vector3.zero;
 
 
@@ -142,14 +143,14 @@ public class InfoPointBeh : MonoBehaviour
             ///////
             if (
                 //GameObject.Find("/Classroom/" + gameObject.name).transform != null && 
-                ClassroomBeh.Instance.chosenObj.name == "empty") { 
+                ClassroomBeh.Instance.chosenObj == ClassroomBeh.Instance.emptyObj) { 
                  point = GameObject.Find("/Classroom/"+gameObject.name).transform.position;
                 //var str = $"{gameObject.name}-{point}";
                 //print(str);
             }
             if (
                 //GameObject.Find("/Classroom/" + gameObject.name).transform != null && 
-                ClassroomBeh.Instance.chosenObj.name != "empty")
+                ClassroomBeh.Instance.chosenObj!= ClassroomBeh.Instance.emptyObj)
             {
                 point = GameObject.Find("/Classroom/"+ ClassroomBeh.Instance.chosenObj.name+"/"+ gameObject.name).transform.TransformPoint(Vector3.zero);
             //    var str = $"{gameObject.name}-{point}";

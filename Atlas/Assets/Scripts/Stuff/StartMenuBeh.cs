@@ -181,7 +181,7 @@ public class StartMenuBeh : MonoBehaviour
         var rtRUImg  = RuImg.rectTransform;
         var rtLATImg = LatImg.rectTransform;
 
-        rtPanel.sizeDelta = size;
+        rtPanel.sizeDelta = Vector2.zero;
         rtPanel.anchoredPosition = Vector2.zero;
 
         var side4Blok = size.x > size.y ? size.y : size.x;

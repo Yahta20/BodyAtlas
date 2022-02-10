@@ -139,7 +139,7 @@ public class topPanel : MonoBehaviour
         switch (GameManager.Instance.currentChose)
         {
             case stateOfChose.Partition:
-                back.color = new Color(255, 255, 255, 128);
+                back.color = new Color(255, 255, 255, 255);
                 //GameManager.Instance.setState(stateOfChose.Partition);
                 //GameManager.Instance.currentSubpartitions = "";
                 //rightPanel.Instance.init = false;
@@ -148,6 +148,7 @@ public class topPanel : MonoBehaviour
                 back.color = new Color(255, 255, 255, 255);
                 GameManager.Instance.setState(stateOfChose.Partition);
                 GameManager.Instance.currentPartition = "";
+                GameManager.Instance.GOID = 0;
                 rightPanel.Instance.init = false;
                 break;
             case stateOfChose.Item:
@@ -155,6 +156,7 @@ public class topPanel : MonoBehaviour
                 GameManager.Instance.setState(stateOfChose.Subpartitions);
                 GameManager.Instance.currentSubpartitions = "";
                 GameManager.Instance.currentItem = "";
+                GameManager.Instance.GOID = 0;
                 GameManager.Instance.currentItemPoints = "";
                 rightPanel.Instance.init = false;
                 break;
@@ -162,6 +164,7 @@ public class topPanel : MonoBehaviour
                 back.color = new Color(255, 255, 255, 255);
                 GameManager.Instance.setState(stateOfChose.Item);
                 GameManager.Instance.currentItem = "";
+                GameManager.Instance.GOID = 0;
                 GameManager.Instance.currentItemPoints = "";
                 ClassroomBeh.Instance.setEmpty();
                 rightPanel.Instance.init = false;

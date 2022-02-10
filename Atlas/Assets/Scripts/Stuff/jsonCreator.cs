@@ -15,6 +15,7 @@ public class ObjData {
         public float[] rotation;
         public float[] scale;
         public int HashCode;
+        public bool spawn = false;
         
         public ObjData(
             string n,
@@ -40,6 +41,33 @@ public class ObjData {
         
         }
 
+    public bool comparison(Transform t) {
+
+        if (position[0] == t.position.x &
+            position[1] == t.position.y &
+            position[2] == t.position.z &
+            rotation[0] == t.rotation.x &
+            rotation[1] == t.rotation.y &
+            rotation[2] == t.rotation.z &
+            rotation[3] == t.rotation.w &
+            name == t.gameObject.name
+            
+            )
+        {
+            if (null != t.gameObject.GetComponentInParent<GameObject>())
+            {
+                if (parent == t.gameObject.GetComponentInParent<GameObject>().name
+                    )
+                {
+                    return true;
+                }
+            }
+            return true;
+        }
+
+
+        return false;
+    }
     }
 
 
@@ -135,7 +163,18 @@ public class listOfData {
         return null;
     }
 
-
+    public ObjData[] FindArrByName(string name)
+    {
+        var list = new List<ObjData>();
+        foreach (var item in saveList)
+        {
+            if (item.name == name)
+            {
+                list.Add(item);
+            }
+        }
+        return list.ToArray();
+    }
 }
 
 
@@ -147,14 +186,14 @@ public class jsonCreator : MonoBehaviour
 {
     public GameObject ObjectToSave;
     public string nameOfFile;
-    
+    public listOfData lod = new listOfData();
     void Start()
     {
         nameOfFile = nameOfFile == "" ? "data" : nameOfFile;
         nameOfFile += ".json";
         var path = Path.Combine(Application.dataPath, nameOfFile);
 
-        var lod = new listOfData();
+        lod = new listOfData();
         List<ObjData> PrepData = new List<ObjData>();
 
         var og = new ObjData(
@@ -189,29 +228,30 @@ public class jsonCreator : MonoBehaviour
         lod.saveListcreaton(PrepData);
 
 
-//        for (int i = 0; i < ObjectToSave.transform.childCount; i++)
-//        {
-//            var od = new ObjData(
-//            ObjectToSave.transform.GetChild(i).gameObject.name,
-//            ObjectToSave.transform.GetChild(i)
-//            );
-//            var scl = ObjectToSave.transform.GetChild(i).transform.lossyScale;
-//            od.UpdateParentScale(scl);
-//            eee.Add(od);
-//            //lod.saveList.Add(od);
-//        }
-        var s = JsonUtility.ToJson(lod,true);
 
+        var s = JsonUtility.ToJson(lod,true);
         try
         {
-            File.WriteAllText(path,s);
-            print("alldone");
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+
+            FileStream fileStream = new FileStream(path,
+                                       FileMode.OpenOrCreate,
+                                       FileAccess.ReadWrite,
+                                       FileShare.None);
+            if (fileStream.CanWrite)
+            {
+                byte[] arr = System.Text.Encoding.Default.GetBytes(s);
+                fileStream.Write(arr, 0, arr.Length);
+            }
+            fileStream.Close();
+            print("fin");
         }
         catch (System.Exception e)
         {
             print($"Pizda togo sho {e.ToString()}");
         }
-            
-
     }
 }       

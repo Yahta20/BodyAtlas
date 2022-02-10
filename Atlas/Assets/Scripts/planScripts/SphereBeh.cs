@@ -93,20 +93,34 @@ public class SphereBeh : MonoBehaviour
                 var currentPos = s;
                 var deltaX = currentPos.x - clicPlace.x;
                 var deltaY = currentPos.y - clicPlace.y;
-                if (ClassroomBeh.Instance.chosenObj.name == "empty")
+                try
                 {
-                    RotationByPress(
-                        new Vector2(deltaY, deltaX)
-                        );
+                     if (ClassroomBeh.Instance.chosenObj== 
+                    ClassroomBeh.Instance.emptyObj)
+                     {
+                         RotationByPress(
+                             new Vector2(deltaY, deltaX)
+                             );
+                     }
+
+                     if (ClassroomBeh.Instance.chosenObj !=
+                    ClassroomBeh.Instance.emptyObj)
+                     {
+                         RotateBone(new Vector2(deltaX, deltaY));
+                         //print("ewfweefwef"+ deltaX+"|"+deltaY);
+                     }
+
                 }
-                if (ClassroomBeh.Instance.chosenObj.name != "empty")
+                catch (Exception)
                 {
-                    RotateBone(new Vector2(deltaX, deltaY));
-                    //print("ewfweefwef"+ deltaX+"|"+deltaY);
+                
                 }
                 clicPlace = s;
             })
             .AddTo(this);
+
+
+
 
         movi.yMoving
             .Where(y => y != 0)
@@ -157,6 +171,7 @@ public class SphereBeh : MonoBehaviour
         if (currentState == AccesState.locked)
         {
             if (GameMenState[1] == "" & GameMenState[2] == "" & GameMenState[3] == "") {
+                /*
                 var bounds = new Bounds(controlObject.transform.position,Vector3.one);
                 offset = new Vector3(6.6f, 12, -42f);
                 var newpoint = offset;
@@ -171,13 +186,15 @@ public class SphereBeh : MonoBehaviour
                 {
 
                     gameObject.transform.position = newpoint;
-                    currentState = AccesState.free;
                 }
                 groupObject = new List<GameObject>();
+                 */    
+                currentState = AccesState.free;
             }
                     
             if (GameMenState[1]!="" & GameMenState[0] != ""&GameMenState[2] == "" & GameMenState[3] == "")
             {
+                /*
                 var bonelist =  GameManager.Instance.anatomy.getItemlist(GameMenState[1]);
                 groupObject = ClassroomBeh.Instance.getChosenGroup(bonelist);
                 var bounds = new Bounds(groupObject[0].transform.position, Vector3.one);
@@ -196,14 +213,16 @@ public class SphereBeh : MonoBehaviour
                 gameObject.transform.LookAt(bounds.center);
                 if (compareRange(gameObject.transform.position, newpoint, 2))
                 {
-
                     gameObject.transform.position = newpoint;
-                    currentState = AccesState.free;
                 }
+                 */
+                    currentState = AccesState.free;
 
             }
             if (GameMenState[1] != "" & GameMenState[0] != "" & GameMenState[2] != "" & GameMenState[3] == "")
             {
+                /*
+                 
                 soloObject = ClassroomBeh.Instance.getSelectedObj(GameMenState[2]);
                 var bounds = new Bounds(soloObject.transform.position, Vector3.one);
                 offset = new Vector3(0, 0, -8f);
@@ -220,6 +239,7 @@ public class SphereBeh : MonoBehaviour
                 
                     gameObject.transform.position = newpoint;
                 }
+                 */
                 currentState = AccesState.free;
             }
         }

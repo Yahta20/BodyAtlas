@@ -9,21 +9,18 @@ public enum Lang
     ru = 2,
     en = 3,
 };
-
 public enum LangUI
 {
     ua = 0,
     eng = 1,
     ru = 2
 };
-
 public enum stateOfChose {
     Partition = 0,
     Subpartitions = 1,
     Item=2,
     ItemPoints=3
 }
-
 [System.Serializable]
 public class studyStruct {
     public string[] Title;
@@ -233,6 +230,8 @@ public class GameManager : MonoBehaviour
     public string currentItem = "";
     public string currentItemPoints = "";
 
+    public int GOID;
+
     public static GameManager Singelton
     {
         get
@@ -252,6 +251,7 @@ public class GameManager : MonoBehaviour
             return;
         }
         Instance = this;
+        
         DontDestroyOnLoad(this.gameObject);
         anatomy = JsonUtility.FromJson<studyStruct>(inputData.text);
         anatomy.fillAllTitle();
@@ -361,15 +361,17 @@ public class GameManager : MonoBehaviour
         currentSubpartitions = "";
         currentItem = "";
         currentItemPoints = "";
+        GOID = 0;
         currentChose = stateOfChose.Partition;
     }
 
-    public void setCurrentBone(string name) {
+    public void setCurrentBone(string name,int id) {
         var newState =  anatomy.getBoneState(name);
         currentPartition        = newState[0];
         currentSubpartitions    = newState[1];
         currentItem             = newState[2];
         currentItemPoints = "";
+        GOID = id;
     }
 }
 
