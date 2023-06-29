@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/StartMenu.unity
+- path: "Assets/Scenes/\u043F\u043E\u043B\u0438\u0433\u043E\u043D.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0

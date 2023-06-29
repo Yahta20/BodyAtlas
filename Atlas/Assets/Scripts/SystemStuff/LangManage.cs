@@ -4,9 +4,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using Newtonsoft.Json.Linq;
+//using Newtonsoft.Json.Linq;
 using UniRx;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 using UnityEngine.SceneManagement;
 using UnityEngine.Assertions.Must;
 using UnityEngine.UI;
@@ -18,7 +18,7 @@ public sealed class LangManage : MonoBehaviour
     public LangUI currentUILang;
     public List <BoneNameClass> bones {get; private set;}
     public TextAsset inputData;
-    private JObject json2work;
+    //private JObject json2work;
 
     private void Awake()
     {
@@ -27,8 +27,9 @@ public sealed class LangManage : MonoBehaviour
         
         bones = new List<BoneNameClass>();
         string jsonRaw = inputData.ToString();
-        json2work = JObject.Parse(jsonRaw);
-        int numberOfBones = json2work["BONES"].Count();
+        //json2work = JObject.Parse(jsonRaw);
+        //int numberOfBones = json2work["BONES"].Count();
+        /*
         for (int i=0; i< json2work["BONES"].Count();i++) {
             var lat=json2work["BONES"][i]["lat"].Value<string>();
             var ua =json2work["BONES"][i]["ua"] .Value<string>();
@@ -48,6 +49,7 @@ public sealed class LangManage : MonoBehaviour
             }
             bones.Add(bonvar);
         }
+         */
         //print(bones.Count);
         //print(bones[1].getCountOfPoints());
         //print(bones[1].getNameOfBone());

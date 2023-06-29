@@ -103,6 +103,7 @@ public class BonePointInfo : MonoBehaviour
                 if (GameManager.Instance.currentChose == stateOfChose.Item)
                 {
                     GameManager.Instance.currentItem = gameObject.name;
+                    //ClassroomBeh.Instance.
                     //GameManager.Instance.setState(currenState);
                 }
                 if (GameManager.Instance.currentChose == stateOfChose.ItemPoints)
