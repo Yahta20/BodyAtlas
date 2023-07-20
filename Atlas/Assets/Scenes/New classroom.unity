@@ -287,7 +287,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1373746990}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999319
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -443,6 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Preparat: {fileID: 8891814102117209651}
+  bones: []
 --- !u!1 &786625221
 GameObject:
   m_ObjectHideFlags: 0
@@ -612,7 +613,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812858347}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14, y: 13, z: -34}
+  m_LocalPosition: {x: 8.3, y: 13, z: -34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1794,7 +1795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.000105973515}
+  m_AnchoredPosition: {x: 0, y: 0.00014991274}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1919314813
@@ -2164,7 +2165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100624598}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14, y: 13, z: -34}
+  m_LocalPosition: {x: 8.3, y: 13, z: -34}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2489,7 +2490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814101498050534}
   m_Layer: 0
-  m_Name: ossa digitorum
+  m_Name: R_ossa digitorum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2838,7 +2839,7 @@ GameObject:
   - component: {fileID: 8891814101513129784}
   - component: {fileID: 8891814101513129927}
   m_Layer: 0
-  m_Name: humerus
+  m_Name: R_humerus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3019,7 +3020,7 @@ GameObject:
   - component: {fileID: 8891814101513227241}
   - component: {fileID: 8891814101513227240}
   m_Layer: 0
-  m_Name: phalanx distalis II
+  m_Name: L_phalanx distalis II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3221,7 +3222,7 @@ GameObject:
   - component: {fileID: 8891814101521040285}
   - component: {fileID: 8891814101521040284}
   m_Layer: 0
-  m_Name: os metatarsale V
+  m_Name: R_os metatarsale V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3397,7 +3398,7 @@ GameObject:
   - component: {fileID: 8891814101525839981}
   - component: {fileID: 8891814101525839980}
   m_Layer: 0
-  m_Name: phalanx proximalis 3
+  m_Name: L_phalanx proximalis 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3571,7 +3572,7 @@ GameObject:
   - component: {fileID: 8891814101528151879}
   - component: {fileID: 8891814101528151878}
   m_Layer: 0
-  m_Name: phalanx proximalis IV
+  m_Name: R_phalanx proximalis IV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3868,7 +3869,7 @@ GameObject:
   - component: {fileID: 8891814101553520127}
   - component: {fileID: 8891814101553520126}
   m_Layer: 0
-  m_Name: phalanx proximalis IV
+  m_Name: L_phalanx proximalis IV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4041,7 +4042,7 @@ GameObject:
   - component: {fileID: 8891814101559139343}
   - component: {fileID: 8891814101559139342}
   m_Layer: 0
-  m_Name: scapula
+  m_Name: L_scapula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4412,7 +4413,7 @@ GameObject:
   - component: {fileID: 8891814101567480489}
   - component: {fileID: 8891814101567480488}
   m_Layer: 0
-  m_Name: os cuneiforme laterale
+  m_Name: L_os cuneiforme laterale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4918,7 +4919,7 @@ GameObject:
   - component: {fileID: 8891814101604649664}
   - component: {fileID: 8891814101604649679}
   m_Layer: 0
-  m_Name: phalanx proximalis 3
+  m_Name: R_phalanx proximalis 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4940,7 +4941,7 @@ Transform:
   - {fileID: 8891814103212380277}
   - {fileID: 8891814103609646019}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 8
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -103.910995, y: -90, z: 180}
 --- !u!114 &8891814101604649679
 MonoBehaviour:
@@ -5298,7 +5299,7 @@ GameObject:
   - component: {fileID: 8891814101638626999}
   - component: {fileID: 8891814101638626998}
   m_Layer: 0
-  m_Name: phalanx proximalis 2
+  m_Name: R_phalanx proximalis 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5320,7 +5321,7 @@ Transform:
   - {fileID: 8891814102622950866}
   - {fileID: 8891814101653062778}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 11
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -106.662994, y: -102.60498, z: 188.374}
 --- !u!114 &8891814101638626998
 MonoBehaviour:
@@ -5426,7 +5427,7 @@ GameObject:
   - component: {fileID: 8891814101639964790}
   - component: {fileID: 8891814101639964789}
   m_Layer: 0
-  m_Name: os metatarsale II
+  m_Name: L_os metatarsale II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5682,7 +5683,7 @@ GameObject:
   - component: {fileID: 8891814101647016392}
   - component: {fileID: 8891814101647016407}
   m_Layer: 0
-  m_Name: os metatarsale V
+  m_Name: R_os metatarsale V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5822,7 +5823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814101655162222}
   m_Layer: 0
-  m_Name: metacarpus
+  m_Name: R_metacarpus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5968,7 +5969,7 @@ GameObject:
   - component: {fileID: 8891814101658781465}
   - component: {fileID: 8891814101658781464}
   m_Layer: 0
-  m_Name: patella
+  m_Name: L_patella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6158,7 +6159,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814101667455206}
   m_Layer: 0
-  m_Name: skeleton membri superioris liberi
+  m_Name: R_skeleton membri superioris liberi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6322,7 +6323,7 @@ GameObject:
   - component: {fileID: 8891814101674979312}
   - component: {fileID: 8891814101674979327}
   m_Layer: 0
-  m_Name: phalanx media 5
+  m_Name: R_phalanx media 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6342,7 +6343,7 @@ Transform:
   m_Children:
   - {fileID: 8891814103464054898}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -134.138, y: -99.570984, z: 161.62799}
 --- !u!114 &8891814101674979327
 MonoBehaviour:
@@ -6680,7 +6681,7 @@ GameObject:
   - component: {fileID: 8891814101694704546}
   - component: {fileID: 8891814101694704545}
   m_Layer: 0
-  m_Name: phalanx proximalis 1
+  m_Name: L_phalanx proximalis 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6741,7 +6742,7 @@ GameObject:
   - component: {fileID: 8891814101699997292}
   - component: {fileID: 8891814101699997291}
   m_Layer: 0
-  m_Name: os metacarpale 1
+  m_Name: L_os metacarpale 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7103,7 +7104,7 @@ GameObject:
   - component: {fileID: 8891814101708689351}
   - component: {fileID: 8891814101708689350}
   m_Layer: 0
-  m_Name: phalanx distalis II
+  m_Name: R_phalanx distalis II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7322,7 +7323,7 @@ GameObject:
   - component: {fileID: 8891814101719928630}
   - component: {fileID: 8891814101719928629}
   m_Layer: 0
-  m_Name: os metacarpale 1
+  m_Name: R_os metacarpale 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7619,7 +7620,7 @@ GameObject:
   - component: {fileID: 8891814101741868368}
   - component: {fileID: 8891814101741868383}
   m_Layer: 0
-  m_Name: os cuneiforme mediale
+  m_Name: L_os cuneiforme mediale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7834,7 +7835,7 @@ GameObject:
   - component: {fileID: 8891814101757849452}
   - component: {fileID: 8891814101757849451}
   m_Layer: 0
-  m_Name: phalanx proximalis II
+  m_Name: L_phalanx proximalis II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7968,7 +7969,7 @@ GameObject:
   - component: {fileID: 8891814101760709571}
   - component: {fileID: 8891814101760709570}
   m_Layer: 0
-  m_Name: talus
+  m_Name: L_talus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8282,7 +8283,7 @@ GameObject:
   - component: {fileID: 8891814101776166595}
   - component: {fileID: 8891814101776166594}
   m_Layer: 0
-  m_Name: os hamatum
+  m_Name: R_os hamatum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8670,7 +8671,7 @@ GameObject:
   - component: {fileID: 8891814101801334824}
   - component: {fileID: 8891814101801334839}
   m_Layer: 0
-  m_Name: os trapezoideum
+  m_Name: R_os trapezoideum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9016,7 +9017,7 @@ GameObject:
   - component: {fileID: 8891814101821559519}
   - component: {fileID: 8891814101821559518}
   m_Layer: 0
-  m_Name: os capitatum
+  m_Name: R_os capitatum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9148,7 +9149,7 @@ GameObject:
   - component: {fileID: 8891814101827843444}
   - component: {fileID: 8891814101827843443}
   m_Layer: 0
-  m_Name: os hamatum
+  m_Name: L_os hamatum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9558,7 +9559,7 @@ GameObject:
   - component: {fileID: 8891814101834759762}
   - component: {fileID: 8891814101834759761}
   m_Layer: 0
-  m_Name: os trapezium
+  m_Name: L_os trapezium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10284,7 +10285,7 @@ GameObject:
   - component: {fileID: 8891814101876459282}
   - component: {fileID: 8891814101876459281}
   m_Layer: 0
-  m_Name: os metatarsale II
+  m_Name: R_os metatarsale II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10376,7 +10377,7 @@ GameObject:
   - component: {fileID: 8891814101886000500}
   - component: {fileID: 8891814101886000499}
   m_Layer: 0
-  m_Name: os cuneiforme intermedium
+  m_Name: R_os cuneiforme intermedium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10535,7 +10536,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814101892451677}
   m_Layer: 0
-  m_Name: carpus
+  m_Name: R_carpus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10667,7 +10668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814101903911864}
   m_Layer: 0
-  m_Name: crus
+  m_Name: R_crus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10830,7 +10831,7 @@ GameObject:
   - component: {fileID: 8891814101930432583}
   - component: {fileID: 8891814101930432582}
   m_Layer: 0
-  m_Name: os metatarsale IV
+  m_Name: L_os metatarsale IV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11254,7 +11255,7 @@ GameObject:
   - component: {fileID: 8891814101963349939}
   - component: {fileID: 8891814101963349938}
   m_Layer: 0
-  m_Name: phalanx proximalis III
+  m_Name: L_phalanx proximalis III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11460,7 +11461,7 @@ GameObject:
   - component: {fileID: 8891814101970501150}
   - component: {fileID: 8891814101970501149}
   m_Layer: 0
-  m_Name: phalanx distalis 4
+  m_Name: R_phalanx distalis 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11480,7 +11481,7 @@ Transform:
   m_Children:
   - {fileID: 8891814103514413910}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 5
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: -133.245, y: -102.48901, z: -7.3549805}
 --- !u!114 &8891814101970501149
 MonoBehaviour:
@@ -11532,7 +11533,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814101973907755}
   m_Layer: 0
-  m_Name: femur
+  m_Name: L_femur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11782,7 +11783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814102001173199}
   m_Layer: 0
-  m_Name: femur
+  m_Name: R_femur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11901,7 +11902,7 @@ GameObject:
   - component: {fileID: 8891814102005991631}
   - component: {fileID: 8891814102005991630}
   m_Layer: 0
-  m_Name: clavicula
+  m_Name: L_clavicula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12110,7 +12111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814102017626513}
   m_Layer: 0
-  m_Name: pedis
+  m_Name: R_pedis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12251,7 +12252,7 @@ GameObject:
   - component: {fileID: 8891814102022016980}
   - component: {fileID: 8891814102022016979}
   m_Layer: 0
-  m_Name: phalanx media 4
+  m_Name: L_phalanx media 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12503,7 +12504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814102038983172}
   m_Layer: 0
-  m_Name: tarsus
+  m_Name: R_tarsus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12682,7 +12683,7 @@ GameObject:
   - component: {fileID: 8891814102043198729}
   - component: {fileID: 8891814102043198728}
   m_Layer: 0
-  m_Name: phalanx media 4
+  m_Name: R_phalanx media 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12702,7 +12703,7 @@ Transform:
   m_Children:
   - {fileID: 8891814101873506918}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -32.57, y: 76.424, z: -8.827001}
 --- !u!1 &8891814102047488825
 GameObject:
@@ -12782,7 +12783,7 @@ GameObject:
   - component: {fileID: 8891814102049415035}
   - component: {fileID: 8891814102049415034}
   m_Layer: 0
-  m_Name: phalanx media 5
+  m_Name: L_phalanx media 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13098,7 +13099,7 @@ GameObject:
   - component: {fileID: 8891814102055108493}
   - component: {fileID: 8891814102055108492}
   m_Layer: 0
-  m_Name: phalanx media 2
+  m_Name: L_phalanx media 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13269,7 +13270,7 @@ GameObject:
   - component: {fileID: 8891814102055490175}
   - component: {fileID: 8891814102055490174}
   m_Layer: 0
-  m_Name: os trapezoideum
+  m_Name: L_os trapezoideum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13789,6 +13790,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8891814102117209652}
+  - component: {fileID: 8891814102117209653}
   m_Layer: 0
   m_Name: Osseus
   m_TagString: Untagged
@@ -13813,6 +13815,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8891814102117209653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8891814102117209651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d91aeb7c52a3b64fb4f5acb6bfb3b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8891814102120362505
 GameObject:
   m_ObjectHideFlags: 0
@@ -14137,7 +14151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814102140788811}
   m_Layer: 0
-  m_Name: tarsus
+  m_Name: L_tarsus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14274,7 +14288,7 @@ GameObject:
   - component: {fileID: 8891814102152474915}
   - component: {fileID: 8891814102152474914}
   m_Layer: 0
-  m_Name: calcaneus
+  m_Name: L_calcaneus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14643,7 +14657,7 @@ GameObject:
   - component: {fileID: 8891814102162785816}
   - component: {fileID: 8891814102162785831}
   m_Layer: 0
-  m_Name: os metatarsale I
+  m_Name: L_os metatarsale I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14760,7 +14774,7 @@ GameObject:
   - component: {fileID: 8891814102172237638}
   - component: {fileID: 8891814102172237637}
   m_Layer: 0
-  m_Name: calcaneus
+  m_Name: R_calcaneus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15286,7 +15300,7 @@ GameObject:
   - component: {fileID: 8891814102209258131}
   - component: {fileID: 8891814102209258130}
   m_Layer: 0
-  m_Name: phalanx distalis 5
+  m_Name: L_phalanx distalis 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15739,7 +15753,7 @@ GameObject:
   - component: {fileID: 8891814102259022624}
   - component: {fileID: 8891814102259022639}
   m_Layer: 0
-  m_Name: os metacarpale 5
+  m_Name: L_os metacarpale 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15820,7 +15834,7 @@ GameObject:
   - component: {fileID: 8891814102261494107}
   - component: {fileID: 8891814102261494106}
   m_Layer: 0
-  m_Name: os pisiforme
+  m_Name: R_os pisiforme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15992,7 +16006,7 @@ Transform:
   - {fileID: 8891814102779667080}
   - {fileID: 8891814102558514271}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 13
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -60.792004, y: 24.185001, z: 172.84601}
 --- !u!114 &8891814102265022465
 MonoBehaviour:
@@ -16114,7 +16128,7 @@ GameObject:
   - component: {fileID: 8891814102265022466}
   - component: {fileID: 8891814102265022465}
   m_Layer: 0
-  m_Name: phalanx proximalis 1
+  m_Name: R_phalanx proximalis 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17006,7 +17020,7 @@ GameObject:
   - component: {fileID: 8891814102334284962}
   - component: {fileID: 8891814102334284961}
   m_Layer: 0
-  m_Name: os metacarpale 3
+  m_Name: L_os metacarpale 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17078,7 +17092,7 @@ GameObject:
   - component: {fileID: 8891814102337036693}
   - component: {fileID: 8891814102337036692}
   m_Layer: 0
-  m_Name: phalanx distalis I
+  m_Name: L_phalanx distalis I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17333,7 +17347,7 @@ GameObject:
   - component: {fileID: 8891814102356979308}
   - component: {fileID: 8891814102356979307}
   m_Layer: 0
-  m_Name: os metatarsale I
+  m_Name: R_os metatarsale I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17651,7 +17665,7 @@ GameObject:
   - component: {fileID: 8891814102364447322}
   - component: {fileID: 8891814102364447321}
   m_Layer: 0
-  m_Name: os triquetrum
+  m_Name: R_os triquetrum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -17828,7 +17842,7 @@ GameObject:
   - component: {fileID: 8891814102383083077}
   - component: {fileID: 8891814102383083076}
   m_Layer: 0
-  m_Name: phalanx media II
+  m_Name: R_phalanx media II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18009,7 +18023,7 @@ GameObject:
   - component: {fileID: 8891814102389039540}
   - component: {fileID: 8891814102389039539}
   m_Layer: 0
-  m_Name: phalanx proximalis 4
+  m_Name: R_phalanx proximalis 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18031,7 +18045,7 @@ Transform:
   - {fileID: 8891814101874772930}
   - {fileID: 8891814103576522783}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -111.51199, y: -80.659, z: 168.51399}
 --- !u!114 &8891814102389039539
 MonoBehaviour:
@@ -18313,7 +18327,7 @@ GameObject:
   - component: {fileID: 8891814102399048276}
   - component: {fileID: 8891814102399048275}
   m_Layer: 0
-  m_Name: phalanx distalis III
+  m_Name: R_phalanx distalis III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18835,7 +18849,7 @@ GameObject:
   - component: {fileID: 8891814102422886922}
   - component: {fileID: 8891814102422886921}
   m_Layer: 0
-  m_Name: phalanx distalis V + phalanx media V
+  m_Name: R_phalanx distalis V + phalanx media V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18961,7 +18975,7 @@ GameObject:
   - component: {fileID: 8891814102425697193}
   - component: {fileID: 8891814102425697192}
   m_Layer: 0
-  m_Name: phalanx media 3
+  m_Name: L_phalanx media 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19091,7 +19105,7 @@ GameObject:
   - component: {fileID: 8891814102426528320}
   - component: {fileID: 8891814102426528335}
   m_Layer: 0
-  m_Name: phalanx distalis I
+  m_Name: R_phalanx distalis I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19406,7 +19420,7 @@ GameObject:
   - component: {fileID: 8891814102435956426}
   - component: {fileID: 8891814102435956425}
   m_Layer: 0
-  m_Name: phalanx distalis 3
+  m_Name: L_phalanx distalis 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19532,7 +19546,7 @@ GameObject:
   - component: {fileID: 8891814102436365233}
   - component: {fileID: 8891814102436365232}
   m_Layer: 0
-  m_Name: patella
+  m_Name: R_patella
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19567,7 +19581,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814102436979626}
   m_Layer: 0
-  m_Name: ossa metacarpi
+  m_Name: R_ossa metacarpi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19586,19 +19600,19 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8891814103282746000}
-  - {fileID: 8891814101674979326}
-  - {fileID: 8891814102753071449}
   - {fileID: 8891814102389039538}
-  - {fileID: 8891814102043198743}
-  - {fileID: 8891814101970501148}
-  - {fileID: 8891814103239602979}
-  - {fileID: 8891814103308130054}
   - {fileID: 8891814101604649678}
-  - {fileID: 8891814103444112801}
-  - {fileID: 8891814102700546413}
   - {fileID: 8891814101638626997}
-  - {fileID: 8891814102711856789}
   - {fileID: 8891814102265022464}
+  - {fileID: 8891814101674979326}
+  - {fileID: 8891814102043198743}
+  - {fileID: 8891814103239602979}
+  - {fileID: 8891814103444112801}
+  - {fileID: 8891814102753071449}
+  - {fileID: 8891814101970501148}
+  - {fileID: 8891814103308130054}
+  - {fileID: 8891814102700546413}
+  - {fileID: 8891814102711856789}
   m_Father: {fileID: 8891814102207384583}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -20003,7 +20017,7 @@ GameObject:
   - component: {fileID: 8891814102477870393}
   - component: {fileID: 8891814102477870392}
   m_Layer: 0
-  m_Name: fibula
+  m_Name: R_fibula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20243,7 +20257,7 @@ GameObject:
   - component: {fileID: 8891814102480412097}
   - component: {fileID: 8891814102480412096}
   m_Layer: 0
-  m_Name: humerus
+  m_Name: L_humerus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20585,7 +20599,7 @@ GameObject:
   - component: {fileID: 8891814102507790740}
   - component: {fileID: 8891814102507790739}
   m_Layer: 0
-  m_Name: phalanx distalis V + phalanx media V
+  m_Name: L_phalanx distalis V + phalanx media V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20991,7 +21005,7 @@ GameObject:
   - component: {fileID: 8891814102527044109}
   - component: {fileID: 8891814102527044108}
   m_Layer: 0
-  m_Name: femur
+  m_Name: L_femur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21147,7 +21161,7 @@ GameObject:
   - component: {fileID: 8891814102528643868}
   - component: {fileID: 8891814102528643867}
   m_Layer: 0
-  m_Name: talus
+  m_Name: R_talus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21392,7 +21406,7 @@ GameObject:
   - component: {fileID: 8891814102531673598}
   - component: {fileID: 8891814102531673597}
   m_Layer: 0
-  m_Name: os triquetrum
+  m_Name: L_os triquetrum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21581,7 +21595,7 @@ GameObject:
   - component: {fileID: 8891814102541860847}
   - component: {fileID: 8891814102541860846}
   m_Layer: 0
-  m_Name: phalanx proximalis I
+  m_Name: L_phalanx proximalis I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21848,7 +21862,7 @@ GameObject:
   - component: {fileID: 8891814102551882893}
   - component: {fileID: 8891814102551882892}
   m_Layer: 0
-  m_Name: phalanx proximalis I
+  m_Name: R_phalanx proximalis I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22044,7 +22058,7 @@ GameObject:
   - component: {fileID: 8891814102552406569}
   - component: {fileID: 8891814102552406568}
   m_Layer: 0
-  m_Name: os metatarsale III
+  m_Name: R_os metatarsale III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22259,7 +22273,7 @@ GameObject:
   - component: {fileID: 8891814102562219213}
   - component: {fileID: 8891814102562219212}
   m_Layer: 0
-  m_Name: os pisiforme
+  m_Name: L_os pisiforme
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -22823,7 +22837,7 @@ GameObject:
   - component: {fileID: 8891814102588559039}
   - component: {fileID: 8891814102588559038}
   m_Layer: 0
-  m_Name: os cuneiforme laterale
+  m_Name: R_os cuneiforme laterale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23195,7 +23209,7 @@ GameObject:
   - component: {fileID: 8891814102635606443}
   - component: {fileID: 8891814102635606442}
   m_Layer: 0
-  m_Name: os navicularae
+  m_Name: R_os navicularae
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23399,7 +23413,7 @@ GameObject:
   - component: {fileID: 8891814102642560203}
   - component: {fileID: 8891814102642560202}
   m_Layer: 0
-  m_Name: os metatarsale IV
+  m_Name: R_os metatarsale IV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23636,7 +23650,7 @@ GameObject:
   - component: {fileID: 8891814102642925152}
   - component: {fileID: 8891814102642925167}
   m_Layer: 0
-  m_Name: os navicularae
+  m_Name: L_os navicularae
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24004,7 +24018,7 @@ GameObject:
   - component: {fileID: 8891814102682839692}
   - component: {fileID: 8891814102682839691}
   m_Layer: 0
-  m_Name: os scaphoideum
+  m_Name: L_os scaphoideum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24387,7 +24401,7 @@ GameObject:
   - component: {fileID: 8891814102694362144}
   - component: {fileID: 8891814102694362159}
   m_Layer: 0
-  m_Name: phalanx media II
+  m_Name: L_phalanx media II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24654,7 +24668,7 @@ GameObject:
   - component: {fileID: 8891814102700546415}
   - component: {fileID: 8891814102700546414}
   m_Layer: 0
-  m_Name: phalanx distalis 2
+  m_Name: R_phalanx distalis 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24674,7 +24688,7 @@ Transform:
   m_Children:
   - {fileID: 8891814103030855476}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 10
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: -169.041, y: -183.905, z: 19.72699}
 --- !u!114 &8891814102700546414
 MonoBehaviour:
@@ -24796,7 +24810,7 @@ GameObject:
   - component: {fileID: 8891814102700909159}
   - component: {fileID: 8891814102700909158}
   m_Layer: 0
-  m_Name: phalanx distalis 4
+  m_Name: L_phalanx distalis 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24981,7 +24995,7 @@ GameObject:
   - component: {fileID: 8891814102706806624}
   - component: {fileID: 8891814102706806639}
   m_Layer: 0
-  m_Name: os cuneiforme mediale
+  m_Name: R_os cuneiforme mediale
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25142,7 +25156,7 @@ GameObject:
   - component: {fileID: 8891814102711856791}
   - component: {fileID: 8891814102711856790}
   m_Layer: 0
-  m_Name: phalanx distalis 1
+  m_Name: R_phalanx distalis 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25162,7 +25176,7 @@ Transform:
   m_Children:
   - {fileID: 8891814101680122971}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: -82.289, y: 76.336006, z: -90.00001}
 --- !u!114 &8891814102711856790
 MonoBehaviour:
@@ -25499,7 +25513,7 @@ GameObject:
   - component: {fileID: 8891814102720756010}
   - component: {fileID: 8891814102720756009}
   m_Layer: 0
-  m_Name: os lunatum
+  m_Name: R_os lunatum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -25643,7 +25657,7 @@ GameObject:
   - component: {fileID: 8891814102722858762}
   - component: {fileID: 8891814102722858761}
   m_Layer: 0
-  m_Name: phalanx proximalis 2
+  m_Name: L_phalanx proximalis 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26009,7 +26023,7 @@ GameObject:
   - component: {fileID: 8891814102753071451}
   - component: {fileID: 8891814102753071450}
   m_Layer: 0
-  m_Name: phalanx distalis 5
+  m_Name: R_phalanx distalis 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26029,7 +26043,7 @@ Transform:
   m_Children:
   - {fileID: 8891814102798269301}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 2
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 38.169003, y: -111.216, z: -6.1930003}
 --- !u!114 &8891814102753071450
 MonoBehaviour:
@@ -26379,7 +26393,7 @@ GameObject:
   - component: {fileID: 8891814102779645876}
   - component: {fileID: 8891814102779645875}
   m_Layer: 0
-  m_Name: os metacarpale 3
+  m_Name: R_os metacarpale 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26725,7 +26739,7 @@ GameObject:
   - component: {fileID: 8891814102782559282}
   - component: {fileID: 8891814102782559281}
   m_Layer: 0
-  m_Name: os scaphoideum
+  m_Name: R_os scaphoideum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26834,7 +26848,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814102800049585}
   m_Layer: 0
-  m_Name: crus
+  m_Name: L_crus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27060,7 +27074,7 @@ GameObject:
   - component: {fileID: 8891814102813893920}
   - component: {fileID: 8891814102813893935}
   m_Layer: 0
-  m_Name: phalanx distalis IV + phalanx media IV
+  m_Name: L_phalanx distalis IV + phalanx media IV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27966,7 +27980,7 @@ GameObject:
   - component: {fileID: 8891814102901727386}
   - component: {fileID: 8891814102901727385}
   m_Layer: 0
-  m_Name: os metacarpale 2
+  m_Name: L_os metacarpale 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28075,7 +28089,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814102913237606}
   m_Layer: 0
-  m_Name: skeleton membri superioris liberi
+  m_Name: L_skeleton membri superioris liberi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28630,7 +28644,7 @@ GameObject:
   - component: {fileID: 8891814102973632109}
   - component: {fileID: 8891814102973632108}
   m_Layer: 0
-  m_Name: phalanx proximalis III
+  m_Name: R_phalanx proximalis III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29050,7 +29064,7 @@ GameObject:
   - component: {fileID: 8891814103000539199}
   - component: {fileID: 8891814103000539198}
   m_Layer: 0
-  m_Name: os sesamoidea II
+  m_Name: R_os sesamoidea II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29234,7 +29248,7 @@ GameObject:
   - component: {fileID: 8891814103013278304}
   - component: {fileID: 8891814103013278319}
   m_Layer: 0
-  m_Name: os metacarpale 4
+  m_Name: L_os metacarpale 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29403,7 +29417,7 @@ GameObject:
   - component: {fileID: 8891814103015346450}
   - component: {fileID: 8891814103015346449}
   m_Layer: 0
-  m_Name: os sesamoidea I
+  m_Name: R_os sesamoidea I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29450,7 +29464,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814103016568285}
   m_Layer: 0
-  m_Name: metatarsus
+  m_Name: L_metatarsus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29632,7 +29646,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814103024805464}
   m_Layer: 0
-  m_Name: metacarpus
+  m_Name: L_metacarpus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30158,7 +30172,7 @@ GameObject:
   - component: {fileID: 8891814103063194567}
   - component: {fileID: 8891814103063194566}
   m_Layer: 0
-  m_Name: os sesamoidea I
+  m_Name: R_os sesamoidea I
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30423,7 +30437,7 @@ GameObject:
   - component: {fileID: 8891814103082942223}
   - component: {fileID: 8891814103082942222}
   m_Layer: 0
-  m_Name: fibula
+  m_Name: L_fibula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30604,7 +30618,7 @@ GameObject:
   - component: {fileID: 8891814103090878465}
   - component: {fileID: 8891814103090878464}
   m_Layer: 0
-  m_Name: os metacarpale 2
+  m_Name: R_os metacarpale 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31014,7 +31028,7 @@ GameObject:
   - component: {fileID: 8891814103143106183}
   - component: {fileID: 8891814103143106182}
   m_Layer: 0
-  m_Name: clavicula
+  m_Name: R_clavicula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31350,7 +31364,7 @@ GameObject:
   - component: {fileID: 8891814103168143083}
   - component: {fileID: 8891814103168143082}
   m_Layer: 0
-  m_Name: os lunatum
+  m_Name: L_os lunatum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -31676,7 +31690,7 @@ GameObject:
   - component: {fileID: 8891814103182283288}
   - component: {fileID: 8891814103182283303}
   m_Layer: 0
-  m_Name: os sesamoidea II
+  m_Name: R_os sesamoidea II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32240,7 +32254,7 @@ GameObject:
   - component: {fileID: 8891814103239602981}
   - component: {fileID: 8891814103239602980}
   m_Layer: 0
-  m_Name: phalanx media 3
+  m_Name: R_phalanx media 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32260,7 +32274,7 @@ Transform:
   m_Children:
   - {fileID: 8891814102262400550}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -7.7650003, y: -8.036, z: 42.811}
 --- !u!114 &8891814103239602980
 MonoBehaviour:
@@ -32454,7 +32468,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814103247835002}
   m_Layer: 0
-  m_Name: pedis
+  m_Name: L_pedis
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32723,7 +32737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814103275626505}
   m_Layer: 8
-  m_Name: spatia interossea metatarsi
+  m_Name: R_spatia interossea metatarsi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32760,7 +32774,7 @@ GameObject:
   - component: {fileID: 8891814103276161491}
   - component: {fileID: 8891814103276161490}
   m_Layer: 0
-  m_Name: radius
+  m_Name: R_radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33062,7 +33076,7 @@ GameObject:
   - component: {fileID: 8891814103282653069}
   - component: {fileID: 8891814103282653068}
   m_Layer: 0
-  m_Name: os cuboideum
+  m_Name: R_os cuboideum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33277,7 +33291,7 @@ GameObject:
   - component: {fileID: 8891814103282746002}
   - component: {fileID: 8891814103282746001}
   m_Layer: 0
-  m_Name: phalanx proximalis 5
+  m_Name: R_phalanx proximalis 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33421,7 +33435,7 @@ GameObject:
   - component: {fileID: 8891814103284589666}
   - component: {fileID: 8891814103284589665}
   m_Layer: 0
-  m_Name: phalanx distalis IV + phalanx media IV
+  m_Name: R_phalanx distalis IV + phalanx media IV
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33547,7 +33561,7 @@ GameObject:
   - component: {fileID: 8891814103286922289}
   - component: {fileID: 8891814103286922288}
   m_Layer: 0
-  m_Name: scapula
+  m_Name: R_scapula
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33759,7 +33773,7 @@ GameObject:
   - component: {fileID: 8891814103308130168}
   - component: {fileID: 8891814103308130055}
   m_Layer: 0
-  m_Name: phalanx distalis 3
+  m_Name: R_phalanx distalis 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33779,7 +33793,7 @@ Transform:
   m_Children:
   - {fileID: 8891814102206978536}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: -22.226002, y: 86.955, z: 1.09}
 --- !u!114 &8891814103308130055
 MonoBehaviour:
@@ -33996,7 +34010,7 @@ GameObject:
   - component: {fileID: 8891814103310840038}
   - component: {fileID: 8891814103310840037}
   m_Layer: 0
-  m_Name: phalanx proximalis 4
+  m_Name: L_phalanx proximalis 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34115,7 +34129,7 @@ GameObject:
   - component: {fileID: 8891814103319363444}
   - component: {fileID: 8891814103319363443}
   m_Layer: 0
-  m_Name: phalanx distalis 1
+  m_Name: L_phalanx distalis 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34353,7 +34367,7 @@ GameObject:
   - component: {fileID: 8891814103319922649}
   - component: {fileID: 8891814103319922648}
   m_Layer: 0
-  m_Name: tibia
+  m_Name: L_tibia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34567,7 +34581,7 @@ GameObject:
   - component: {fileID: 8891814103330727859}
   - component: {fileID: 8891814103330727858}
   m_Layer: 0
-  m_Name: tibia
+  m_Name: R_tibia
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34822,7 +34836,7 @@ GameObject:
   - component: {fileID: 8891814103331796952}
   - component: {fileID: 8891814103331796967}
   m_Layer: 0
-  m_Name: os cuboideum
+  m_Name: L_os cuboideum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34898,7 +34912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814103342882252}
   m_Layer: 0
-  m_Name: ossa digitorum
+  m_Name: L_ossa digitorum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35028,7 +35042,7 @@ GameObject:
   - component: {fileID: 8891814103343414127}
   - component: {fileID: 8891814103343414126}
   m_Layer: 0
-  m_Name: ulna
+  m_Name: R_ulna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35346,7 +35360,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814103355422961}
   m_Layer: 0
-  m_Name: metatarsus
+  m_Name: R_metatarsus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35509,7 +35523,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814103375970829}
   m_Layer: 0
-  m_Name: carpus
+  m_Name: L_carpus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35891,7 +35905,7 @@ GameObject:
   - component: {fileID: 8891814103390676458}
   - component: {fileID: 8891814103390676457}
   m_Layer: 0
-  m_Name: os metacarpale 4
+  m_Name: R_os metacarpale 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36243,7 +36257,7 @@ GameObject:
   - component: {fileID: 8891814103414157472}
   - component: {fileID: 8891814103414157487}
   m_Layer: 0
-  m_Name: phalanx proximalis V
+  m_Name: L_phalanx proximalis V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36425,7 +36439,7 @@ GameObject:
   - component: {fileID: 8891814103426507235}
   - component: {fileID: 8891814103426507234}
   m_Layer: 0
-  m_Name: os metatarsale III
+  m_Name: L_os metatarsale III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36595,7 +36609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8891814103436967239}
   m_Layer: 0
-  m_Name: ossa metacarpi
+  m_Name: L_ossa metacarpi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36708,7 +36722,7 @@ GameObject:
   - component: {fileID: 8891814103444112803}
   - component: {fileID: 8891814103444112802}
   m_Layer: 0
-  m_Name: phalanx media 2
+  m_Name: R_phalanx media 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36728,7 +36742,7 @@ Transform:
   m_Children:
   - {fileID: 8891814102746508472}
   m_Father: {fileID: 8891814102436979626}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: -365.732, y: -16.122002, z: 49.945004}
 --- !u!114 &8891814103444112802
 MonoBehaviour:
@@ -36872,10 +36886,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.5001513
+  m_Radius: 0.32980266
   m_Height: 4.6238713
   m_Direction: 0
-  m_Center: {x: -0.16541642, y: 0.09867706, z: 0.08276558}
+  m_Center: {x: -0.16541642, y: 0.15340637, z: 0.033472892}
 --- !u!23 &8891814103446857627
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36942,7 +36956,7 @@ GameObject:
   - component: {fileID: 8891814103446857624}
   - component: {fileID: 8891814103446857639}
   m_Layer: 0
-  m_Name: femur
+  m_Name: R_femur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37048,7 +37062,7 @@ GameObject:
   - component: {fileID: 8891814103450055163}
   - component: {fileID: 8891814103450055162}
   m_Layer: 0
-  m_Name: phalanx distalis III
+  m_Name: L_phalanx distalis III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37313,7 +37327,7 @@ GameObject:
   - component: {fileID: 8891814103456749632}
   - component: {fileID: 8891814103456749647}
   m_Layer: 0
-  m_Name: ulna
+  m_Name: L_ulna
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37532,7 +37546,7 @@ GameObject:
   - component: {fileID: 8891814103460577040}
   - component: {fileID: 8891814103460577055}
   m_Layer: 0
-  m_Name: phalanx proximalis II
+  m_Name: R_phalanx proximalis II
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37832,7 +37846,7 @@ GameObject:
   - component: {fileID: 8891814103476899014}
   - component: {fileID: 8891814103476899013}
   m_Layer: 0
-  m_Name: os metacarpale 5
+  m_Name: R_os metacarpale 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37941,7 +37955,7 @@ GameObject:
   - component: {fileID: 8891814103487980538}
   - component: {fileID: 8891814103487980537}
   m_Layer: 0
-  m_Name: phalanx proximalis 5
+  m_Name: L_phalanx proximalis 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38271,7 +38285,7 @@ GameObject:
   - component: {fileID: 8891814103504496901}
   - component: {fileID: 8891814103504496900}
   m_Layer: 0
-  m_Name: os cuneiforme intermedium
+  m_Name: L_os cuneiforme intermedium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38734,7 +38748,7 @@ GameObject:
   - component: {fileID: 8891814103524120701}
   - component: {fileID: 8891814103524120700}
   m_Layer: 0
-  m_Name: radius
+  m_Name: L_radius
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38915,7 +38929,7 @@ GameObject:
   - component: {fileID: 8891814103532242508}
   - component: {fileID: 8891814103532242507}
   m_Layer: 0
-  m_Name: os trapezium
+  m_Name: R_os trapezium
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39471,7 +39485,7 @@ GameObject:
   - component: {fileID: 8891814103551925634}
   - component: {fileID: 8891814103551925633}
   m_Layer: 0
-  m_Name: phalanx distalis 2
+  m_Name: L_phalanx distalis 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39712,7 +39726,7 @@ GameObject:
   - component: {fileID: 8891814103565777878}
   - component: {fileID: 8891814103565777877}
   m_Layer: 0
-  m_Name: phalanx media III
+  m_Name: L_phalanx media III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39984,7 +39998,7 @@ GameObject:
   - component: {fileID: 8891814103587143860}
   - component: {fileID: 8891814103587143859}
   m_Layer: 0
-  m_Name: os capitatum
+  m_Name: L_os capitatum
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40291,7 +40305,7 @@ GameObject:
   - component: {fileID: 8891814103604897805}
   - component: {fileID: 8891814103604897804}
   m_Layer: 0
-  m_Name: phalanx proximalis V
+  m_Name: R_phalanx proximalis V
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40453,7 +40467,7 @@ GameObject:
   - component: {fileID: 8891814103610024460}
   - component: {fileID: 8891814103610024459}
   m_Layer: 0
-  m_Name: phalanx media III
+  m_Name: R_phalanx media III
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
