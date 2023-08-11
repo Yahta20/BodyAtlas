@@ -20,7 +20,8 @@ public class MainPanel : MonoBehaviour
     public Image BtnImage;
     public Sprite[] button;
 
-
+    [SerializeField]
+    float xkof;
 
 
     bool visible =true;
@@ -34,11 +35,13 @@ public class MainPanel : MonoBehaviour
     private void SetSizes()
     {
         var sc = CanvasBehavior.Instance.getSize();
-        mainRect.sizeDelta = new Vector2(sc.x*0.32f,sc.y);
+
+
+        mainRect.sizeDelta = new Vector2(sc.x*xkof,sc.y);
         mainRect.anchoredPosition = Vector2.zero;
 
-        scrollRect.sizeDelta = new Vector2(sc.x * 0.32f, mainRect.sizeDelta.y * 0.80f);
-        toppanel.sizeDelta = new Vector2(sc.x * 0.32f, mainRect.sizeDelta.y * 0.10f);
+        scrollRect.sizeDelta = new Vector2(sc.x * xkof, mainRect.sizeDelta.y * 0.80f);
+        toppanel.sizeDelta = new Vector2(sc.x * xkof, mainRect.sizeDelta.y * 0.10f);
         text.sizeDelta = toppanel.sizeDelta;
         lanbtn  .sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
         upbtn   .sizeDelta = new Vector2(text.sizeDelta.y,text.sizeDelta.y);

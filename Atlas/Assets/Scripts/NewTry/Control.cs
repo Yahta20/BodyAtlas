@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -9,10 +10,11 @@ public class Control : MonoBehaviour
     public static Control Instance { get; private set; }
     public GameObject Preparat;
     public GameObject Postparat { get; private set; }
+    public Material trasperent;
     [SerializeField]
     List<MeshRenderer> bones = new List<MeshRenderer>();
-    public event Action OnChangePoint;
-
+    public event Action<GameObject> OnChangePoint;
+    // public CinemachineFreeLook camera;
 
     private void Awake()
     {
@@ -23,14 +25,8 @@ public class Control : MonoBehaviour
     void Start()
     {
         MeshListUpdate();
-
     }
 
-
-    void Update()
-    {
-
-    }
 
     private void MeshListUpdate()
     {
@@ -41,18 +37,20 @@ public class Control : MonoBehaviour
             if (list[i].TryGetComponent<MeshRenderer>(out rend))
             {
                 bones.Add(rend);
+
+
                 //var e = new Regex()
                 if (
                     !(list[i].gameObject.name.StartsWith("R_")|
                     list[i].gameObject.name.StartsWith("L_"))
                     ) {
-                    print(list[i].gameObject.name);
+                    //print(list[i].gameObject.name);
                 }
             }
         }
 
-        print(list.Count);
-        print(bones.Count);
+        //print(list.Count);
+        //print(bones.Count);
     }
 
     public void ChangePoint(string name) {
@@ -64,9 +62,10 @@ public class Control : MonoBehaviour
                 )
             {
                 Postparat = Postparat.transform.GetChild(i).gameObject;
+                //camera.LookAt = Postparat.transform;
             }
         }
-        OnChangePoint?.Invoke();
+        OnChangePoint?.Invoke(Postparat);
     }
 
     public void UpperHierarchy() {
@@ -74,8 +73,9 @@ public class Control : MonoBehaviour
         else
         {
             Postparat = Postparat.transform.parent.gameObject;
+
         }
-        OnChangePoint?.Invoke();
+        OnChangePoint?.Invoke(Postparat);
     }
     public string[] getContent() {
         List<string> content = new List<string>();

@@ -1,3 +1,4 @@
+using Cinemachine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,19 +9,30 @@ public class SckeletonInput : MonoBehaviour
 {
     GameObject controled;
     NInput input;
-    
-    
+    public CinemachineVirtualCamera camera;
+
 
 
     private void OnEnable()
     {
         input = new NInput();
-        controled = this.gameObject;
+        controled = camera.gameObject;//this.gameObject;
         input.Enable();
+        
+
         //input.Gamplay.Zoom.performed += Zooming;
         //input.Gamplay.moving.performed += Moving;
         //input.Gamplay.Rotation.performed += Rotating;
         //MeshListUpdate();
+    }
+    private void Start()
+    {
+        Control.Instance.OnChangePoint += PointChangin;
+    }
+    private void PointChangin(GameObject obj)
+    {
+        camera.LookAt = obj.transform;
+        //camera.
     }
 
 
@@ -42,7 +54,7 @@ public class SckeletonInput : MonoBehaviour
      */
 
 
-    
+
 
 
     private void Update()
@@ -52,12 +64,14 @@ public class SckeletonInput : MonoBehaviour
 
     private void Interactive()
     {
-        var zom= input.Gamplay.Zoom      .ReadValue<float>(); 
-        var mov= input.Gamplay.moving    .ReadValue<float>();
-        var rot= input.Gamplay.Rotation.ReadValue<float>();
+        var zom= input.Gamplay.Zoom         .ReadValue<float>(); 
+        var mov= input.Gamplay.moving       .ReadValue<float>();
+        var rot= input.Gamplay.Rotation     .ReadValue<float>();
     
-        controled.transform.RotateAround(transform.position, Vector3.up, rot);//new Quaternion.//Vector3(0, chang * 5, 0); ;
-        controled.transform.Translate(0, mov*0.1f, zom*0.1f,Space.World);
+        //controled.transform.RotateAround(transform.position, Vector3.up, rot);//new Quaternion.//Vector3(0, chang * 5, 0); ;
+        controled.transform.RotateAround(camera.LookAt.position, Vector3.up, rot*0.5f);//new Quaternion.//Vector3(0, chang * 5, 0); ;
+
+        controled.transform.Translate(0, -mov*0.07f, zom*0.07f,Space.World);
         //controled.transform.Translate()
 
     }
