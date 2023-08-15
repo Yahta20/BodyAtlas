@@ -24,7 +24,7 @@ public class MainPanel : MonoBehaviour
     float xkof;
 
 
-    bool visible =true;
+    bool visible = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -37,21 +37,21 @@ public class MainPanel : MonoBehaviour
         var sc = CanvasBehavior.Instance.getSize();
 
 
-        mainRect.sizeDelta = new Vector2(sc.x*xkof,sc.y);
+        mainRect.sizeDelta = new Vector2(sc.x * xkof, sc.y);
         mainRect.anchoredPosition = Vector2.zero;
 
         scrollRect.sizeDelta = new Vector2(sc.x * xkof, mainRect.sizeDelta.y * 0.80f);
         toppanel.sizeDelta = new Vector2(sc.x * xkof, mainRect.sizeDelta.y * 0.10f);
         text.sizeDelta = toppanel.sizeDelta;
-        lanbtn  .sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
-        upbtn   .sizeDelta = new Vector2(text.sizeDelta.y,text.sizeDelta.y);
-        extbtn  .sizeDelta = new Vector2(text.sizeDelta.y,text.sizeDelta.y);
-        lanbtn  .anchoredPosition   =   Vector2.zero; 
-        extbtn  .anchoredPosition = Vector2.zero; 
-        upbtn   .anchoredPosition   =new Vector2(extbtn.sizeDelta.y*2,0);
+        lanbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
+        upbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
+        extbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
+        lanbtn.anchoredPosition = Vector2.zero;
+        extbtn.anchoredPosition = Vector2.zero;
+        upbtn.anchoredPosition = new Vector2(extbtn.sizeDelta.y * 2, 0);
 
-        icon    .sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
-        icon    .anchoredPosition = new Vector2(-extbtn.sizeDelta.y * 2, 0);
+        icon.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
+        icon.anchoredPosition = new Vector2(-extbtn.sizeDelta.y * 2, 0);
 
     }
 
@@ -63,34 +63,42 @@ public class MainPanel : MonoBehaviour
 
     private void ChekVisible()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ChangeView();
-        }
+       //if (Input.GetKeyDown(KeyCode.Space))
+       //{
+       //    ChangeView();
+       //}
         if (visible)
         {
-            mainRect.anchoredPosition = new Vector2(Mathf.Lerp(mainRect.anchoredPosition.x, 0, Time.deltaTime*3), 0);
+            mainRect.anchoredPosition = new Vector2(Mathf.Lerp(mainRect.anchoredPosition.x, 0, Time.deltaTime * 3), 0);
+
         }
-        else {
-            mainRect.anchoredPosition = new Vector2(Mathf.Lerp(mainRect.anchoredPosition.x, mainRect.sizeDelta.x, Time.deltaTime*3), 0);
+        else
+        {
+            mainRect.anchoredPosition = new Vector2(Mathf.Lerp(mainRect.anchoredPosition.x, mainRect.sizeDelta.x, Time.deltaTime * 3), 0);
         }
 
     }
 
-    public void ChangeLang() { 
-    
-    
+    public void ChangeLang()
+    {
+
+
     }
 
-    public void Upstarse() {
+    public void Upstarse()
+    {
         Control.Instance.UpperHierarchy();
     }
 
-    public void Exit() {
-    
+    public void Exit()
+    {
+
     }
 
-    public void ChangeView() =>visible = !visible;
-    
+    public void ChangeView() {
+        visible = !visible;
+        SetSizes();
+    }
+
 
 }

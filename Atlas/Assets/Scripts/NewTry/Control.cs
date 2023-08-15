@@ -2,7 +2,7 @@ using Cinemachine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
+using System.IO;
 using UnityEngine;
 
 public class Control : MonoBehaviour
@@ -10,7 +10,10 @@ public class Control : MonoBehaviour
     public static Control Instance { get; private set; }
     public GameObject Preparat;
     public GameObject Postparat { get; private set; }
+    [Space]
+    public string nameOfFile;
     public Material trasperent;
+    
     [SerializeField]
     List<MeshRenderer> bones = new List<MeshRenderer>();
     public event Action<GameObject> OnChangePoint;
@@ -31,11 +34,67 @@ public class Control : MonoBehaviour
     private void MeshListUpdate()
     {
         var list = ObjectTree(Preparat);
+        /*
+<<<<<<< HEAD
+        var path = Path.Combine(Application.dataPath, nameOfFile);
+        nameOfFile += ".txt";
+        var alb = "";
+=======
+>>>>>>> parent of 7c93133 (Chek for Webgl build)
         var rend = new MeshRenderer();
         for (int i = 0; i < list.Count; i++)
         {
             if (list[i].TryGetComponent<MeshRenderer>(out rend))
             {
+<<<<<<< HEAD
+                var d = list[i].AddComponent<Bone>();
+                d.Setmaterial(trasperent);
+                bones.Add(
+                    d);
+            }
+
+            if (
+                (list[i].gameObject.name.StartsWith("R_") |
+                list[i].gameObject.name.StartsWith("L_"))
+                )
+            {
+                alb += $"{list[i].gameObject.name.Substring(2)} \n";
+
+            }
+            else {
+                alb += $"{list[i].gameObject.name} \n" ;
+            }
+        }
+        try
+        {
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+
+            FileStream fileStream = new FileStream(path,
+                                       FileMode.OpenOrCreate,
+                                       FileAccess.ReadWrite,
+                                       FileShare.None);
+            if (fileStream.CanWrite)
+            {
+                byte[] arr = System.Text.Encoding.Default.GetBytes(alb);
+                fileStream.Write(arr, 0, arr.Length);
+            }
+            fileStream.Close();
+            print("fin");
+        }
+        catch (System.Exception e)
+        {
+            print($"Pizda togo sho {e.ToString()}");
+        }
+
+
+
+
+
+=======
+>>>>>>> parent of 7c93133 (Chek for Webgl build)
                 bones.Add(rend);
 
 
@@ -48,10 +107,13 @@ public class Control : MonoBehaviour
                 }
             }
         }
+         */
 
-        //print(list.Count);
-        //print(bones.Count);
     }
+
+
+            
+
 
     public void ChangePoint(string name) {
 
