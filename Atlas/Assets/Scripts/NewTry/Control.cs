@@ -15,7 +15,8 @@ public class Control : MonoBehaviour
     public Material trasperent;
     
     [SerializeField]
-    List<MeshRenderer> bones = new List<MeshRenderer>();
+    List<Bone> bones = new List<Bone>();    
+    //List<MeshRenderer> bones = new List<MeshRenderer>();
     public event Action<GameObject> OnChangePoint;
     // public CinemachineFreeLook camera;
 
@@ -34,25 +35,22 @@ public class Control : MonoBehaviour
     private void MeshListUpdate()
     {
         var list = ObjectTree(Preparat);
-        /*
-<<<<<<< HEAD
         var path = Path.Combine(Application.dataPath, nameOfFile);
         nameOfFile += ".txt";
         var alb = "";
-=======
->>>>>>> parent of 7c93133 (Chek for Webgl build)
         var rend = new MeshRenderer();
         for (int i = 0; i < list.Count; i++)
         {
             if (list[i].TryGetComponent<MeshRenderer>(out rend))
             {
-<<<<<<< HEAD
                 var d = list[i].AddComponent<Bone>();
                 d.Setmaterial(trasperent);
                 bones.Add(
                     d);
             }
 
+        }
+        /*
             if (
                 (list[i].gameObject.name.StartsWith("R_") |
                 list[i].gameObject.name.StartsWith("L_"))
@@ -64,7 +62,6 @@ public class Control : MonoBehaviour
             else {
                 alb += $"{list[i].gameObject.name} \n" ;
             }
-        }
         try
         {
             if (File.Exists(path))
@@ -89,12 +86,16 @@ public class Control : MonoBehaviour
             print($"Pizda togo sho {e.ToString()}");
         }
 
-
-
-
-
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 7c93133 (Chek for Webgl build)
+=======
+<<<<<<< HEAD
+>>>>>>> parent of 7c93133 (Chek for Webgl build)
+
+
+
+
                 bones.Add(rend);
 
 
@@ -111,8 +112,12 @@ public class Control : MonoBehaviour
 
     }
 
+    public void ChangePoint(Bone obj)
+    {
+        Postparat=obj.gameObject;
+        OnChangePoint?.Invoke(Postparat);
+    }
 
-            
 
 
     public void ChangePoint(string name) {

@@ -29,10 +29,15 @@ public class SckeletonInput : MonoBehaviour
     {
         Control.Instance.OnChangePoint += PointChangin;
     }
+
+    private void OnDestroy()
+    {
+        Control.Instance.OnChangePoint -= PointChangin;
+    }
     private void PointChangin(GameObject obj)
     {
         camera.LookAt = obj.transform;
-        //camera.
+        camera.transform.position = new Vector3 (controled.transform.position.x, obj.transform.position.y, controled.transform.position.z);
     }
 
 
@@ -70,8 +75,8 @@ public class SckeletonInput : MonoBehaviour
     
         //controled.transform.RotateAround(transform.position, Vector3.up, rot);//new Quaternion.//Vector3(0, chang * 5, 0); ;
         controled.transform.RotateAround(camera.LookAt.position, Vector3.up, rot*0.5f);//new Quaternion.//Vector3(0, chang * 5, 0); ;
-
-        controled.transform.Translate(0, -mov*0.07f, zom*0.07f,Space.World);
+        controled.transform.Translate(0, 0, zom * 0.07f, Space.Self);
+        controled.transform.Translate(0, -mov*0.07f, 0,Space.World);
         //controled.transform.Translate()
 
     }

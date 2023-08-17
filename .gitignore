@@ -68,7 +68,8 @@ crashlytics-build.properties
 /[Bb]uild/
 /[Bb]uilds/
 /[Ll]ogs/
-Atlas//[Uu]ser[Ss]ettings/
+Atlas//UserSettings/
+Atlas/UserSettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
