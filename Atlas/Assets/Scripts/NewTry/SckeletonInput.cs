@@ -40,28 +40,6 @@ public class SckeletonInput : MonoBehaviour
         camera.transform.position = new Vector3 (controled.transform.position.x, obj.transform.position.y, controled.transform.position.z);
     }
 
-
-
-    /*
-    private void Rotating(InputAction.CallbackContext context)
-    {
-        var chang = context.ReadValue<float>();
-    }
-    private void Zooming(InputAction.CallbackContext context)
-    {
-        var chang = context.ReadValue<float>();
-
-    }
-    private void Moving(InputAction.CallbackContext context)
-    {
-        var chang = context.ReadValue<float>();
-    }
-     */
-
-
-
-
-
     private void Update()
     {
         Interactive();

@@ -49,6 +49,8 @@ public class scrollBeh : MonoBehaviour
             butun.GetComponent<Button>().onClick.AddListener(() => {
                 Control.Instance.ChangePoint(a);
             });
+            
+
             //butun.GetComponent<Button>().On
             scroll.content.sizeDelta += new Vector2(0
                 , CanvasBehavior.Instance.getSize().y * 0.15f + 25);

@@ -8,6 +8,7 @@ using UnityEngine;
 public class Control : MonoBehaviour
 {
     public static Control Instance { get; private set; }
+    public GameObject Indicator;
     public GameObject Preparat;
     public GameObject Postparat { get; private set; }
     [Space]
@@ -18,13 +19,23 @@ public class Control : MonoBehaviour
     List<Bone> bones = new List<Bone>();    
     //List<MeshRenderer> bones = new List<MeshRenderer>();
     public event Action<GameObject> OnChangePoint;
+    //public event Action<Transform> OnMarkPoint;
     // public CinemachineFreeLook camera;
 
     private void Awake()
     {
         Instance = this;
         Postparat = Preparat;
+
+        HideIndicator();
     }
+
+    private void HideIndicator()
+    {
+        Indicator.transform.position = new Vector3(1007, 1070, 1700);
+    }
+    
+    
 
     void Start()
     {
@@ -116,6 +127,7 @@ public class Control : MonoBehaviour
     {
         Postparat=obj.gameObject;
         OnChangePoint?.Invoke(Postparat);
+        HideIndicator();
     }
 
 
@@ -124,15 +136,32 @@ public class Control : MonoBehaviour
 
         for (int i = 0; i < Postparat.transform.childCount; i++)
         {
-            if (Postparat.transform.GetChild(i).gameObject.name == name &&
-                Postparat.transform.GetChild(i).childCount != 0
+            if (
+                Postparat.transform.GetChild(i).gameObject.name == name 
+                //&
                 )
             {
-                Postparat = Postparat.transform.GetChild(i).gameObject;
+                if (
+                //  true
+                Postparat.transform.GetChild(i).childCount != 0 
+                    )
+                {
+                    Postparat = Postparat.transform.GetChild(i).gameObject;
+                    HideIndicator();
+                    OnChangePoint?.Invoke(Postparat);
+                    //print("sa");
+                }
+                else
+                {
+                    print($"ss{Postparat.transform.position}");
+                    Indicator.transform.position = Postparat.transform.GetChild(i).position;
+                    //OnMarkPoint?.Invoke(Postparat.transform);
+                }
+                    
+
                 //camera.LookAt = Postparat.transform;
             }
         }
-        OnChangePoint?.Invoke(Postparat);
     }
 
     public void UpperHierarchy() {
@@ -140,10 +169,11 @@ public class Control : MonoBehaviour
         else
         {
             Postparat = Postparat.transform.parent.gameObject;
-
         }
+        HideIndicator();
         OnChangePoint?.Invoke(Postparat);
     }
+
     public string[] getContent() {
         List<string> content = new List<string>();
         for (int i = 0; i < Postparat.transform.childCount; i++) {

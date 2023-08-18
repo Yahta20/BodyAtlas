@@ -43,6 +43,8 @@ public class MainPanel : MonoBehaviour
         scrollRect.sizeDelta = new Vector2(sc.x * xkof, mainRect.sizeDelta.y * 0.80f);
         toppanel.sizeDelta = new Vector2(sc.x * xkof, mainRect.sizeDelta.y * 0.10f);
         text.sizeDelta = toppanel.sizeDelta;
+
+
         lanbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
         upbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
         extbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);

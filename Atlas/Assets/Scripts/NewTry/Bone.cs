@@ -10,7 +10,7 @@ public class Bone : MonoBehaviour
     public Collider m_colider;
     Material c_material;
     public Material t_material;
-
+    
 
     void Awake()
     {
@@ -22,14 +22,21 @@ public class Bone : MonoBehaviour
     private void OnEnable()
     {
         Control.Instance.OnChangePoint += onChangePoint;
+        //Control.Instance.OnMarkPoint += onMarkPoint;
+
+    }
+
+    private void onMarkPoint(Transform t)
+    {
+        
     }
 
     private void onChangePoint(GameObject obj)
     {
+        SetView(obj==gameObject|gameObject.transform.IsChildOf(obj.transform));
+    }
         
 
-        SetView(obj==gameObject| gameObject.transform.IsChildOf(obj.transform));
-    }
 
 
     private void OnMouseDown()
