@@ -21,6 +21,8 @@ public class MainPanel : MonoBehaviour
     public Sprite[] button;
 
     [SerializeField]
+    int lang;
+    [SerializeField]
     float xkof;
 
 
@@ -30,12 +32,13 @@ public class MainPanel : MonoBehaviour
     {
         mainRect = GetComponent<RectTransform>();
         SetSizes();
+
     }
 
     private void SetSizes()
     {
         var sc = CanvasBehavior.Instance.getSize();
-
+        var aspekt = sc.x / sc.y;
 
         mainRect.sizeDelta = new Vector2(sc.x * xkof, sc.y);
         mainRect.anchoredPosition = Vector2.zero;
@@ -45,15 +48,17 @@ public class MainPanel : MonoBehaviour
         text.sizeDelta = toppanel.sizeDelta;
 
 
-        lanbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
-        upbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
-        extbtn.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
+
+        lanbtn.sizeDelta = new Vector2(text.sizeDelta.x*0.25f, text.sizeDelta.x * 0.25f);
+        upbtn.sizeDelta = new Vector2(text.sizeDelta.x * 0.25f, text.sizeDelta.x * 0.25f);
+        extbtn.sizeDelta = new Vector2(text.sizeDelta.x * 0.25f, text.sizeDelta.x * 0.25f);
+        icon.sizeDelta = new Vector2(text.sizeDelta.x * 0.25f, text.sizeDelta.x * 0.25f);
+        
         lanbtn.anchoredPosition = Vector2.zero;
         extbtn.anchoredPosition = Vector2.zero;
         upbtn.anchoredPosition = new Vector2(extbtn.sizeDelta.y * 2, 0);
-
-        icon.sizeDelta = new Vector2(text.sizeDelta.y, text.sizeDelta.y);
         icon.anchoredPosition = new Vector2(-extbtn.sizeDelta.y * 2, 0);
+
 
     }
 
@@ -83,7 +88,106 @@ public class MainPanel : MonoBehaviour
 
     public void ChangeLang()
     {
+        switch (ContentLoc.Instance.language)
+        {
+            case SystemLanguage.Afrikaans:
+                break;
+            case SystemLanguage.Arabic:
+                break;
+            case SystemLanguage.Basque:
+                break;
+            case SystemLanguage.Belarusian:
+                break;
+            case SystemLanguage.Bulgarian:
+                break;
+            case SystemLanguage.Catalan:
+                break;
+            case SystemLanguage.Chinese:
+                break;
+            case SystemLanguage.Czech:
+                break;
+            case SystemLanguage.Danish:
+                break;
+            case SystemLanguage.Dutch:
+                break;
+            case SystemLanguage.English:
 
+                ContentLoc.Instance.changeLang(SystemLanguage.Unknown);
+                BtnImage.sprite = button[2];
+                break;
+            case SystemLanguage.Estonian:
+                break;
+            case SystemLanguage.Faroese:
+                break;
+            case SystemLanguage.Finnish:
+                break;
+            case SystemLanguage.French:
+                break;
+            case SystemLanguage.German:
+                break;
+            case SystemLanguage.Greek:
+                break;
+            case SystemLanguage.Hebrew:
+                break;
+            case SystemLanguage.Icelandic:
+                break;
+            case SystemLanguage.Indonesian:
+                break;
+            case SystemLanguage.Italian:
+                break;
+            case SystemLanguage.Japanese:
+                break;
+            case SystemLanguage.Korean:
+                break;
+            case SystemLanguage.Latvian:
+                break;
+            case SystemLanguage.Lithuanian:
+                break;
+            case SystemLanguage.Norwegian:
+                break;
+            case SystemLanguage.Polish:
+                break;
+            case SystemLanguage.Portuguese:
+                break;
+            case SystemLanguage.Romanian:
+                break;
+            case SystemLanguage.Russian:
+                break;
+            case SystemLanguage.SerboCroatian:
+                break;
+            case SystemLanguage.Slovak:
+                break;
+            case SystemLanguage.Slovenian:
+                break;
+            case SystemLanguage.Spanish:
+                break;
+            case SystemLanguage.Swedish:
+                break;
+            case SystemLanguage.Thai:
+                break;
+            case SystemLanguage.Turkish:
+                break;
+            case SystemLanguage.Ukrainian:
+                ContentLoc.Instance.changeLang(SystemLanguage.English);
+                BtnImage.sprite = button[1];
+                break;
+            case SystemLanguage.Vietnamese:
+                break;
+            case SystemLanguage.ChineseSimplified:
+                break;
+            case SystemLanguage.ChineseTraditional:
+                break;
+            case SystemLanguage.Unknown:
+                ContentLoc.Instance.changeLang(SystemLanguage.Ukrainian);
+                BtnImage.sprite = button[0];
+                break;
+            case SystemLanguage.Hungarian:
+                break;
+            default:
+                break;
+        }
+
+        //ContentLoc.Instance.OnChangeLang();
 
     }
 

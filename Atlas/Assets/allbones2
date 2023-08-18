@@ -1,0 +1,274 @@
+skeleton axiale 
+cranium 
+neurocranium 
+os frontale 
+os ethmoidale 
+os occipitale 
+os sphenoidale 
+os temporale 
+os parietale 
+cranium viscerale 
+os palatinum 
+dentes 
+vomer 
+mandibula 
+Lower_dentes 
+os zygomaticum 
+os nasale 
+os lacrimale 
+concha nasalis inferior 
+columna vertebralis 
+sceleton appendiculare 
+ossa membri superioris 
+cingulum membri superioris 
+scapula 
+processus coracoideus 
+acromion 
+angulus acromialis 
+angulus lateralis 
+margo lateralis 
+facies posterior 
+angulus inferior 
+margo medialis 
+fossa infraspinata 
+fossa supraspinata 
+angulus superior 
+margo superior 
+spina scapulae 
+incisura scapulae 
+fossa subscapularis 
+facies costalis 
+tuberculum infraglenoidale 
+cavitas glenoidalis 
+facies articularis acromialis 
+collum scapulae 
+clavicula 
+corpus claviculae 
+extremitas acromialis 
+extremitas sternalis 
+sulcus m. subclavii 
+impressio lig. costoclavicularis 
+foramen nutricium 
+tuberculum conoideum 
+linea trapezoidea 
+skeleton membri superioris liberi 
+brachium 
+humerus 
+sulcus nervi radialis 
+tuberculum majus 
+fossa olecrani 
+epicondylus lateralis 
+trochlea humeri 
+condylus humeri 
+sulcus nervi ulnaris 
+epicondylus medialis 
+crista supraepicondylaris medialis 
+facies anteromedialis 
+corpus humeri 
+collum chirurgicum 
+collum anatomicum 
+caput humeri 
+tuberculum minus 
+crista tuberculi minoris 
+fossa coronoidea 
+processus supracondylaris 
+capitulum humeri 
+fossa radialis 
+crista supraepicondylaris lateralis 
+facies anterolateralis 
+tuberositas deltoidea 
+crista tuberculi majoris 
+antebrachium 
+ulna 
+olecranon 
+incisura trochlearis 
+incisura radialis 
+processus coronoideus 
+tuberositas ulnae 
+corpus ulnae 
+margo anterior 
+facies anterior 
+caput ulnae 
+circumferentia articularis 
+processus styloideus 
+margo posterior 
+facies medialis 
+radius 
+caput radii 
+collum radii 
+tuberositas radii 
+corpus radii 
+facies lateralis 
+tuberculum dorsale 
+incisura ulnaris 
+facies articularis 
+margo interosseus 
+fovea articularis 
+manus 
+carpus 
+os trapezium 
+corpus 
+tuberculum ossis trapezii 
+os scaphoideum 
+os capitatum 
+os lunatum 
+os pisiforme 
+os hamatum 
+hamulus ossi hamati 
+os triquetrum 
+os trapezoideum 
+metacarpus 
+os metacarpale 1 
+ossa sesamoidea 
+caput 
+basis 
+os metacarpale 2 
+os metacarpale 3 
+os metacarpale 4 
+os metacarpale 5 
+ossa metacarpi 
+phalanx proximalis 5 
+corpus phalangis 
+basis phalangis 
+caput phalangis 
+phalanx proximalis 4 
+phalanx proximalis 3 
+phalanx proximalis 2 
+phalanx proximalis 1 
+phalanx media 5 
+phalanx media 4 
+phalanx media 3 
+phalanx media 2 
+phalanx distalis 5 
+tuberositas phalangis distalis 
+phalanx distalis 4 
+phalanx distalis 3 
+phalanx distalis 2 
+phalanx distalis 1 
+Ossa membri inferioris 
+skeleton membri inferioris liberi 
+femur 
+caput femoris 
+trochanter major 
+crista intertrochanterica 
+trochanter tertius 
+tuberositas glutea 
+linea pectinea 
+linea aspera 
+labium mediale 
+labium laterale 
+facies poplitea 
+linea supracondylaris lateralis 
+linea intercondylaris 
+condylus lateralis 
+fossa intercondylaris 
+condylus medialis 
+linea supracondylaris medialis 
+tuberculum adductorium 
+facies patellaris 
+corpus femoris 
+linea intertrochanterica 
+fovea саріtis femoris 
+collum femoris 
+trochanter minor 
+patella 
+basis patellae 
+apex patellae 
+crus 
+tibia 
+tuberositas tibiae 
+margo interos- seus tibiae 
+malleolus medialis 
+facies articularis malleoli 
+eminentia untercondylaris 
+sulcus malleolaris 
+corpus tibiae 
+linea m. solei 
+tuberculum intercondylare mediale 
+area intercondylaris anterior 
+facies articularis superior 
+facies articularis inferior 
+fibula 
+corpus fibulae 
+margo interos- seus 
+fossa malleoli lateralis 
+malleolus lateralis 
+margo interos- seus fibulae 
+collum fibulae 
+caput fibulae 
+facies articularis capitis fibulae 
+apex capitis fibulae 
+pedis 
+tarsus 
+calcaneus 
+tuber calcanei 
+sulcus tendis m. flexoris hallucis longi 
+tuberculum calcanei 
+trochlea peronealis 
+sustentaculum tali 
+processus medialis tuberis calcanei 
+sulcus tendinis mm. peroneorum 
+processus lateralis tuber calcanei 
+facies articularis talaris posterior 
+sulcus calcanei 
+facies articularis talaris media 
+facies articularis talaris anterior 
+talus 
+trochlea tali 
+facies malleolaris medialis 
+facies superior trochleae 
+collum tali 
+facies malleoiaris lateralis 
+sinus tarsi 
+processus lateralis tali 
+processus posterior tali 
+sulcus tendinis m. flexoris hallucis longi 
+tuberculum laterale 
+tuberculum mediale 
+facies articularis navicularis 
+caput tali 
+facies articularis calcanea anterior 
+facies articularis calcanea media 
+sulcus tali 
+facies articularis calcanea posterior 
+corpus tali 
+os navicularae 
+tuberositas ossis navicularis 
+os cuneiforme mediale 
+os cuneiforme intermedium 
+os cuneiforme laterale 
+os cuboideum 
+sulcus tendis m. peronei longi 
+tuberositas ossis cuboidei 
+metatarsus 
+os metatarsale I 
+tuberositas ossis metatarsalis 
+os metatarsale II 
+basis  
+corpus  
+caput  
+os metatarsale III 
+os metatarsale IV 
+os metatarsale V 
+os sesamoidea I 
+os sesamoidea II 
+ossa digitorum 
+phalanx distalis V + phalanx media V 
+phalanx distalis 
+phalanx media 
+tuberositas phalangis distalis  
+phalanx distalis IV + phalanx media IV 
+phalanx distalis  
+phalanx media II 
+phalanx media III 
+phalanx distalis I 
+phalanx distalis II 
+phalanx distalis III 
+spatia interossea metatarsi 
+phalanx proximalis I 
+phalanx proximalis II 
+phalanx proximalis III 
+phalanx proximalis IV 
+phalanx proximalis V 
+cingulum membri inferioris 
+os coxae 

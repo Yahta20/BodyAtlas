@@ -1,0 +1,275 @@
+Id,Key,Latina(lat),English(en),Ukrainian(Ua)
+1,skeleton axiale,skeleton axiale,skeleton axiale,осьовий скелет
+2,cranium,cranium,cranium,череп
+3,neurocranium,neurocranium,neurocranium,нейрочереп
+4,os frontale,os frontale,frontal bone,лобова кістка
+5,os ethmoidale,os ethmoidale,ethmoid bone,решітчаста кістка
+6,os occipitale,os occipitale,occipital bone,потилична кістка
+7,os sphenoidale,os sphenoidale,sphenoid bone,клиноподібна кістка
+8,os temporale,os temporale,temporal bone,скронева кістка
+9,os parietale,os parietale,parietal bone,тім'яна кістка
+10,cranium viscerale,cranium viscerale,visceral cranium,вісцеральний череп
+11,os palatinum,os palatinum,palatine bone,піднебінний рот
+12,dentes,dentes,teeth,зуби
+13,vomer,vomer,vomer,блювота
+14,mandibula,mandibula,mandible,нижня щелепа
+15,Lower_dentes,Lower_dentes,Lower teeth,Нижні_зуби
+16,os zygomaticum,os zygomaticum,zygomatic bone,вилична кістка
+17,os nasale,os nasale,nasal bone,Носова порожнина
+18,os lacrimale,os lacrimale,lacrimal bone,заплаканий рот
+19,concha nasalis inferior,concha nasalis inferior,inferior nasal concha,нижня носова раковина
+20,columna vertebralis,columna vertebralis,vertebral column,хребетний стовп
+21,sceleton appendiculare,sceleton appendiculare,appendicular skeleton,апендикулярний скелет
+22,ossa membri superioris,ossa membri superioris,bones of the upper limb,кістки верхньої кінцівки
+23,cingulum membri superioris,cingulum membri superioris,girdle of the upper limb,пояс верхньої кінцівки
+24,scapula,scapula,scapula,лопатка
+25,processus coracoideus,processus coracoideus,coracoid process,коракоїдний відросток
+26,acromion,acromion,acromion,акроміон
+27,angulus acromialis,angulus acromialis,acromial angle,акроміальний кут
+28,angulus lateralis,angulus lateralis,lateral angle,бічний кут
+29,margo lateralis,margo lateralis,lateral border,бічний край
+30,facies posterior,facies posterior,posterior surface,заднє обличчя
+31,angulus inferior,angulus inferior,inferior angle,нижній кут
+32,margo medialis,margo medialis,medial border,медіальний край
+33,fossa infraspinata,fossa infraspinata,infraspinous fossa,подостной ямка
+34,fossa supraspinata,fossa supraspinata,supraspinous fossa,надостна ямка
+35,angulus superior,angulus superior,superior angle,верхній кут
+36,margo superior,margo superior,superior border,верхнє поле
+37,spina scapulae,spina scapulae,spine of the scapula,Ость лопатки
+38,incisura scapulae,incisura scapulae,scapular notch,плечовий розріз
+39,fossa subscapularis,fossa subscapularis,subscapular fossa,підлопаткової ямки
+40,facies costalis,facies costalis,costal surface,реберні особи
+41,tuberculum infraglenoidale,tuberculum infraglenoidale,infraglenoid tubercle,підсуглобовий горбок
+42,cavitas glenoidalis,cavitas glenoidalis,glenoid cavity,суглобова порожнина
+43,facies articularis acromialis,facies articularis acromialis,acromial articular surface,фасетка акроміального суглоба
+44,collum scapulae,collum scapulae,neck of the scapula,шийка плеча
+45,clavicula,clavicula,clavicle,ключ
+46,corpus claviculae,corpus claviculae,clavicle body,тіло ключа
+47,extremitas acromialis,extremitas acromialis,acromial end,акроміальна кінцівка
+48,extremitas sternalis,extremitas sternalis,sternal end,груднину
+49,sulcus m. subclavii,sulcus m. subclavii,subclavian groove,sulcus m. підвал
+50,impressio lig. costoclavicularis,impressio lig. costoclavicularis,costoclavicular impression,враження lig. реберно-ключичний
+51,foramen nutricium,foramen nutricium,nutrient foramen,отвір для годування
+52,tuberculum conoideum,tuberculum conoideum,conoid tubercle,коноїдний горбок
+53,linea trapezoidea,linea trapezoidea,trapezoid line,трапецієподібна лінія
+54,skeleton membri superioris liberi,skeleton membri superioris liberi,free upper limb skeleton,скелет верхньої кінцівки дитини
+55,brachium,brachium,brachium,рука
+56,humerus,humerus,humerus,плече
+57,sulcus nervi radialis,sulcus nervi radialis,radial groove,борозна променевого нерва
+58,tuberculum majus,tuberculum majus,greater tubercle,більший горбок
+59,fossa olecrani,fossa olecrani,olecranon fossa,olecranon fossa
+60,epicondylus lateralis,epicondylus lateralis,lateral epicondyle,латеральний надвиросток
+61,trochlea humeri,trochlea humeri,trochlea of the humerus,плечовий шків
+62,condylus humeri,condylus humeri,humerus condyle,виросток плеча
+63,sulcus nervi ulnaris,sulcus nervi ulnaris,ulnar groove,борозна ліктьового нерва
+64,epicondylus medialis,epicondylus medialis,medial epicondyle,медіальний надвиросток
+65,crista supraepicondylaris medialis,crista supraepicondylaris medialis,medial supracondylar crest,медіальний над-надмищелковий гребінь
+66,facies anteromedialis,facies anteromedialis,anteromedial surface,передньомедіальне обличчя
+67,corpus humeri,corpus humeri,humerus body,плече тіла
+68,collum chirurgicum,collum chirurgicum,surgical neck,хірургічна шийка
+69,collum anatomicum,collum anatomicum,anatomical neck,анатомічна шия
+70,caput humeri,caput humeri,head of the humerus,головка плеча
+71,tuberculum minus,tuberculum minus,lesser tubercle,бульби менше
+72,crista tuberculi minoris,crista tuberculi minoris,crest of the lesser tubercle,гребінь малого горбка
+73,fossa coronoidea,fossa coronoidea,coronoid fossa,вінцевої ямки
+74,processus supracondylaris,processus supracondylaris,supracondylar process,надвиростковий відросток
+75,capitulum humeri,capitulum humeri,capitulum of the humerus,головка плеча
+76,fossa radialis,fossa radialis,radial fossa,радіальна траншея
+77,crista supraepicondylaris lateralis,crista supraepicondylaris lateralis,lateral supraepicondylar crest,латеральний наднадмищелковий гребінь
+78,facies anterolateralis,facies anterolateralis,anterolateral surface,передньобокове обличчя
+79,tuberositas deltoidea,tuberositas deltoidea,deltoid tuberosity,дельтоподібна горбистість
+80,crista tuberculi majoris,crista tuberculi majoris,crest of the greater tubercle,гребінь великого горбка
+81,antebrachium,antebrachium,forearm,передпліччя
+82,ulna,ulna,ulna,ліктьова кістка
+83,olecranon,olecranon,olecranon,олекран
+84,incisura trochlearis,incisura trochlearis,trochlear notch,трохлеарний розріз
+85,incisura radialis,incisura radialis,radial notch,радіальна виїмка
+86,processus coronoideus,processus coronoideus,coronoid process,вінцевий відросток
+87,tuberositas ulnae,tuberositas ulnae,ulnar tuberosity,горбистість ліктьової кістки
+88,corpus ulnae,corpus ulnae,ulna body,тіло ліктьової кістки
+89,margo anterior,margo anterior,anterior border,передній край
+90,facies anterior,facies anterior,anterior surface,передня грань
+91,caput ulnae,caput ulnae,head of the ulna,головка ліктьової кістки
+92,circumferentia articularis,circumferentia articularis,articular circumference,суглобова окружність
+93,processus styloideus,processus styloideus,styloid process,шилоподібний відросток
+94,margo posterior,margo posterior,posterior border,задній край
+95,facies medialis,facies medialis,medial surface,медіальне обличчя
+96,radius,radius,radius,промінь
+97,caput radii,caput radii,head of the radius,головка променя
+98,collum radii,collum radii,neck of the radius,шийка променя
+99,tuberositas radii,tuberositas radii,radial tuberosity,горбистість променевої кістки
+100,corpus radii,corpus radii,radius body,тіло променя
+101,facies lateralis,facies lateralis,lateral surface,бічна грань
+102,tuberculum dorsale,tuberculum dorsale,dorsal tubercle,спинний горбок
+103,incisura ulnaris,incisura ulnaris,ulnar notch,ліктьовий розріз
+104,facies articularis,facies articularis,articular surface,суглобова фасетка
+105,margo interosseus,margo interosseus,interosseous border,міжкістковий край
+106,fovea articularis,fovea articularis,articular fossa,суглобова ямка
+107,manus,manus,hand,руками
+108,carpus,carpus,carpus,зап'ястя
+109,os trapezium,os trapezium,trapezium bone,трапецієподібний рот
+110,corpus,corpus,body,тіло
+111,tuberculum ossis trapezii,tuberculum ossis trapezii,trapezium tubercle,горбок трапецієподібної кістки
+112,os scaphoideum,os scaphoideum,scaphoid bone,човноподібна кістка
+113,os capitatum,os capitatum,capitate bone,рот закритий
+114,os lunatum,os lunatum,lunate bone,півмісяць
+115,os pisiforme,os pisiforme,pisiform bone,пізоподібний рот
+116,os hamatum,os hamatum,hamate bone,гачкуватий рот
+117,hamulus ossi hamati,hamulus ossi hamati,hook of hamate bone,гачок з кістки
+118,os triquetrum,os triquetrum,triquetral bone,triquetra рот
+119,os trapezoideum,os trapezoideum,trapezoid bone,трапецієподібний рот
+120,metacarpus,metacarpus,metacarpus,п'ясткова кістка
+121,os metacarpale 1,os metacarpale 1,first metacarpal bone,п'ясткова кістка 1
+122,ossa sesamoidea,ossa sesamoidea,sesamoid bones,сесамоподібні кістки
+123,caput,caput,head,Глава
+124,basis,basis,base,основа
+125,os metacarpale 2,os metacarpale 2,second metacarpal bone,п'ясткова кістка 2
+126,os metacarpale 3,os metacarpale 3,third metacarpal bone,п'ясткова кістка 3
+127,os metacarpale 4,os metacarpale 4,fourth metacarpal bone,п'ясткова кістка 4
+128,os metacarpale 5,os metacarpale 5,fifth metacarpal bone,п'ясткова кістка 5
+129,ossa metacarpi,ossa metacarpi,metacarpal bones,п'ясткових кісток
+130,phalanx proximalis 5,phalanx proximalis 5,proximal phalanx of the fifth finger,проксимальна фаланга 5
+131,corpus phalangis,corpus phalangis,shaft of the phalanx,тіло фаланги
+132,basis phalangis,basis phalangis,base of the phalanx,підстава фаланги
+133,caput phalangis,caput phalangis,head of the phalanx,головка фаланги
+134,phalanx proximalis 4,phalanx proximalis 4,proximal phalanx of the fourth finger,проксимальна фаланга 4
+135,phalanx proximalis 3,phalanx proximalis 3,proximal phalanx of the third finger,проксимальна фаланга 3
+136,phalanx proximalis 2,phalanx proximalis 2,proximal phalanx of the second finger,проксимальна фаланга 2
+137,phalanx proximalis 1,phalanx proximalis 1,proximal phalanx of the first finger,проксимальна фаланга 1
+138,phalanx media 5,phalanx media 5,middle phalanx of the fifth finger,середня фаланга 5
+139,phalanx media 4,phalanx media 4,middle phalanx of the fourth finger,середня фаланга 4
+140,phalanx media 3,phalanx media 3,middle phalanx of the third finger,середня фаланга 3
+141,phalanx media 2,phalanx media 2,middle phalanx of the second finger,середня фаланга 2
+142,phalanx distalis 5,phalanx distalis 5,distal phalanx of the fifth finger,дистальна фаланга 5
+143,tuberositas phalangis distalis,tuberositas phalangis distalis,distal tuberosity of the phalanx,горбистість дистальної фаланги
+144,phalanx distalis 4,phalanx distalis 4,distal phalanx of the fourth finger,дистальна фаланга 4
+145,phalanx distalis 3,phalanx distalis 3,distal phalanx of the third finger,дистальна фаланга 3
+146,phalanx distalis 2,phalanx distalis 2,distal phalanx of the second finger,дистальна фаланга 2
+147,phalanx distalis 1,phalanx distalis 1,distal phalanx of the first finger,дистальна фаланга 1
+148,Ossa membri inferioris,Ossa membri inferioris,bones of the lower limb,Кістки нижньої кінцівки
+149,skeleton membri inferioris liberi,skeleton membri inferioris liberi,free lower limb skeleton,скелет нижньої кінцівки дитини
+150,femur,femur,femur,стегно
+151,caput femoris,caput femoris,head of the femur,головка стегнової кістки
+152,trochanter major,trochanter major,greater trochanter,великий вертел
+153,crista intertrochanterica,crista intertrochanterica,intertrochanteric crest,межвертельний гребінь
+154,trochanter tertius,trochanter tertius,third trochanter,третій вертел
+155,tuberositas glutea,tuberositas glutea,gluteal tuberosity,сіднична горбистість
+156,linea pectinea,linea pectinea,pectineal line,лінія гребінця
+157,linea aspera,linea aspera,linea aspera,груба лінія
+158,labium mediale,labium mediale,medial lip,медіальна губа
+159,labium laterale,labium laterale,lateral lip,бічна губа
+160,facies poplitea,facies poplitea,popliteal surface,підколінне обличчя
+161,linea supracondylaris lateralis,linea supracondylaris lateralis,lateral supracondylar line,латеральна надвиросткова лінія
+162,linea intercondylaris,linea intercondylaris,intercondylar line,міжвиросткова лінія
+163,condylus lateralis,condylus lateralis,lateral condyle,латеральний виросток
+164,fossa intercondylaris,fossa intercondylaris,intercondylar fossa,міжвиросткова ямка
+165,condylus medialis,condylus medialis,medial condyle,медіальний виросток
+166,linea supracondylaris medialis,linea supracondylaris medialis,medial supracondylar line,медіальна надвиросткова лінія
+167,tuberculum adductorium,tuberculum adductorium,adductor tubercle,привідний горбок
+168,facies patellaris,facies patellaris,patellar surface,плоскі обличчя
+169,corpus femoris,corpus femoris,femur body,тіло стегна
+170,linea intertrochanterica,linea intertrochanterica,intertrochanteric line,міжвертлюжна лінія
+171,fovea саріtis femoris,fovea саріtis femoris,fovea capitis femoris,ямка sarіtis femoris
+172,collum femoris,collum femoris,femoral neck,шийка стегна
+173,trochanter minor,trochanter minor,lesser trochanter,малий вертел
+174,patella,patella,patella,плита
+175,basis patellae,basis patellae,patella base,Опорна плита
+176,apex patellae,apex patellae,patella apex,верхівка пластини
+177,crus,crus,leg,нога
+178,tibia,tibia,tibia,флейта
+179,tuberositas tibiae,tuberositas tibiae,tibial tuberosity,горбистість великогомілкової кістки
+180,margo interos- seus tibiae,margo interos- seus tibiae,interosseous border of the tibia,край міжкісткової труби
+181,malleolus medialis,malleolus medialis,medial malleolus,медіальна кісточка
+182,facies articularis malleoli,facies articularis malleoli,malleolar articular surface,суглобова грань молоточка
+183,eminentia untercondylaris,eminentia untercondylaris,eminentia intercondylaris,міжвиросткове підвищення
+184,sulcus malleolaris,sulcus malleolaris,malleolar groove,щиколоткова борозна
+185,corpus tibiae,corpus tibiae,tibia body,тіло труби
+186,linea m. solei,linea m. solei,soleal line,лінія m. звик
+187,tuberculum intercondylare mediale,tuberculum intercondylare mediale,medial intercondylar tubercle,медіальний міжвиростковий горбок
+188,area intercondylaris anterior,area intercondylaris anterior,anterior intercondylar area,передня міжвиросткова ділянка
+189,facies articularis superior,facies articularis superior,superior articular surface,верхня суглобова фасетка
+190,facies articularis inferior,facies articularis inferior,inferior articular surface,нижня суглобова фасетка
+191,fibula,fibula,fibula,пряжка
+192,corpus fibulae,corpus fibulae,fibula body,тіло пряжки
+193,margo interos- seus,margo interos- seus,interosseous border of the fibula,на маргінесі
+194,fossa malleoli lateralis,fossa malleoli lateralis,lateral malleolar fossa,латеральна кісточка
+195,malleolus lateralis,malleolus lateralis,lateral malleolus,латеральна кісточка
+196,margo interos- seus fibulae,margo interos- seus fibulae,interosseous border of the fibula,край застібки
+197,collum fibulae,collum fibulae,fibular neck,шийний бандаж
+198,caput fibulae,caput fibulae,head of the fibula,головка пряжки
+199,facies articularis capitis fibulae,facies articularis capitis fibulae,head of the fibula articular surface,суглобова грань головки кламера
+200,apex capitis fibulae,apex capitis fibulae,apex of the fibular head,верхівка головки застібки
+201,pedis,pedis,foot,стопа
+202,tarsus,tarsus,tarsus,щиколотка
+203,calcaneus,calcaneus,calcaneus,каблук
+204,tuber calcanei,tuber calcanei,calcaneal tuberosity,п'яткова шпора
+205,sulcus tendis m. flexoris hallucis longi,sulcus tendis m. flexoris hallucis longi,sulcus for the tendon of the long flexor muscle of the big toe,Tendis m. довгий згинач великого м'яза
+206,tuberculum calcanei,tuberculum calcanei,calcaneal tubercle,горбок п'яти
+207,trochlea peronealis,trochlea peronealis,peroneal trochlea,малогомілковий шків
+208,sustentaculum tali,sustentaculum tali,sustentaculum of the talus,підтримка таких
+209,processus medialis tuberis calcanei,processus medialis tuberis calcanei,medial tubercle of the calcaneus,медіальний відросток п'яткової горбка
+210,sulcus tendinis mm. peroneorum,sulcus tendinis mm. peroneorum,tendon sulcus of the peroneal muscles,сухожилкова борозна мм. малогомілкової кістки
+211,processus lateralis tuber calcanei,processus lateralis tuber calcanei,lateral tubercle of the calcaneus,бічний відросток п'яткової горбка
+212,facies articularis talaris posterior,facies articularis talaris posterior,posterior articular surface of the talus,задня сторона таранного суглоба
+213,sulcus calcanei,sulcus calcanei,calcaneal sulcus,п'яткова борозна
+214,facies articularis talaris media,facies articularis talaris media,middle articular surface of the talus,медіальний аспект таранного суглоба
+215,facies articularis talaris anterior,facies articularis talaris anterior,anterior articular surface of the talus,передня сторона таранного суглоба
+216,talus,talus,talus,щиколотка
+217,trochlea tali,trochlea tali,trochlea of the talus,такий шків
+218,facies malleolaris medialis,facies malleolaris medialis,medial malleolar facet,медіальна щиколотка
+219,facies superior trochleae,facies superior trochleae,superior articular surface of the trochlea,верхню грань шківа
+220,collum tali,collum tali,neck of the talus,така шия
+221,facies malleoiaris lateralis,facies malleoiaris lateralis,lateral malleolar facet,бічна щиколотка
+222,sinus tarsi,sinus tarsi,tarsal sinus,гомілковостопний синус
+223,processus lateralis tali,processus lateralis tali,lateral process of the talus,такий бічний відросток
+224,processus posterior tali,processus posterior tali,posterior process of the talus,такий пізніший процес
+225,sulcus tendinis m. flexoris hallucis longi,sulcus tendinis m. flexoris hallucis longi,sulcus for the tendon of the long flexor muscle of the big toe,sulcus сухожилля m. довгий згинач великого м'яза
+226,tuberculum laterale,tuberculum laterale,lateral tubercle,бічний горбок
+227,tuberculum mediale,tuberculum mediale,medial tubercle,медіальний горбок
+228,facies articularis navicularis,facies articularis navicularis,navicular articular surface,суглобова фасетка човноподібної кістки
+229,caput tali,caput tali,head of the talus,така голова
+230,facies articularis calcanea anterior,facies articularis calcanea anterior,anterior articular surface of the calcaneus,передня фасетка п'яткового суглоба
+231,facies articularis calcanea media,facies articularis calcanea media,middle articular surface of the calcaneus,медіальна фасетка п'яткового суглоба
+232,sulcus tali,sulcus tali,calcaneal sulcus,така канавка
+233,facies articularis calcanea posterior,facies articularis calcanea posterior,posterior articular surface of the calcaneus,суглобова фасетка задньої п'яткової кістки
+234,corpus tali,corpus tali,calcaneus body,тіло такого
+235,os navicularae,os navicularae,navicular bone,гирло корабля
+236,tuberositas ossis navicularis,tuberositas ossis navicularis,tuberosity of the navicular bone,горбистість човноподібної кістки
+237,os cuneiforme mediale,os cuneiforme mediale,medial cuneiform bone,медіальна клиноподібна кістка
+238,os cuneiforme intermedium,os cuneiforme intermedium,intermediate cuneiform bone,проміжне клиноподібне гирло
+239,os cuneiforme laterale,os cuneiforme laterale,lateral cuneiform bone,латеральна клиноподібна кістка
+240,os cuboideum,os cuboideum,cuboid bone,кубоподібна кістка
+241,sulcus tendis m. peronei longi,sulcus tendis m. peronei longi,sulcus for the tendon of the long peroneal muscle,Tendis m. довга малогомілкова кістка
+242,tuberositas ossis cuboidei,tuberositas ossis cuboidei,tuberosity of the cuboid bone,горбистість кубоподібної кістки
+243,metatarsus,metatarsus,metatarsus,плюсна
+244,os metatarsale I,os metatarsale I,first metatarsal bone,I плеснової кістки
+245,tuberositas ossis metatarsalis,tuberositas ossis metatarsalis,tuberosity of the first metatarsal bone,горбистість плеснової кістки
+246,os metatarsale II,os metatarsale II,second metatarsal bone,плеснової кістки II
+247,basis,basis,base,основа
+248,corpus,corpus,body,тіло
+249,caput,caput,head,Глава
+250,os metatarsale III,os metatarsale III,third metatarsal bone,плеснової кістки III
+251,os metatarsale IV,os metatarsale IV,fourth metatarsal bone,IV плеснової кістки
+252,os metatarsale V,os metatarsale V,fifth metatarsal bone,V плеснової кістки
+253,os sesamoidea I,os sesamoidea I,os sesamoideum I,сесамоподібна кістка I
+254,os sesamoidea II,os sesamoidea II,os sesamoideum II,сесамоподібна кістка II
+255,ossa digitorum,ossa digitorum,bones of the toes,кістки пальців
+256,phalanx distalis V + phalanx media V,phalanx distalis V + phalanx media V,distal phalanx of the fifth toe + middle phalanx of the fifth toe,V дистальна фаланга + V середня фаланга
+257,phalanx distalis,phalanx distalis,distal phalanx of the toe,дистальна фаланга
+258,phalanx media,phalanx media,middle phalanx of the toe,середня фаланга
+259,tuberositas phalangis distalis,tuberositas phalangis distalis,distal tuberosity of the phalanx,горбистість дистальної фаланги
+260,phalanx distalis IV + phalanx media IV,phalanx distalis IV + phalanx media IV,distal phalanx of the fourth toe + middle phalanx of the fourth toe,дистальна фаланга IV + середня фаланга IV
+261,phalanx distalis,phalanx distalis,distal phalanx of the toe,дистальна фаланга
+262,phalanx media II,phalanx media II,middle phalanx of the second toe,середня фаланга II
+263,phalanx media III,phalanx media III,middle phalanx of the third toe,середня фаланга III
+264,phalanx distalis I,phalanx distalis I,distal phalanx of the first toe,І дистальна фаланга
+265,phalanx distalis II,phalanx distalis II,distal phalanx of the second toe,дистальна фаланга II
+266,phalanx distalis III,phalanx distalis III,distal phalanx of the third toe,III дистальна фаланга
+267,spatia interossea metatarsi,spatia interossea metatarsi,interosseous spaces of the metatarsus,накопичуватися в міжкісткових проміжках
+268,phalanx proximalis I,phalanx proximalis I,proximal phalanx of the first toe,I проксимальна фаланга
+269,phalanx proximalis II,phalanx proximalis II,proximal phalanx of the second toe,II проксимальна фаланга
+270,phalanx proximalis III,phalanx proximalis III,proximal phalanx of the third toe,III проксимальна фаланга
+271,phalanx proximalis IV,phalanx proximalis IV,proximal phalanx of the fourth toe,проксимальна фаланга IV
+272,phalanx proximalis V,phalanx proximalis V,proximal phalanx of the fifth toe,V проксимальна фаланга
+273,os coxae,os coxae,pelvic girdle,тазова кістка
+274,Osseus,Osseus,Skeleton,Скелет

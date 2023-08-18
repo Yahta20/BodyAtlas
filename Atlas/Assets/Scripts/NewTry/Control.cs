@@ -48,7 +48,9 @@ public class Control : MonoBehaviour
         var list = ObjectTree(Preparat);
         var path = Path.Combine(Application.dataPath, nameOfFile);
         nameOfFile += ".txt";
-        var alb = "";
+        var idot = new List<string>();
+        
+        
         var rend = new MeshRenderer();
         for (int i = 0; i < list.Count; i++)
         {
@@ -60,19 +62,37 @@ public class Control : MonoBehaviour
                     d);
             }
 
-        }
-        /*
             if (
                 (list[i].gameObject.name.StartsWith("R_") |
                 list[i].gameObject.name.StartsWith("L_"))
                 )
             {
-                alb += $"{list[i].gameObject.name.Substring(2)} \n";
+                if (!idot.Exists(p =>p== $"{list[i].gameObject.name.Substring(2)} \n")) {
+                   // print($"{list[i].gameObject.name.Substring(2)} \n");
+                    idot.Add($"{list[i].gameObject.name.Substring(2)} \n");
+                }
+                
 
             }
             else {
-                alb += $"{list[i].gameObject.name} \n" ;
+                if (!idot.Exists(p => p == $"{list[i].gameObject.name} \n"))
+                {
+                    
+                 //   print($"{list[i].gameObject.name.Substring(2)} \n");
+                    idot.Add($"{list[i].gameObject.name} \n");
+                }
+                //alb += $"{list[i].gameObject.name.Substring(2)} \n";
+                //alb += $"{list[i].gameObject.name} \n" ;
             }
+        }
+        /*
+        var alb = "";
+
+        for (int i = 0; i < idot.Count; i++)
+        {
+            alb += idot[i];
+        }
+
         try
         {
             if (File.Exists(path))
@@ -138,25 +158,24 @@ public class Control : MonoBehaviour
         {
             if (
                 Postparat.transform.GetChild(i).gameObject.name == name 
-                //&
                 )
             {
                 if (
-                //  true
                 Postparat.transform.GetChild(i).childCount != 0 
                     )
                 {
                     Postparat = Postparat.transform.GetChild(i).gameObject;
                     HideIndicator();
                     OnChangePoint?.Invoke(Postparat);
-                    //print("sa");
                 }
                 else
                 {
-                    print($"ss{Postparat.transform.position}");
                     Indicator.transform.position = Postparat.transform.GetChild(i).position;
-                    //OnMarkPoint?.Invoke(Postparat.transform);
                 }
+                //  true
+                    //print("sa");
+                    //print($"ss{Postparat.transform.position}");
+                    //OnMarkPoint?.Invoke(Postparat.transform);
                     
 
                 //camera.LookAt = Postparat.transform;
@@ -184,17 +203,6 @@ public class Control : MonoBehaviour
         return content.ToArray();
     }
 
-
-    public string getObjName() {
-        return Postparat.transform.name;
-    }
-
-    public void CloseAllObjects() {
-        List<GameObject> objects = new List<GameObject>();
-
-
-
-    }
 
     List<GameObject> ObjectTree(GameObject root){
         List<GameObject> objects = new List<GameObject>();
