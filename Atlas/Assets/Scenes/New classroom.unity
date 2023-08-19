@@ -542,7 +542,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1373746990}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.99997354
+  m_Size: 0.6587155
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1166,7 +1166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Indicator: {fileID: 7649005637644274569}
   Preparat: {fileID: 8891814102117209651}
-  nameOfFile: allbones2
+  nameOfFile: allbones3.json
   trasperent: {fileID: 2100000, guid: f6f5848867af4204697f989ce89e1a33, type: 2}
   bones: []
 --- !u!1 &786625221
@@ -2580,7 +2580,7 @@ MonoBehaviour:
   extbtn: {fileID: 1648884869}
   text: {fileID: 217635936}
   icon: {fileID: 1980399600}
-  BtnImage: {fileID: 2111979796}
+  BtnImage: {fileID: 1667322046}
   button:
   - {fileID: 1460841695244920704, guid: 06f04123ae7815f4aa32bc6e6f467ac7, type: 3}
   - {fileID: -5905839721040431917, guid: 06f04123ae7815f4aa32bc6e6f467ac7, type: 3}
@@ -3077,7 +3077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd5127e85ba80f42a4aa4eb27b83ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputData: {fileID: 4900000, guid: 6808ad342ebe4a046a020d73d4b8d4d2, type: 3}
+  inputData: {fileID: 4900000, guid: ce43841698becf14d9903b170ee0b67c, type: 3}
   locs: []
 --- !u!1 &1746780675
 GameObject:
@@ -3401,7 +3401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0001463398}
+  m_AnchoredPosition: {x: 0, y: 128.68237}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1919314813

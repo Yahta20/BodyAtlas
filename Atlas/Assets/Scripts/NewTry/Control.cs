@@ -61,7 +61,9 @@ public class Control : MonoBehaviour
                 bones.Add(
                     d);
             }
+        }
 
+        /*
             if (
                 (list[i].gameObject.name.StartsWith("R_") |
                 list[i].gameObject.name.StartsWith("L_"))
@@ -84,7 +86,8 @@ public class Control : MonoBehaviour
                 //alb += $"{list[i].gameObject.name.Substring(2)} \n";
                 //alb += $"{list[i].gameObject.name} \n" ;
             }
-        }
+              */
+
         /*
         var alb = "";
 

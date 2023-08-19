@@ -32,7 +32,7 @@ public class MainPanel : MonoBehaviour
     {
         mainRect = GetComponent<RectTransform>();
         SetSizes();
-
+        //ContentLoc.Instance.OnChangeLang += ChangeLang;
     }
 
     private void SetSizes()
@@ -187,9 +187,9 @@ public class MainPanel : MonoBehaviour
                 break;
         }
 
+    }
         //ContentLoc.Instance.OnChangeLang();
 
-    }
 
     public void Upstarse()
     {

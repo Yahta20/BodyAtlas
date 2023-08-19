@@ -31,17 +31,29 @@ public class ContentLoc : MonoBehaviour
     }
     public string GetLocalText(string key) {
 
-
-        var e =locs.Find(p => p.KEY == key); // eror from missing obj
+        string s;
+        //chekDup(key)
+        var e =locs.Find(p => p.KEY == chekDup(key)) !=null? locs.Find(p => p.KEY == chekDup(key)) :new LocPoint(); // eror from missing obj
+            s = e.GetByLang(language)!=null? e.GetByLang(language):$"{key} not find";
 
             
-        return e.GetByLang(language);
+        return s;
     }
     public void changeLang(SystemLanguage s) { 
         language = s;
         OnChangeLang?.Invoke();
     }
+    string chekDup(string a) {
+        if (
+                 (  a.StartsWith("R_") |
+                    a.StartsWith("L_"))
+                 )
+        {
+            return a.Substring(2);    
+        }
+        return a;
 
+    }
 
 
 }
@@ -54,6 +66,7 @@ class LocPoint {
     public string ID;
     public string KEY;
     Dictionary<SystemLanguage, string> content = new Dictionary<SystemLanguage, string>();
+    public LocPoint() { }
     public LocPoint(string[] data) { 
         content = new Dictionary<SystemLanguage, string>();
         ID = data[0];
@@ -72,9 +85,9 @@ class LocPoint {
         {
             return ret;
         }
-
         return "ERorR";//content[sl];
     }
+
     public string GetByKey(string key)
     {
         
