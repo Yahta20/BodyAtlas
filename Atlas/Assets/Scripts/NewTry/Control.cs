@@ -16,27 +16,24 @@ public class Control : MonoBehaviour
     public Material trasperent;
     
     [SerializeField]
-    List<Bone> bones = new List<Bone>();    
+    public List<Bone> bones = new List<Bone>();    
     //List<MeshRenderer> bones = new List<MeshRenderer>();
     public event Action<GameObject> OnChangePoint;
     //public event Action<Transform> OnMarkPoint;
     // public CinemachineFreeLook camera;
 
+
+
     private void Awake()
     {
         Instance = this;
         Postparat = Preparat;
-
         HideIndicator();
     }
-
     private void HideIndicator()
     {
         Indicator.transform.position = new Vector3(1007, 1070, 1700);
     }
-    
-    
-
     void Start()
     {
         MeshListUpdate();
@@ -46,10 +43,13 @@ public class Control : MonoBehaviour
     private void MeshListUpdate()
     {
         var list = ObjectTree(Preparat);
-        var path = Path.Combine(Application.dataPath, nameOfFile);
-        nameOfFile += ".txt";
-        var idot = new List<string>();
         
+        var path = Path.Combine(Application.dataPath, nameOfFile);
+        
+        var alb = "";
+        nameOfFile += ".txt";
+
+        var idot = new List<string>();
         
         var rend = new MeshRenderer();
         for (int i = 0; i < list.Count; i++)
@@ -61,36 +61,36 @@ public class Control : MonoBehaviour
                 bones.Add(
                     d);
             }
-        }
 
-        /*
+
             if (
                 (list[i].gameObject.name.StartsWith("R_") |
                 list[i].gameObject.name.StartsWith("L_"))
                 )
             {
-                if (!idot.Exists(p =>p== $"{list[i].gameObject.name.Substring(2)} \n")) {
-                   // print($"{list[i].gameObject.name.Substring(2)} \n");
-                    idot.Add($"{list[i].gameObject.name.Substring(2)} \n");
+                if (!idot.Exists(p =>p== $"{list[i].gameObject.name.Substring(2)}\n")) {
+                    idot.Add($"{list[i].gameObject.name.Substring(2)}\n");
                 }
-                
-
             }
             else {
-                if (!idot.Exists(p => p == $"{list[i].gameObject.name} \n"))
+                if (!idot.Exists(p => p == $"{list[i].gameObject.name}\n"))
                 {
-                    
-                 //   print($"{list[i].gameObject.name.Substring(2)} \n");
-                    idot.Add($"{list[i].gameObject.name} \n");
+                    idot.Add($"{list[i].gameObject.name}\n");
                 }
-                //alb += $"{list[i].gameObject.name.Substring(2)} \n";
-                //alb += $"{list[i].gameObject.name} \n" ;
+                //alb += $"{list[i].gameObject.name} \n";
             }
-              */
+            /*
+             */
+                    
+                   // print($"{list[i].gameObject.name.Substring(2)} \n");
+                 //   print($"{list[i].gameObject.name.Substring(2)} \n");
+                //alb += $"{list[i].gameObject.name} \n" ;
 
+        }
+
+        //idot.Sort();
+         
         /*
-        var alb = "";
-
         for (int i = 0; i < idot.Count; i++)
         {
             alb += idot[i];
@@ -119,32 +119,10 @@ public class Control : MonoBehaviour
         {
             print($"Pizda togo sho {e.ToString()}");
         }
-
-<<<<<<< HEAD
-=======
->>>>>>> parent of 7c93133 (Chek for Webgl build)
-=======
-<<<<<<< HEAD
->>>>>>> parent of 7c93133 (Chek for Webgl build)
-
-
-
-
-                bones.Add(rend);
-
-
-                //var e = new Regex()
-                if (
-                    !(list[i].gameObject.name.StartsWith("R_")|
-                    list[i].gameObject.name.StartsWith("L_"))
-                    ) {
-                    //print(list[i].gameObject.name);
-                }
-            }
-        }
          */
-
     }
+
+
 
     public void ChangePoint(Bone obj)
     {

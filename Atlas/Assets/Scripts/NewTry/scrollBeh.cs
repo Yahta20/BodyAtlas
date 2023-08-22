@@ -34,6 +34,8 @@ public class scrollBeh : MonoBehaviour
 
     private void UpdateContent(GameObject @object)
     {
+
+
         Label.text = ContentLoc.Instance.GetLocalText(@object.name);// ;
         for (int i = 0; i < scroll.content.transform.childCount; i++)
         {
@@ -65,6 +67,20 @@ public class scrollBeh : MonoBehaviour
         }
 
     }
+    public void UpdateTesting() {
+        Label.text = ContentLoc.Instance.GetLocalText("<-?->");// ;
+        for (int i = 0; i < scroll.content.transform.childCount; i++)
+        {
+            Destroy(scroll.content.transform.GetChild(i).gameObject);
+        }
+        scroll.content.sizeDelta = Vector2.zero;
+
+
+
+
+
+    }
+
 
 
 
