@@ -68,18 +68,62 @@ public class scrollBeh : MonoBehaviour
 
     }
     public void UpdateTesting() {
-        Label.text = ContentLoc.Instance.GetLocalText("<-?->");// ;
+
+        List<Bone> l2v = new List<Bone>();  
+        var a =Control.Instance.bones[
+            UnityEngine.Random.Range(0, Control.Instance.bones.Count)];
+        Control.Instance.ChangePoint(
+        a    
+            );
+        l2v.Add(a);
+        while (l2v.Count <6) {
+            var t = Control.Instance.bones[
+            UnityEngine.Random.Range(0, Control.Instance.bones.Count)];
+            if (
+                !l2v.Contains(t)
+                )
+            {
+                l2v.Add(t);
+            }
+
+        }
+        l2v.Sort();
+
+
+
+        //Random.Range(0, Control.Instance.bones.Count)
+        Label.text = ContentLoc.Instance.GetLocalText("Quod os hoc est?");// ;
         for (int i = 0; i < scroll.content.transform.childCount; i++)
         {
             Destroy(scroll.content.transform.GetChild(i).gameObject);
         }
         scroll.content.sizeDelta = Vector2.zero;
+       
+        for (int i = 0; i < l2v.Count; i++) {
+            var butun = Instantiate(prefab, scroll.content);
+            butun.GetComponent<RectTransform>().sizeDelta
+                = new Vector2(
+                        butun.GetComponent<RectTransform>().sizeDelta.x,
+                        CanvasBehavior.Instance.getSize().y * 0.15f);
 
+            butun.name = l2v[i].name;
+            butun.GetComponentInChildren<Text>().text = ContentLoc.Instance.GetLocalText(l2v[i].name);//
+            //var a = l2v[i].name.ToString();
 
+            butun.GetComponent<Button>().onClick.AddListener(() => {
+                //Control.Instance.ChangePoint(a);
+            });
+
+        }
 
 
 
     }
+
+
+
+
+
 
 
 

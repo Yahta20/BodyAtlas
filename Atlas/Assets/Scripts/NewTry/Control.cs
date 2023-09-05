@@ -61,8 +61,6 @@ public class Control : MonoBehaviour
                 bones.Add(
                     d);
             }
-
-
             if (
                 (list[i].gameObject.name.StartsWith("R_") |
                 list[i].gameObject.name.StartsWith("L_"))
@@ -81,12 +79,12 @@ public class Control : MonoBehaviour
             }
             /*
              */
+        }
                     
                    // print($"{list[i].gameObject.name.Substring(2)} \n");
                  //   print($"{list[i].gameObject.name.Substring(2)} \n");
                 //alb += $"{list[i].gameObject.name} \n" ;
 
-        }
 
         //idot.Sort();
          
@@ -132,7 +130,20 @@ public class Control : MonoBehaviour
     }
 
 
-
+    public Bone GetBone() {
+        return bones.Find(
+            (b => b.gameObject == Postparat)
+            )!=null?
+                bones.Find(
+                (b => b.gameObject == Postparat)
+                ):
+                null;
+            //(b => b.gameObject == Postparat) != null ? b : null
+         ;
+        /*
+        return null;
+           */
+    }
     public void ChangePoint(string name) {
 
         for (int i = 0; i < Postparat.transform.childCount; i++)

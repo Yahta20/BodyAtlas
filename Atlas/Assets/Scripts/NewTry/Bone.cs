@@ -9,6 +9,7 @@ public class Bone : MonoBehaviour
     public MeshRenderer m_render;
     public Collider m_colider;
     Material c_material;
+    Color c_color;
     public Material t_material;
     
 
@@ -17,15 +18,14 @@ public class Bone : MonoBehaviour
         m_colider = GetComponent<Collider>();
         m_render = GetComponent<MeshRenderer>();
         c_material = m_render.material;
+        c_color =c_material.color;
     }
 
     private void OnEnable()
     {
         Control.Instance.OnChangePoint += onChangePoint;
-        //Control.Instance.OnMarkPoint += onMarkPoint;
-
     }
-
+     
     private void onMarkPoint(Transform t)
     {
         
@@ -35,22 +35,37 @@ public class Bone : MonoBehaviour
     {
         SetView(obj==gameObject|gameObject.transform.IsChildOf(obj.transform));
     }
-        
 
 
+    public bool IsThisBone(GameObject go) {
+        return true;
+    }
 
     private void OnMouseDown()
     {
-        Control.Instance.ChangePoint(this);
+        if (c_material == m_render.material)
+        {
+            Control.Instance.ChangePoint(this);
+        }
     }
-        
 
+    private void OnMouseOver()
+    {
+        if (Control.Instance.Postparat!=this.gameObject)
+        {
+            c_material.color = Color.magenta;
+        }
+    }
+    
+    private void OnMouseExit()
+    {
+        c_material.color = c_color;
+    }
     public void SetView(bool b)
     {
         m_render.material = b==true?c_material: t_material;
     }
 
-    // Update is called once per frame
     void Update()
     {
         

@@ -168,6 +168,7 @@ public class MainPanel : MonoBehaviour
             case SystemLanguage.Turkish:
                 break;
             case SystemLanguage.Ukrainian:
+
                 ContentLoc.Instance.changeLang(SystemLanguage.English);
                 BtnImage.sprite = button[1];
                 break;
@@ -193,6 +194,7 @@ public class MainPanel : MonoBehaviour
 
     public void Upstarse()
     {
+
         Control.Instance.UpperHierarchy();
     }
 

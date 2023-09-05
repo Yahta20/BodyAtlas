@@ -1,25 +1,23 @@
-﻿
+﻿using UnityEngine;
 
-using UnityEngine;
-
-public class Information : IState
+internal class Learning : IState
 {
+
+
     protected readonly Canvas pano;
-    public Information(Canvas pano)
+    public Learning(Canvas pano)
     {
         this.pano = pano;
         this.pano.gameObject.SetActive(false);
     }
 
-    public Information()
+    public Learning()
     {
         this.pano = null;
-        this.pano.gameObject.SetActive(false);
     }
-
-    public void Enter() {
+    public void Enter()
+    {
         this.pano.gameObject.SetActive(true);
-
     }
 
     public void Exit()
@@ -28,7 +26,5 @@ public class Information : IState
     }
 
     public void Update()
-    {
-        
-    }
+    {}
 }

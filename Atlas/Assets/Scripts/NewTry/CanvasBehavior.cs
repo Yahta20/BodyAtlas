@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,8 @@ public class CanvasBehavior : MonoBehaviour
         Instance = this;
        field = GetComponent<Canvas>();
     }
+
+
 
     public Vector2 getSize() => field.pixelRect.size;
 }

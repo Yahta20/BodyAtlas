@@ -7,6 +7,8 @@ public class SteteBeh : MonoBehaviour
 {
     private Dictionary<Type, IState> statemap;
     private IState curState;
+    
+    public Canvas[] panorama;
     public scrollBeh scroll;
 
 
@@ -37,14 +39,19 @@ public class SteteBeh : MonoBehaviour
     private void InitStates()
     {
         statemap = new Dictionary<Type, IState>();
-
-        statemap[typeof(Testing)] = new Testing(scroll);
-        statemap[typeof(Information)] = new Information();
+        statemap[typeof(Information)] = new Information(panorama[0]);
+        statemap[typeof(Learning)] = new Learning(panorama[1]);
+        statemap[typeof(Testing)] = new Testing(panorama[2],scroll);
 
     }
 
+
     public void SetInformation() {
         SetState(GetState<Information>());
+    }
+    public void SetLerning()
+    {
+        SetState(GetState<Learning>());
     }
     public void SetTesting() {
         SetState(GetState<Testing>());

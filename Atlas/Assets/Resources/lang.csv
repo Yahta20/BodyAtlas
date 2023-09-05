@@ -26,7 +26,7 @@ Id,Key,Latina(lat),English(en),Ukrainian(Ua)
 25,cranium viscerale,cranium viscerale,visceral skull,вісцеральний череп
 26,os palatinum,os palatinum,palatine mouth,піднебінний рот
 27,dentes,dentes,teeth,зуби
-28,vomer,vomer,vomit,блювота
+28,vomer,vomer,vomit,Леміш
 29,mandibula,mandibula,mandible,нижня щелепа
 30,Lower_dentes,Lower_dentes,Lower_teeth,Нижні_зуби
 31,os zygomaticum,os zygomaticum,zygomatic bone,вилична кістка
@@ -286,3 +286,4 @@ Id,Key,Latina(lat),English(en),Ukrainian(Ua)
 285,cingulum membri inferioris,cingulum membri inferioris,girdle of the lower limb,пояс нижньої кінцівки
 286,os coxae,os coxae,hip bone,тазова кістка
 287,Osseus,Osseus,Skeleton,Скелет
+5000,Quod os hoc est?,Quod os hoc est?,What bone is this?,Яка це кістка?
