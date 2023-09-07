@@ -18,6 +18,7 @@ internal class Learning : IState
     public void Enter()
     {
         this.pano.gameObject.SetActive(true);
+
     }
 
     public void Exit()

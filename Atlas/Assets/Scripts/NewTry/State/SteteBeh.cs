@@ -7,7 +7,8 @@ public class SteteBeh : MonoBehaviour
 {
     private Dictionary<Type, IState> statemap;
     private IState curState;
-    
+
+    public MonoBehaviour[] predicted;
     public Canvas[] panorama;
     public scrollBeh scroll;
 
@@ -18,6 +19,8 @@ public class SteteBeh : MonoBehaviour
         InitStates();
         DEfState();
     }
+
+        
 
     private void DEfState()
     {
