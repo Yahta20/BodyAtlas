@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class Control : MonoBehaviour
 {
@@ -29,7 +30,15 @@ public class Control : MonoBehaviour
         Instance = this;
         Postparat = Preparat;
         HideIndicator();
+        VisibilityOfPreparat(false);
     }
+
+    public void VisibilityOfPreparat(bool v)
+    {
+        Preparat.SetActive(v);
+    }
+    
+
     private void HideIndicator()
     {
         Indicator.transform.position = new Vector3(1007, 1070, 1700);
@@ -43,13 +52,14 @@ public class Control : MonoBehaviour
     private void MeshListUpdate()
     {
         var list = ObjectTree(Preparat);
-        
+        /*
         var path = Path.Combine(Application.dataPath, nameOfFile);
         
         var alb = "";
         nameOfFile += ".txt";
 
         var idot = new List<string>();
+         */
         
         var rend = new MeshRenderer();
         for (int i = 0; i < list.Count; i++)
@@ -61,6 +71,7 @@ public class Control : MonoBehaviour
                 bones.Add(
                     d);
             }
+                /*
             if (
                 (list[i].gameObject.name.StartsWith("R_") |
                 list[i].gameObject.name.StartsWith("L_"))
@@ -77,15 +88,11 @@ public class Control : MonoBehaviour
                 }
                 //alb += $"{list[i].gameObject.name} \n";
             }
-            /*
-             */
-        }
-                    
+                 */
+        }      
                    // print($"{list[i].gameObject.name.Substring(2)} \n");
                  //   print($"{list[i].gameObject.name.Substring(2)} \n");
                 //alb += $"{list[i].gameObject.name} \n" ;
-
-
         //idot.Sort();
          
         /*

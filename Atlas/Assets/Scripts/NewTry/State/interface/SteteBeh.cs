@@ -24,11 +24,11 @@ public class SteteBeh : MonoBehaviour
 
     private void DEfState()
     {
-        SetInformation();
+        //SetInformation();
     }
     private IState GetState<T>() where T : IState { 
         var tupe =typeof(T);
-        return statemap[tupe ];
+        return statemap[tupe];
     }
 
     private void SetState(IState newstate) {
@@ -42,9 +42,11 @@ public class SteteBeh : MonoBehaviour
     private void InitStates()
     {
         statemap = new Dictionary<Type, IState>();
+        /*
         statemap[typeof(Information)] = new Information(panorama[0]);
         statemap[typeof(Learning)] = new Learning(panorama[1]);
         statemap[typeof(Testing)] = new Testing(panorama[2],scroll);
+         */
 
     }
 
