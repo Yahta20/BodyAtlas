@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
+[Serializable]
 public class StateMashine
 {
     private AFState CurState { get; set; }
@@ -13,7 +14,7 @@ public class StateMashine
     public void SetState<T>() where T : AFState { 
         Type type = typeof(T);
 
-        if (CurState != null & type == CurState.GetType()) return;
+        if (CurState != null && type == CurState.GetType()) return;
 
         if (_states.TryGetValue(type, out var stat))
         {

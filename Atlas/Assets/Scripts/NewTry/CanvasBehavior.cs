@@ -7,7 +7,7 @@ public class CanvasBehavior : MonoBehaviour
 {
     public static CanvasBehavior Instance;
     private Canvas field;
-    public  event Action<Vector2> OnSizeChanged;
+    public event Action<Vector2> OnSizeChanged;
     Vector2 HScreensize = Vector2.zero;
     void Awake()
     {

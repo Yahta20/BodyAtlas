@@ -111,7 +111,6 @@ public class MainPanel : MonoBehaviour
             case SystemLanguage.Dutch:
                 break;
             case SystemLanguage.English:
-
                 ContentLoc.Instance.changeLang(SystemLanguage.Unknown);
                 BtnImage.sprite = button[2];
                 break;
@@ -168,7 +167,6 @@ public class MainPanel : MonoBehaviour
             case SystemLanguage.Turkish:
                 break;
             case SystemLanguage.Ukrainian:
-
                 ContentLoc.Instance.changeLang(SystemLanguage.English);
                 BtnImage.sprite = button[1];
                 break;

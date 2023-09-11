@@ -30,7 +30,7 @@ public class Control : MonoBehaviour
         Instance = this;
         Postparat = Preparat;
         HideIndicator();
-        VisibilityOfPreparat(false);
+        //VisibilityOfPreparat(false);
     }
 
     public void VisibilityOfPreparat(bool v)

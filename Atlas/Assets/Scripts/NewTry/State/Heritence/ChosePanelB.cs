@@ -13,6 +13,7 @@ public class ChosePanelB:MonoBehaviour
 
     private void Start()
     {
+        curPanel = GetComponent<RectTransform>();
         PrintPanel(CanvasBehavior.Instance.getSize());
         CanvasBehavior.Instance.OnSizeChanged += PrintPanel;
     }
