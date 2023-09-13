@@ -66,6 +66,7 @@ public class scrollBeh : MonoBehaviour
     }
     public void UpdateTesting() {
 
+        /*
         List<Bone> l2v = new List<Bone>();  
         var a =Control.Instance.bones[
             UnityEngine.Random.Range(0, Control.Instance.bones.Count)];
@@ -110,8 +111,8 @@ public class scrollBeh : MonoBehaviour
             butun.GetComponent<Button>().onClick.AddListener(() => {
                 //Control.Instance.ChangePoint(a);
             });
-
         }
+         */
     }
     private void OnDisable()
     {

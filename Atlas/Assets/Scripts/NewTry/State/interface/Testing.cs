@@ -20,8 +20,8 @@ public class Testing : IState
     
     {
         this.pano.gameObject.SetActive(true);
-        int numer = (int)Random.Range(0,Control.Instance.bones.Count);
         /*
+        int numer = (int)Random.Range(0,Control.Instance.bones.Count);
          */
         
         sb.UpdateTesting();

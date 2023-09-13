@@ -27,10 +27,8 @@ public class FChose : AFState
          
          panel.SetIplementing(
              () => { rootMashine.SetState<FAudit>(); },//left button 
-             () => {
-                 UnityEngine.Debug.Log("rerer");
+             () => { UnityEngine.Debug.Log("rerer"); } //right button
                  //rootMashine.SetState<>()
-                 } //right button
              );
         Control.Instance.VisibilityOfPreparat(false);
         /*

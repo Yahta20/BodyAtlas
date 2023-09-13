@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.XR;
 
 public class Control : MonoBehaviour
 {
@@ -15,9 +16,9 @@ public class Control : MonoBehaviour
     [Space]
     public string nameOfFile;
     public Material trasperent;
-    
+
     [SerializeField]
-    public List<Bone> bones = new List<Bone>();    
+    List<Bone> bones = new List<Bone>();
     //List<MeshRenderer> bones = new List<MeshRenderer>();
     public event Action<GameObject> OnChangePoint;
     //public event Action<Transform> OnMarkPoint;
@@ -31,22 +32,20 @@ public class Control : MonoBehaviour
         Postparat = Preparat;
         HideIndicator();
         //VisibilityOfPreparat(false);
+        MeshListUpdate();
     }
 
     public void VisibilityOfPreparat(bool v)
     {
         Preparat.SetActive(v);
     }
-    
+
 
     private void HideIndicator()
     {
         Indicator.transform.position = new Vector3(1007, 1070, 1700);
     }
-    void Start()
-    {
-        MeshListUpdate();
-    }
+
 
 
     private void MeshListUpdate()
@@ -60,7 +59,7 @@ public class Control : MonoBehaviour
 
         var idot = new List<string>();
          */
-        
+
         var rend = new MeshRenderer();
         for (int i = 0; i < list.Count; i++)
         {
@@ -71,30 +70,30 @@ public class Control : MonoBehaviour
                 bones.Add(
                     d);
             }
-                /*
-            if (
-                (list[i].gameObject.name.StartsWith("R_") |
-                list[i].gameObject.name.StartsWith("L_"))
-                )
+            /*
+        if (
+            (list[i].gameObject.name.StartsWith("R_") |
+            list[i].gameObject.name.StartsWith("L_"))
+            )
+        {
+            if (!idot.Exists(p =>p== $"{list[i].gameObject.name.Substring(2)}\n")) {
+                idot.Add($"{list[i].gameObject.name.Substring(2)}\n");
+            }
+        }
+        else {
+            if (!idot.Exists(p => p == $"{list[i].gameObject.name}\n"))
             {
-                if (!idot.Exists(p =>p== $"{list[i].gameObject.name.Substring(2)}\n")) {
-                    idot.Add($"{list[i].gameObject.name.Substring(2)}\n");
-                }
+                idot.Add($"{list[i].gameObject.name}\n");
             }
-            else {
-                if (!idot.Exists(p => p == $"{list[i].gameObject.name}\n"))
-                {
-                    idot.Add($"{list[i].gameObject.name}\n");
-                }
-                //alb += $"{list[i].gameObject.name} \n";
-            }
-                 */
-        }      
-                   // print($"{list[i].gameObject.name.Substring(2)} \n");
-                 //   print($"{list[i].gameObject.name.Substring(2)} \n");
-                //alb += $"{list[i].gameObject.name} \n" ;
+            //alb += $"{list[i].gameObject.name} \n";
+        }
+             */
+        }
+        // print($"{list[i].gameObject.name.Substring(2)} \n");
+        //   print($"{list[i].gameObject.name.Substring(2)} \n");
+        //alb += $"{list[i].gameObject.name} \n" ;
         //idot.Sort();
-         
+
         /*
         for (int i = 0; i < idot.Count; i++)
         {
@@ -131,9 +130,54 @@ public class Control : MonoBehaviour
 
     public void ChangePoint(Bone obj)
     {
-        Postparat=obj.gameObject;
+        Postparat = obj.gameObject;
         OnChangePoint?.Invoke(Postparat);
         HideIndicator();
+    }
+
+
+    public Bone[] GetBoneArray(int l) {
+        var rand = new System.Random();
+        List<Bone> list = new List<Bone>();
+
+        do
+        {
+            var ansv = bones[rand.Next(0,bones.Count-1)];
+            if (ansv.gameObject.name.StartsWith("R_") |
+                ansv.gameObject.name.StartsWith("L_")
+                )
+            {
+                if (!list.Exists(p => p == ansv) |
+                    !list.Exists(p => p.name == $"{ansv.gameObject.name.Substring(2)}\n"))
+                {
+                    list.Add(ansv);
+                }
+            }
+        } while (list.Count < l);
+        return list.ToArray();
+    }
+
+    public Bone[] GetAddBoneArray(Bone obj,int l)
+    {
+        var rand = new System.Random();
+        List<Bone> list = new List<Bone>();
+        list.Add(obj);
+
+        do
+        {
+            var ansv = bones[rand.Next(bones.Count-1)];
+            if (ansv.gameObject.name.StartsWith("R_") |
+                ansv.gameObject.name.StartsWith("L_")
+                )
+            {
+                if (!list.Exists(p => p == ansv) |
+                    !list.Exists(p => p.name == $"{ansv.gameObject.name.Substring(2)}\n"))
+                {
+                    list.Add(ansv);
+                }
+            }
+        } while (list.Count < l);
+        return list.ToArray();
     }
 
 
