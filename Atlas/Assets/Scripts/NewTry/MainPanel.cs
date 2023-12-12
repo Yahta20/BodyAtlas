@@ -85,7 +85,7 @@ public class MainPanel : MonoBehaviour
         }
 
     }
-
+    /*
     public void ChangeLang()
     {
         switch (ContentLoc.Instance.language)
@@ -187,6 +187,7 @@ public class MainPanel : MonoBehaviour
         }
 
     }
+     */
         //ContentLoc.Instance.OnChangeLang();
 
 

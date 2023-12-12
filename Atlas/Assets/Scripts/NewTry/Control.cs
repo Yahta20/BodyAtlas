@@ -41,9 +41,11 @@ public class Control : MonoBehaviour
     }
 
 
-    private void HideIndicator()
+    public void HideIndicator()
     {
         Indicator.transform.position = new Vector3(1007, 1070, 1700);
+        Indicator.SetActive(false);
+            //transform.position = new Vector3(1007, 1070, 1700);
     }
 
 
@@ -127,6 +129,12 @@ public class Control : MonoBehaviour
     }
 
 
+    public void HomePosition()
+    {
+        Postparat = Preparat;
+        OnChangePoint?.Invoke(Postparat);
+        HideIndicator();
+    }
 
     public void ChangePoint(Bone obj)
     {
@@ -177,6 +185,7 @@ public class Control : MonoBehaviour
                 }
             }
         } while (list.Count < l);
+        list.Sort();
         return list.ToArray();
     }
 
@@ -213,6 +222,7 @@ public class Control : MonoBehaviour
                 }
                 else
                 {
+                    Indicator.SetActive(true);
                     Indicator.transform.position = Postparat.transform.GetChild(i).position;
                 }
                 //  true
@@ -266,9 +276,6 @@ public class Control : MonoBehaviour
 
         return objects; 
     }
-
-
-
 
 }
 

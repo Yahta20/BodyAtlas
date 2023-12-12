@@ -1,18 +1,38 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class ChosePanelB:MonoBehaviour
+public class ChosePanelB : MonoBehaviour
 {
     public RectTransform curPanel;
+
     public Button lernButt;
     public Button testButt;
+    public Button langButt;
+
     public Text InfoText;
     public Text butonText;
 
+    public Image langImage;
+
+    public Sprite[] flags;
+
+    Dictionary<SystemLanguage, Sprite> flagD = new();
+    private void fillDic()
+    {
+        flagD.Add(SystemLanguage.Unknown, flags[0]);
+        flagD.Add(SystemLanguage.Ukrainian, flags[1]);
+        flagD.Add(SystemLanguage.English, flags[2]);
+    }
+
+
+
+
     private void Start()
     {
+        fillDic();
         curPanel = GetComponent<RectTransform>();
         PrintPanel(CanvasBehavior.Instance.getSize());
         CanvasBehavior.Instance.OnSizeChanged += PrintPanel;
@@ -29,9 +49,22 @@ public class ChosePanelB:MonoBehaviour
 
         var lernbrt = lernButt.GetComponent<RectTransform>();
         var tstbrt = testButt.GetComponent<RectTransform>();
+        var lanbrt = langButt.GetComponent<RectTransform>();
 
         lernbrt.sizeDelta   = new Vector2(curPanel.sizeDelta.x*0.25f,curPanel.sizeDelta.y*0.1f);
         tstbrt.sizeDelta    = new Vector2(curPanel.sizeDelta.x*0.25f,curPanel.sizeDelta.y*0.1f);
+        lanbrt.sizeDelta = new Vector2(curPanel.sizeDelta.x * 0.15f, curPanel.sizeDelta.x * 0.15f);
+
+        langButt.onClick.AddListener(() => {
+            ContentLoc.Instance.changeLang();
+            FillText(new string[] {
+            ContentLoc.Instance.GetLocalText("grata verbum"),
+            ContentLoc.Instance.GetLocalText("audit"),
+            ContentLoc.Instance.GetLocalText("adsuescere")
+            });
+            langImage.sprite = flagD[ContentLoc.Instance.language];
+        });
+        langImage.sprite = flagD[ContentLoc.Instance.language];
     }
 
     public void FillText(string[] args) {
@@ -45,9 +78,9 @@ public class ChosePanelB:MonoBehaviour
         testButt.onClick.RemoveAllListeners();
         lernButt.onClick.AddListener(left);
         testButt.onClick.AddListener(right);
-
-
     }
+
+
 
 
 

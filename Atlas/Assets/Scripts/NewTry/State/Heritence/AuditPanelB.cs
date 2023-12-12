@@ -30,7 +30,6 @@ public class AuditPanelB : MonoBehaviour
 
 
         var a = Control.Instance.GetAddBoneArray(b, 5);
-
         Qlabel.text = ContentLoc.Instance.GetLocalText("Quod os hoc est?");// ;
         for (int i = 0; i < AnsverPool.content.transform.childCount; i++)
         {

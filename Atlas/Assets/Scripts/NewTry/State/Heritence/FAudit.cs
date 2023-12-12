@@ -37,15 +37,16 @@ public class FAudit : AFState
 
     }
 
-    void CaseCreation()
+    public void CaseCreation()
     {
+
         var a =Control.Instance.GetBoneArray(10);
 
         Question = new Queue<Bone>(a);
         
-           // UnityEngine.Debug.Log($"{Question.Count} - {a.Length}"); 
-
         /*
+        UnityEngine.Debug.Log($"{Question.Count} - {a.Length}"); 
+
         var arr = Control.Instance.GetBoneArray(10);
         var rand = new Random();
         List<Bone> list = new List<Bone>();
@@ -103,6 +104,21 @@ public class FAudit : AFState
             auditP.gameObject.SetActive(false);
             Control.Instance.VisibilityOfPreparat(false);
             resultP.CreateResoult(RAnswer.ToArray(), UAnswer.ToArray());
+            resultP.FillText(new string[] {
+                ContentLoc.Instance.GetLocalText("repeat"),
+                ContentLoc.Instance.GetLocalText("adsuescere") });
+            resultP.SetIplementing(
+                () => {
+                    CaseCreation();
+                    Enter();
+                },
+                () => {
+                    rootMashine.SetState<FStudy>();
+                }
+                );
+
+
+
             //UnityEngine.Debug.Log($"{RAnswer.Count} - {UAnswer.Count}");
 
             
@@ -121,6 +137,7 @@ public class FAudit : AFState
        panel.gameObject.SetActive(false);
        auditP.gameObject.SetActive(false);
        resultP .gameObject.SetActive(false);
+
     }
 
     public override void Update()

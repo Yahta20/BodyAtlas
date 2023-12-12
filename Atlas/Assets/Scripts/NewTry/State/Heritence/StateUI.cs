@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditorInternal;
+
 using UnityEngine;
 
 public class StateUI : MonoBehaviour
@@ -18,7 +18,7 @@ public class StateUI : MonoBehaviour
             list[1] as AuditPanelB,
             list[2] as ResultPanelB
             ));
-
+        curMashine.AddState(new FStudy(curMashine, list[3] as LernPanelB));
         foreach (var item in list) { 
             item.gameObject.SetActive(false);
         }

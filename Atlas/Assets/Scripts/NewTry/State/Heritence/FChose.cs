@@ -22,12 +22,12 @@ public class FChose : AFState
             ContentLoc.Instance.GetLocalText("grata verbum"),
             ContentLoc.Instance.GetLocalText("audit"),
             ContentLoc.Instance.GetLocalText("adsuescere")
-
         });
-         
-         panel.SetIplementing(
+        
+
+        panel.SetIplementing(
              () => { rootMashine.SetState<FAudit>(); },//left button 
-             () => { UnityEngine.Debug.Log("rerer"); } //right button
+             () => { rootMashine.SetState<FStudy>(); } //right button
                  //rootMashine.SetState<>()
              );
         Control.Instance.VisibilityOfPreparat(false);
