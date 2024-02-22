@@ -11,14 +11,20 @@ public class ResultPanelB: MonoBehaviour
 
     public Button retry;
     public Button lerning;
+    Text txtretry;  
+    Text txtlerning;
 
     RectTransform baseRect;
 
     private void Start()
     {
+
         baseRect = GetComponent<RectTransform>();
         PrintPanel(CanvasBehavior.Instance.getSize());
         CanvasBehavior.Instance.OnSizeChanged += PrintPanel;
+        txtretry  =retry  .GetComponentInChildren<Text>();
+        txtlerning = lerning.GetComponentInChildren<Text>();
+
     }
 
     public void PrintPanel(Vector2 screen)
@@ -93,10 +99,12 @@ public class ResultPanelB: MonoBehaviour
 
     public void FillText(string[] args)
     {
-        retry  .GetComponentInChildren<Text>().text = args[0];
+        retry.GetComponentInChildren<Text>().text   = args[0];
         lerning.GetComponentInChildren<Text>().text = args[1];
-        //print($"setting text {retry.GetComponentInChildren<Text>().text} {lerning.GetComponentInChildren<Text>().text}");
-        //print($"setting text {retry.GetComponentInChildren<Text>().fontSize} {lerning.GetComponentInChildren<Text>().fontSize}");
+        
+
+        print($"{retry.GetComponentInChildren<Text>()   .text}");
+        print($"{lerning.GetComponentInChildren<Text>() .text}");
     }
 
 }

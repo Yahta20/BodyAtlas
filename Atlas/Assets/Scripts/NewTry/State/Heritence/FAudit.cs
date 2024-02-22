@@ -71,9 +71,6 @@ public class FAudit : AFState
         UAnswer=new();
     }
 
-
-
-
     public override void Enter()
     {
         if (Question.Count > 0)
@@ -116,21 +113,8 @@ public class FAudit : AFState
                     rootMashine.SetState<FStudy>();
                 }
                 );
-
-
-
-            //UnityEngine.Debug.Log($"{RAnswer.Count} - {UAnswer.Count}");
-
-            
-            
-
         }
-
-
     }
-
-           
-
 
     public override void Exit()
     {
