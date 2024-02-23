@@ -319,6 +319,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9130524}
   m_CullTransparentMesh: 1
+--- !u!1 &24954758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 24954759}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &24954759
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24954758}
+  m_LocalRotation: {x: 0.08680194, y: -0.7900485, z: 0.60516304, w: -0.04545867}
+  m_LocalPosition: {x: 0.027, y: 0.174, z: -0.055}
+  m_LocalScale: {x: 1.1146494, y: 1.1146494, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &26701388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 26701389}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &26701389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26701388}
+  m_LocalRotation: {x: 0.41626367, y: 0.0015291097, z: -0.0060566794, w: -0.9092225}
+  m_LocalPosition: {x: 0.023, y: 0.181, z: 0.126}
+  m_LocalScale: {x: 0.9676053, y: 0.9676058, z: 0.96760577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &27338224
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,6 +779,37 @@ MonoBehaviour:
   - {fileID: -4122188091182406724, guid: 06f04123ae7815f4aa32bc6e6f467ac7, type: 3}
   - {fileID: 1460841695244920704, guid: 06f04123ae7815f4aa32bc6e6f467ac7, type: 3}
   - {fileID: -5905839721040431917, guid: 06f04123ae7815f4aa32bc6e6f467ac7, type: 3}
+--- !u!1 &45091411
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 45091412}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &45091412
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45091411}
+  m_LocalRotation: {x: 0.51510364, y: 0.010416225, z: -0.013161286, w: -0.8569636}
+  m_LocalPosition: {x: 0.154, y: 0.063, z: 0.064}
+  m_LocalScale: {x: 0.96760535, y: 0.9676051, z: 0.96760523}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &60248476
 GameObject:
   m_ObjectHideFlags: 0
@@ -747,6 +840,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388029133661963}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &65360010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 65360011}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &65360011
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65360010}
+  m_LocalRotation: {x: 0.436964, y: 0.029034717, z: -0.021161444, w: -0.8987612}
+  m_LocalPosition: {x: 0.04, y: -0.083, z: 0.166}
+  m_LocalScale: {x: 0.96760535, y: 0.96760523, z: 0.9676053}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &81098986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 81098987}
+  m_Layer: 0
+  m_Name: processus costiformis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &81098987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 81098986}
+  m_LocalRotation: {x: -0.06771781, y: 0.0042364704, z: -0.04952214, w: 0.9964657}
+  m_LocalPosition: {x: -0.399, y: 0.074, z: -0.132}
+  m_LocalScale: {x: 1.1146495, y: 1.1146495, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &81442609
 GameObject:
@@ -883,6 +1038,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 110.34}
   m_Pivot: {x: 0, y: 1}
+--- !u!1 &89278113
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 89278114}
+  m_Layer: 0
+  m_Name: incisura vertebralis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &89278114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89278113}
+  m_LocalRotation: {x: -0.18325993, y: -0.7514232, z: 0.63335603, w: -0.025281094}
+  m_LocalPosition: {x: -0.06, y: 0.121, z: -0.077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &91533433
 GameObject:
   m_ObjectHideFlags: 0
@@ -1018,6 +1204,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 5.170002}
   m_SizeDelta: {x: 100, y: 110.34}
   m_Pivot: {x: 0, y: 0.5}
+--- !u!1 &102861885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 102861886}
+  m_Layer: 0
+  m_Name: incisura vertebralis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &102861886
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102861885}
+  m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
+  m_LocalPosition: {x: -0.133, y: 0.057, z: 0.02}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1151388028947387848}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &125073714
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,7 +1259,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125073714}
   m_LocalRotation: {x: 0.7071069, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.012309539, y: -0.0212, z: 0.1696}
+  m_LocalPosition: {x: 0.012309539, y: -0.021199994, z: 0.16959997}
   m_LocalScale: {x: 0.027645867, y: 0.027645871, z: 0.027645867}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1250,7 +1467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137499826}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: 0.093616545, y: -0.39533374, z: -0.64349186}
+  m_LocalPosition: {x: 0.141, y: 0.169, z: 0.074}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1361,7 +1578,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154484217}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: 0.07044614, y: -0.20627041, z: -0.5303027}
+  m_LocalPosition: {x: 0.076, y: 0.177, z: 0.009}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1429,6 +1646,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028509031783}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &168168502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 168168503}
+  m_Layer: 0
+  m_Name: processus mamillaris
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &168168503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168168502}
+  m_LocalRotation: {x: 0.08680194, y: -0.7900485, z: 0.60516304, w: -0.04545867}
+  m_LocalPosition: {x: 0.249, y: 0.289, z: 0.004}
+  m_LocalScale: {x: 1.1146494, y: 1.1146494, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &180713954
 GameObject:
@@ -1696,7 +1944,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 191156211}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: 0.11343788, y: -0.36441636, z: -0.65996164}
+  m_LocalPosition: {x: 0.11, y: 0.063, z: -0.107}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1727,7 +1975,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 201694251}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: -0.117756836, y: -0.30158842, z: -0.35113096}
+  m_LocalPosition: {x: -0.113, y: -0.073, z: 0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1814,6 +2062,68 @@ RectTransform:
   m_AnchoredPosition: {x: -1.3999939, y: 0}
   m_SizeDelta: {x: 445.3, y: 102.3}
   m_Pivot: {x: 0.5, y: 1}
+--- !u!1 &215492364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 215492365}
+  m_Layer: 0
+  m_Name: basis ossi sacri
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &215492365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 215492364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.301, y: 0.178, z: -0.374}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &229199588
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229199589}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &229199589
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229199588}
+  m_LocalRotation: {x: -0.06771781, y: 0.0042364704, z: -0.04952214, w: 0.9964657}
+  m_LocalPosition: {x: -0.152, y: 0.003, z: -0.1}
+  m_LocalScale: {x: 1.1146495, y: 1.1146495, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242667873
 GameObject:
   m_ObjectHideFlags: 0
@@ -2088,6 +2398,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 252491932}
   m_CullTransparentMesh: 1
+--- !u!1 &254300802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 254300803}
+  m_Layer: 0
+  m_Name: processus mamillaris
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &254300803
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254300802}
+  m_LocalRotation: {x: -0.06771781, y: 0.0042364704, z: -0.04952214, w: 0.9964657}
+  m_LocalPosition: {x: -0.207, y: 0.067, z: -0.269}
+  m_LocalScale: {x: 1.1146495, y: 1.1146495, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &255625777
 GameObject:
   m_ObjectHideFlags: 0
@@ -2465,7 +2806,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280662367}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: -0.1425597, y: -0.21646291, z: -0.19740622}
+  m_LocalPosition: {x: -0.136, y: 0.001, z: 0.152}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2496,7 +2837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 288128433}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: 0.0024717983, y: -0.071928665, z: -0.1540841}
+  m_LocalPosition: {x: -0.001, y: 0.045, z: -0.006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2733,6 +3074,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309199844}
   m_CullTransparentMesh: 1
+--- !u!1 &318618500
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 318618501}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &318618501
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318618500}
+  m_LocalRotation: {x: 0.44898903, y: -0.0026307707, z: -0.0038929002, w: -0.8935249}
+  m_LocalPosition: {x: 0.011, y: 0.142, z: -0.101}
+  m_LocalScale: {x: 0.9676053, y: 0.967606, z: 0.9676058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &326263699
 GameObject:
   m_ObjectHideFlags: 0
@@ -2984,7 +3356,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334225080}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: -0.008817716, y: 0.026387384, z: -0.5560433}
+  m_LocalPosition: {x: 0.02, y: 0.416, z: 0.147}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3015,7 +3387,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334462281}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: -0.012792482, y: -0.4523529, z: -0.45125386}
+  m_LocalPosition: {x: 0.031, y: -0.115, z: 0.042}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3435,6 +3807,130 @@ Transform:
   m_Father: {fileID: 1151388028509031783}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &367429109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 367429110}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &367429110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 367429109}
+  m_LocalRotation: {x: 0.44898903, y: -0.0026307707, z: -0.0038929002, w: -0.8935249}
+  m_LocalPosition: {x: 0.194, y: 0.073, z: 0.059}
+  m_LocalScale: {x: 0.9676053, y: 0.967606, z: 0.9676058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &372280061
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 372280062}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &372280062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 372280061}
+  m_LocalRotation: {x: 0.44824544, y: 0.039301187, z: -0.027421404, w: -0.8926251}
+  m_LocalPosition: {x: -0.189, y: -0.008, z: -0.016}
+  m_LocalScale: {x: 0.9676053, y: 0.96760523, z: 0.9676052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &379115916
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 379115917}
+  m_Layer: 0
+  m_Name: tuberculum posterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &379115917
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 379115916}
+  m_LocalRotation: {x: -0.023032395, y: -0.018862523, z: 0.02521488, w: 0.99923867}
+  m_LocalPosition: {x: 0.351, y: -0.04, z: 0.078}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &383577828
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 383577829}
+  m_Layer: 0
+  m_Name: foramina sacralia anteriora
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &383577829
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 383577828}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.213, y: 0.056, z: -0.023}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &395012083
 GameObject:
   m_ObjectHideFlags: 0
@@ -3601,12 +4097,74 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 405195263}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: -0.004024598, y: 0.14643349, z: -0.3282811}
+  m_LocalPosition: {x: 0.001, y: 0.336, z: 0.077}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388027581722004}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &406145222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406145223}
+  m_Layer: 0
+  m_Name: foramen transversarium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406145223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406145222}
+  m_LocalRotation: {x: 0.44824544, y: 0.039301187, z: -0.027421404, w: -0.8926251}
+  m_LocalPosition: {x: -0.169, y: 0.014, z: 0.103}
+  m_LocalScale: {x: 0.9676053, y: 0.96760523, z: 0.9676052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &406702302
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 406702303}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &406702303
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 406702302}
+  m_LocalRotation: {x: 0.41626367, y: 0.0015291097, z: -0.0060566794, w: -0.9092225}
+  m_LocalPosition: {x: 0.009, y: -0.059, z: 0.169}
+  m_LocalScale: {x: 0.9676053, y: 0.9676058, z: 0.96760577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &409292351
 GameObject:
@@ -3637,6 +4195,68 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388028194816039}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &409370739
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 409370740}
+  m_Layer: 0
+  m_Name: foramen transversarium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &409370740
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409370739}
+  m_LocalRotation: {x: 0.41626367, y: 0.0015291097, z: -0.0060566794, w: -0.9092225}
+  m_LocalPosition: {x: -0.191, y: -0.006, z: 0.092}
+  m_LocalScale: {x: 0.9676053, y: 0.9676058, z: 0.96760577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &413283726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 413283727}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &413283727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 413283726}
+  m_LocalRotation: {x: 0.44824544, y: 0.039301187, z: -0.027421404, w: -0.8926251}
+  m_LocalPosition: {x: -0.199, y: 0.017, z: -0.005}
+  m_LocalScale: {x: 0.9676053, y: 0.96760523, z: 0.9676052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &415644074
@@ -3906,6 +4526,37 @@ Transform:
   m_Father: {fileID: 1151388029133661963}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &458609726
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 458609727}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &458609727
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 458609726}
+  m_LocalRotation: {x: -0.1686905, y: -0.88000447, z: 0.43732288, w: -0.07670932}
+  m_LocalPosition: {x: 0.209, y: 0.108, z: 0.121}
+  m_LocalScale: {x: 1.1146494, y: 1.1146498, z: 1.1146499}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &462741160
 GameObject:
   m_ObjectHideFlags: 0
@@ -4005,6 +4656,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &491135023
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 491135024}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &491135024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 491135023}
+  m_LocalRotation: {x: 0.44824544, y: 0.039301187, z: -0.027421404, w: -0.8926251}
+  m_LocalPosition: {x: -0.01, y: 0.2, z: -0.129}
+  m_LocalScale: {x: 0.9676053, y: 0.96760523, z: 0.9676052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &495270361
 GameObject:
   m_ObjectHideFlags: 0
@@ -4034,6 +4716,68 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388028509031783}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &498487495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 498487496}
+  m_Layer: 0
+  m_Name: tuberculum anterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &498487496
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498487495}
+  m_LocalRotation: {x: -0.036310878, y: 0.0026593434, z: -0.0036539305, w: 0.9993304}
+  m_LocalPosition: {x: 0.226, y: -0.014, z: 0.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &500384124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 500384125}
+  m_Layer: 0
+  m_Name: processus mamillaris
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &500384125
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 500384124}
+  m_LocalRotation: {x: -0.1686905, y: -0.88000447, z: 0.43732288, w: -0.07670932}
+  m_LocalPosition: {x: 0.281, y: 0.217, z: 0.117}
+  m_LocalScale: {x: 1.1146494, y: 1.1146498, z: 1.1146499}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &501068593
@@ -4334,6 +5078,37 @@ Transform:
   m_Father: {fileID: 1151388028539378279}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &523748336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 523748337}
+  m_Layer: 0
+  m_Name: tuberculum anterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523748337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 523748336}
+  m_LocalRotation: {x: -0.11157809, y: -0.005801529, z: 0.010324425, w: 0.9936851}
+  m_LocalPosition: {x: 0.192, y: -0.05, z: 0.196}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &526307585
 GameObject:
   m_ObjectHideFlags: 0
@@ -4433,6 +5208,37 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &574279362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 574279363}
+  m_Layer: 0
+  m_Name: incisura vertebralis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &574279363
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574279362}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.115, y: 0.104, z: -0.001}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &583192765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4457,7 +5263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583192765}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: 0.014682123, y: -0.17407368, z: -0.3297817}
+  m_LocalPosition: {x: 0.012, y: 0.056, z: 0.034}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4756,6 +5562,130 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 599856369}
   m_CullTransparentMesh: 1
+--- !u!1 &607739655
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 607739656}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &607739656
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 607739655}
+  m_LocalRotation: {x: -0.15009443, y: -0.00043064932, z: 0.012886246, w: 0.9885876}
+  m_LocalPosition: {x: -0.007, y: 0.053, z: -0.034}
+  m_LocalScale: {x: 1.1146495, y: 1.1146499, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &609755502
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 609755503}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &609755503
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609755502}
+  m_LocalRotation: {x: 0.436964, y: 0.029034717, z: -0.021161444, w: -0.8987612}
+  m_LocalPosition: {x: -0.155, y: -0.075, z: 0.014}
+  m_LocalScale: {x: 0.96760535, y: 0.96760523, z: 0.9676053}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &613681452
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 613681453}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &613681453
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 613681452}
+  m_LocalRotation: {x: -0.23853481, y: -0.008696271, z: 0.0030167028, w: 0.9710904}
+  m_LocalPosition: {x: 0.003, y: 0.376, z: -0.175}
+  m_LocalScale: {x: 1.1146497, y: 1.1146493, z: 1.1146495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &616800896
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 616800897}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &616800897
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616800896}
+  m_LocalRotation: {x: 0.436964, y: 0.029034717, z: -0.021161444, w: -0.8987612}
+  m_LocalPosition: {x: -0.103, y: -0.06, z: 0.074}
+  m_LocalScale: {x: 0.96760535, y: 0.96760523, z: 0.9676053}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &619269965
 GameObject:
   m_ObjectHideFlags: 0
@@ -4845,6 +5775,37 @@ MonoBehaviour:
   m_DeselectOnBackgroundClick: 1
   m_PointerBehavior: 0
   m_CursorLockBehavior: 0
+--- !u!1 &619812317
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619812318}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619812318
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619812317}
+  m_LocalRotation: {x: 0.44824544, y: 0.039301187, z: -0.027421404, w: -0.8926251}
+  m_LocalPosition: {x: 0.163, y: 0.114, z: 0.032}
+  m_LocalScale: {x: 0.9676053, y: 0.96760523, z: 0.9676052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &627950090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5016,6 +5977,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 648539027}
   m_CullTransparentMesh: 1
+--- !u!1 &650579752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 650579753}
+  m_Layer: 0
+  m_Name: incisura vertebralis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &650579753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 650579752}
+  m_LocalRotation: {x: 0.0899465, y: 0.010799857, z: 0.008328896, w: 0.9958533}
+  m_LocalPosition: {x: 0.14, y: 0.085, z: 0.014}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &655741635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5587,6 +6579,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688918301}
   m_CullTransparentMesh: 1
+--- !u!1 &692799052
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692799053}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692799053
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692799052}
+  m_LocalRotation: {x: -0.15009443, y: -0.00043064932, z: 0.012886246, w: 0.9885876}
+  m_LocalPosition: {x: -0.02, y: 0.368, z: -0.108}
+  m_LocalScale: {x: 1.1146495, y: 1.1146499, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &704841570
 GameObject:
   m_ObjectHideFlags: 0
@@ -5789,6 +6812,37 @@ Transform:
   m_Father: {fileID: 1286763010450322441}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &713384057
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 713384058}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &713384058
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713384057}
+  m_LocalRotation: {x: -0.06771781, y: 0.0042364704, z: -0.04952214, w: 0.9964657}
+  m_LocalPosition: {x: 0.001, y: 0.046, z: -0.076}
+  m_LocalScale: {x: 1.1146495, y: 1.1146495, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &715797872
 GameObject:
   m_ObjectHideFlags: 0
@@ -5813,7 +6867,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 715797872}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: -0.13517903, y: -0.19546878, z: -0.16086346}
+  m_LocalPosition: {x: -0.103, y: -0.038, z: -0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5924,7 +6978,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738827324}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: 0.31546515, y: -0.028286455, z: -0.28142795}
+  m_LocalPosition: {x: 0.242, y: 0.19, z: -0.089}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6038,6 +7092,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028371652855}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &741837041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 741837042}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &741837042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 741837041}
+  m_LocalRotation: {x: -0.1686905, y: -0.88000447, z: 0.43732288, w: -0.07670932}
+  m_LocalPosition: {x: -0.053, y: -0.108, z: 0.191}
+  m_LocalScale: {x: 1.1146494, y: 1.1146498, z: 1.1146499}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &756253985
 GameObject:
@@ -6370,6 +7455,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 773341115}
   m_CullTransparentMesh: 1
+--- !u!1 &776769908
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776769909}
+  m_Layer: 0
+  m_Name: processus costiformis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776769909
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776769908}
+  m_LocalRotation: {x: 0.08680194, y: -0.7900485, z: 0.60516304, w: -0.04545867}
+  m_LocalPosition: {x: 0.446, y: 0.213, z: 0.024}
+  m_LocalScale: {x: 1.1146494, y: 1.1146494, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &779778182
 GameObject:
   m_ObjectHideFlags: 0
@@ -6394,7 +7510,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779778182}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: -0.16428204, y: -0.31410566, z: -0.38898265}
+  m_LocalPosition: {x: -0.138, y: 0.045, z: 0.123}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6465,7 +7581,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &803414653
 Transform:
   m_ObjectHideFlags: 0
@@ -6660,7 +7776,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 817987459}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: -0.0016890051, y: 0.24612433, z: -0.19769558}
+  m_LocalPosition: {x: -0.014, y: 0.293, z: -0.217}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6813,12 +7929,74 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 828227201}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: -0.15908238, y: -0.08866063, z: -0.021172855}
+  m_LocalPosition: {x: -0.16, y: 0.043, z: 0.128}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388028947387848}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &830423845
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 830423846}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &830423846
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830423845}
+  m_LocalRotation: {x: 0.08680194, y: -0.7900485, z: 0.60516304, w: -0.04545867}
+  m_LocalPosition: {x: -0.14, y: 0.067, z: -0.197}
+  m_LocalScale: {x: 1.1146494, y: 1.1146494, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &838341656
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 838341657}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &838341657
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 838341656}
+  m_LocalRotation: {x: -0.15009443, y: -0.00043064932, z: 0.012886246, w: 0.9885876}
+  m_LocalPosition: {x: 0.11, y: 0.281, z: 0.096}
+  m_LocalScale: {x: 1.1146495, y: 1.1146499, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &857722268
 GameObject:
@@ -6985,6 +8163,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867564129}
   m_CullTransparentMesh: 1
+--- !u!1 &871347367
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 871347368}
+  m_Layer: 0
+  m_Name: incisura vertebralis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &871347368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 871347367}
+  m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
+  m_LocalPosition: {x: -0.095, y: 0.065, z: 0.035}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1151388027619698105}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &882903272
 GameObject:
   m_ObjectHideFlags: 0
@@ -7009,12 +8218,43 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 882903272}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: -0.31818777, y: -0.065219946, z: -0.23044115}
+  m_LocalPosition: {x: -0.337, y: 0.103, z: -0.073}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388028947387848}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &885598701
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 885598702}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &885598702
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885598701}
+  m_LocalRotation: {x: 0.44824544, y: 0.039301187, z: -0.027421404, w: -0.8926251}
+  m_LocalPosition: {x: -0.013, y: 0.139, z: 0.049}
+  m_LocalScale: {x: 0.9676053, y: 0.96760523, z: 0.9676052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &891598618
 GameObject:
@@ -7046,6 +8286,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388027879652783}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &908552961
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 908552962}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &908552962
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908552961}
+  m_LocalRotation: {x: -0.15009443, y: -0.00043064932, z: 0.012886246, w: 0.9885876}
+  m_LocalPosition: {x: -0.168, y: -0.003, z: -0.083}
+  m_LocalScale: {x: 1.1146495, y: 1.1146499, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &909233630
 GameObject:
@@ -7381,6 +8652,68 @@ Transform:
   m_Father: {fileID: 1151388028325054173}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &928512654
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 928512655}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &928512655
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928512654}
+  m_LocalRotation: {x: -0.23853481, y: -0.008696271, z: 0.0030167028, w: 0.9710904}
+  m_LocalPosition: {x: 0.128, y: 0.316, z: 0.033}
+  m_LocalScale: {x: 1.1146497, y: 1.1146493, z: 1.1146495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &929800646
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 929800647}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &929800647
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929800646}
+  m_LocalRotation: {x: -0.15009443, y: -0.00043064932, z: 0.012886246, w: 0.9885876}
+  m_LocalPosition: {x: 0.099, y: 0.087, z: -0.222}
+  m_LocalScale: {x: 1.1146495, y: 1.1146499, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &931490544
 GameObject:
   m_ObjectHideFlags: 0
@@ -7458,6 +8791,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 931490544}
   m_CullTransparentMesh: 1
+--- !u!1 &938771675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 938771676}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &938771676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 938771675}
+  m_LocalRotation: {x: -0.06771781, y: 0.0042364704, z: -0.04952214, w: 0.9964657}
+  m_LocalPosition: {x: 0.17, y: 0.196, z: 0.043}
+  m_LocalScale: {x: 1.1146495, y: 1.1146495, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &946068583
 GameObject:
   m_ObjectHideFlags: 0
@@ -7513,12 +8877,74 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954003944}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: -0.11850505, y: -0.2745189, z: -0.39650458}
+  m_LocalPosition: {x: -0.088, y: -0.038, z: -0.027}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388027581722004}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &960818094
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 960818095}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &960818095
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 960818094}
+  m_LocalRotation: {x: -0.06771781, y: 0.0042364704, z: -0.04952214, w: 0.9964657}
+  m_LocalPosition: {x: -0.017, y: -0.251, z: -0.009}
+  m_LocalScale: {x: 1.1146495, y: 1.1146495, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &963148069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 963148070}
+  m_Layer: 0
+  m_Name: lineae transversae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &963148070
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 963148069}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.18, y: -0.26, z: 0.078}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &968516444
 GameObject:
@@ -7544,7 +8970,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968516444}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: 0.15022977, y: -0.22526689, z: -0.45680168}
+  m_LocalPosition: {x: 0.156, y: 0.002, z: -0.093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7840,6 +9266,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 985451735}
   m_CullTransparentMesh: 1
+--- !u!1 &988257863
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 988257864}
+  m_Layer: 0
+  m_Name: processus costiformis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &988257864
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988257863}
+  m_LocalRotation: {x: -0.1686905, y: -0.88000447, z: 0.43732288, w: -0.07670932}
+  m_LocalPosition: {x: 0.426, y: 0.012, z: 0.161}
+  m_LocalScale: {x: 1.1146494, y: 1.1146498, z: 1.1146499}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1007554620
 GameObject:
   m_ObjectHideFlags: 0
@@ -8026,6 +9483,37 @@ Transform:
   m_Father: {fileID: 1151388028325054173}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1021633323
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1021633324}
+  m_Layer: 0
+  m_Name: incisura vertebralis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1021633324
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021633323}
+  m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
+  m_LocalPosition: {x: -0.118, y: 0.042, z: 0.048}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1151388027581722004}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1023811145
 GameObject:
   m_ObjectHideFlags: 0
@@ -8056,6 +9544,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1286763008672448000}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1029894516
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1029894517}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1029894517
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029894516}
+  m_LocalRotation: {x: 0.44898903, y: -0.0026307707, z: -0.0038929002, w: -0.8935249}
+  m_LocalPosition: {x: 0.026, y: -0.052, z: 0.195}
+  m_LocalScale: {x: 0.9676053, y: 0.967606, z: 0.9676058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1030518187
 GameObject:
@@ -8265,12 +9784,74 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1054422582}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: -0.15320805, y: -0.41285184, z: -0.53601795}
+  m_LocalPosition: {x: -0.08, y: -0.057, z: 0.019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388027619698105}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1059010985
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1059010986}
+  m_Layer: 0
+  m_Name: processus mamillaris
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1059010986
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059010985}
+  m_LocalRotation: {x: -0.15009443, y: -0.00043064932, z: 0.012886246, w: 0.9885876}
+  m_LocalPosition: {x: -0.188, y: 0.079, z: -0.186}
+  m_LocalScale: {x: 1.1146495, y: 1.1146499, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1059404340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1059404341}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1059404341
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1059404340}
+  m_LocalRotation: {x: 0.44898903, y: -0.0026307707, z: -0.0038929002, w: -0.8935249}
+  m_LocalPosition: {x: 0.006, y: 0.1, z: 0.052}
+  m_LocalScale: {x: 0.9676053, y: 0.967606, z: 0.9676058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1069600870
 GameObject:
@@ -8456,6 +10037,37 @@ Transform:
   m_Father: {fileID: 1151388028022927630}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1081837604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1081837605}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1081837605
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1081837604}
+  m_LocalRotation: {x: 0.44898903, y: -0.0026307707, z: -0.0038929002, w: -0.8935249}
+  m_LocalPosition: {x: -0.125, y: -0.059, z: 0.079}
+  m_LocalScale: {x: 0.9676053, y: 0.967606, z: 0.9676058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1083084426
 GameObject:
   m_ObjectHideFlags: 0
@@ -8547,6 +10159,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1083084426}
   m_CullTransparentMesh: 1
+--- !u!1 &1085485336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085485337}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1085485337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085485336}
+  m_LocalRotation: {x: 0.41626367, y: 0.0015291097, z: -0.0060566794, w: -0.9092225}
+  m_LocalPosition: {x: 0.011, y: 0.227, z: -0.235}
+  m_LocalScale: {x: 0.9676053, y: 0.9676058, z: 0.96760577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1085877841
 GameObject:
   m_ObjectHideFlags: 0
@@ -8597,6 +10240,37 @@ MonoBehaviour:
   - {fileID: 587670774}
   - {fileID: 913846533}
   scroll: {fileID: 985451737}
+--- !u!1 &1100853644
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1100853645}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1100853645
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100853644}
+  m_LocalRotation: {x: 0.51510364, y: 0.010416225, z: -0.013161286, w: -0.8569636}
+  m_LocalPosition: {x: -0.036, y: 0.095, z: 0.089}
+  m_LocalScale: {x: 0.96760535, y: 0.9676051, z: 0.96760523}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1101805158
 GameObject:
   m_ObjectHideFlags: 0
@@ -8689,6 +10363,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028509031783}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1108781183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1108781184}
+  m_Layer: 0
+  m_Name: arcus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1108781184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108781183}
+  m_LocalRotation: {x: 0.436964, y: 0.029034717, z: -0.021161444, w: -0.8987612}
+  m_LocalPosition: {x: 0.115, y: 0.067, z: -0.036}
+  m_LocalScale: {x: 0.96760535, y: 0.96760523, z: 0.9676053}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1114512517
 GameObject:
@@ -9799,6 +11504,37 @@ Transform:
   m_Father: {fileID: 1151388029133661963}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1163024621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1163024622}
+  m_Layer: 0
+  m_Name: tuberculum posterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1163024622
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163024621}
+  m_LocalRotation: {x: -0.036310878, y: 0.0026593434, z: -0.0036539305, w: 0.9993304}
+  m_LocalPosition: {x: 0.296, y: -0.005, z: 0.114}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1166447846
 GameObject:
   m_ObjectHideFlags: 0
@@ -10051,6 +11787,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1180620694}
   m_CullTransparentMesh: 1
+--- !u!1 &1184427703
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1184427704}
+  m_Layer: 0
+  m_Name: incisura vertebralis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1184427704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1184427703}
+  m_LocalRotation: {x: 0.04685565, y: -0.75038207, z: 0.6539056, w: -0.08449203}
+  m_LocalPosition: {x: -0.182, y: 0.023, z: -0.013}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1191041141
 GameObject:
   m_ObjectHideFlags: 3
@@ -10178,6 +11945,37 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1192022675
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1192022676}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1192022676
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1192022675}
+  m_LocalRotation: {x: -0.23853481, y: -0.008696271, z: 0.0030167028, w: 0.9710904}
+  m_LocalPosition: {x: 0.024, y: -0.128, z: 0.028}
+  m_LocalScale: {x: 1.1146497, y: 1.1146493, z: 1.1146495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1207913480
 GameObject:
   m_ObjectHideFlags: 0
@@ -10271,6 +12069,37 @@ Transform:
   m_Father: {fileID: 1151388028194816039}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1220525934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1220525935}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1220525935
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1220525934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.157, y: 0.474, z: -0.313}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223150066
 GameObject:
   m_ObjectHideFlags: 0
@@ -10301,6 +12130,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028509031783}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1223941945
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1223941946}
+  m_Layer: 0
+  m_Name: apex ossis sacri
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1223941946
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223941945}
+  m_LocalRotation: {x: 0.000000029802312, y: 0.00000004097818, z: 0.000000022351735,
+    w: 1}
+  m_LocalPosition: {x: 0.363, y: -0.575, z: 0.117}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1229838626
 GameObject:
@@ -10455,6 +12316,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1230565989}
   m_CullTransparentMesh: 1
+--- !u!1 &1231762380
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1231762381}
+  m_Layer: 0
+  m_Name: incisura vertebralis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1231762381
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1231762380}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.166, y: 0.057, z: 0.025}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1235309721
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,12 +12718,105 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1245569687}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: -0.13381304, y: -0.17502098, z: -0.20956771}
+  m_LocalPosition: {x: -0.115, y: -0.022, z: -0.036}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388028947387848}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1246878439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246878440}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246878440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246878439}
+  m_LocalRotation: {x: 0.08680194, y: -0.7900485, z: 0.60516304, w: -0.04545867}
+  m_LocalPosition: {x: 0.064, y: -0.11, z: 0.192}
+  m_LocalScale: {x: 1.1146494, y: 1.1146494, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1251033283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1251033284}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1251033284
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251033283}
+  m_LocalRotation: {x: 0.08680194, y: -0.7900485, z: 0.60516304, w: -0.04545867}
+  m_LocalPosition: {x: -0.198, y: 0.3, z: 0.001}
+  m_LocalScale: {x: 1.1146494, y: 1.1146494, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1253779779
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1253779780}
+  m_Layer: 0
+  m_Name: arcus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1253779780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1253779779}
+  m_LocalRotation: {x: 0.51510364, y: 0.010416225, z: -0.013161286, w: -0.8569636}
+  m_LocalPosition: {x: 0.025, y: 0.045, z: -0.029}
+  m_LocalScale: {x: 0.96760535, y: 0.9676051, z: 0.96760523}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1256505428
 GameObject:
@@ -11088,6 +13073,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1265489280}
   m_CullTransparentMesh: 1
+--- !u!1 &1266545264
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1266545265}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1266545265
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266545264}
+  m_LocalRotation: {x: 0.08680194, y: -0.7900485, z: 0.60516304, w: -0.04545867}
+  m_LocalPosition: {x: 0.038, y: 0.309, z: -0.295}
+  m_LocalScale: {x: 1.1146494, y: 1.1146494, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1276469536
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1276469537}
+  m_Layer: 0
+  m_Name: processus costiformis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1276469537
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1276469536}
+  m_LocalRotation: {x: -0.15009443, y: -0.00043064932, z: 0.012886246, w: 0.9885876}
+  m_LocalPosition: {x: -0.381, y: 0.073, z: 0.059}
+  m_LocalScale: {x: 1.1146495, y: 1.1146499, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286276471
 GameObject:
   m_ObjectHideFlags: 0
@@ -11447,6 +13494,37 @@ Transform:
   m_Father: {fileID: 1286763008672448000}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1324386158
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1324386159}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1324386159
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324386158}
+  m_LocalRotation: {x: 0.08680194, y: -0.7900485, z: 0.60516304, w: -0.04545867}
+  m_LocalPosition: {x: 0.231, y: 0.165, z: 0.06}
+  m_LocalScale: {x: 1.1146494, y: 1.1146494, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4179474321826391165}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1325368523
 GameObject:
   m_ObjectHideFlags: 0
@@ -11524,6 +13602,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1325368523}
   m_CullTransparentMesh: 1
+--- !u!1 &1325912695
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1325912696}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1325912696
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325912695}
+  m_LocalRotation: {x: -0.23853481, y: -0.008696271, z: 0.0030167028, w: 0.9710904}
+  m_LocalPosition: {x: 0.009, y: 0.086, z: -0.039}
+  m_LocalScale: {x: 1.1146497, y: 1.1146493, z: 1.1146495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1336175896
 GameObject:
   m_ObjectHideFlags: 0
@@ -11691,6 +13800,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028325054173}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1353482533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1353482534}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1353482534
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353482533}
+  m_LocalRotation: {x: -0.23853481, y: -0.008696271, z: 0.0030167028, w: 0.9710904}
+  m_LocalPosition: {x: 0.12, y: 0.109, z: -0.237}
+  m_LocalScale: {x: 1.1146497, y: 1.1146493, z: 1.1146495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1360182202
 GameObject:
@@ -12077,6 +14217,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395379024}
   m_CullTransparentMesh: 1
+--- !u!1 &1396797355
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1396797356}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1396797356
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1396797355}
+  m_LocalRotation: {x: 0.436964, y: 0.029034717, z: -0.021161444, w: -0.8987612}
+  m_LocalPosition: {x: 0.018, y: 0.04, z: 0.04}
+  m_LocalScale: {x: 0.96760535, y: 0.96760523, z: 0.9676053}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1398914499
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1398914500}
+  m_Layer: 0
+  m_Name: foramen transversarium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1398914500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1398914499}
+  m_LocalRotation: {x: 0.436964, y: 0.029034717, z: -0.021161444, w: -0.8987612}
+  m_LocalPosition: {x: 0.217, y: -0.024, z: 0.113}
+  m_LocalScale: {x: 0.96760535, y: 0.96760523, z: 0.9676053}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1405811387
 GameObject:
   m_ObjectHideFlags: 0
@@ -12346,7 +14548,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1419392578}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: -0.15449852, y: -0.389532, z: -0.5834162}
+  m_LocalPosition: {x: -0.085, y: -0.047, z: 0.003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12480,6 +14682,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1429479752}
   m_CullTransparentMesh: 1
+--- !u!1 &1435555660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1435555661}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1435555661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1435555660}
+  m_LocalRotation: {x: -0.15009443, y: -0.00043064932, z: 0.012886246, w: 0.9885876}
+  m_LocalPosition: {x: 0.014, y: -0.221, z: 0.05}
+  m_LocalScale: {x: 1.1146495, y: 1.1146499, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1559134778612659872}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1436954926
 GameObject:
   m_ObjectHideFlags: 0
@@ -12654,6 +14887,100 @@ Transform:
   m_Father: {fileID: 1746780677}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1444598183
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1444598184}
+  m_Layer: 0
+  m_Name: arcus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1444598184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1444598183}
+  m_LocalRotation: {x: 0.44824544, y: 0.039301187, z: -0.027421404, w: -0.8926251}
+  m_LocalPosition: {x: 0.065, y: 0.17, z: -0.033}
+  m_LocalScale: {x: 0.9676053, y: 0.96760523, z: 0.9676052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1445214612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445214613}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445214613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445214612}
+  m_LocalRotation: {x: -0.1686905, y: -0.88000447, z: 0.43732288, w: -0.07670932}
+  m_LocalPosition: {x: 0.007, y: 0.135, z: -0.256}
+  m_LocalScale: {x: 1.1146494, y: 1.1146498, z: 1.1146499}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1445409540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445409541}
+  m_Layer: 0
+  m_Name: tuberculum posterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1445409541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445409540}
+  m_LocalRotation: {x: -0.000000029802319, y: 0.0000000012223608, z: 3.4924594e-10,
+    w: 1}
+  m_LocalPosition: {x: 0.35199988, y: -0.056999903, z: 0.0749997}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1446483751
 GameObject:
   m_ObjectHideFlags: 0
@@ -12982,7 +15309,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1467166072}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: 0.081868544, y: 0.01795973, z: -0.15259534}
+  m_LocalPosition: {x: 0.078, y: 0.167, z: 0.006}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13233,6 +15560,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473694962}
   m_CullTransparentMesh: 1
+--- !u!1 &1481516427
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1481516428}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1481516428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481516427}
+  m_LocalRotation: {x: 0.51510364, y: 0.010416225, z: -0.013161286, w: -0.8569636}
+  m_LocalPosition: {x: -0.011, y: 0.13, z: -0.102}
+  m_LocalScale: {x: 0.96760535, y: 0.9676051, z: 0.96760523}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1484111787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1484111788}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1484111788
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1484111787}
+  m_LocalRotation: {x: 0.41626367, y: 0.0015291097, z: -0.0060566794, w: -0.9092225}
+  m_LocalPosition: {x: -0.147, y: -0.042, z: 0.055}
+  m_LocalScale: {x: 0.9676053, y: 0.9676058, z: 0.96760577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1498792975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1498792976}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1498792976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1498792975}
+  m_LocalRotation: {x: 0.436964, y: 0.029034717, z: -0.021161444, w: -0.8987612}
+  m_LocalPosition: {x: 0.04, y: 0.182, z: -0.152}
+  m_LocalScale: {x: 0.96760535, y: 0.96760523, z: 0.9676053}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1503694112
 GameObject:
   m_ObjectHideFlags: 0
@@ -13409,7 +15829,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1519944996
 Transform:
   m_ObjectHideFlags: 0
@@ -13498,6 +15918,68 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1522499901
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522499902}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1522499902
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522499901}
+  m_LocalRotation: {x: 0.51510364, y: 0.010416225, z: -0.013161286, w: -0.8569636}
+  m_LocalPosition: {x: -0.204, y: -0.091, z: 0.046}
+  m_LocalScale: {x: 0.96760535, y: 0.9676051, z: 0.96760523}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1537798793
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1537798794}
+  m_Layer: 0
+  m_Name: foramen vertebrale
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1537798794
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1537798793}
+  m_LocalRotation: {x: -0.1686905, y: -0.88000447, z: 0.43732288, w: -0.07670932}
+  m_LocalPosition: {x: 0.093, y: 0.094, z: -0.034}
+  m_LocalScale: {x: 1.1146494, y: 1.1146498, z: 1.1146499}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1544416430
 GameObject:
   m_ObjectHideFlags: 0
@@ -13676,12 +16158,43 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1556458197}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: 0.10370138, y: -0.36358953, z: -0.56046546}
+  m_LocalPosition: {x: 0.124, y: 0.006, z: -0.063}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388027619698105}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1563790314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1563790315}
+  m_Layer: 0
+  m_Name: canalis sacralis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1563790315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563790314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.209, y: 0.235, z: -0.132}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1578406346
 GameObject:
@@ -13738,7 +16251,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1578414572}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: 0.3221844, y: -0.09896329, z: -0.4558243}
+  m_LocalPosition: {x: 0.274, y: 0.185, z: -0.107}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13800,7 +16313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1580905407}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: 0.12137927, y: -0.13974531, z: -0.170845}
+  m_LocalPosition: {x: 0.11, y: -0.001, z: -0.061}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14031,6 +16544,37 @@ Transform:
   m_Father: {fileID: 1151388027879652783}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1628461325
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1628461326}
+  m_Layer: 0
+  m_Name: tuberculum anterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1628461326
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628461325}
+  m_LocalRotation: {x: -0.035791337, y: -0.025668949, z: 0.035200052, w: 0.99840933}
+  m_LocalPosition: {x: 0.202, y: -0.041, z: 0.128}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1633164451
 GameObject:
   m_ObjectHideFlags: 0
@@ -14055,7 +16599,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1633164451}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: 0.13190602, y: -0.25870788, z: -0.44391906}
+  m_LocalPosition: {x: 0.125, y: 0.033, z: -0.09}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14142,6 +16686,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1649426467}
   m_CullTransparentMesh: 1
+--- !u!1 &1657538490
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1657538491}
+  m_Layer: 0
+  m_Name: tuberculum posterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1657538491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1657538490}
+  m_LocalRotation: {x: -0.11157809, y: -0.005801529, z: 0.010324425, w: 0.9936851}
+  m_LocalPosition: {x: 0.252, y: -0.01, z: 0.13}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1663132855
 GameObject:
   m_ObjectHideFlags: 0
@@ -14217,7 +16792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fbd5127e85ba80f42a4aa4eb27b83ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputData: {fileID: 4900000, guid: 207dcc4d6f27bdf418bf518b87c18b75, type: 3}
+  inputData: {fileID: 4900000, guid: 8203fee961767d245a28fff1d825cf82, type: 3}
   locs: []
 --- !u!1 &1673354967
 GameObject:
@@ -14617,6 +17192,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1693396219}
   m_CullTransparentMesh: 1
+--- !u!1 &1703709065
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1703709066}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1703709066
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703709065}
+  m_LocalRotation: {x: 0.41626367, y: 0.0015291097, z: -0.0060566794, w: -0.9092225}
+  m_LocalPosition: {x: 0.181, y: 0.058, z: 0.073}
+  m_LocalScale: {x: 0.9676053, y: 0.9676058, z: 0.96760577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1710733169
 GameObject:
   m_ObjectHideFlags: 0
@@ -14641,7 +17247,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1710733169}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: 0.11793409, y: -0.17660391, z: -0.25228426}
+  m_LocalPosition: {x: 0.101, y: 0.197, z: 0.075}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14886,7 +17492,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1724890740}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: 0.021039853, y: -0.3385967, z: -0.26265678}
+  m_LocalPosition: {x: 0.03, y: -0.157, z: 0.093}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15301,12 +17907,43 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1750407893}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: 0.13800488, y: -0.14610334, z: -0.2692226}
+  m_LocalPosition: {x: 0.132, y: 0.037, z: -0.092}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388028947387848}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1750512496
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1750512497}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1750512497
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1750512496}
+  m_LocalRotation: {x: 0.51510364, y: 0.010416225, z: -0.013161286, w: -0.8569636}
+  m_LocalPosition: {x: -0.143, y: -0.075, z: 0.113}
+  m_LocalScale: {x: 0.96760535, y: 0.9676051, z: 0.96760523}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1751940867
 GameObject:
@@ -15430,6 +18067,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777355217}
   m_CullTransparentMesh: 1
+--- !u!1 &1788891909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1788891910}
+  m_Layer: 0
+  m_Name: foramen transversarium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1788891910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1788891909}
+  m_LocalRotation: {x: 0.44898903, y: -0.0026307707, z: -0.0038929002, w: -0.8935249}
+  m_LocalPosition: {x: -0.15, y: -0.031, z: 0.139}
+  m_LocalScale: {x: 0.9676053, y: 0.967606, z: 0.9676058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1793577781
 GameObject:
   m_ObjectHideFlags: 0
@@ -15454,7 +18122,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793577781}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: 0.13587871, y: -0.23342724, z: -0.35819927}
+  m_LocalPosition: {x: 0.137, y: 0.014, z: 0.001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15485,7 +18153,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793655106}
   m_LocalRotation: {x: -0.1854388, y: -0.031600557, z: 0.010725068, w: 0.98208904}
-  m_LocalPosition: {x: 0.000043614098, y: -0.22553575, z: -0.06456902}
+  m_LocalPosition: {x: 0.013, y: -0.071, z: 0.086}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15706,6 +18374,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1801515873}
   m_CullTransparentMesh: 1
+--- !u!1 &1803140587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1803140588}
+  m_Layer: 0
+  m_Name: tuberculum anterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1803140588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1803140587}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.229, y: -0.004, z: 0.144}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1806016415
 GameObject:
   m_ObjectHideFlags: 0
@@ -15892,6 +18591,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1834340051}
   m_CullTransparentMesh: 1
+--- !u!1 &1838992704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1838992705}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1838992705
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1838992704}
+  m_LocalRotation: {x: -0.06771781, y: 0.0042364704, z: -0.04952214, w: 0.9964657}
+  m_LocalPosition: {x: -0.019, y: 0.356, z: -0.154}
+  m_LocalScale: {x: 1.1146495, y: 1.1146495, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1845149132
 GameObject:
   m_ObjectHideFlags: 0
@@ -15922,6 +18652,68 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028776756949}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1852387166
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1852387167}
+  m_Layer: 0
+  m_Name: processus spinosus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1852387167
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852387166}
+  m_LocalRotation: {x: -0.1686905, y: -0.88000447, z: 0.43732288, w: -0.07670932}
+  m_LocalPosition: {x: 0.235, y: 0.395, z: -0.16}
+  m_LocalScale: {x: 1.1146494, y: 1.1146498, z: 1.1146499}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1872110968
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1872110969}
+  m_Layer: 0
+  m_Name: crista sacralis medialis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1872110969
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1872110968}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.303, z: -0.098}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1884266454
 GameObject:
@@ -16153,6 +18945,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892065771}
   m_CullTransparentMesh: 1
+--- !u!1 &1900234622
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1900234623}
+  m_Layer: 0
+  m_Name: incisura vertebralis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1900234623
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900234622}
+  m_LocalRotation: {x: -0.23853481, y: -0.008696271, z: 0.0030167028, w: 0.9710904}
+  m_LocalPosition: {x: -0.123, y: 0.043, z: -0.124}
+  m_LocalScale: {x: 1.1146497, y: 1.1146493, z: 1.1146495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1920272742
 GameObject:
   m_ObjectHideFlags: 0
@@ -16411,6 +19234,37 @@ Transform:
   m_Father: {fileID: 1151388028194816039}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1931331326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1931331327}
+  m_Layer: 0
+  m_Name: processus mamillaris
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1931331327
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931331326}
+  m_LocalRotation: {x: -0.23853481, y: -0.008696271, z: 0.0030167028, w: 0.9710904}
+  m_LocalPosition: {x: -0.137, y: 0.112, z: -0.204}
+  m_LocalScale: {x: 1.1146497, y: 1.1146493, z: 1.1146495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1935539369
 GameObject:
   m_ObjectHideFlags: 0
@@ -16466,7 +19320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1938438369}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: -0.011631702, y: -0.2937211, z: -0.531557}
+  m_LocalPosition: {x: 0.016, y: 0.082, z: 0.044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17140,6 +19994,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1983460361}
   m_CullTransparentMesh: 1
+--- !u!1 &1985921210
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1985921211}
+  m_Layer: 0
+  m_Name: arcus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1985921211
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1985921210}
+  m_LocalRotation: {x: 0.41626367, y: 0.0015291097, z: -0.0060566794, w: -0.9092225}
+  m_LocalPosition: {x: 0.11, y: 0.041, z: -0.048}
+  m_LocalScale: {x: 0.9676053, y: 0.9676058, z: 0.96760577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1986004714
 GameObject:
   m_ObjectHideFlags: 0
@@ -17190,6 +20075,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986004714}
   m_CullTransparentMesh: 1
+--- !u!1 &1986739716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1986739717}
+  m_Layer: 0
+  m_Name: tuberositas sacralis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1986739717
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986739716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.084, y: 0.469, z: -0.307}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1987869294
 GameObject:
   m_ObjectHideFlags: 0
@@ -17294,7 +20210,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1990670417}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: -0.33635148, y: -0.27371737, z: -0.584988}
+  m_LocalPosition: {x: -0.259, y: 0.128, z: -0.023}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17435,6 +20351,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1997454986}
   m_CullTransparentMesh: 1
+--- !u!1 &1998204312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1998204313}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1998204313
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1998204312}
+  m_LocalRotation: {x: 0.41626367, y: 0.0015291097, z: -0.0060566794, w: -0.9092225}
+  m_LocalPosition: {x: -0.181, y: -0.045, z: 0.006}
+  m_LocalScale: {x: 0.9676053, y: 0.9676058, z: 0.96760577}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5266556285949187087}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2001450834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2001450835}
+  m_Layer: 0
+  m_Name: arcus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2001450835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001450834}
+  m_LocalRotation: {x: 0.44898903, y: -0.0026307707, z: -0.0038929002, w: -0.8935249}
+  m_LocalPosition: {x: 0.103, y: 0.092, z: 0.009}
+  m_LocalScale: {x: 0.9676053, y: 0.967606, z: 0.9676058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2003840097
 GameObject:
   m_ObjectHideFlags: 0
@@ -17575,6 +20553,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2007168585}
   m_CullTransparentMesh: 1
+--- !u!1 &2009365720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2009365721}
+  m_Layer: 0
+  m_Name: processus costiformis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2009365721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009365720}
+  m_LocalRotation: {x: -0.23853481, y: -0.008696271, z: 0.0030167028, w: 0.9710904}
+  m_LocalPosition: {x: -0.329, y: 0.153, z: -0.106}
+  m_LocalScale: {x: 1.1146497, y: 1.1146493, z: 1.1146495}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8095276703557914119}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2010374073
 GameObject:
   m_ObjectHideFlags: 0
@@ -17605,6 +20614,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028539378279}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2012359553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2012359554}
+  m_Layer: 0
+  m_Name: tuberculum posterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2012359554
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012359553}
+  m_LocalRotation: {x: -0.035791337, y: -0.025668949, z: 0.035200052, w: 0.99840933}
+  m_LocalPosition: {x: 0.255, y: 0.028, z: 0.112}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2030631914
 GameObject:
@@ -17740,6 +20780,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030631914}
   m_CullTransparentMesh: 1
+--- !u!1 &2031683986
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2031683987}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2031683987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2031683986}
+  m_LocalRotation: {x: -0.1686905, y: -0.88000447, z: 0.43732288, w: -0.07670932}
+  m_LocalPosition: {x: -0.051, y: 0.267, z: 0.043}
+  m_LocalScale: {x: 1.1146494, y: 1.1146498, z: 1.1146499}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2394975276270484781}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2043106609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2043106610}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2043106610
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043106609}
+  m_LocalRotation: {x: 0.51510364, y: 0.010416225, z: -0.013161286, w: -0.8569636}
+  m_LocalPosition: {x: -0.017, y: -0.052, z: 0.176}
+  m_LocalScale: {x: 0.96760535, y: 0.9676051, z: 0.96760523}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2044923118
 GameObject:
   m_ObjectHideFlags: 0
@@ -17873,6 +20975,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2044923118}
   m_CullTransparentMesh: 1
+--- !u!1 &2047415369
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2047415370}
+  m_Layer: 0
+  m_Name: processus articularis inferior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2047415370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047415369}
+  m_LocalRotation: {x: 0.436964, y: 0.029034717, z: -0.021161444, w: -0.8987612}
+  m_LocalPosition: {x: 0.203, y: 0.081, z: 0.047}
+  m_LocalScale: {x: 0.96760535, y: 0.96760523, z: 0.9676053}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2059448532
 GameObject:
   m_ObjectHideFlags: 0
@@ -17935,6 +21068,37 @@ Transform:
   m_Father: {fileID: 1286763010450322441}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2067037284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2067037285}
+  m_Layer: 0
+  m_Name: foramen transversarium
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2067037285
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067037284}
+  m_LocalRotation: {x: 0.51510364, y: 0.010416225, z: -0.013161286, w: -0.8569636}
+  m_LocalPosition: {x: 0.158, y: 0.005, z: 0.161}
+  m_LocalScale: {x: 0.96760535, y: 0.9676051, z: 0.96760523}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8312108263554928111}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2088479910
 GameObject:
   m_ObjectHideFlags: 0
@@ -17965,6 +21129,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028194816039}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2097307014
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2097307015}
+  m_Layer: 0
+  m_Name: pars lateralis
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2097307015
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097307014}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.411, y: 0.04, z: -0.134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7799339404987458738}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2102068205
 GameObject:
@@ -18124,6 +21319,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2107685710}
   m_CullTransparentMesh: 1
+--- !u!1 &2109129783
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2109129784}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2109129784
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2109129783}
+  m_LocalRotation: {x: 0.44898903, y: -0.0026307707, z: -0.0038929002, w: -0.8935249}
+  m_LocalPosition: {x: -0.169, y: -0.048, z: 0.017}
+  m_LocalScale: {x: 0.9676053, y: 0.967606, z: 0.9676058}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4876998277057856385}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2110664029
 GameObject:
   m_ObjectHideFlags: 0
@@ -18148,12 +21374,43 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2110664029}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: -0.30782726, y: -0.17136692, z: -0.39818028}
+  m_LocalPosition: {x: -0.281, y: 0.089, z: -0.058}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151388027581722004}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2113496160
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113496161}
+  m_Layer: 0
+  m_Name: processus articularis superior
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2113496161
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113496160}
+  m_LocalRotation: {x: -0.06771781, y: 0.0042364704, z: -0.04952214, w: 0.9964657}
+  m_LocalPosition: {x: 0.157, y: 0.071, z: -0.219}
+  m_LocalScale: {x: 1.1146495, y: 1.1146495, z: 1.1146498}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3892095574627897666}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2125126812
 GameObject:
@@ -18179,7 +21436,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2125126812}
   m_LocalRotation: {x: -0.15599276, y: 0.0044508576, z: 0.001809349, w: 0.9877465}
-  m_LocalPosition: {x: 0.29325274, y: -0.25092217, z: -0.67750114}
+  m_LocalPosition: {x: 0.25, y: 0.167, z: -0.115}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18210,7 +21467,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2127600321}
   m_LocalRotation: {x: -0.115319, y: -0.025227029, z: 0.03215671, w: 0.9924873}
-  m_LocalPosition: {x: 0.09022373, y: -0.08175641, z: -0.31725267}
+  m_LocalPosition: {x: 0.067, y: 0.14, z: 0.019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18247,6 +21504,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1151388028539378279}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2130561723
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2130561724}
+  m_Layer: 0
+  m_Name: corpus vertebrae
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2130561724
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130561723}
+  m_LocalRotation: {x: 0.44824544, y: 0.039301187, z: -0.027421404, w: -0.8926251}
+  m_LocalPosition: {x: -0.013, y: -0.018, z: 0.108}
+  m_LocalScale: {x: 0.9676053, y: 0.96760523, z: 0.9676052}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7189008987598985325}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2137505129
 GameObject:
@@ -18401,6 +21689,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143498818}
   m_CullTransparentMesh: 1
+--- !u!1 &2143593946
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2143593947}
+  m_Layer: 0
+  m_Name: tuberculum anterius
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2143593947
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143593946}
+  m_LocalRotation: {x: -0.023032395, y: -0.018862523, z: 0.02521488, w: 0.99923867}
+  m_LocalPosition: {x: 0.27, y: -0.063, z: 0.185}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5666247171314219815}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &205638739050655465
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -18691,6 +22010,7 @@ Transform:
   - {fileID: 954003945}
   - {fileID: 280662368}
   - {fileID: 1633164452}
+  - {fileID: 1021633324}
   m_Father: {fileID: 125073715}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 74.042, y: 178.726, z: 175.33}
@@ -18718,6 +22038,7 @@ Transform:
   - {fileID: 1419392579}
   - {fileID: 779778183}
   - {fileID: 137499827}
+  - {fileID: 871347368}
   m_Father: {fileID: 125073715}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 69.251, y: -172.701, z: -172.577}
@@ -18967,6 +22288,7 @@ Transform:
   - {fileID: 1245569688}
   - {fileID: 828227202}
   - {fileID: 1710733170}
+  - {fileID: 102861886}
   m_Father: {fileID: 125073715}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 65.932, y: -183.272, z: -184.029}
@@ -20115,7 +23437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1286763008672448000
 Transform:
   m_ObjectHideFlags: 0
@@ -23884,7 +27206,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1286763009072607220
 GameObject:
   m_ObjectHideFlags: 0
@@ -35580,7 +38902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!33 &1357649041352432951
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -35600,7 +38922,16 @@ Transform:
   m_LocalPosition: {x: -0.05, y: 0.38, z: 1.23}
   m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1276469537}
+  - {fileID: 1059010986}
+  - {fileID: 1435555661}
+  - {fileID: 607739656}
+  - {fileID: 692799053}
+  - {fileID: 929800647}
+  - {fileID: 838341657}
+  - {fileID: 908552962}
+  - {fileID: 650579753}
   m_Father: {fileID: 1519944996}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 110.024994, y: 6.5099945, z: 5.345993}
@@ -36142,14 +39473,23 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6884462510337945110}
-  m_LocalRotation: {x: 0.07863093, y: 0.9226817, z: 0.3375175, w: -0.1689904}
-  m_LocalPosition: {x: -0.007000179, y: -0.132, z: 1.276}
+  m_LocalRotation: {x: 0.09074863, y: 0.91598904, z: 0.3344631, w: -0.20214684}
+  m_LocalPosition: {x: -0.017318653, y: -0.13200007, z: 1.2694613}
   m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 988257864}
+  - {fileID: 500384125}
+  - {fileID: 741837042}
+  - {fileID: 1537798794}
+  - {fileID: 1852387167}
+  - {fileID: 2031683987}
+  - {fileID: 1445214613}
+  - {fileID: 458609727}
+  - {fileID: 89278114}
   m_Father: {fileID: 1519944996}
   m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 220.498, y: 19.895004, z: -177.661}
+  m_LocalEulerAnglesHint: {x: 220.498, y: 24.026993, z: -177.661}
 --- !u!23 &2590393033020488099
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -36429,7 +39769,16 @@ Transform:
   m_LocalPosition: {x: -0.02700006, y: -0.426, z: 1.463}
   m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 81098987}
+  - {fileID: 254300803}
+  - {fileID: 960818095}
+  - {fileID: 713384058}
+  - {fileID: 1838992705}
+  - {fileID: 2113496161}
+  - {fileID: 938771676}
+  - {fileID: 229199589}
+  - {fileID: 1231762381}
   m_Father: {fileID: 1519944996}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 100.649994, y: 16.330002, z: 18.037003}
@@ -36505,7 +39854,16 @@ Transform:
   m_LocalPosition: {x: 0.0059999945, y: -0.932, z: 1.614}
   m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 776769909}
+  - {fileID: 168168503}
+  - {fileID: 1246878440}
+  - {fileID: 24954759}
+  - {fileID: 1266545265}
+  - {fileID: 1251033284}
+  - {fileID: 830423846}
+  - {fileID: 1324386159}
+  - {fileID: 1184427704}
   m_Father: {fileID: 1519944996}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -17.811, y: -178.52, z: -368.197}
@@ -36565,7 +39923,17 @@ Transform:
   m_LocalPosition: {x: 0.011105726, y: -0.015400011, z: 0.0023496528}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 2109129784}
+  - {fileID: 367429110}
+  - {fileID: 1059404341}
+  - {fileID: 1081837605}
+  - {fileID: 1788891910}
+  - {fileID: 1029894517}
+  - {fileID: 318618501}
+  - {fileID: 2001450835}
+  - {fileID: 1163024622}
+  - {fileID: 498487496}
   m_Father: {fileID: 803414653}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: -55.98, y: 183.073, z: -181.041}
@@ -36652,7 +40020,17 @@ Transform:
   m_LocalPosition: {x: 0.0115, y: -0.017600019, z: -0.011100015}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1998204313}
+  - {fileID: 1703709066}
+  - {fileID: 26701389}
+  - {fileID: 1484111788}
+  - {fileID: 409370740}
+  - {fileID: 406702303}
+  - {fileID: 1085485337}
+  - {fileID: 1985921211}
+  - {fileID: 1445409541}
+  - {fileID: 1803140588}
   m_Father: {fileID: 803414653}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: -51.824, y: 182.434, z: -180.943}
@@ -36675,7 +40053,17 @@ Transform:
   m_LocalPosition: {x: 0.010085241, y: -0.016602842, z: -0.004222117}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 609755503}
+  - {fileID: 2047415370}
+  - {fileID: 1396797356}
+  - {fileID: 616800897}
+  - {fileID: 1398914500}
+  - {fileID: 65360011}
+  - {fileID: 1498792976}
+  - {fileID: 1108781184}
+  - {fileID: 379115917}
+  - {fileID: 2143593947}
   m_Father: {fileID: 803414653}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: -54.501, y: 178.903, z: -181.007}
@@ -36945,7 +40333,17 @@ Transform:
   m_LocalPosition: {x: 0.0123, y: -0.0127000185, z: 0.008099986}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 372280062}
+  - {fileID: 619812318}
+  - {fileID: 885598702}
+  - {fileID: 413283727}
+  - {fileID: 406145223}
+  - {fileID: 2130561724}
+  - {fileID: 491135024}
+  - {fileID: 1444598184}
+  - {fileID: 2012359554}
+  - {fileID: 1628461326}
   m_Father: {fileID: 803414653}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -55.98, y: 177.561, z: -181.041}
@@ -36956,7 +40354,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4349997891077143827}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -41549,11 +44947,20 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336160219145041801}
-  m_LocalRotation: {x: 0.7249079, y: 0.06397662, z: -0.3038607, w: 0.6148857}
-  m_LocalPosition: {x: 0.0127, y: -0.0409, z: 0.009}
-  m_LocalScale: {x: 0.04, y: 0.04, z: 0.04}
+  m_LocalRotation: {x: 0.7249079, y: 0.063976616, z: -0.30386066, w: 0.6148857}
+  m_LocalPosition: {x: 0.0127, y: -0.040899996, z: 0.009000009}
+  m_LocalScale: {x: 0.040000007, y: 0.039999995, z: 0.04}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 215492365}
+  - {fileID: 2097307015}
+  - {fileID: 1223941946}
+  - {fileID: 963148070}
+  - {fileID: 383577829}
+  - {fileID: 1220525935}
+  - {fileID: 1563790315}
+  - {fileID: 1986739717}
+  - {fileID: 1872110969}
   m_Father: {fileID: 2680888828361832773}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 111.51001, y: 80.714, z: 50.009003}
@@ -41568,7 +44975,16 @@ Transform:
   m_LocalPosition: {x: -0.06, y: 0.83, z: 1.1}
   m_LocalScale: {x: 1.57, y: 1.57, z: 1.57}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 2009365721}
+  - {fileID: 1931331327}
+  - {fileID: 1192022676}
+  - {fileID: 1325912696}
+  - {fileID: 613681453}
+  - {fileID: 1353482534}
+  - {fileID: 928512655}
+  - {fileID: 1900234623}
+  - {fileID: 574279363}
   m_Father: {fileID: 1519944996}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 120.24899, y: 2.003006, z: 2.2079926}
@@ -41603,7 +45019,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078558098343668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41635,7 +45051,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078558251594801
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41667,7 +45083,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078558540799581
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41731,7 +45147,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078558809826799
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41763,7 +45179,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078559170227861
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41795,7 +45211,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078559295414838
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41827,7 +45243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078559458923293
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41859,7 +45275,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078559483446221
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41891,7 +45307,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078559597286887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41923,7 +45339,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078559803702960
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41955,7 +45371,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!65 &8164078559966983811
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -41980,7 +45396,17 @@ Transform:
   m_LocalPosition: {x: 0.0129, y: -0.0152, z: 0.0134}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_ConstrainProportionsScale: 1
-  m_Children: []
+  m_Children:
+  - {fileID: 1522499902}
+  - {fileID: 45091412}
+  - {fileID: 1100853645}
+  - {fileID: 1750512497}
+  - {fileID: 2067037285}
+  - {fileID: 2043106610}
+  - {fileID: 1481516428}
+  - {fileID: 1253779780}
+  - {fileID: 1657538491}
+  - {fileID: 523748337}
   m_Father: {fileID: 803414653}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -64.648, y: 181.688, z: -181.495}
@@ -42050,7 +45476,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 4
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2432090755550338912, guid: 5443a96bbb428ba43bc1e4ead0d102a7, type: 3}
 --- !u!23 &8806482207140775347

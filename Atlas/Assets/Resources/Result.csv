@@ -33,7 +33,7 @@ Id,Key,Latina(lat),English(en),Ukrainian(Ua)
 32,os nasale,os nasale,Nasal bone,Носова кістка
 33,os lacrimale,os lacrimale,Lacrimal bone,Сльозна кістка
 34,concha nasalis inferior,concha nasalis inferior,Inferior nasal concha,Нижня носова раковина
-35,columna vertebralis,columna vertebralis,Vertebral column,Хребетка
+35,columna vertebralis,columna vertebralis,Vertebral column,Хребтовий стовп
 36,sceleton appendiculare,sceleton appendiculare,Appendicular skeleton,Додатковий скелет
 37,ossa membri superioris,ossa membri superioris,Bones of the upper limb,Кістки верхньої кінцівки
 38,cingulum membri superioris,cingulum membri superioris,Upper limb girdle,Верхня кінцівкова кільце
@@ -821,3 +821,25 @@ Id,Key,Latina(lat),English(en),Ukrainian(Ua)
 820,sulcus tendinis mm peroneorum,sulcus tendinis mm peroneorum,groove for tendon of peroneus muscles,борозна сухожилків малогомілкових м'язів
 821,facies malleolaris lateralis,facies malleolaris lateralis,malleolar lateral surface,бічна кісточкова поверхня
 822,sulcus tendinis m flexoris hallucis longi,sulcus tendinis m flexoris hallucis longi,groove for tendom of flexor hallucis longus muscle,борозна сухожилка довгого м’язазгинача великого пальця
+823,C3,vertebrae cervicales 3,Vertebral column 3,шийний хребець 3
+824,C4,vertebrae cervicales 4,Vertebral column 4,шийний хребець 4
+825,C5,vertebrae cervicales 5,Vertebral column 5,шийний хребець 5
+826,C6,vertebrae cervicales 6,Vertebral column 6,шийний хребець 6
+827,C7,vertebrae cervicales 7,Vertebral column 7,шийний хребець 7
+828,Th1,vertebra thoracica 1,thoracic vertebrae,грудний хребець 1
+829,Th2,vertebra thoracica 2,thoracic vertebrae,грудний хребець 2
+830,Th3,vertebra thoracica 3,thoracic vertebrae,грудний хребець 3
+831,Th4,vertebra thoracica 4,thoracic vertebrae,грудний хребець 4
+832,Th5,vertebra thoracica 5,thoracic vertebrae,грудний хребець 5
+833,Th6,vertebra thoracica 6,thoracic vertebrae,грудний хребець 6
+834,Th7,vertebra thoracica 7,thoracic vertebrae,грудний хребець 7
+835,Th8,vertebra thoracica 8,thoracic vertebrae,грудний хребець 8
+836,Th9,vertebra thoracica 9,thoracic vertebrae,грудний хребець 9
+837,Th10,vertebra thoracica 10,thoracic vertebrae,грудний хребець 10
+838,Th11,vertebra thoracica 11,thoracic vertebrae,грудний хребець 11
+839,Th12,vertebra thoracica 12,thoracic vertebrae,грудний хребець 12
+840,L1,Vertebra lumbalis 1,Lumbar vertebra 1,Поперековий хребець 1
+841,L2,Vertebra lumbalis 2,Lumbar vertebra 2,Поперековий хребець 2
+842,L3,Vertebra lumbalis 3,Lumbar vertebra 3,Поперековий хребець 3
+843,L4,Vertebra lumbalis 4,Lumbar vertebra 4,Поперековий хребець 4
+844,L5,Vertebra lumbalis 5,Lumbar vertebra 5,Поперековий хребець 5
