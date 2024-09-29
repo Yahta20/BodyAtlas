@@ -11,8 +11,22 @@ public class ContentLoc : MonoBehaviour
     [SerializeField]
     List<LocPoint> locs = new List<LocPoint>();
     public SystemLanguage language { get; private set; } = SystemLanguage.Ukrainian;
+    
+    
+    [SerializeField]
+    public Sprite[] langColor;
 
+    Dictionary<SystemLanguage, Sprite> flagD = new();
+    private void fillDic()
+    {
+        flagD.Add(SystemLanguage.Unknown,   langColor[0]);
+        flagD.Add(SystemLanguage.Ukrainian, langColor[1]);
+        flagD.Add(SystemLanguage.English,   langColor[2]);
+    }
+
+    //public event Action<Sprite> OnContentLocChanged;
     public event Action OnChangeLang;
+    
     void Awake()
     {
         Instance = this;
@@ -28,6 +42,7 @@ public class ContentLoc : MonoBehaviour
 
         }
     }
+    
     public string GetLocalText(string key) {
 
         string s;

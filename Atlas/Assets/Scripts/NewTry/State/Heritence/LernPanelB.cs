@@ -26,9 +26,9 @@ public class LernPanelB : MonoBehaviour
     Dictionary<SystemLanguage, Sprite> flagD = new();
     private void fillDic()
     {
-        flagD.Add(SystemLanguage.Unknown, flags[0]);
+        flagD.Add(SystemLanguage.Unknown,   flags[0]);
         flagD.Add(SystemLanguage.Ukrainian, flags[1]);
-        flagD.Add(SystemLanguage.English, flags[2]);
+        flagD.Add(SystemLanguage.English,   flags[2]);
     }
 
     private void Awake()
@@ -40,8 +40,12 @@ public class LernPanelB : MonoBehaviour
     {
         //print("SASA");
     }
-
-
+    private void OnDisable()
+    {
+        Control.Instance.OnChangePoint      -= UpdateContent;
+        ContentLoc.Instance.OnChangeLang    -= UpdateLang;
+    }
+    
     void Start()
     {
         mainRect = GetComponent<RectTransform>();
@@ -86,7 +90,7 @@ public class LernPanelB : MonoBehaviour
     private void UpdateLang()
     {
         flag.sprite = flagD[ContentLoc.Instance.language];
-        UpdateContent(Control.Instance.Postparat);
+        UpdateContent(Control.Instance.SubParat);
     }
 
     private void UpdateFunctional()
@@ -126,16 +130,16 @@ public class LernPanelB : MonoBehaviour
         extbtn.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
         upbtn.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
         hide.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
+    }
+
+
+
+
+
         /*
         icon.GetComponent<RectTransform>().anchoredPosition = new Vector2(-extbtn.sizeDelta.y * 2, 0);
         toppanel.sizeDelta = new Vector2(sc.x * 0.25f, mainRect.sizeDelta.y * 0.10f);
-
-
-
-
          */
-
-    }
 
     // Update is called once per frame
     void Update()

@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-
+using System.Reflection.Emit;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class scrollBeh : MonoBehaviour
@@ -11,7 +13,7 @@ public class scrollBeh : MonoBehaviour
     public GameObject prefab;
     ScrollRect scroll;
     public Text Label;
-
+    IntrBtn[] intrBtns;
     // Start is called before the first frame update
 
     private void Awake()
@@ -21,7 +23,7 @@ public class scrollBeh : MonoBehaviour
         
     void Start()
     {
-        UpdateContent(Control.Instance.Postparat);
+        UpdateContent(Control.Instance.SubParat);
 
         Control.Instance.OnChangePoint += UpdateContent;
         ContentLoc.Instance.OnChangeLang += UpdateLang;
@@ -29,13 +31,13 @@ public class scrollBeh : MonoBehaviour
 
     private void UpdateLang()
     {
-        UpdateContent(Control.Instance.Postparat);
+        UpdateContent(Control.Instance.SubParat);
     }
 
     private void UpdateContent(GameObject @object)
     {
 
-
+        var ibl = new List<IntrBtn>(); 
         Label.text = ContentLoc.Instance.GetLocalText(@object.name);// ;
         for (int i = 0; i < scroll.content.transform.childCount; i++)
         {
@@ -59,11 +61,26 @@ public class scrollBeh : MonoBehaviour
             butun.GetComponent<Button>().onClick.AddListener(() => {
                 Control.Instance.ChangePoint(a);
             });
+            IntrBtn p = new IntrBtn(
+                butun.GetComponentInChildren<Text>()
+                ,butun.GetComponent<Button>()
+                , () => { print("ex"); }
+                , () => { print("en"); });
+            ibl.Add(p);
+            ///UnityAction a = 
+                //butun.GetComponent<Button>().OnPointerEnter
+
             scroll.content.sizeDelta += new Vector2(0
                 , CanvasBehavior.Instance.getSize().y * 0.15f + 25);
         }
-
+        intrBtns= ibl.ToArray();
     }
+
+    private void terra(PointerEventData data)
+    {
+        throw new NotImplementedException();
+    }
+
     public void UpdateTesting() {
 
         /*

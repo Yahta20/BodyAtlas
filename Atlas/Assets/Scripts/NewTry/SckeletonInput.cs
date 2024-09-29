@@ -10,21 +10,32 @@ public class SckeletonInput : MonoBehaviour
     GameObject controled;
     NInput input;
     public CinemachineVirtualCamera camera;
+    //Light _light;
 
 
 
     private void OnEnable()
     {
+        //_light = GetComponent<Light>();
+
         input = new NInput();
         controled = camera.gameObject;//this.gameObject;
         input.Enable();
-        
+        lightConfig();
 
         //input.Gamplay.Zoom.performed += Zooming;
         //input.Gamplay.moving.performed += Moving;
         //input.Gamplay.Rotation.performed += Rotating;
         //MeshListUpdate();
     }
+
+    private void lightConfig()
+    {
+        //_light.enabled = true;
+        //_light.type = LightType.Directional;
+    
+    }
+
     private void Start()
     {
         Control.Instance.OnChangePoint += PointChangin;
@@ -36,8 +47,8 @@ public class SckeletonInput : MonoBehaviour
     }
     private void PointChangin(GameObject obj)
     {
-        camera.LookAt = obj.transform;
         camera.transform.position = new Vector3 (controled.transform.position.x, obj.transform.position.y, controled.transform.position.z);
+        camera.LookAt = obj.transform;
     }
 
     private void Update()

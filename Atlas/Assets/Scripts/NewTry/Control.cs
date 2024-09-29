@@ -12,7 +12,7 @@ public class Control : MonoBehaviour
     public static Control Instance { get; private set; }
     public GameObject Indicator;
     public GameObject Preparat;
-    public GameObject Postparat { get; private set; }
+    public GameObject SubParat { get; private set; }
     [Space]
     public string nameOfFile;
     public Material trasperent;
@@ -29,125 +29,52 @@ public class Control : MonoBehaviour
     private void Awake()
     {
         Instance = this;
-        Postparat = Preparat;
+        SubParat = Preparat;
         HideIndicator();
         //VisibilityOfPreparat(false);
         MeshListUpdate();
     }
-
-    public void VisibilityOfPreparat(bool v)
-    {
-        Preparat.SetActive(v);
-    }
-
-
     public void HideIndicator()
     {
         Indicator.transform.position = new Vector3(1007, 1070, 1700);
         Indicator.SetActive(false);
-            //transform.position = new Vector3(1007, 1070, 1700);
     }
-
-
-
     private void MeshListUpdate()
     {
         var list = ObjectTree(Preparat);
-        /*
-        var path = Path.Combine(Application.dataPath, nameOfFile);
-        
-        var alb = "";
-        nameOfFile += ".txt";
-
-        var idot = new List<string>();
-         */
-
-        var rend = new MeshRenderer();
         for (int i = 0; i < list.Count; i++)
         {
-            if (list[i].TryGetComponent<MeshRenderer>(out rend))
+            if (list[i].TryGetComponent<MeshRenderer>(out var rend))
             {
                 var d = list[i].AddComponent<Bone>();
                 d.Setmaterial(trasperent);
                 bones.Add(
                     d);
             }
-            /*
-        if (
-            (list[i].gameObject.name.StartsWith("R_") |
-            list[i].gameObject.name.StartsWith("L_"))
-            )
-        {
-            if (!idot.Exists(p =>p== $"{list[i].gameObject.name.Substring(2)}\n")) {
-                idot.Add($"{list[i].gameObject.name.Substring(2)}\n");
-            }
         }
-        else {
-            if (!idot.Exists(p => p == $"{list[i].gameObject.name}\n"))
-            {
-                idot.Add($"{list[i].gameObject.name}\n");
-            }
-            //alb += $"{list[i].gameObject.name} \n";
-        }
-             */
-        }
-        // print($"{list[i].gameObject.name.Substring(2)} \n");
-        //   print($"{list[i].gameObject.name.Substring(2)} \n");
-        //alb += $"{list[i].gameObject.name} \n" ;
-        //idot.Sort();
-
-        /*
-        for (int i = 0; i < idot.Count; i++)
-        {
-            alb += idot[i];
-        }
-
-        try
-        {
-            if (File.Exists(path))
-            {
-                File.Delete(path);
-            }
-
-            FileStream fileStream = new FileStream(path,
-                                       FileMode.OpenOrCreate,
-                                       FileAccess.ReadWrite,
-                                       FileShare.None);
-            if (fileStream.CanWrite)
-            {
-                byte[] arr = System.Text.Encoding.Default.GetBytes(alb);
-                fileStream.Write(arr, 0, arr.Length);
-            }
-            fileStream.Close();
-            print("fin");
-        }
-        catch (System.Exception e)
-        {
-            print($"Pizda togo sho {e.ToString()}");
-        }
-         */
     }
-
-
+     
+    public void VisibilityOfPreparat(bool v)
+    {
+        Preparat.SetActive(v);
+    }
     public void HomePosition()
     {
-        Postparat = Preparat;
-        OnChangePoint?.Invoke(Postparat);
+        SubParat = Preparat;
+        OnChangePoint?.Invoke(SubParat);
         HideIndicator();
     }
 
     public void ChangePoint(Bone obj)
     {
-        Postparat = obj.gameObject;
-        OnChangePoint?.Invoke(Postparat);
+        SubParat = obj.gameObject;
+        OnChangePoint?.Invoke(SubParat);
         HideIndicator();
     }
-
 
     public Bone[] GetBoneArray(int l) {
         var rand = new System.Random();
         List<Bone> list = new List<Bone>();
-
         do
         {
             var ansv = bones[rand.Next(0,bones.Count-1)];
@@ -189,70 +116,86 @@ public class Control : MonoBehaviour
         return list.ToArray();
     }
 
-
-    public Bone GetBone() {
-        return bones.Find(
-            (b => b.gameObject == Postparat)
-            )!=null?
-                bones.Find(
-                (b => b.gameObject == Postparat)
-                ):
-                null;
-            //(b => b.gameObject == Postparat) != null ? b : null
-         ;
-        /*
-        return null;
-           */
-    }
     public void ChangePoint(string name) {
 
-        for (int i = 0; i < Postparat.transform.childCount; i++)
+        for (int i = 0; i < SubParat.transform.childCount; i++)
         {
             if (
-                Postparat.transform.GetChild(i).gameObject.name == name 
+                SubParat.transform.GetChild(i).gameObject.name == name 
                 )
             {
                 if (
-                Postparat.transform.GetChild(i).childCount != 0 
+                SubParat.transform.GetChild(i).childCount != 0 
                     )
                 {
-                    Postparat = Postparat.transform.GetChild(i).gameObject;
+                    SubParat = SubParat.transform.GetChild(i).gameObject;
                     HideIndicator();
-                    OnChangePoint?.Invoke(Postparat);
+                    OnChangePoint?.Invoke(SubParat);
                 }
                 else
                 {
                     Indicator.SetActive(true);
-                    Indicator.transform.position = Postparat.transform.GetChild(i).position;
+                    Indicator.transform.position = SubParat.transform.GetChild(i).position;
                 }
                 //  true
                     //print("sa");
-                    //print($"ss{Postparat.transform.position}");
-                    //OnMarkPoint?.Invoke(Postparat.transform);
+                    //print($"ss{SubParat.transform.position}");
+                    //OnMarkPoint?.Invoke(SubParat.transform);
                     
 
-                //camera.LookAt = Postparat.transform;
+                //camera.LookAt = SubParat.transform;
             }
         }
     }
 
     public void UpperHierarchy() {
-        if (Postparat == Preparat) return;
+        if (SubParat == Preparat) return;
         else
         {
-            Postparat = Postparat.transform.parent.gameObject;
+            SubParat = SubParat.transform.parent.gameObject;
         }
         HideIndicator();
-        OnChangePoint?.Invoke(Postparat);
+        OnChangePoint?.Invoke(SubParat);
     }
 
+
+    //creatin answering list
     public string[] getContent() {
         List<string> content = new List<string>();
-        for (int i = 0; i < Postparat.transform.childCount; i++) {
+
+
+        //need compare special case
+
+
+        if (SubParat.TryGetComponent<Bone>(out var bon))
+        {
+
+        }
+
+        if (SubParat.TryGetComponent<MeshRenderer>(out var mr)) {
+            for (int i = 0; i < mr.materials.Length; i++)
+            {
+                var s = $"{mr.materials[i].name}";
+                if (mr.materials[i].name != SubParat.name
+                    & mr.materials[i].name.IndexOf('_')!=-1
+                    )
+                { 
+                    content.Add(
+                        mr.materials[i].name.Substring(
+                              mr.materials[i].name.IndexOf('_') + 1,
+                              mr.materials[i].name.IndexOf('(') - mr.materials[i].name.IndexOf('_')-2
+                        )
+                    );
+                }
+            }
+        }
+
+        for (int i = 0; i < SubParat.transform.childCount; i++) {
             content.Add(
-            Postparat.transform.GetChild(i).gameObject.name
+            SubParat.transform.GetChild(i).gameObject.name
                 );
         }
+
         return content.ToArray();
     }
 
@@ -283,3 +226,62 @@ public class Control : MonoBehaviour
 
 
 
+
+        /*
+        var path = Path.Combine(Application.dataPath, nameOfFile);
+        
+        var alb = "";
+        nameOfFile += ".txt";
+
+        var idot = new List<string>();
+         */
+
+            /*
+        if (
+            (list[i].gameObject.name.StartsWith("R_") |
+            list[i].gameObject.name.StartsWith("L_"))
+            )
+        {
+            if (!idot.Exists(p =>p== $"{list[i].gameObject.name.Substring(2)}\n")) {
+                idot.Add($"{list[i].gameObject.name.Substring(2)}\n");
+            }
+        }
+        else {
+            if (!idot.Exists(p => p == $"{list[i].gameObject.name}\n"))
+            {
+                idot.Add($"{list[i].gameObject.name}\n");
+            }
+            //alb += $"{list[i].gameObject.name} \n";
+        }
+             */
+        // print($"{list[i].gameObject.name.Substring(2)} \n");
+        //   print($"{list[i].gameObject.name.Substring(2)} \n");
+        //alb += $"{list[i].gameObject.name} \n" ;
+        //idot.Sort();
+
+        /*
+        
+        try
+        {
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+
+            FileStream fileStream = new FileStream(path,
+                                       FileMode.OpenOrCreate,
+                                       FileAccess.ReadWrite,
+                                       FileShare.None);
+            if (fileStream.CanWrite)
+            {
+                byte[] arr = System.Text.Encoding.Default.GetBytes(alb);
+                fileStream.Write(arr, 0, arr.Length);
+            }
+            fileStream.Close();
+            print("fin");
+        }
+        catch (System.Exception e)
+        {
+            print($"Pizda togo sho {e.ToString()}");
+        }
+         */
